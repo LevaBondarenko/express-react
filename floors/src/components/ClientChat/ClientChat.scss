@@ -1,0 +1,349 @@
+@import '../variables.scss';
+
+.root {
+  width: inherit;
+  position: fixed;
+  background-color: #fff;
+  bottom: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.75);
+  transition: all 0.7s ease-out;
+
+  &.hidden {
+    bottom: -545px;
+    transition: all 0.7s ease-out;
+  }
+}
+
+.chatLabel {
+  position: fixed;
+  bottom: 5px;
+  z-index: 900;
+  height: 60px;
+  transition: all 0.5s ease-out;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.hiddenLabel {
+    bottom: -70px !important;
+    transition: all 0.5s ease-out;
+  }
+}
+
+.labelContent {
+  background-color: $green-600;
+  display: inline-block;
+  vertical-align: top;
+  color: #fff;
+  height: 60px;
+  padding: 8px 15px 10px;
+  border-radius: 6px;
+  transition: all 0.3s;
+  position: relative;
+
+  &:hover {
+    background-color: $green-800;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:after {
+      border-left: 10px solid $green-800;
+      transition: all 0.3s;
+    }
+  }
+
+  &:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid $green-600;
+    position: absolute;
+    right: -9px;
+    top: 22px;
+    transition: all 0.3s;
+  }
+}
+
+.labelText {
+  font-size: 16px;
+}
+
+.labelPhoto {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 15px;
+}
+
+.chatText {
+  color: #fff;
+}
+
+.thanks {
+  position: absolute;
+  height: 100%;
+  text-align: center;
+  padding-left: 26px;
+  padding-right: 26px;
+  width: 100%;
+  z-index: 10;
+  padding-top: 77px;
+  background-color: #fff;
+}
+
+.image {
+  width: 63px;
+  height: 63px;
+  border-radius: 35px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+
+  img {
+    width: 100%;
+  }
+}
+
+.headerText {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+.header {
+  padding-top: 10px;
+  padding-left: 16px;
+  padding-bottom: 5px;
+  background-color: $green-600;
+  color: #fff;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.city {
+  font-size: 14px;
+}
+
+.status {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 33px;
+  display: inline-block;
+  margin-right: 7px;
+
+  &.online {
+    background-color: $green-400;
+  }
+
+  &.offline {
+    background-color: $red-600;
+  }
+}
+
+.close {
+  float: right;
+  margin-right: 15px;
+  margin-top: 4px;
+}
+
+.icon {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 60px;
+  right: 16px;
+  z-index: 11;
+
+  a {
+    width: 45px;
+    height: 45px;
+    display: block;
+
+    &:hover {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.messages {
+  height: calc(100% - 160px);
+  min-height: 345px;
+  position: relative;
+  overflow: hidden;
+}
+
+.message {
+  padding: 10px 15px 25px;
+  max-width: 75%;
+  min-width: 60px;
+  float: left;
+  background-color: $gray-400;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  margin-left: 15px;
+  position: relative;
+
+  &:after {
+    content: '';
+    width: 13px;
+    height: 15px;
+    position: absolute;
+    background-image: url('https://cdn-media.etagi.com/content/media/site/b/b3/b3c37eab19eabb4abeb8e456c1a10ad7d2fb0d74.png');
+    bottom: -5px;
+    left: 3px;
+    clear: both;
+  }
+}
+
+.my {
+  float: right;
+  background-color: $gray-10;
+  margin-right: 15px;
+
+  &:after {
+    content: '';
+    width: 13px;
+    height: 15px;
+    position: absolute;
+    background-image: url('https://cdn-media.etagi.com/content/media/site/1/1e/1e217ab4a404a441a8a4477469d55402339db43b.png');
+    bottom: -6px;
+    right: 5px !important;
+    left: inherit !important;
+  }
+}
+
+.message:first-child {
+  margin-top: 15px;
+}
+
+.time {
+  color: $gray-500;
+  position: absolute;
+  bottom: 7px;
+  right: 15px;
+  font-size: 12px;
+}
+
+.msgWrapper {
+  position: relative;
+}
+
+.msgStatus {
+  position: absolute;
+  right: 30px;
+  bottom: -4px;
+  color: $gray-500;
+  font-size: 12px;
+  width: 77px;
+  text-align: right;
+}
+
+.msgRead {
+  background-image: url('https://cdn-media.etagi.com/content/media/site/d/d5/d54547acc989beaf91f4a1b905e9de581b39aad7.png');
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+}
+
+.form {
+  padding: 10px 15px;
+}
+
+.inputIcon {
+  display: inline-block;
+  background-image: url('https://cdn-media.etagi.com/content/media/site/c/c3/c3ff169a99cf1bafba24d435903c7c3e7d24d274.png');
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 13px;
+  vertical-align: top;
+  margin-top: 20px;
+}
+
+.inputWrapper {
+  border: 1px solid #e5e5e5;
+}
+
+.textArea {
+  resize: none;
+  border: none;
+  outline: none;
+  width: 85%;
+  margin-right: 5%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 15px;
+}
+
+.textArea::-webkit-input-placeholder {
+  color: #949494;
+}
+
+.orderForm {
+  position: absolute;
+  height: 100%;
+  z-index: 10;
+  background-color: #fff;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-top: 77px;
+  text-align: center;
+}
+
+.orderTitle {
+  width: 85%;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.orderInputWrapper {
+  width: 100%;
+  margin-top: 20px;
+
+  input,
+  button {
+    width: 100%;
+  }
+
+  input {
+    border: 1px solid #a3a3a3;
+    padding-left: 10px;
+    height: 36px;
+  }
+
+  button {
+    height: 42px;
+    background-color: $green-600;
+    color: #fff;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    border-radius: 3px;
+
+    &:hover {
+      background-color: $green-800;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+.writeMode {
+  background-image: url('https://cdn-media.etagi.com/content/media/site/0/08/08a989c97ef37f8ec7ff1436bfef4c5c95252a14.png');
+  transition: all 0.3s ease-in-out;
+}
+
+.callMode {
+  background-image: url('https://cdn-media.etagi.com/content/media/site/4/44/4480613a958847e13589b25e94803ae74bc535dd.png');
+  transition: all 0.3s ease-in-out;
+}

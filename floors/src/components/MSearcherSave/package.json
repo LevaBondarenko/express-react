@@ -1,0 +1,6 @@
+{
+  "name": "MSearcherSave",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./MSearcherSave.js"
+}

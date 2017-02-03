@@ -1,0 +1,176 @@
+/**
+ * USelect styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+@import '../ucontrols.scss';
+
+.USelect {
+  :global(.uselect-container) {
+    width: 100%;
+    margin: 0;
+  }
+
+  :global(.col-xs-12) {
+    position: relative;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  :global(.input-label) {
+    text-align: center;
+    min-width: 100%;
+    max-width: none;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  :global(.form-control) {
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.2rem;
+    height: auto;
+
+    &:focus,
+    &:hover {
+      background: $white-base;
+    }
+  }
+
+  .simple {
+    padding: 0 12px;
+    height: 50px;
+    font-size: 16px;
+    border: 1px solid $gray-300;
+  }
+
+  :global(.form-control.disabled) {
+    background: $gray-300;
+    box-shadow: inset 0 0 8px -1px rgba(0, 0, 0, 0.15);
+  }
+
+  :global(div.form-control) {
+    border: none;
+    box-shadow: none;
+  }
+}
+
+:global(.uselect-list) {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  z-index: 49;
+  background: #fff;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  background-clip: padding-box;
+  white-space: nowrap;
+  height: 200px;
+
+  :global(.gm-scrollbar.-vertical) {
+    width: 0.6rem;
+    margin-right: 0.3rem;
+
+    :global(.thumb) {
+      color: $green-600;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.3rem 0 0;
+    width: fit-content;
+
+    li {
+      position: relative;
+      padding: 0.2rem 2rem;
+      white-space: nowrap;
+      cursor: pointer;
+
+      &:hover {
+        color: color($crimson blackness(+20%));
+      }
+
+      :global(.uselect-checkbox) {
+        position: absolute;
+        border: 1px solid $gray-base;
+        border-radius: 2px;
+        width: 12px;
+        height: 12px;
+        left: 10px;
+        top: 5px;
+
+        :global(.fa) {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: -1px;
+          font-size: 12px;
+          color: $green-600;
+        }
+      }
+
+      &:hover {
+        :global(.uselect-checkbox) {
+          :global(.fa) {
+            border-color: $green-300;
+          }
+        }
+      }
+    }
+
+    :global(.uselect-active-item) {
+      color: $crimson;
+    }
+
+    :global(.uselect-multiselect-item) {
+      padding-left: 3rem;
+
+      &:hover {
+        color: $gray-dark;
+      }
+    }
+  }
+}
+
+:global(.uselect-text-search) {
+  padding: 3px 10px 4px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: none;
+  min-width: 290px;
+  margin-bottom: -1px;
+  position: absolute;
+  z-index: 10;
+  background: #fff;
+
+  a {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    font-weight: normal;
+    color: #868686;
+    font-size: 12px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 2px;
+    border: none;
+
+    &:focus {
+      outline: 1px solid #ccc;
+    }
+  }
+}

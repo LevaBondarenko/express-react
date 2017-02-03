@@ -1,0 +1,65 @@
+@import '../variables.scss';
+
+.realtorsList {
+  background-color: $gray-100;
+  font-family: 'Roboto', sans-serif;
+
+  &__arrowIcon {
+    background-image: url('//cdn-media.etagi.com/content/media/site/5/5c/5ce5f37034f0544278cdd67794c31e5cd954c8c7.svg');
+    background-position: center;
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    display: block;
+    height: 22px;
+    width: 22px;
+  }
+
+  &__cardList {
+    overflow: auto;
+  }
+
+  &__dummy {
+    height: 22px;
+    width: 22px;
+  }
+
+  &__emptyResult {
+    background-color: $white-base;
+    border-top: 1px solid $gray-300;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  &__header {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 auto;
+  }
+
+  &__headerWrapper {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0 12px;
+  }
+
+  &__input :global(.form-control) {
+    background-attachment: scroll;
+    background-image: url('//cdn-media.etagi.com/content/media/site/9/93/933800caf3bbb9c4abd49c93a4512c001fc8ef64.svg');
+    background-position: 10px;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    border-radius: 3px !important;
+    font-size: 13px;
+    height: 50px !important;
+    padding-left: 30px !important;
+  }
+
+  &__inputWrapper {
+    background-color: $white-base;
+    border-bottom: 1px solid $gray-300;
+    border-top: 1px solid $gray-300;
+    margin-bottom: 10px;
+    padding: 10px 12px;
+  }
+}

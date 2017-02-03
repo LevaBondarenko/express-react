@@ -1,0 +1,135 @@
+/**
+ * MortgagePercent styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.root {
+  /* styles here */
+}
+
+.block {
+  display: inline-block;
+  width: 75px;
+  text-align: center;
+  color: $white-base;
+  margin: 5px;
+}
+
+.percBlock,
+.prefBlock,
+.oupsBlock {
+  border-radius: 3px;
+
+  > span {
+    width: 100%;
+    display: block;
+    padding: 10px 0;
+  }
+
+  .percentBlock {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .oups {
+    font-size: 18px;
+    padding-top: 0;
+    padding-bottom: 14px;
+  }
+
+  .borderBlock {
+    height: 0;
+    padding: 0;
+    border-top: 1px solid $white-base;
+    margin: 0 auto;
+    width: 75%;
+  }
+}
+
+.percBlock,
+.percBlock + .detailBlock,
+.percBlock + .detailBlock:after {
+  background: $green-600;
+}
+
+.prefBlock,
+.prefBlock + .detailBlock,
+.prefBlock + .detailBlock:after {
+  background: $red-600;
+}
+
+.oupsBlock,
+.oupsBlock + .detailBlock,
+.oupsBlock + .detailBlock:after {
+  background: $orange-600;
+}
+
+.exclamation {
+  display: block;
+  font-size: 24px;
+  margin: 8px auto 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid $white-base;
+  border-radius: 50%;
+}
+
+.detailBlock {
+  margin-top: 4px;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+  padding: 10px 0;
+
+  &:after {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    margin-left: -10px;
+    content: '?';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid $white-base;
+  }
+}
+
+.modalDialogMortgageForm {
+  :global(.modal-dialog) {
+    width: 70em !important;
+    margin-top: 50px !important;
+  }
+
+  :global(.modal-body),
+  :global(.modal-footer) {
+    padding-bottom: 0;
+  }
+}
+
+.modalDialogOupsForm {
+  :global(.modal-dialog) {
+    margin-top: 50px !important;
+  }
+}
+
+.modalExclamationIcon {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin: 8px auto 0;
+  width: 40px;
+  height: 40px;
+  color: $orange-300;
+  border: 2px solid $orange-300;
+  border-radius: 50%;
+}
+
+.formTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}

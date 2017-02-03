@@ -1,0 +1,80 @@
+@import '../variables.scss';
+
+.timelineContainer {
+  position: relative;
+  padding: 0 5.5rem;
+  min-height: 8.7rem;
+  display: inline-block;
+  border-bottom: 1px solid #f4f4f4;
+
+  .thumbArrow__prev {
+    position: absolute;
+    padding: 4rem 2.4rem;
+    border: 0.1rem solid #f4f4f4;
+    cursor: pointer;
+    top: 0;
+    height: 100%;
+    background: url('https://cdn-media.etagi.com/static/site/2/25/25f58540af9f99eb85e68a8d36d46f80e59d4f86.png') no-repeat center;
+    left: 0;
+
+    &:hover {
+      background: url('https://cdn-media.etagi.com/static/site/4/4a/4a1a1d0670bc5e4953bd4e6fc0aeed4ed144ee33.png') no-repeat center;
+      -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .thumbArrow__next {
+    position: absolute;
+    padding: 4rem 2.4rem;
+    border: 0.1rem solid #f4f4f4;
+    cursor: pointer;
+    top: 0;
+    height: 100%;
+    background: url('https://cdn-media.etagi.com/static/site/b/be/be41d1f574d0cc2786db609df56ae7a7084530a5.png') no-repeat center;
+    right: 0;
+
+    &:hover {
+      background: url('https://cdn-media.etagi.com/static/site/6/69/69e2301d97e5341c6eb92aa9b6c72ffea44d19dd.png') no-repeat center;
+      -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .thumbsContainer {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    display: block;
+    margin-top: 0.3rem;
+
+    .thumbsWrapper {
+      position: relative;
+      display: block;
+
+      .groupThumbs {
+        display: inline-block;
+        padding: 1.5rem 0.3rem 0.5rem;
+
+        .groupName {
+          text-align: center;
+          margin-top: 5.5rem;
+          font-size: 1.3rem;
+        }
+      }
+
+      .groupThumbs__active {
+        display: inline-block;
+        padding: 1.5rem 0.3rem 0.5rem;
+        background-color: #efefef;
+
+        .groupName {
+          text-align: center;
+          margin-top: 5.5rem;
+          font-size: 1.3rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

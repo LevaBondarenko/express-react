@@ -1,0 +1,138 @@
+@import '../variables.scss';
+
+.root {
+  border: solid 0.1rem color(black lightness(+88%));
+  border-radius: 0.3rem;
+  padding: 0 2.5rem 0.7rem;
+  background: $white-base;
+}
+
+.imageWrapper {
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.agentCard {
+  text-align: center;
+
+  .agentName {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .agentTitle {
+    font-size: 1.4rem;
+    font-weight: normal;
+    font-style: italic;
+    color: color(black lightness(+46%));
+    margin-bottom: 2.3rem;
+  }
+
+  .agentText {
+    font-size: 1.4rem;
+    font-weight: normal;
+  }
+}
+
+.agentPhone {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+
+  a {
+    color: $gray-dark;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.agentToolbar {
+  margin-top: 2.1rem;
+  margin-bottom: 1.4rem;
+  text-align: center;
+
+  button {
+    display: inline-block;
+    float: none !important;
+    border: solid 0.1rem $green-600;
+    border-radius: 0.3rem;
+    padding: 0.75rem 1rem;
+    font-size: 1.4rem;
+    transition: all 0.15s linear;
+
+    &:hover {
+      border-color: $green-600;
+      background: $green-600;
+      color: $white-base;
+    }
+
+    &:focus {
+      outline: none;
+      background: $white-base;
+      color: $gray-600;
+      border-color: $green-600;
+    }
+  }
+}
+
+.agentChange {
+  text-align: center;
+
+  button {
+    color: $blue-700;
+    text-decoration: underline;
+
+    &:hover {
+      color: $blue-900;
+    }
+
+    &:focus,
+    &:active:focus {
+      outline: none;
+    }
+  }
+}
+
+.orderToolbar {
+  button {
+    border: solid 0.1rem;
+    border-color: $red-600;
+    border-radius: 0.3rem;
+    padding: 0.75rem 0;
+    font-size: 1.4rem;
+    min-width: 10rem;
+    transition: all 0.15s linear;
+
+    &:hover {
+      border-color: $red-600;
+      background: $red-600;
+      color: $white-base;
+    }
+
+    &:focus {
+      outline: none;
+      background: $white-base;
+    }
+
+    &:last-child {
+      border: solid 0.1rem $green-600;
+      background: $green-600;
+      color: $white-base;
+
+      &:hover {
+        background: $green-700;
+        border: solid 0.1rem $green-700;
+        color: $white-base;
+      }
+
+      &:focus {
+        outline: none;
+        background: $green-600;
+      }
+    }
+  }
+}

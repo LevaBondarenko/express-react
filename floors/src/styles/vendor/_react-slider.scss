@@ -1,0 +1,76 @@
+.handle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 3px solid #ececec;
+  background-color: #595562;
+  color: white;
+  cursor: pointer;
+
+  &:hover {box-shadow: 0 0 3px 0px #44b73a;}
+
+  &.active {
+    background-color: #595562; box-shadow: 0 0 3px 0px #44b73a;
+    &:before {display: block; position: absolute; width: 6px; height: 6px; border-radius: 50%; left: 50%; top: 50%; margin-left: -3px; margin-top: -3px; background: #fff; content:''; }
+  }
+}
+
+.bar {
+  position: relative;
+  background: #ddd;
+  &.bar-1 {
+    background: #f00;
+  }
+  &.bar-2 {
+    background: #0f0;
+  }
+
+}
+
+.horizontal-slider {
+  width: 210px;
+  max-width: 500px;
+  height: 22px;
+
+  .bar {
+    top: 8px;
+    height: 6px;
+
+    &.bar-0 {
+      background: #a5a5a7; border-radius: 2px;
+    }
+    &.bar-1 {
+      background: #3eab47;
+    }
+    &.bar-2 {
+      background: #a5a5a7; border-radius: 2px;
+    }
+  }
+
+  .handle {
+    top: 0;
+    &.handle-0 {
+      margin-left: -8px;
+    }
+    &.handle-1 {
+      margin-right: -8px;
+    }
+  }
+}
+
+.vertical-slider {
+  height: 380px;
+  width: 50px;
+  border: 1px solid grey;
+
+  .handle {
+    left: 1px;
+    width: 48px;
+    line-height: 50px;
+  }
+
+  .bar {
+    left: 20px;
+    width: 10px;
+  }
+}

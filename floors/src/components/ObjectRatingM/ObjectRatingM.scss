@@ -1,0 +1,75 @@
+@import '../variables.scss';
+
+.root {
+  .titleItemContainer {
+    font-weight: bold;
+    height: 51px;
+    line-height: 51px;
+    padding: 0 12px;
+    border-top: 1px solid $gray-300;
+    border-bottom: 1px solid $gray-300;
+  }
+
+  .ratingLink {
+    display: block;
+    text-align: center;
+    color: $blue-600;
+  }
+
+  .ratingNumber {
+    border: 1px solid $gray-600;
+    border-radius: 3px;
+    padding: 0 5px;
+  }
+
+  .popoverContent {
+    padding: 0 12px;
+
+    div {
+      display: table-row;
+      height: 45px;
+      line-height: 45px;
+      border-top: 1px solid $gray-400;
+      font-size: 16px;
+
+      span {
+        display: table-cell;
+
+        &:first-child {
+          white-space: nowrap;
+          color: $gray-600;
+        }
+
+        &:nth-child(2) {
+          margin: 14px 10px 0 0;
+          padding: 0 10px;
+          width: 100%;
+
+          :global(.progress) {
+            display: block;
+            height: 5px;
+            margin-bottom: 0;
+            margin-top: 7px;
+
+            :global(.progress-bar) {
+              background: $green-600;
+            }
+          }
+        }
+
+        &:last-child {
+          width: 50px;
+          text-align: center;
+        }
+      }
+
+      &:first-child {
+        border: none;
+      }
+
+      &:last-child {
+        border-bottom: 1px solid $gray-400;
+      }
+    }
+  }
+}

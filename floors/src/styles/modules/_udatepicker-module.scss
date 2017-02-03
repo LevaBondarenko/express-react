@@ -1,0 +1,73 @@
+.date-picker-container {
+  position: relative;
+  width: auto;
+
+  .react-date-field--theme-default {
+    border: none !important;
+    width: 100%;
+    height: 30px;
+    border-radius: 2px;
+
+    .react-date-field__clear-icon {
+      position: absolute;
+      right: 35px;
+      top: 4px;
+    }
+
+    .react-date-field__calendar-icon {
+      position: absolute;
+      right: 10px;
+      top: 6px;
+    }
+  }
+
+  .input-label {
+    text-align: center;
+    min-width: 100%;
+    max-width: none;
+    font-weight: 600;
+    font-size: 22.4px;
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+    margin-bottom: 1rem;
+  }
+
+  .react-date-picker__month-view--theme-default {
+    top: 36px;
+    left: -56px;
+    position: absolute;
+    border: 1px solid $gray-400 !important;
+  }
+
+  .react-date-field__input {
+    position: relative;
+    top: -1px;
+
+    input::placeholder {
+      color: $gray-400;
+    }
+  }
+
+  .etagi-help-icon {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+
+    .fa-question {
+      background: $white-base;
+      padding: 3px 6px;
+      border: 1px solid $gray-600 !important;
+      border-radius: 12px;
+      color: $black;
+    }
+  }
+
+  input {
+    padding: 0.4rem 0.6rem !important;
+    height: 30px;
+  }
+
+  .react-date-picker__calendar--theme-default {
+    border: none;
+  }
+}

@@ -1,0 +1,41 @@
+@import '../variables.scss';
+
+.modalIcon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: $green-600;
+  color: $white-base;
+  text-align: center;
+  line-height: 4rem;
+  font-size: 2rem;
+  margin: 2rem auto 1rem;
+  float: left;
+}
+
+.formWrap {
+  h3 {
+    font-size: 1.6rem;
+    color: color(black lightness(+13%));
+    font-weight: bold;
+    float: left;
+    line-height: 4rem;
+    margin-left: 2rem;
+  }
+
+  .formGroup {
+    position: relative;
+    margin-bottom: 2rem;
+
+    .label {
+      position: absolute;
+      top: 0.8rem;
+      left: 1.5rem;
+      color: color(black lightness(+88%));
+    }
+
+    input {
+      padding-left: 3.7rem;
+    }
+  }
+}

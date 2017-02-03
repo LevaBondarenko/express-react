@@ -1,0 +1,63 @@
+/**
+ * ShowCaseTicketCount styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.root {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+
+.root button {
+  color: #fff;
+  border: none;
+  background: #0ea34a;
+  border-radius: 3px !important;
+  padding: 15px;
+  width: 200px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.root button:hover {
+  background: #096a30;
+  transition: all 0.3s ease-in-out;
+}
+
+.root button[disabled] {
+  opacity: 0.65;
+}
+
+.root button[disabled]:hover {
+  cursor: not-allowed;
+}
+
+.hint {
+  position: absolute;
+  top: 10px;
+  right: -270px;
+  background-color: #797979;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 2px;
+  line-height: 20px;
+  opacity: 0.65;
+}
+
+.hint:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid #797979;
+  position: absolute;
+  z-index: 100;
+  left: -6px;
+  top: 8px;
+}

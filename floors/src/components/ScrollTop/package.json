@@ -1,0 +1,6 @@
+{
+  "name": "ScrollTop",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ScrollTop.js"
+}

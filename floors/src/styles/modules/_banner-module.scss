@@ -1,0 +1,16 @@
+.banner--wrap{
+    margin: 0 -1.5rem;
+    img{
+        width: 100%;
+    }
+}
+
+header .banner--wrap {
+    img {width: auto;}
+}
+
+#pgc-2-3-1{
+    .banner--wrap{
+        margin-left: .5rem;
+    }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "ClientChat",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ClientChat.js"
+}

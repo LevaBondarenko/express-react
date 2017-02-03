@@ -1,0 +1,38 @@
+/**
+ * SuggestBox styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../../../src/components/variables.scss';
+
+.root {
+  &:global(.withoutSlider) {
+    .helpBlock {
+      top: 100%;
+    }
+  }
+
+  .helpBlock {
+    position: absolute;
+    left: 0;
+    top: 63%;
+    z-index: 2;
+    padding: 0.3rem 1rem;
+    width: 100%;
+    background-color: $white-base;
+    cursor: pointer;
+    border: 0.1rem solid;
+    border-color: $gray-300;
+    border-top: 0;
+    color: $gray-600;
+    transition: all 0.15s linear;
+
+    &:global(.active),
+    &:hover {
+      background-color: $gray-300;
+      color: $gray-900;
+    }
+  }
+}

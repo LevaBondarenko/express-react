@@ -1,0 +1,46 @@
+.sectionPager {
+	text-align: center;
+	width: 645px;
+	position: relative;
+	float: left;
+	z-index: 40;
+	height: 1.8rem;
+}
+
+.sectionPager__sectionLink {
+	text-transform: uppercase;
+	color: #B8B8B8;
+	display: inline-block;
+	position: relative;
+	font-size: .9em;
+  	cursor: pointer;
+}
+
+.sectionPager__sectionLink:hover, .sectionPager__sectionLink:active, .sectionPager__sectionLink:visited, .sectionPager__sectionLink:focus {
+	color: black !important;
+	text-decoration: none !important;
+}
+
+.sectionPager__sectionLink_sectionPrevious {
+	position: relative;
+	left: 0;
+	float: left;
+	margin-right: 10px;
+}
+
+.sectionPager__sectionLink_sectionNext {
+	right: 0;
+	float: right;
+	margin-left: 10px;
+}
+
+.sectionPager__sectionLink_sectionCurrent {
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	position: absolute;
+  	width: 8rem;
+  	left: 0;
+  	right: 0;
+  	margin: 0 auto;
+}

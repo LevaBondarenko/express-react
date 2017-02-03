@@ -1,0 +1,67 @@
+.dopServices {
+  background: #efeff1; padding-top: 40px;
+}
+
+.dopServicesPhoto {
+  padding-right: 30px;
+}
+
+.servicesText  {
+  h2 {
+    text-transform: uppercase;
+    margin-top: 0; line-height: 1;
+    font-size: 24px;
+  }
+  .dopServicesDesc {
+    font-size: 18px; line-height: 20px;
+    padding-top: 5px;
+    a {
+      text-decoration: underline;
+      color: #343434;
+
+      &:hover {
+        color: #303b77;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.dopServicesList {
+  margin-top: 50px;
+  .dopServicesItem {
+    width: 49%;
+    vertical-align: top;
+
+    table {
+      width: 80%;
+      margin-bottom: 8px;
+
+      td {
+        vertical-align: top;
+      }
+    }
+
+    img {
+      padding: 5px 13px 0 20px;
+    }
+
+    p {
+      line-height: 16px;
+
+      &.dopServicesTitle {
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 16px;
+      }
+    }
+
+    a {
+      color: #343434; font-weight: bold;
+
+      &:hover {
+        color: #303b77;
+      }
+    }
+  }
+}

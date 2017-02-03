@@ -1,0 +1,67 @@
+/**
+ * GalleryUploader styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.root {
+  .title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0 30px;
+  }
+
+  .navigation {
+    margin: 20px 0;
+
+    .next {
+      width: 190px;
+      height: auto;
+      margin: 0 auto;
+      padding: 8px 24px;
+      background: $crimson;
+      color: $white-base;
+      border-radius: 1px;
+      border-color: $crimson;
+      text-transform: uppercase;
+      transition: all 0.1s ease-in-out;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        background: url('//cdn-media.etagi.com/static/site/9/93/93d831c95ed4ecc3122f6a4bc83a58d04c3903af.png');
+        width: 23px;
+        height: 18px;
+        right: 30px;
+        top: 8px;
+      }
+
+      &:hover {
+        background: $red-700;
+      }
+
+      &:disabled {
+        background: $red-300;
+        border-color: $red-300;
+      }
+    }
+  }
+
+  :global(.uinput-container),
+  :global(.uselect-container) {
+    :global(.form-control) {
+      padding: 8px 12px !important;
+    }
+  }
+
+  :global(.uselect-container) {
+    :global(.form-control) {
+      color: $gray-600;
+    }
+  }
+}

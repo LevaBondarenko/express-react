@@ -1,0 +1,6 @@
+{
+  "name": "UValidator",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./UValidator.js"
+}

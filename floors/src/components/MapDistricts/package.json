@@ -1,0 +1,6 @@
+{
+  "name": "MapDistricts",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./MapDistricts.js"
+}

@@ -1,0 +1,42 @@
+/**
+ * BankActive styles
+ *
+ * @ver 0.0.1
+ * @author a.d.permin@72.etagi.com
+ */
+
+@import '../variables.scss';
+
+.activeBank {
+  display: inline-block;
+  width: 18rem;
+  height: 5rem;
+  margin: 1rem;
+  overflow: hidden;
+
+  input {
+    margin: 0 0.5rem 0 0;
+    vertical-align: top;
+    cursor: pointer;
+  }
+
+  .logo {
+    max-width: 13rem;
+    max-height: 5rem;
+    -webkit-filter: grayscale(100%);
+    opacity: 0.5;
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      opacity: 1;
+      -webkit-filter: grayscale(0);
+    }
+  }
+
+  .checkedLogo {
+    max-width: 13rem;
+    max-height: 5rem;
+    cursor: pointer;
+  }
+}

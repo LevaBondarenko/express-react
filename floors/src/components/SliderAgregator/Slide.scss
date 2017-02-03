@@ -1,0 +1,77 @@
+@import '../variables.scss';
+
+.slide {
+  color: $white-base;
+  font-weight: bold;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding: 2rem 4rem 5rem;
+  display: none;
+  left: 0;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: -o-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+
+  & > div {
+    display: table;
+    margin: 0 auto;
+
+    div {
+      vertical-align: middle;
+      display: table-cell;
+
+      a {
+        color: $white-base;
+      }
+    }
+  }
+
+  .topText {
+    height: 35%;
+
+    div {
+      text-transform: uppercase;
+      font-size: 1.8rem;
+    }
+  }
+
+  .middleText {
+    height: 50%;
+
+    div {
+      font-size: 2.4rem;
+    }
+  }
+
+  .bottomText {
+    height: 25%;
+
+    div {
+      text-decoration: underline;
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.slide.active {
+  display: block;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.left {
+  display: block;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  position: absolute;
+  top: 0;
+}
+
+.right {
+  display: block;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  position: absolute;
+  top: 0;
+}

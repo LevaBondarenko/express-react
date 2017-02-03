@@ -1,0 +1,167 @@
+@import '../variables.scss';
+
+$blue-booking: #4a535d;
+
+.root {
+  h2 {
+    color: $blue-booking;
+    text-align: center;
+    margin-top: 4.8rem;
+    font-size: 3.13rem;
+    font-weight: bold;
+  }
+
+  h3 {
+    color: $blue-booking;
+    text-align: center;
+    margin-top: 3.6rem;
+    font-size: 3.13rem;
+    font-weight: bold;
+  }
+}
+
+.summary {
+  div {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: lighter;
+  }
+}
+
+.orderForm {
+  background: $white-base;
+
+  :global(.errorText) {
+    margin: 0;
+  }
+}
+
+.orderWrap {
+  padding: 4rem;
+  border: 0.3rem solid #f2f2f2;
+  border-radius: 0.3rem;
+
+  input,
+  select {
+    border-color: #f2f2f2;
+    border-radius: 0.3rem;
+    margin-bottom: 1.8rem;
+    box-shadow: none;
+  }
+
+  select {
+    min-width: 77px;
+  }
+
+  button {
+    width: 100%;
+    padding: 0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    margin-top: 2rem;
+    height: 5rem;
+    background: $gray-light;
+    color: $black;
+
+    &:hover,
+    &:active,
+    &:active:focus {
+      color: $black;
+      background: $gray-darker;
+    }
+  }
+
+  :global(.has-feedback) {
+    label ~ :global(.form-control-feedback) {
+      top: 2rem;
+      right: -0.5rem;
+      color: #f2f2f2;
+    }
+  }
+}
+
+.timeSelect {
+  width: 47%;
+  display: inline-block;
+}
+
+.sliderWrap {
+  margin: 0 0 3rem;
+
+  :global(.slick-list) {
+    padding: 1rem 0;
+  }
+
+  :global(.fa-chevron-left),
+  :global(.fa-chevron-right) {
+    font-size: 2.4rem;
+    top: 6rem;
+    position: absolute;
+    cursor: pointer;
+    color: #cacccf;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: #333;
+    }
+
+    &:global(.slick-disabled) {
+      display: none;
+    }
+  }
+
+  :global(.fa-chevron-left) {
+    left: -1.3rem;
+  }
+
+  :global(.fa-chevron-right) {
+    right: -1.3rem;
+  }
+
+  :global(.slideItem) {
+    border: 1px solid rgba(164, 169, 180, 0.17);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.14);
+    }
+
+    & > div {
+      text-align: center;
+      text-transform: uppercase;
+      padding: 0.8rem 0;
+    }
+
+    &:global(.active) {
+      border-color: #b7252b;
+
+      :global(.slideHead) {
+        background: #b7252b;
+        color: #fff;
+      }
+    }
+  }
+
+  :global(.slideHead) {
+    font-size: 1.5rem;
+  }
+
+  :global(.slideContent) {
+    font-size: 2.2rem;
+    padding-bottom: 0;
+  }
+
+  :global(.slideFooter) {
+    font-size: 1.4rem;
+    text-transform: normal;
+  }
+}
+
+.bookingNotice {
+  text-align: center;
+  margin-top: 3rem;
+}

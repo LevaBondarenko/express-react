@@ -1,0 +1,37 @@
+/*
+    Created on : 16.09.2016, 16:42:48
+    Author     : zemlyanov
+*/
+
+@import '../variables.scss';
+
+.root {
+  width: 100%;
+}
+
+.blockWithImage {
+  display: flex;
+  text-align: center;
+  margin: 40px auto 0;
+  width: 70%;
+}
+
+.rightBlock {
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.14);
+  margin: 30px 0;
+  padding: 30px;
+}
+
+.share {
+  margin-top: 20px;
+
+  > div {
+    text-align: center;
+    margin: 0 auto;
+
+    > div {
+      display: inline-block;
+    }
+  }
+}

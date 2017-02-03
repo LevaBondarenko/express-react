@@ -1,0 +1,6 @@
+{
+  "name": "SuggestBox",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./SuggestBox.js"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "ScrollPointer",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ScrollPointer.js"
+}

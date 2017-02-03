@@ -1,0 +1,62 @@
+/**
+ * MortgageBroker styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.root {
+  position: relative;
+  min-width: 20rem;
+  min-height: 27rem;
+
+  :global(.ball-clip-rotate) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    & > div {
+      top: 40% !important;
+    }
+  }
+}
+
+:global(.mortgageBoxHover) {
+  border: solid 0.1rem color(black lightness(+88%));
+  border-radius: 0.3rem;
+  background: $white-base;
+  padding: 2rem 2.5rem;
+  transition: all 0.15s linear;
+
+  &:hover {
+    border-color: transparent;
+    box-shadow: 0 0.1rem 1rem 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+.rootLinear {
+  position: relative;
+  border: solid 0.1rem color(black lightness(+88%));
+  border-left: none;
+  border-radius: 0.3rem;
+  padding: 0;
+  background: $white-base;
+  max-height: 80px;
+  min-width: 960px;
+
+  :global(.ball-clip-rotate) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    & > div {
+      top: 40% !important;
+    }
+  }
+}

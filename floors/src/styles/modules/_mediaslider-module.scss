@@ -1,0 +1,473 @@
+/*
+    Created on : 17.09.2015, 15:25:40
+    Author     : zemlyanov
+*/
+
+.swiper-container {
+    overflow: hidden;
+}
+.swiper-slide {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    flex-shrink: 0;
+}
+.gallery-top
+{
+    height: 100%;
+    width: 100%;
+    .swiper-slide
+    {
+        text-align: center;
+        height: 100%;
+        .loader {
+            &:after {
+                content: '\231b';
+            }
+            padding-top: 7px;
+            position: absolute;
+            z-index: -1;
+            color: $green;
+            font-size: 200%;
+            top: 50%;
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            margin-left: -25px;
+            margin-top: -25px;
+            font-family: 'Glyphicons Halflings';
+            -webkit-animation:spin 1s linear infinite;
+            -moz-animation:spin 1s linear infinite;
+            animation:spin 1s linear infinite;
+        }
+        img {
+            height: 100%;
+            max-width: 100%;
+        }
+    }
+}
+.gallery-thumbs
+{
+    position: absolute;
+    z-index: 999;
+    left: 102px;
+    bottom: 18px;
+    text-align: center;
+    .swiper-slide
+    {
+        cursor: pointer;
+        width: 66px;
+        height: 66px;
+        border-radius: 50%;
+        border: none;
+        overflow: hidden;
+        &:hover {
+            border: solid #e3e3e3 3px;
+            background: #e3e3e3;
+            span {
+                display: none;
+            }
+        }
+        span, &.image-error span{
+            background-image: url("//cdn-media.etagi.com/static/site/2/26/268f999e32ae834e9c59e1bb2f919aca42648258.png");
+        }
+        .thumb-background {
+            background: $black;
+            opacity: 0.5;
+            z-index: 2;
+        }
+        .thumb-video {
+            background-image: url("//cdn-media.etagi.com/static/site/9/9b/9bc7f6d188326de8f3f293c9983dea014f95c616.png");
+            background-size: auto auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            &:hover {
+                background-image: url("//cdn-media.etagi.com/static/site/7/7e/7eed959261989ba3827ab376fee9da1d1443c875.png");
+            }
+        }
+        span {
+            display: block;
+            color: $white;
+            font-weight: 900;
+            font-size: 120%;
+            line-height: 66px;
+            width: 100%;
+            text-align: center;
+            z-index: 3;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-size: auto auto;
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        &.image-error {
+            border: solid lighten($gray, 45%) 3px;
+            .thumb-background {
+                display: none !important;
+            }
+            &:hover {
+                background: #e3e3e3;
+                border: none;
+                span {
+                    line-height: 66px;
+                    color: lighten($gray, 40%);
+                    display: block;
+                }
+            }
+            span {
+                color: lighten($gray, 45%);
+                line-height: 63px;
+                opacity: 1;
+                background-position: bottom;
+            }
+            img {
+                display: none;
+            }
+        }
+    }
+    .swiper-slide-active
+    {
+        &.image-error {
+            background: #e3e3e3;
+            border: none;
+            span {
+                line-height: 66px;
+                color: lighten($gray, 40%);
+                display: block;
+            }
+        }
+        border: solid #e3e3e3 3px;
+        span {
+            display: none;
+        }
+    }
+}
+.swiper-wrapper
+{
+    position: relative;
+    height: 100%;
+    display: flex;
+    object {
+        position: absolute;
+        right: 0;
+    }
+}
+
+.media-slider {
+    .street-view {
+        bottom: 0;
+        width: 100%;
+        position: absolute;
+        z-index: 0;
+    }
+    .control-mode-ms {
+      position: relative;
+      margin: .25rem 0;
+      z-index: 99;
+      div {
+        float: right;
+      }
+      button {
+        width: 13.7rem;
+        background: lighten($gray, 60%);
+        color: $black;
+        border: 0;
+        padding: 1.2rem;
+        margin: 0 .25rem;
+        @include transition(.1s);
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+          color: $white;
+          background: lighten($gray, 20%);
+          outline: none;
+        }
+      }
+      div {
+        button {
+          padding: 10px 10px !important;
+          min-width: 180px;
+        }
+      }
+    }
+    .ms-fullscreen-button {
+        position: absolute;
+        z-index: 999;
+        right: 18px;
+        bottom: 30px;
+        text-transform: uppercase;
+        background: none;
+        border: none;
+        color: $white;
+        &.white-back {
+            color: $black;
+            &:hover, &:active {
+                color: $green;
+                background: none;
+            }
+        }
+        span {
+            display: block;
+            float: left;
+            margin-left: .5rem;
+            line-height: 4rem;
+        }
+        .glyphicon {
+            font-size: 200%;
+            margin-left: 0;
+        }
+        &:hover {
+            color: $white;
+            background: $gray;
+        }
+        &:active {
+            color: $white;
+            background: lighten($gray, 20%);
+            border: none;
+            outline: none;
+        }
+        &:focus {
+            border: none;
+            outline: none;
+        }
+    }
+}
+
+.checkbox-select {
+    .checkbox-select-content {
+        background: $white;
+        ul {
+            border-top: solid lighten($gray, 60%) 1px;
+            list-style: none;
+            padding: 1rem;
+        }
+    }
+}
+
+.backgroundSlider
+{
+    position: absolute;
+    z-index: 60;
+    bottom: 0;
+    width: 100%;
+    height: 102px;
+    opacity: .5;
+    background-color: $black;
+    &.white-back {
+        opacity: 1;
+        background-color: $white;
+        border-bottom: 1px solid  #c2c2c2;
+    }
+}
+
+.media-slider, .ms-fullscreen .ms-fullscreen-container {
+    position: relative;
+    .slider-ms, .slider-ms-fullscreen {
+        position: relative;
+        width: 100%;
+        background: #fff;
+        .button-left
+        {
+            position: absolute;
+            z-index: 999 !important;
+            top: auto;
+            left: 18px;
+            bottom: 18px;
+            right: auto;
+            cursor: pointer;
+            width: 66px;
+            height: 66px;
+            margin-top: 0;
+            border-radius: 50%;
+            background: #3eab47 url('//cdn-media.etagi.com/static/site/b/b3/b3f663fdd09ef2f89919ef6388541dcbfe210551.png') left top;
+        }
+        .button-right
+        {
+            position: absolute;
+            z-index: 999 !important;
+            top: auto;
+            right: 176px;
+            bottom: 18px;
+            left: auto;
+            cursor: pointer;
+            width: 66px;
+            height: 66px;
+            margin-top: 0;
+            border-radius: 50%;
+            background: #3eab47 url('//cdn-media.etagi.com/static/site/b/b3/b3f663fdd09ef2f89919ef6388541dcbfe210551.png') right top;
+        }
+    }
+    .filter-panel {
+        position: absolute;
+        top: 4.8rem;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 56px;
+        .backgroundFilter {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            opacity: 0.5;
+            background-color: $black;
+            z-index: -1;
+            &.white-back {
+                opacity: 1;
+                background-color: $white;
+                border-top: 1px solid  #c2c2c2;
+            }
+        }
+        .filter {
+            display: inline-flex;
+            text-align: left;
+            .checkbox-select {
+                margin: 10px;
+            }
+        }
+    }
+}
+
+.ms-fullscreen {
+    .modal-dialog {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .modal-content {
+        background: none;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        padding: 1rem;
+    }
+    .ms-fullscreen-container {
+        width: 100%;
+        .control-mode-ms {
+            width: 160px;
+            float: left;
+            z-index: 999;
+            text-align: center;
+            button {
+                width: 14rem;
+                background: lighten($gray, 60%);
+                color: $black;
+                border: 0;
+                padding: 1.2rem;
+                margin: 0 .25rem 0.5rem;
+                @include transition(.1s);
+
+                &:hover,
+                &:focus,
+                &:active,
+                &.active {
+                  background: lighten($gray, 40%);
+                  outline: none;
+                }
+            }
+        }
+        .filter-panel {
+            top: 0;
+            left: 240px;
+            z-index: 999;
+            text-align: center;
+            .backgroundFilter {
+                display: none;
+            }
+        }
+        .street-view {
+            position: absolute;
+            z-index: 0;
+            left: 240px;
+        }
+        .ms-pager {
+            position: absolute;
+            width: 140px;
+            margin-left: 10px;
+            left: 50%;
+            bottom: 0;
+            background: $black;
+            opacity: 0.7;
+            text-align: center;
+            span {
+                color: $white;
+                font-size: 200%;
+            }
+        }
+        .slider-ms-fullscreen {
+            position: relative;
+            float: left;
+            background: none;
+            margin-left: 70px;
+            .backgroundSlider
+            {
+                z-index: 60;
+                bottom: -108px;
+                left: -50%;
+                width: 200%;
+            }
+            .gallery-thumbs
+            {
+                bottom: -92px;
+            }
+            .button-left
+            {
+                bottom: -92px;
+            }
+            .button-right
+            {
+                bottom: -92px;
+            }
+            .button-fs-left, .button-fs-right {
+                background-image: url('//cdn-media.etagi.com/static/site/0/0f/0fc72440051cd680153a69913d64c9b7d4a6606c.png');
+                width: 56px;
+                height: 91px;
+                position: fixed;
+                top: 50%;
+                margin-top: -45px;
+                z-index: 10;
+                cursor: pointer;
+            }
+            .button-fs-left {
+                left: 170px;
+                background-position: -51px 0;
+                &:hover {
+                    background-position: -51px -100px;
+                }
+            }
+            .button-fs-right {
+                right: 10px;
+                background-position: -135px -100px;
+                &:hover {
+                    background-position: -135px 0;
+                }
+            }
+        }
+    }
+    .fullscreen-close {
+        position: absolute;
+        top: -3rem;
+        right: 0;
+        cursor: pointer;
+        font-size: 300%;
+        z-index: 1000;
+        color: $white;
+    }
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.media-slider .control-mode-ms div button {
+  //min-width: 200px;
+  width: inherit;
+  padding: 10px !important;
+}

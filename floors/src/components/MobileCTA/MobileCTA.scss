@@ -1,0 +1,131 @@
+/**
+ * MobileCTA styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.root {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 52px;
+  right: 0;
+  overflow: hidden;
+  z-index: 10;
+  background: $white-base;
+  border-top: 1px solid $gray-100;
+
+  .button {
+    height: 100%;
+    border: 0;
+    background: none;
+    font-size: 11px;
+    position: relative;
+    display: inline-block;
+    color: $gray-dark;
+    outline: none;
+
+    > span {
+      display: inline-block;
+      width: 100%;
+      overflow: hidden;
+      text-align: center;
+      white-space: nowrap;
+      margin-top: 30px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 50%;
+      width: 25px;
+      height: 25px;
+      margin-left: -12.5px;
+    }
+  }
+
+  &.buttons-1 {
+    .button {
+      width: 100%;
+    }
+  }
+
+  &.buttons-2 {
+    .button {
+      width: 50%;
+    }
+  }
+
+  &.buttons-3 {
+    .button {
+      width: 33.333333333%;
+    }
+  }
+
+  &.buttons-4 {
+    .button {
+      width: 25%;
+    }
+  }
+
+  &.buttons-5 {
+    .button {
+      width: 20%;
+    }
+  }
+
+  @media (width <= 479px) {
+    &.buttons-4 {
+      .button {
+        width: 33.333333333%;
+      }
+    }
+
+    &.buttons-5 {
+      .button {
+        width: 33.333333333%;
+      }
+    }
+  }
+}
+
+:global(.mobile-cta-call-office),
+:global(.mobile-cta-call-realtor) {
+  &:before {
+    background: url('//cdn-media.etagi.com/content/media/site/3/32/320565cc7e8462375000175ed41cb659ab862e9e.svg');
+  }
+}
+
+:global(.mobile-cta-chat-ss) {
+  &:before {
+    background: url('//cdn-media.etagi.com/content/media/site/f/ff/ff5fa852e14ab833be10bf83b43e3bab7c029e93.svg');
+  }
+}
+
+:global(.mobile-cta-send-ticket) {
+  &:before {
+    background: url('//cdn-media.etagi.com/content/media/site/6/67/67fdfb50fb6df1ba0fdfe0e62dd288b1db8551da.svg');
+  }
+}
+
+:global(.mobile-cta-advanced-filter) {
+  &:before {
+    background: url('//cdn-media.etagi.com/content/media/site/3/32/321fa9078dfd0673a8684be37200d59742741aa0.svg');
+  }
+}
+
+:global(.mobile-cta-add-to-favorites) {
+  &:before {
+    background: url('//cdn-media.etagi.com/content/media/site/6/6a/6ac7af0304ae58e13f519b054b40d407650e9f2b.svg');
+  }
+}
+
+:global(&.in-favorites) {
+  &:before {
+    background: url('//cdn-media.etagi.com/content/media/site/5/56/56e8f31de3b1d77f18972d075269342f475d0098.svg');
+  }
+}

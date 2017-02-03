@@ -1,0 +1,6 @@
+{
+  "name": "UCheckBox",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./UCheckBox.js"
+}

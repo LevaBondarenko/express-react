@@ -1,0 +1,6 @@
+{
+  "name": "AuthPanel2",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./AuthPanel2.js"
+}

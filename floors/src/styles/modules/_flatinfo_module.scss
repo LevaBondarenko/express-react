@@ -1,0 +1,415 @@
+.object-block {
+  //float: left;
+  width: 100%;
+}
+
+.object_oldPrice {
+  text-align: right;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+.object_newPrice {
+  position: relative;
+  height: 24px;
+}
+
+span.object_newPrice_text {
+  text-transform: uppercase;
+  font-size: 14px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  line-height: 20px;
+}
+
+span.object_newPrice_sum {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  font-size: 2rem;
+  color: red;
+  line-height: 24px;
+}
+
+.object_economy {
+  line-height: 2.4rem;
+  color: $crimson;
+}
+
+.object_economy_text, .object_economy_value {
+  display: inline-block;
+  width: 50%;
+}
+
+.object_price_m2_text, .object_price_m2_value {
+  display: inline-block;
+  width: 50%;
+}
+
+.object_price_m2_text {
+  text-align: left;
+}
+
+.object_price_m2_value {
+  text-align: right;
+}
+
+.object_economy_text {
+  text-align: left;
+}
+.object_economy_value {
+  text-align: right;
+}
+
+.object_mainParams {
+  position: relative;
+  margin-top: 20px;
+}
+
+.object_mainParam {
+  width: 33%;
+  float: left;
+  position: relative;
+}
+
+.object_mainParam_ico {
+  background-repeat: no-repeat;
+  width: 5rem;
+  height: 5rem;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+
+.object_mainParam_ico__areaLand {
+  background-image: url("//cdn-media.etagi.com/content/media/site/a/a4/a45eb878482f77ed9955a56dc9c3a43acc16e803.png");
+  transition: all .3s ease-out;
+}
+
+.object_mainParam_ico__areaHouse {
+  background-image: url("//cdn-media.etagi.com/content/media/site/1/10/10f26bd52ec945f43c8af2798be27d9052d0b8b5.png");
+  transition: all .3s ease-out;
+  margin: 0 auto;
+}
+
+.object_mainParam_ico__tocenter {
+  background-image: url("//cdn-media.etagi.com/content/media/site/0/0a/0ad535de2e3f5f318105cc60a3b5e197788f7b15.png");
+  transition: all .3s ease-out;
+  margin-left: calc(100% - 50px);
+}
+
+.object_mainParam_ico__areaLand:hover {
+  background-image: url("//cdn-media.etagi.com/content/media/site/2/2e/2ec92cb0cac3c45fb13f8811f3a3a30bc6e438d0.png");
+  transition: all .3s ease-out;
+}
+
+.object_mainParam_ico__areaHouse:hover {
+  background-image: url("//cdn-media.etagi.com/content/media/site/4/4c/4c2b8416837edf82059d9d9575b7659cb68e6d25.png");
+  transition: all .3s ease-out;
+}
+
+.object_mainParam_ico__tocenter:hover {
+  background-image: url("//cdn-media.etagi.com/content/media/site/7/7e/7ebe0af55617a953e57e2cf9f72edb976b32fd09.png");
+  transition: all .3s ease-out;
+}
+
+.object_mainParam_ico__rooms {
+  background-image: url("//cdn-media.etagi.com/content/media/site/9/95/9526b6a1263205c98a28b6541e400f6d918d42e8.png");
+  transition: all .3s ease-out;
+}
+
+.object_mainParam_ico__square {
+  background-image: url("//cdn-media.etagi.com/content/media/site/1/10/10f26bd52ec945f43c8af2798be27d9052d0b8b5.png");
+  transition: all .3s ease-out;
+  margin: 0 auto;
+}
+
+.object_mainParam_ico__squareKitchen {
+  background-image: url("//cdn-media.etagi.com/content/media/site/3/3b/3b7ff51bba8f5c97c5e9666ed840dbb2def65d6f.png");
+  transition: all .3s ease-out;
+  margin-left: calc(100% - 50px);
+}
+
+.object_mainParam_ico__rooms:hover {
+  background-image: url("//cdn-media.etagi.com/content/media/site/a/a3/a3c191449eeb1b8e5e9b622e8582035c8958945f.png");
+  transition: all .3s ease-out;
+}
+
+.object_mainParam_ico__square:hover {
+  background-image: url("//cdn-media.etagi.com/content/media/site/4/4c/4c2b8416837edf82059d9d9575b7659cb68e6d25.png");
+  transition: all .3s ease-out;
+}
+
+.object_mainParam_ico__squareKitchen:hover {
+  background-image: url("//cdn-media.etagi.com/content/media/site/4/4c/4c681b2d38d5c55e7f9b5c9368ead76f1fca0b6f.png");
+  transition: all .3s ease-out;
+}
+
+.object_mainParam_text__square, .object_mainParam_text__areaHouse {
+  text-align: center;
+}
+
+.object_mainParam_text__squareKitchen, .object_mainParam_text__tocenter  {
+  text-align: right;
+}
+
+.object_mainParam_text__rooms {
+  padding-left: 1rem;
+}
+
+.object_mainParam_text {
+  color: $apple;
+  font-size: 1.8rem;
+}
+
+.object_params {
+  width: 100%;
+  margin-top: 17px;
+}
+
+.object_house_params {
+  border-bottom: 1px solid #c2c2c2;
+}
+
+.object_house_params td {
+  padding: .7rem 0 .7rem 0;
+}
+
+.object_house_params__last {
+  border-bottom: none;
+}
+
+.object_params_value {
+  text-align: right;
+  font-weight: bold;
+  width: 50%;
+}
+
+.object_price_params {
+  border-top: 4px solid #fff;
+  &--reducedComission {
+      color: green;
+  }
+  &--oldComission {
+    position: relative;
+    font-size: 90%;
+    &:before {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 50%;
+      right: 0;
+      border-top: .2rem solid $crimson !important;
+      border-color: inherit;
+
+      -webkit-transform:rotate(-15deg);
+      -moz-transform:rotate(-15deg);
+      -ms-transform:rotate(-15deg);
+      -o-transform:rotate(-15deg);
+      transform:rotate(-15deg);
+    }
+  }
+}
+
+.object_price_params_first {
+  padding-top: 10px;
+}
+
+.object_price_params {
+  background-color: #f4f4f4;
+}
+
+.object_price_params_highlight {
+  background-color: #c9e8cc;
+}
+
+.object_price_params td, .object_code td {
+  padding: 3px;
+}
+
+.object_code {
+  border-top: 10px solid #fff;
+}
+
+.object_oldPrice_diagonalBg {
+  width: 80px;
+  height: 46px;
+  border-bottom: 1px solid red;
+  -webkit-transform: translateY(0px) translateX(0px) rotate(-7deg);
+  position: absolute;
+  top: -34px;
+  right: 0px;
+}
+
+.flat-description-wrapper {
+  //height: 15rem;
+  overflow: hidden;
+  width: 106%;
+  .gm-scrollbar-container {
+    .gm-scrollbar.-vertical {
+      top: 0;
+      width: .3rem;
+      background-color: #fff;
+      .thumb {
+        opacity: 1;
+        transition: all .1s ease-in;
+      }
+    }
+    .gm-scrollbar.-horizontal {
+      display: none;
+    }
+    .gm-scrollbar {
+      right: 0;
+      bottom: 0;
+      background: darken($grey, 16%);
+      border-radius: 0;
+      .thumb {
+        background: $apple;
+      }
+    }
+
+    .gm-scroll-view {
+      overflow-x: hidden !important;
+    }
+
+    .gm-scrollbar-container:hover {
+      .gm-scrollbar.-vertical {
+        top: 0;
+        width: .3rem;
+        .thumb {
+          opacity: 1;
+          transition: all .1s ease-in;
+        }
+      }
+    }
+  }
+}
+
+.flat-description-wrapper__custom {
+  overflow: hidden;
+  width: 106%;
+  .gm-scrollbar-container {
+    .gm-scrollbar.-vertical {
+      top: 0;
+      width: .3rem;
+      background-color: #fff;
+      .thumb {
+        opacity: 0;
+        transition: all .1s ease-in;
+      }
+    }
+    .gm-scrollbar.-horizontal {
+      display: none;
+    }
+    .gm-scrollbar {
+      right: 0;
+      bottom: 0;
+      background: darken($grey, 16%);
+      border-radius: 0;
+      .thumb {
+        background: $apple;
+      }
+    }
+
+    .gm-scroll-view {
+      overflow-x: hidden !important;
+    }
+  }
+
+  .gm-scrollbar-container:hover {
+    .gm-scrollbar.-vertical {
+      top: 0;
+      width: .3rem;
+      .thumb {
+        opacity: 1;
+        transition: all .1s ease-in;
+      }
+    }
+  }
+}
+
+.object-page {
+  width: 120rem;
+  padding: 30px 0 0 0;
+}
+
+.flat-description-title {
+  font-weight: bold;
+}
+
+.flat-description-title_first {
+  margin-top: 0 !important;
+}
+
+.stickyMenu {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  background-color: #fff;
+
+  .sticky-inner-wrapper {
+    left: 0;
+    right: 0;
+    width: 100% !important;
+  }
+}
+
+.sticky .bs-docs-sidebar.realtyobject-menu {
+  width: 1175px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: #fff;
+  z-index: 100000;
+}
+
+.no-margin_top_bottom {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.liquidity_block_text, .liquidity_block_value {
+  display: inline-block;
+  width: 50%;
+}
+
+.liquidity_block {
+  margin-top: 10px;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.liquidity_block_value {
+  text-align: right;
+}
+
+.green_percent {
+  color: $apple;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.red_percent {
+  color: $crimson;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.tooltip_icon {
+  background-position: left top;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+}
+
+.tooltip-icon__question {
+
+  background-image: url('//cdn-media.etagi.com/content/media/site/8/89/899a4d9df5bcb1ac1d5219e6862cc4d77625bece.png');
+  background-image: url("//cdn-media.etagi.com/content/media/site/8/89/899a4d9df5bcb1ac1d5219e6862cc4d77625bece.png");
+  width: 2rem;
+  height: 1.8rem;
+  display: inline-block;
+  margin-bottom: -2px;
+}
+
+.tooltip-icon__question:hover {
+  cursor: pointer;
+}

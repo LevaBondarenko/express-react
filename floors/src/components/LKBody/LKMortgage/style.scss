@@ -1,0 +1,777 @@
+/*
+  Created on : 13.09.2016, 10:34:05
+  Author     : zemlyanov
+*/
+@import '../../variables.scss';
+@import '../../ucontrols.scss';
+
+.lkBodyMortgage {
+  width: 100%;
+}
+
+.lkBodyMortgageList {
+  padding: 0 15px;
+
+  .percentBlock {
+    color: $blue-600;
+  }
+
+  .mortgageListDescr,
+  .orangeInfo {
+    margin-bottom: 15px;
+
+    > span,
+    a {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    > span {
+      width: 80%;
+      padding-right: 6px;
+    }
+
+    a {
+      width: 20%;
+      border-radius: 3px;
+    }
+  }
+
+  .title {
+    margin: 10px 0;
+    border-bottom: 1px solid $gray-300;
+
+    span {
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    .ticketNum {
+      color: $green-600;
+    }
+  }
+
+  .programs {
+    margin-bottom: 10px;
+
+    .programsTable {
+      border: 1px solid $gray-300;
+      border-radius: 3px;
+
+      table {
+        width: 100%;
+
+        tr {
+          border-bottom: 1px solid $gray-300;
+
+          &:last-child {
+            border-bottom: none;
+          }
+
+          th,
+          td {
+            text-align: center;
+            vertical-align: top;
+          }
+
+          th {
+            background: $gray-100;
+            padding: 10px 0;
+          }
+
+          td {
+            padding: 8px 0;
+          }
+
+          .statusCell {
+            padding-right: 10px;
+            width: 120px;
+          }
+        }
+      }
+
+      .bankCheckBox {
+        width: 20%;
+        display: inline-block;
+        padding: 5px 0 0 5px;
+      }
+
+      .bankLogo {
+        width: 80%;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: -5px;
+
+        img {
+          max-width: 120px;
+          max-height: 40px;
+        }
+      }
+
+      .statusButton,
+      .deleteButton {
+        margin: 4px;
+        box-shadow: none;
+        background: none;
+        border-color: $gray-300;
+        border-radius: 3px;
+
+        &:hover {
+          color: $white-base !important;
+        }
+
+        &.wait {
+          color: $gray-600;
+
+          &:hover {
+            background: $gray-600;
+            border-color: $gray-600;
+          }
+        }
+
+        &.approved {
+          color: $green-600;
+
+          &:hover {
+            background: $green-600;
+            border-color: $green-600;
+          }
+        }
+
+        &.noApproved {
+          color: $red-600;
+
+          &:hover {
+            background: $red-600;
+            border-color: $red-600;
+          }
+        }
+
+        &.rework {
+          color: $orange-600;
+
+          &:hover {
+            background: $orange-600;
+            border-color: $orange-600;
+          }
+        }
+      }
+
+      .deleteButton {
+        color: $red-600;
+        font-size: 14px;
+        padding: 2px 8px;
+        line-height: 14px;
+        position: relative;
+
+        &:hover {
+          background: $red-600;
+          border-color: $red-600;
+        }
+      }
+    }
+
+    .programsFooter {
+      > div {
+        padding: 8px 30px;
+
+        &:last-child {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.orangeInfo {
+  background: $orange-50;
+  padding: 10px;
+  margin: 10px 0;
+
+  &.white {
+    background: $white-base;
+  }
+}
+
+.LKMortgageStateModal {
+  /* styles here */
+}
+
+.LKMortgageModal {
+  /* styles here */
+}
+
+.LKMortgageProfile {
+  padding: 0 15px;
+
+  .header {
+    margin-bottom: 15px;
+
+    > span {
+      display: inline-block;
+      width: 100%;
+
+      &:first-child {
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      &:last-child {
+        color: $gray-600;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .stepTitle {
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    margin: 20px 0;
+    border-bottom: 1px solid $gray-600;
+  }
+
+  .stepDescription {
+    display: inline-block;
+    width: 100%;
+    font-size: 13px;
+    color: $gray-600;
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+
+  .attachDescription {
+    .sizes,
+    .agreement {
+      display: inline-block;
+      width: 100%;
+      font-size: 13px;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .common {
+      color: $gray-600;
+      padding: 0 10px;
+    }
+
+    .agreement {
+      background: $gray-100;
+
+      > div,
+      > span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      > div {
+        width: 5%;
+        text-align: center;
+      }
+
+      > span {
+        width: 95%;
+      }
+    }
+
+    .sizes {
+      background: $orange-50;
+    }
+
+    .uploader {
+      border: 1px solid $gray-300;
+      margin-bottom: 15px;
+
+      :global(.input-label) {
+        padding: 16px 25% !important;
+        font-weight: 300;
+        font-size: 13px;
+        position: relative;
+
+        &:before {
+          content: '\f0ee';
+          position: absolute;
+          font: normal normal normal 14px/1 'FontAwesome';
+          left: 18%;
+          top: 22px;
+          font-size: 32px;
+          color: $green-300;
+        }
+      }
+
+      :global(.help-block) {
+        left: 28px;
+        text-align: left;
+        top: -20px;
+        background: none;
+        color: $green-600;
+
+        &:before {
+          content: '\f058';
+          position: absolute;
+          top: 2px;
+          left: -18px;
+          font: normal normal normal 14px/1 'FontAwesome';
+          border: none;
+        }
+
+        &:after {
+          border: none;
+        }
+      }
+
+      :global(.has-error) {
+        :global(.help-block) {
+          color: $red-600;
+
+          &:before {
+            content: '\f06a';
+          }
+        }
+      }
+
+      :global(.has-warning) {
+        :global(.help-block) {
+          color: $orange-600;
+
+          &:before {
+            content: '\f071';
+          }
+        }
+      }
+    }
+  }
+
+  .stepNavigate {
+    margin: 20px 0;
+
+    > a {
+      padding: 6px 24px;
+      border-radius: 3px;
+    }
+
+    .prevStep {
+      float: left;
+    }
+
+    .nextStep {
+      float: right;
+      min-width: 100px;
+    }
+  }
+}
+
+.lkBodyMortgageInOffice {
+  border-top: 1px solid $gray-300;
+  padding: 10px 0;
+
+  .inOfficeHeader {
+    margin-bottom: 20px;
+
+    span {
+      display: block;
+
+      &:first-child {
+        font-weight: 600;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .inOfficeInfo {
+    display: table;
+    width: 100%;
+  }
+
+  .inOfficeContacts {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    height: 40px;
+
+    i {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      margin-top: -20px;
+      width: 40px;
+      height: 40px;
+      background: $red-600;
+      color: $white-base;
+      text-align: center;
+      border-radius: 50%;
+      font-size: 20px;
+      padding-top: 10px;
+    }
+
+    > span {
+      display: block;
+      margin-left: 70px;
+    }
+
+    .phone {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  .inOfficeMap {
+    margin-top: 40px;
+
+    :global(.yandexMapWidget) {
+      height: 250px;
+
+      :global(.container-wide),
+      :global(.yaMap) {
+        width: 100%;
+      }
+
+      :global(.yaMapArrow) {
+        display: none;
+      }
+    }
+  }
+
+  :global(.col-xs-3) {
+    width: 28%;
+  }
+}
+
+.lkBodyMortgageMain {
+  :global(.lkbody-favorites) {
+    margin-bottom: 2rem;
+  }
+}
+
+.LKMortgageProfile {
+  .stepForm {
+    :global(.form-group) {
+      margin-bottom: 25px;
+
+      div[class^='col-'],
+      div[class*=' col-'] {
+        position: relative;
+      }
+
+      input,
+      button {
+        padding: 4px 8px;
+      }
+    }
+
+    :global(.control-label) {
+      text-align: left;
+      font-weight: 300;
+      color: $gray-dark;
+
+      .required {
+        color: $red-600;
+        font-weight: 600;
+        padding-left: 5px;
+      }
+    }
+
+    :global(.help-block) {
+      position: absolute;
+      top: -6px;
+      left: 105%;
+      left: calc(100% + 14px);
+      line-height: 16px;
+      min-height: 38px;
+      width: 220px;
+      border-radius: 3px;
+      padding: 3px 6px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 14px;
+        left: -5px;
+        border-top: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+      }
+    }
+
+    :global(.has-error) {
+      input,
+      button {
+        border-color: $red-600 !important;
+        box-shadow: 0 0 5px 0 $red-300 !important;
+      }
+
+      :global(.help-block) {
+        background: $red-100;
+
+        &:before {
+          border-right-color: $red-100;
+        }
+      }
+
+      :global(.form-control-feedback) {
+        color: $red-600;
+
+        &:before {
+          content: '\f057';
+        }
+      }
+    }
+
+    :global(.has-warning) {
+      input,
+      button {
+        border-color: $orange-600 !important;
+        box-shadow: 0 0 5px 0 $orange-300 !important;
+      }
+
+      :global(.help-block) {
+        background: $orange-100;
+
+        &:before {
+          border-right-color: $orange-100;
+        }
+      }
+
+      :global(.form-control-feedback) {
+        color: $orange-600;
+
+        &:before {
+          content: '\f071';
+        }
+      }
+    }
+
+    :global(.radio),
+    :global(.checkbox) {
+      label {
+        color: $gray-dark;
+
+        &:hover {
+          color: $green-600;
+
+          input + span {
+            &:before {
+              border-color: $green-300;
+            }
+          }
+        }
+      }
+
+      input {
+        display: none;
+      }
+
+      input + span {
+        line-height: 15px;
+        position: relative;
+
+        &:before {
+          content: '';
+          position: absolute;
+          border: 1px solid $gray-600;
+          border-radius: 2px;
+          left: -20px;
+          width: 15px;
+          height: 15px;
+          padding: 1px;
+          font-size: 11px !important;
+        }
+      }
+
+      input:checked + span {
+        &:before {
+          color: $green-600;
+          background: none;
+          font: normal normal normal 14px/1 'FontAwesome';
+          content: '\f00c';
+        }
+      }
+    }
+
+    :global(.radio) {
+      input + span {
+        &:before {
+          border-radius: 50%;
+          font-size: 8px !important;
+          padding: 2px 3px;
+        }
+      }
+
+      input:checked + span {
+        &:before {
+          content: '\f111';
+        }
+      }
+    }
+
+    :global(.has-success) {
+      input,
+      button {
+        &:focus,
+        &:active,
+        &:hover {
+          border-color: $green-600 !important;
+          box-shadow: 0 0 5px 0 $green-300 !important;
+        }
+      }
+
+      :global(.form-control-feedback) {
+        color: $green-600;
+
+        &:before {
+          content: '\f058';
+        }
+      }
+    }
+
+    :global(.form-control-feedback) {
+      top: 10px;
+      right: -14px;
+      font: normal normal normal 14px/1 'FontAwesome';
+    }
+
+    .uploader {
+      border: 1px solid $gray-300;
+      border-bottom: none;
+
+      &:last-child {
+        border-bottom: 1px solid $gray-300;
+      }
+
+      :global(.ufileuploader-container) {
+        margin-bottom: 0;
+        height: 61px;
+      }
+
+      :global(.input-label) {
+        margin-left: 28px;
+        margin-top: 8px;
+        font-weight: 300;
+        text-align: left;
+      }
+
+      :global(div.col-xs-12) {
+        text-align: right;
+        margin-top: -8px;
+        margin-bottom: 6px;
+      }
+
+      :global(.with-view-button) {
+        margin-right: 10px;
+      }
+
+      :global(.view-button.disabled) {
+        display: none;
+      }
+
+      :global(.form-control) {
+        width: auto;
+        padding: 2px 6px;
+      }
+
+      :global(.etagi-help-icon) {
+        left: 4px;
+        right: auto;
+        top: -26px;
+      }
+
+      :global(.help-block) {
+        left: 22px;
+        text-align: left;
+        top: 8px;
+        background: none;
+        color: $green-600;
+
+        &:before {
+          content: '\f058';
+          position: absolute;
+          top: 4px;
+          left: -12px;
+          font: normal normal normal 14px/1 'FontAwesome';
+          border: none;
+        }
+
+        &:after {
+          border: none;
+        }
+      }
+
+      :global(.has-error) {
+        :global(.help-block) {
+          color: $red-600;
+
+          &:before {
+            content: '\f06a';
+          }
+        }
+      }
+
+      :global(.has-warning) {
+        :global(.help-block) {
+          color: $orange-600;
+
+          &:before {
+            content: '\f071';
+          }
+        }
+      }
+    }
+
+    .multipageUploader {
+      &.active {
+        > .uploader {
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+        }
+      }
+
+      > .uploader {
+        position: relative;
+        transition: all 500ms ease;
+
+        :global(.with-view-button) {
+          margin-right: 192px;
+        }
+
+        .subpageToggle {
+          position: absolute;
+          right: 10px;
+          padding: 2px 6px;
+          bottom: 6px;
+          border-radius: 3px;
+          z-index: 2;
+          background: none;
+          border-color: $gray-300;
+
+          &:hover {
+            background: $gray-50;
+          }
+
+          i {
+            margin-left: 6px;
+          }
+        }
+      }
+
+      .subpages {
+        height: 0;
+        overflow: hidden;
+        padding: 0 6px;
+        transition: all 500ms ease;
+
+        &.shown {
+          border-top: 1px solid $gray-300;
+        }
+
+        > .uploader {
+          background: $gray-100;
+        }
+      }
+
+      &:last-child {
+        .subpages {
+          border-top: 1px solid $gray-300;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+.unsubscribeBlock {
+  padding: 6rem 0;
+
+  .notice {
+    color: $feedback-moreBtn-color;
+    line-height: 2.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .unsubscribeDesc {
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  .unsubscribeLeftBlock {
+    padding-top: 4rem;
+  }
+
+  .unsubscribeRightBlock {
+    padding-left: 6rem;
+  }
+
+  .unsubscribeRightBlock2 {
+    .notice {
+      padding-top: 15rem;
+      margin-bottom: 1rem;
+    }
+
+    .unsubscribeDesc {
+      font-size: 2.4rem;
+    }
+  }
+
+  .unsubscribeRightBlock3 {
+    padding-left: 6.5rem;
+
+    .unsubscribeDesc {
+      font-size: 1.8rem;
+      padding-top: 3rem;
+    }
+  }
+
+  .btn-border-green {
+    padding: 1rem 4.2rem;
+    margin-right: 1.5rem;
+    font-size: 1.8rem;
+    border: 3px solid $green;
+    color: $green;
+  }
+
+  textarea {
+    width: 100%;
+    margin-left: 4.8rem;
+    padding: .6rem;
+  }
+
+  input[type='submit'] {
+    padding: 1.2rem 6rem;
+    font-size: 1.8rem;
+  }
+
+  /* custom input[type=radio] */
+  label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 4.8rem;
+    margin-right: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: normal;
+  }
+  input[type=radio] {
+    display: none;
+  }
+  label:before {
+    content: "";
+    display: inline-block;
+
+    width: 1.8rem;
+    height: 1.8rem;
+
+    margin-right: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: .1rem;
+    background-color: transparent;
+    border: 1px solid $dark-grey;
+  }
+
+  input[type=radio] + label:before {
+    border-radius: 50%;
+  }
+
+  input[type=radio]:checked + label:before {
+    font-family: serif;
+    content: "·";
+    color: #f3f3f3;
+    font-size: 5rem;
+    text-align: center;
+    line-height: 1.6rem;
+    background: $crimson;
+    border: 1px solid $crimson;
+  }
+  /* end custom input[type=radio] */
+}

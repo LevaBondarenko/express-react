@@ -1,0 +1,82 @@
+.specialoffer-wrapper {
+  width: 30rem;
+  margin-left: -1.5rem;
+}
+
+.specialOffer {
+  position: relative;
+  display: block;
+  color: $gray-dark;
+
+  img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: all 2s linear;
+    transition: all 2s linear;
+  }
+
+  &:hover {
+    color: $gray-dark;
+    img {
+      -webkit-transition: all 2s linear;
+      transition: all 2s linear;
+      -webkit-transform: scale(1.4);
+      -ms-transform: scale(1.4);
+      transform: scale(1.4);
+    }
+  }
+
+  .soImg {
+    width: 30rem;
+    height: 24rem;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .labelHit {
+    background: url("//cdn-media.etagi.com/static/site/2/27/271f59abd8bbda0bf80a3440148ea033cbe615a6.png") no-repeat;
+    width: 6.3rem;
+    height: 7.2rem;
+    position: absolute;
+    left: -.6rem;
+    top: 0;
+    z-index: 2;
+  }
+  .labelNew {
+    background: url("//cdn-media.etagi.com/static/site/d/de/de85f81af1ff60aad8d4a49ec4e8468cc4ebf5c5.png") no-repeat;
+    width: 6.3rem;
+    height: 7.2rem;
+    position: absolute;
+    left: -.6rem;
+    top: 0;
+    z-index: 2;
+  }
+  .soText {
+    position: absolute;
+    left: 2rem;
+    top: 5rem;
+    width: 60%;
+
+    .soTitle {
+      font-weight: bold;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      max-height: 4.4rem;
+      margin-bottom: .8rem;
+      overflow: hidden;
+    }
+    .soPersent {
+      font-size: 4.8rem;
+      line-height: .9em;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+    .soDesc {
+      font-size: 1.6rem;
+    }
+  }
+}

@@ -1,0 +1,736 @@
+/* order-module.scss */
+
+.order-bg
+{
+    background: $grey url('//cdn-media.etagi.com/static/site/2/20/2016b8516d17d4a9321b3bf3914e9968513e690b.jpg') repeat;
+}
+
+.widget--wrap__bg
+{
+    min-height: 12.3em;
+}
+
+.order--wrap
+{
+    @extend .widgetBox;
+}
+
+.widget--title
+{
+    font-size: 2.3rem;
+
+    margin-top: 2rem;
+    margin-bottom: 1.3rem;
+
+    text-align: center;
+}
+
+.form-etagi
+{
+    padding: .6rem 1rem;
+
+    border: .1rem solid $white;
+    border-radius: .2rem;
+    background: $white;
+
+    @include transition(.1s);
+    &:hover,
+    &:focus
+    {
+        border: 1px solid $apple;
+        outline: none;
+    }
+    .input-error
+    {
+        border: .1rem solid $crimson;
+    }
+}
+
+.errorText {
+  color: $crimson;
+  margin: 0;
+}
+
+.form-control
+{
+    &:hover,
+    &:focus
+    {
+        border: .1rem solid $green;
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.btn-green
+{
+    color: $white;
+    border-color: transparent;
+    border-bottom-width: .3rem;
+    border-bottom-color: darken($green, 21%);
+    border-radius: 0;
+    background-color: $green;
+
+    @include transition(.1s);
+    &:hover
+    {
+        color: $white;
+        border-bottom-color: $green;
+        box-shadow: none;
+    }
+    &:focus
+    {
+        color: $white;
+        border-bottom-color: darken($green, 21%);
+        outline: none !important;
+        background: darken($green, 21%);
+        box-shadow: none;
+    }
+}
+
+.btn-green-mono
+{
+  color: $white;
+  border-radius: 0;
+  background-color: $green;
+  padding: 13px 12px 14px;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $white;
+    background: #41ab35;
+    box-shadow: none;
+  }
+  &:focus {
+    color: $white;
+    outline: none !important;
+    background: #41ab35;
+    box-shadow: none;
+  }
+}
+
+.btn-darkgreen-mono
+{
+  color: $white;
+  border-radius: 0;
+  border: none;
+  background-color: #3eab47;
+  padding: 13px 12px 14px;
+
+  &:hover {
+    color: $white;
+    background: #286d21;
+    box-shadow: none;
+  }
+  &:focus, &:active, &:focus:active {
+    color: $white;
+    outline: none !important;
+    background: #286d21;
+    box-shadow: none;
+  }
+}
+
+.orderMainPageOneField {
+  background: #ededed;
+  padding: 40px 0;
+
+  .margin3 {
+    margin: 7px 0;
+  }
+
+  .notice--text {
+    margin: 7px 0;
+    line-height: 30px;
+    text-align: left;
+  }
+}
+
+.orderNhOneField {
+  width: 39%;
+  position: absolute;
+  left: 15px;
+  bottom: 30px;
+  background: rgba(237, 237, 237, 0.5);//#ededed;
+  padding: 15px 0;
+  border-radius: 5px;
+
+  .margin3 {
+    margin: 7px 0;
+  }
+
+  .notice--text {
+    margin: 7px 0;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  .col-md-5 {
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+.btn-blue {
+  color : $white;
+  background-color : #30bbd7;
+  border-color : transparent;
+  border-bottom-color : darken(#30bbd7, 21%);
+  border-bottom-width : .3rem;
+  border-radius : 0;
+  text-transform: uppercase;
+  @include transition(.1s);
+  &:hover{
+    color : $white;
+    border-bottom-color : #30bbd7;
+    box-shadow : none;
+  }
+  &:focus {
+    color : $white;
+    background: darken(#30bbd7, 21%);
+    border-bottom-color : darken(#30bbd7, 21%);
+    outline : none !important;
+    box-shadow : none;
+  }
+}
+
+.order-text-modal {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 20px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.btn-red
+{
+  color: $white;
+  border-color: transparent;
+  border-bottom-width: .3rem;
+  border-bottom-color: darken($crimson, 21%);
+  border-radius: 0;
+  background-color: $crimson;
+
+  @include transition(.1s);
+  &:hover
+  {
+    color: $white;
+    border-bottom-color: $crimson;
+    box-shadow: none;
+  }
+  &:focus
+  {
+    color: $white;
+    border-bottom-color: darken($crimson, 21%);
+    outline: none !important;
+    background: darken($crimson, 21%);
+    box-shadow: none;
+  }
+}
+
+.btn-redBig
+{
+  color: $white;
+  border: 0;
+  background-color: $crimson;
+  border-radius: 4px;
+  font-size: 24px!important;
+  line-height: 44px;
+
+  @include transition(.1s);
+  &:hover
+  {
+    color: $white;
+    background: darken($crimson, 21%);
+    box-shadow: none;
+  }
+  &:focus
+  {
+    color: $white;
+    outline: none !important;
+    background: darken($crimson, 21%);
+    box-shadow: none;
+  }
+}
+
+.btn-rating
+{
+  padding: 0px 20px;
+  font-size: 18px!important;
+  margin-top: 12px;
+  background: #fff;
+  color: #226b8e;
+  font-weight: bold;
+
+  border: 0;
+  border-radius: 4px;
+  line-height: 44px;
+
+  @include transition(.1s);
+  &:hover
+  {
+    box-shadow: 0 0 20px #226b8e;
+    color: #226b8e;
+    background: #f7f7f7;
+  }
+  &:focus
+  {
+    color: #226b8e;
+    outline: none !important;
+  }
+}
+
+.margin--fix {
+  margin-top : -.2rem;
+}
+
+.order-form {
+  margin : 1.7rem 0 0;
+}
+
+.order-modal-form {
+  .notice--text {
+    margin: 0;
+  }
+
+  .order-text-modal {
+    margin: 2rem 0 0 0;
+  }
+}
+
+.form-opencity-modal {
+  .etagi--closeBtn {
+    line-height: 2rem;
+  }
+
+  .modal-dialog .modal-body h2 {
+    font-size: 26px;
+  }
+}
+
+.orderIpotekaDiv {
+  margin : 0 1rem 0 0;
+  border : .1rem solid #dadada;
+  border-radius : 50%;
+  .orderIpotekaFace {
+    width : 10rem;
+    height : 10rem;
+    padding : .5rem;
+    border-radius : 50%;
+  }
+}
+
+.orderIpotekaName {
+  display : block;
+  margin-top : 23px;
+  margin-bottom : 2px;
+  margin-left : 14px;
+}
+
+.orderIpotekaJob {
+  margin-left : 1.1rem;
+  margin-bottom: 0.5px;
+  font-size : 120%;
+}
+
+.orderIpotekaPhone {
+  margin-left : 1.1rem;
+  font-size : 146%;
+}
+
+.margin3 {
+  position : relative;
+  margin-bottom : .3rem;
+}
+
+.orderImportant {
+  position : absolute;
+  top : 0;
+  right : 0;
+  background : transparent;
+  border : none;
+}
+.w1000 {
+  width : 100rem;
+}
+
+.orderSuccess {
+  padding-left : 2rem;
+  background : url('//cdn-media.etagi.com/static/site/d/de/de3bb96d10faebba258df0adcf25962caa7744ed.png') no-repeat left top;
+}
+
+.notice--text {
+  margin-top : 2rem;
+}
+
+.mortgage--wrap {
+  margin-top : 2.9rem;
+  &__broker {
+    margin-top : .5rem;
+    margin-left : -1rem;
+  }
+}
+
+.orderYarmarka {
+  margin: 0;
+}
+.order_call {
+  padding-top: 8px;
+  height: 217px;
+  background: #ececec;
+
+  h2 {
+    padding: 0 0 0 18px;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 36px;
+    margin: 0;
+    color: #e31f30;
+    padding-bottom: 30px;
+  }
+  p {
+    color: #999;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    padding: 6px 0 0 18px;
+  }
+  input[type='text'] {
+    margin-left: 18px;
+  }
+
+  .orderImportant {
+    right: 10%;
+  }
+}
+
+.order--openCity {
+  text-align: center;
+
+  .btn-red {
+    background: $crimson;
+    color: #fff;
+    border-radius: 5px;
+    height: 52px;
+    width: 352px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+
+.order--learnPopup {
+  .btn-red {
+    background: $crimson;
+    color: #fff;
+    height: 65px;
+    padding: 0 63px;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+
+    &:hover {background: #b5212f;}
+  }
+}
+
+.order--learnInterface {
+  width: 300px;
+  margin-top: 48px;
+
+  .btn-red {
+    background: $crimson;
+    color: #fff;
+    height: 65px;
+    padding: 0 20px;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+
+    &:hover {background: #b5212f;}
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+}
+
+.form-learnPopup {
+  .modal-dialog {
+    width: 440px;
+
+    .modal-body {
+      padding: 10px 30px 30px 30px;
+    }
+
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 22px;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    label {
+      color: #666;
+      margin-bottom: 0;
+      font-size: 16px;
+      line-height: 32px;
+    }
+
+    .margin3 {
+      margin-bottom: 10px;
+    }
+
+    .btn-red {
+      margin-top: 20px;
+      text-transform: uppercase;
+      font-size: 16px;
+      height:50px;
+    }
+
+    .notice--text {
+      margin-top : 0;
+    }
+  }
+
+  .error
+  {
+    border: .1rem solid $crimson;
+  }
+}
+
+
+
+.orderLabel {
+  display:block;
+  text-align: left;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.mainLK-2-wrapper {position: relative; height: 450px;}
+.mainLK-2 {background: url(//cdn-media.etagi.com/static/site/7/72/725beda0c99a1741cb34446470cd7f7c896ad249.png) no-repeat right bottom; height: 422px; width: 1074px; position: absolute; left:50%; bottom: -2px; margin-left: -207px; z-index: 1;}
+.mainLK-2-text {position: relative; z-index: 3;}
+.mainLK-2-text ul {
+  font-size: 16px;
+  line-height: 26px;
+  padding: 30px 0 0 0;
+  list-style: none;
+}
+
+.modal-list {
+  font-size: 16px;
+  line-height: 26px;
+  padding: 30px 0 15px 0;
+  list-style: none;
+}
+
+.mainLK-2-text ul i, .modal-list i {
+  padding-right: 13px;
+}
+
+.mainLK-2-arrow {
+  position: absolute;
+  left:50%; top: 280px; margin-left: -125px; z-index: 2;
+}
+.mainLK-2-text h2 {
+  margin-top: 0;
+  padding-top: 50px;
+  text-transform: uppercase;
+  line-height: 40px;
+  font-size: 34px;}
+
+.mainLK-2-aBlack {
+  margin-right: 58px;
+  font-size: 16px;
+  color: #000;
+  display: inline-block;
+  line-height: 46px;
+}
+
+.mainLK-2-aBlack:hover, .mainLK-2-aBlack:focus {
+  color: #000;
+  text-decoration: underline;
+}
+.mainLK-2-aRed {
+  color: #fff;
+  text-transform: uppercase;
+  background: #e31f30;
+  text-decoration: none;
+  display: inline-block;
+  height: 46px;
+  line-height: 46px;
+  padding: 0px 30px;
+  font-size: 17px;}
+
+.mainLK-2-aRed:hover, .mainLK-2-aRed:focus {
+  background: #cf1d2c;
+  color: #fff;
+  text-decoration: none;}
+
+
+.didntLike {
+  border: 1px solid #ccc;
+
+  .order--wrap  {
+    margin: 0;
+  }
+
+  .modal-list {font-size: 15px;}
+}
+
+.didntLike > div > .panel-grid > .panel-row-style > .panel-grid-cell {
+  width: 100%;
+}
+
+
+.main-lk {
+  &-phone {
+    position: absolute; right: 0; bottom: 15px; z-index: 3;
+  }
+  &-bg {
+    background: url("//cdn-media.etagi.com/content/media/site/9/91/91232d020272e3abce16fbf9a3f98c2d3930eb48.png") no-repeat;
+    width: 1897px;
+    height: 256px;
+    position: absolute; bottom: -17px; left: 50%; margin-left: -948px;
+    z-index: 2;
+  }
+}
+
+.order-fieldsInRow {
+  position: absolute;
+  width: 570px;
+  left: 49%;
+  top: 226px;
+
+  .widget--title {
+    font-size: 28px;
+    margin-top: 2.6rem;
+    color: #333;
+  }
+
+  .notice--text {
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 18px;
+    color: #999;
+  }
+
+  .form-group {
+    padding: 0 130px 10px;
+
+    .errorText {
+      margin: 0;
+    }
+
+    .form-etagi {
+      border: 1px solid #eee;
+      font-size: 20px;
+
+      &::-webkit-input-placeholder {color:#ccc;}
+      &::-moz-placeholder          {color:#ccc;} /* Firefox 19+ */
+      &:-moz-placeholder           {color:#ccc;}/* Firefox 18- */
+      &:-ms-input-placeholder      {color:#ccc;}
+    }
+  }
+
+  .submitBtn {
+    margin: 10px 130px 0;
+
+    button {
+      width: 100%;
+      border: 0;
+      padding: 15px 10px;
+      border-radius: 4px;
+      font-size: 24px;
+      text-transform: none;
+
+      &:hover {
+        background: #86111b;
+      }
+    }
+  }
+}
+
+.zastr-order-parametrs {
+  background: none;
+  bottom: -25px;
+  color: #fff;
+
+  h2 {
+    text-transform: uppercase;
+    padding: 5px 15px;
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+
+  input {
+    padding: 1.1rem 1rem;
+    color: #000;
+  }
+
+  p {
+    padding: 5px 15px;
+    font-size: 12px;
+  }
+
+  .btn {
+    width: 120% !important;
+    border-radius: 3px;
+    position: relative;
+    left: -20px;
+    padding: 1.1rem 1rem;
+  }
+
+  .orderImportant {
+    right: 20px;
+    font-size: 24px;
+  }
+}
+
+.want {
+  width: 100%;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  background: none;
+  padding: 15px 0;
+  border-radius: 5px;
+
+  .btn {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 3px;
+  }
+
+  input {
+    width: 70%;
+    float: right;
+    padding: 10px 10px;
+    border: 1px solid #e4e4e4;
+  }
+
+  p {
+    width: 26%;
+    float: left;
+    padding: 11px 0 0;
+    position: relative;
+    margin: 0;
+    text-transform: uppercase;
+    left: 15px;
+  }
+
+  label {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+  }
+}

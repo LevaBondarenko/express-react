@@ -1,0 +1,6 @@
+{
+  "name": "LKMenu",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./LKMenu.js"
+}

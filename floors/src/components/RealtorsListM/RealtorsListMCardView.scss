@@ -1,0 +1,58 @@
+@import '../variables.scss';
+
+.realtorsList {
+  &__cardImage {
+    border-radius: 50%;
+    height: 100px;
+  }
+
+  &__cardImageWrapper {
+    float: left;
+  }
+
+  &__cardWrapper {
+    background-color: $white-base;
+    border-bottom: 1px solid $gray-300;
+    border-top: 1px solid $gray-300;
+    margin-bottom: 10px;
+    padding: 10px 12px;
+  }
+
+  &__textBlock {
+    margin-left: 110px;
+    min-height: 100px;
+
+    &__name {
+      height: 100%;
+      margin-bottom: 10px;
+      min-height: 60px;
+    }
+
+    &__phone {
+      background-color: $gray-100;
+      border-radius: 20px;
+      color: $black;
+      padding: 6px 8px;
+      text-decoration: none;
+
+      &__icon {
+        background-image: url('//cdn-media.etagi.com/content/media/site/5/5e/5efc3ed9a0ae8e4a31330777c52586086ec5e8e7.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        display: inline-block;
+        height: 20px;
+        margin-right: 10px;
+        vertical-align: top;
+        width: 15px;
+      }
+
+      &:active,
+      &:hover,
+      &:focus {
+        color: $black;
+        outline: 0;
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+/**
+ * FooterControls styles
+ *
+ * @ver 0.0.1
+ * @author a.d.permin@72.etagi.com
+ */
+
+@import '../variables.scss';
+
+.modalFooter {
+  height: 5rem;
+
+  .applyFilterButton {
+    margin-left: 9rem;
+    border: 0.1rem solid $green-600;
+
+    &:focus,
+    &:hover {
+      background-color: $green-600;
+      color: $white-base;
+      transition: all 0.15s;
+    }
+  }
+
+  a {
+    margin-right: 2.5rem;
+    cursor: pointer;
+    color: $gray-dark;
+    text-decoration: underline;
+
+    &:focus,
+    &:hover {
+      color: $gray-dark;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "UAgregator",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./UAgregator.js"
+}

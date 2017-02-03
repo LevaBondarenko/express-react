@@ -1,0 +1,150 @@
+/**
+ * UFileUploader styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.UFileUploader {
+  :global(.ufileuploader-container) {
+    position: relative;
+    width: 100%;
+    margin: 0;
+  }
+
+  :global(.col-xs-12) {
+    position: relative;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  :global(.input-label) {
+    text-align: center;
+    min-width: 100%;
+    max-width: none;
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  :global(.form-control) {
+    border-radius: 3px;
+    transition: all 0.15s ease-in-out;
+    padding: 4px 6px;
+    height: auto;
+  }
+
+  :global(.btn-success) {
+    background-color: $green-600;
+
+    &:hover {
+      background-color: $green-700;
+    }
+  }
+
+  :global(.btn-default) {
+    border-color: $gray-300;
+    background-color: $white-base;
+
+    &:hover {
+      background-color: $gray-100;
+    }
+  }
+
+  :global(.btn.disabled) {
+    background-color: $gray-100;
+  }
+
+  :global(.view-button) {
+    width: 34px;
+  }
+
+  :global(.with-view-button) {
+    width: auto;
+    width: calc(100% - 42px);
+    margin-left: 6px;
+  }
+
+  :global(.dragover) {
+    box-shadow: inset 0 0 8px $green-600;
+    border-radius: 3px;
+    z-index: 3;
+  }
+
+  :global(.dragover-block) {
+    display: table;
+    width: 100%;
+
+    > span {
+      position: relative;
+      color: $green-600;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+
+      &:before {
+        content: '\f0ee';
+        position: absolute;
+        font: normal normal normal 14px/1 'FontAwesome';
+        left: 5%;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.viewFormTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: $gray-100;
+  text-align: center;
+
+  img {
+    display: inline-block;
+    max-height: 100%;
+  }
+
+  .imgPreviewBack {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+
+    .imgPreviewBtn {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      margin-left: -100px !important;
+      width: 200px !important;
+      border-color: $white-base !important;
+      background: none !important;
+      box-shadow: none !important;
+
+      &:hover {
+        background: $gray-50 !important;
+        color: $gray-600 !important;
+      }
+    }
+  }
+
+  &:hover {
+    .imgPreviewBack {
+      display: block;
+    }
+  }
+}

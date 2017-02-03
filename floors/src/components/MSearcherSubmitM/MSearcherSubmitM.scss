@@ -1,0 +1,30 @@
+/**
+ * MSearcherSubmitM styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.root {
+  width: 100%;
+
+  .loader {
+    div {
+      margin-right: 6px;
+      height: 8px;
+      width: 8px;
+    }
+  }
+
+  a {
+    &:hover,
+    &:active,
+    &:focus {
+      color: $white-base;
+      text-decoration: none;
+      outline: none;
+    }
+  }
+}

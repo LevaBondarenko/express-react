@@ -1,0 +1,6 @@
+{
+  "name": "MortgageProgramDescription",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./MortgageProgramDescription.js"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "MSearcherInput",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./MSearcherInput.js"
+}

@@ -1,0 +1,60 @@
+.ratingHeader {
+  background: #3684a3 url("//cdn-media.etagi.com/static/site/2/23/23ed3f97af18d5529f2f94f45e09ae5ad726e560.jpg") no-repeat center;
+  height: 290px;
+  padding-top: 57px;
+
+  &-title {
+    font-size: 42px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1;
+    padding-bottom: 11px;
+  }
+
+  &-desc {
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.ratingWrapper {
+  text-align: center;
+
+  &-border {
+    border: 1px solid #fff;
+    border-radius: 4px;
+  }
+
+  &-number {
+    font-size: 60px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    line-height: 92px;
+  }
+
+  &-word {
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+
+  &-star {
+    margin: 10px auto 0;
+    background: url("//cdn-media.etagi.com/static/site/6/68/68cf094ba0eb5b1881d424b39f3e00423965a0d8.png") no-repeat bottom left;
+    width: 125px; height: 19px;
+    position: relative;
+  }
+
+  &-starActive {
+    background: url("//cdn-media.etagi.com/static/site/6/68/68cf094ba0eb5b1881d424b39f3e00423965a0d8.png") no-repeat top left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

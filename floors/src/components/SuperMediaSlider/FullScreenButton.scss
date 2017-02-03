@@ -1,0 +1,23 @@
+@import '../variables.scss';
+
+.fullScreenButtonFloat {
+  margin: 3rem 0 0 1rem;
+  float: right;
+  cursor: pointer;
+}
+
+.fullScreenButton {
+  margin: 1rem 0 0 1rem;
+  text-align: right;
+  cursor: pointer;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+:global(.glyphicon) {
+  font-size: 150%;
+  top: 0.4rem;
+  margin-right: 0.5rem;
+}

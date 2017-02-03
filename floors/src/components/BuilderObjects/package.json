@@ -1,0 +1,6 @@
+{
+  "name": "BuilderObjects",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./BuilderObjects.js"
+}

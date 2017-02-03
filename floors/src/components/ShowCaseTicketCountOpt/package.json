@@ -1,0 +1,6 @@
+{
+  "name": "ShowCaseTicketCountOpt",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ShowCaseTicketCountOpt.js"
+}

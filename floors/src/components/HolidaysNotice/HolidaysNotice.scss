@@ -1,0 +1,8 @@
+@import '../variables.scss';
+
+.text {
+  color: $red-base;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 13px;
+}

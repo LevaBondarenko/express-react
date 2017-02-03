@@ -1,0 +1,124 @@
+@import '../variables.scss';
+
+/* out of palette */
+
+$nav-gray: #8c9098;
+
+.modalFlatMedia {
+  margin-top: 5rem;
+
+  :global(.btn-toolbar) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+
+  :global(.btn-group) {
+    padding: 0.3rem;
+    height: 3.9rem;
+    background: $gray-light;
+    border: 0.1rem solid #f4f4f4;
+    border-radius: 5rem;
+  }
+}
+
+.toggleLayout {
+  border-radius: 5rem;
+  background: transparent;
+  border: 0;
+
+  &:hover,
+  &:focus {
+    background: transparent;
+    outline: none;
+    border: 0;
+  }
+
+  &:active {
+    box-shadow: none;
+
+    &:focus {
+      background: transparent;
+      outline: none;
+    }
+  }
+
+  &:global(.active) {
+    border-radius: 5rem !important;
+    background: $white-base;
+    box-shadow: none;
+
+    &:hover,
+    &:focus {
+      background: $white-base;
+      outline: none;
+    }
+  }
+}
+
+.buttonsWrap {
+  position: fixed;
+  bottom: 2rem;
+  text-align: center;
+
+  :global(.btn-fav) {
+    position: relative;
+    display: inline-block;
+    width: 4.6rem;
+    height: 4.6rem;
+    border: 0.1rem solid $gray-light;
+    margin: 0 0.5rem;
+    border-radius: 5rem;
+    line-height: 4.6rem;
+    overflow: hidden;
+    text-align: center;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+
+    &:hover {
+      width: 18rem;
+      text-align: left;
+      padding-left: 2rem;
+
+      button {
+        color: $red-base;
+
+        span:not(:global(.subIcon)) {
+          &:last-child {
+            display: inline-block;
+            padding-left: 2rem;
+            font-size: 1.6rem;
+            padding-top: 0.2rem;
+            vertical-align: top;
+          }
+        }
+      }
+    }
+
+    button {
+      span:not(:global(.subIcon)) {
+        &:last-child {
+          display: none;
+        }
+      }
+
+      &:hover {
+        color: $red-base;
+      }
+    }
+
+    &:global(.in-fav),
+    &:global(.on) {
+      border-color: $red-base;
+    }
+
+    :global(.btn) {
+      font-size: 2rem;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+/* 
+    Created on : 30.11.2015, 19:55:10
+    Author     : zemlyanov
+*/
+
+.countdown {
+    padding: 0 1rem;
+    &-label {
+        width: 100%;
+        font-size: 1.5rem;
+        padding: 1rem 0 2rem;
+        overflow: visible;
+        white-space: nowrap;
+    }
+    &-digits, &-labels {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    &-digits {
+        font-size: 4rem;
+        font-weight: 600;
+        line-height: 3rem;
+    }
+    &-labels {
+        font-size: 90%;
+    }
+}

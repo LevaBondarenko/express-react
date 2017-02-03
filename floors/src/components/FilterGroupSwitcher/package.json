@@ -1,0 +1,6 @@
+{
+  "name": "FilterGroupSwitcher",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./FilterGroupSwitcher.js"
+}

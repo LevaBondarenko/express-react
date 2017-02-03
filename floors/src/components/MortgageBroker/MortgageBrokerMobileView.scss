@@ -1,0 +1,89 @@
+@import '../variables.scss';
+
+.root {
+  background: $white-base;
+  text-align: center;
+}
+
+.formControl {
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.2rem;
+  height: auto;
+  border-color: $gray-300;
+  color: $gray-600;
+
+  :global(.form-control),
+  :global(.btn) {
+    padding: 0.8rem;
+    line-height: 1rem;
+    height: auto;
+    width: 100%;
+  }
+
+  :global(.usubmit-container) {
+    margin: 0;
+  }
+}
+
+.brokerTitle {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.imageWrapper {
+  margin: 10px 0;
+}
+
+.agentText {
+  font-size: 14px;
+  text-align: center;
+}
+
+.agentCard {
+  text-align: center;
+
+  .agentName {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .agentTitle {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+    color: color(black lightness(+46%));
+    margin-bottom: 15px;
+  }
+}
+
+.agentPhone {
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 1.5rem;
+  padding: 0.8rem 1.2rem 0.8rem 2.2rem;
+  position: relative;
+  background: #eee;
+  margin-bottom: 1rem;
+
+  a {
+    color: $gray-dark;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      margin-top: -7.5px;
+      left: 12.8px;
+      left: 0.8rem;
+      width: 15px;
+      height: 15px;
+      background: url('//cdn-media.etagi.com/content/media/site/a/a4/a45d940729368c3d78ea4f4c29faaafdfe4fda18.svg');
+    }
+  }
+}

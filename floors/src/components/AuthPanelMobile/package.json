@@ -1,0 +1,6 @@
+{
+  "name": "AuthPanelMobile",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./AuthPanelMobile.js"
+}

@@ -1,0 +1,39 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 05.12.2016, 15:12:02
+    Author     : zemlyanov
+*/
+
+$icon-font-path: '//cdn-media.etagi.com/build/public/fonts/';
+$fa-font-path: '//cdn-media.etagi.com/build/public/fonts';
+@import '../../node_modules/font-awesome/scss/font-awesome.scss';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+@import 'vendor/_react-date-picker.scss';
+@import 'vendor/_layerslider.scss';
+@import 'vendor/_bxslider.scss';
+@import 'vendor/_front.scss';
+@import 'vendor/_wordpress_default.scss';
+@import 'vendor/select2.scss';
+@import 'vendor/fixed-data-table.scss';
+@import 'vendor/_loaders.scss';
+@import '../components/buttons-default.scss';
+
+@import 'helpers/_grid_custom.scss';
+@import 'helpers/_mobileVariables.scss';
+@import 'helpers/_icons.scss';
+
+@import 'mixins/_transition.scss';
+
+@import 'helpers/_mobileHelpers.scss';
+
+@import 'partials/_header.scss';
+@import 'partials/_footerMobile.scss';
+
+@import 'modules/_banks-mortgage-m.scss';
+@import 'modules/_switcher-module.scss';
+@import 'modules/_msearcherm-module.scss';
+@import 'modules/_mobileslider-module.scss';

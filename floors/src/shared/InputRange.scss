@@ -1,0 +1,56 @@
+@import '../../src/components/variables.scss';
+
+.sliderwithInput {
+  margin-top: 0;
+  height: 1.7rem;
+  :global(.handle) {
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    border: 0.1rem solid $blue-dark;
+    background-color: $white-base;
+    color: $white-base;
+    cursor: pointer;
+
+    &:global(:hover) {
+      box-shadow: 0 0 3px 0 $blue-dark;
+    }
+
+    &:global(.active) {
+      background-color: $white-base;
+      &:global(:before) {
+        display: block;
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        margin-left: -3px;
+        margin-top: -3px;
+        background: $white-base;
+        content:'';
+      }
+    }
+  }
+
+  :global(.bar) {
+    position: relative;
+    background: $blue-dark;
+    top: 8px;
+    height: 6px;
+    border-bottom: 1px solid $gray-300;
+    &:global(.bar-0) {
+      background: $blue-dark;
+      border-radius: 1rem;
+    }
+    &:global(.bar-1) {
+      background: $blue-light;
+      border-radius: 1rem;
+    }
+    &:global(.bar-2) {
+      background: $blue-dark;
+    }
+
+  }
+}

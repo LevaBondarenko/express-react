@@ -1,0 +1,94 @@
+@import '../variables.scss';
+
+.bookingForm {
+  &__popover {
+    &__header {
+      text-align: right;
+      margin: -1rem -1rem -1rem 0;
+    }
+
+    &__close {
+      padding: 0;
+      color: $gray-base;
+      font-size: 10px;
+    }
+  }
+
+  &__contacts {
+    margin: 1.7rem 0;
+    text-align: left;
+
+    &__controls {
+      margin-top: 1.9rem;
+
+      &__button {
+        display: inline-block;
+        border: 1px solid $gray-base;
+        border-radius: 22px;
+        padding: 12.5px;
+        font-size: 12px;
+        text-align: left;
+
+        &__image {
+          vertical-align: middle;
+          display: inline-block;
+        }
+
+        &:hover,
+        &:active,
+        &:focus,
+        &:active:focus {
+          text-decoration: none;
+          border: 1px solid $gray-base;
+          outline: 0;
+        }
+      }
+
+      &__printButton {
+        padding: 9.5px 9px !important;
+
+        &__image {
+          background: url('//cdn-media.etagi.com/static/site/3/3d/3d40030dae5ca8ff1d86b4178e248816cf8cf5e7.png') no-repeat center top;
+          height: 24px;
+          width: 25px;
+        }
+
+        &:hover .bookingForm__contacts__controls__printButton__image,
+        &:active .bookingForm__contacts__controls__printButton__image,
+        &:focus .bookingForm__contacts__controls__printButton__image {
+          background: url('//cdn-media.etagi.com/static/site/c/c4/c44f34eefc40770910e6b1a0dc0c764fe7444cb7.png') no-repeat center top;
+        }
+      }
+
+      &__emailButton {
+        &__image {
+          background: url('//cdn-media.etagi.com/static/site/7/7c/7ce098bf5b55fa7a8a4ce1d2cf3c2e18590d2a88.png') no-repeat center top;
+          height: 16px;
+          width: 18px;
+        }
+
+        &:hover .bookingForm__contacts__controls__emailButton__image,
+        &:active .bookingForm__contacts__controls__emailButton__image,
+        &:focus .bookingForm__contacts__controls__emailButton__image {
+          background: url('//cdn-media.etagi.com/static/site/a/a1/a1404dc55ce6402e3d74d3f2b0896db246678ced.png') no-repeat center top;
+        }
+      }
+
+      &__dlButton {
+        padding: 12.5px 13.5px !important;
+
+        &__image {
+          background: url('//cdn-media.etagi.com/static/site/4/45/4596d77e87cbe6aad6533cff0cd7e8dc4f230bca.png') no-repeat center top;
+          height: 18px;
+          width: 16px;
+        }
+
+        &:hover .bookingForm__contacts__controls__dlButton__image,
+        &:active .bookingForm__contacts__controls__dlButton__image,
+        &:focus .bookingForm__contacts__controls__dlButton__image {
+          background: url('//cdn-media.etagi.com/static/site/3/32/32cd0045a00b63c132adb36ca110055339b9d63c.png') no-repeat center top;
+        }
+      }
+    }
+  }
+}

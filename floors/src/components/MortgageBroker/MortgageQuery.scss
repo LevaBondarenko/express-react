@@ -1,0 +1,99 @@
+@import '../variables.scss';
+
+.mortgageQueryWrapper {
+  margin-bottom: 2rem;
+
+  .queryText {
+    font-size: 1.4rem;
+    color: $green-600;
+    border-right: 0.1rem solid;
+    border-color: color(black lightness(+81%));
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 1rem;
+      right: -0.7rem;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0.75rem 0 0.75rem 0.7rem;
+      border-color: transparent transparent transparent color(black lightness(+81%));
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 1rem;
+      right: -0.55rem;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0.7rem 0 0.7rem 0.6rem;
+      border-color: transparent transparent transparent white;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .query {
+      font-size: 2.4rem;
+      font-weight: bold;
+    }
+  }
+}
+
+.queryBlockLinear {
+  background: $gray-100;
+  position: relative;
+  width: 22%;
+
+  &:before {
+    content: '';
+    height: 60%;
+    width: 1px;
+    position: absolute;
+    left: 0;
+    top: 15px;
+    background-color: color(black lightness(+88%));
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 16px;
+    top: 0;
+    right: 1.2px;
+    right: -3.9rem;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4rem 2rem;
+    border-color: transparent transparent transparent $gray-100;
+  }
+
+  p:first-child {
+    margin: 10px 0 0;
+  }
+
+  p {
+    margin: 0 0 11px;
+  }
+
+  .queryTextLinear {
+    font-size: 1.4rem;
+    color: $green-600;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-right: 5px;
+    width: 22%;
+    position: relative;
+  }
+
+  .queryItalic {
+    font-style: italic;
+    color: color(black lightness(+46%));
+  }
+}

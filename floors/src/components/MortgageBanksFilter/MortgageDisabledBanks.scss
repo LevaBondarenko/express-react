@@ -1,0 +1,33 @@
+/**
+ * MortgageBanks styles
+ *
+ * @ver 0.0.1
+ * @author a.d.permin@72.etagi.com
+ */
+
+@import '../variables.scss';
+
+.disabledBanks {
+  padding-left: 1rem;
+  text-align: left;
+}
+
+.disabledHeader {
+  background-color: $gray-100;
+  text-align: center;
+  height: 6.5rem;
+
+  .headerTitle {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding-top: 1rem;
+  }
+}
+
+.disabledBanksWrapper {
+  margin: 0 -1.5rem;
+}
+
+.disabledBanksWrapperHidden {
+  display: none;
+}

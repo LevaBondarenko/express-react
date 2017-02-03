@@ -1,0 +1,2033 @@
+#searchform {
+  position: relative;
+  z-index: 5000;
+  min-height: 12.8rem;
+}
+
+.searchform--wrapper {
+  position: relative;
+  z-index: 20;
+  background: $white;
+  box-shadow: 0 0.4rem 0.8rem rgba(51, 51, 51, 0.11);
+}
+
+.searchform--background {
+  background: $grey url('//cdn-media.etagi.com/build/public/images/pattern.png') repeat;
+  box-shadow: none;
+  .searchform--wrapper {
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+.searchform--inner.searchform__layout {
+  padding: 1.9rem 4.1rem 0.1rem 4.8rem;
+  background: $white;
+  border: 0;
+}
+
+.flatfilter {
+  margin-left: 15px;
+
+  label {
+    font-size: 1.4rem !important;
+    min-width: 2.9rem !important;
+    height: 2.9rem !important;
+    line-height: 2.6rem !important;
+  }
+}
+
+.searchform--inner {
+  position: relative;
+  width: 100%;
+  padding: 1.8rem 3rem 0;
+  background: #fff;
+  border: 0.1rem solid darken($grey, 16%);
+
+  .searchform--rooms {
+    &__item {
+      margin: 0.3rem 0.5rem 0.1rem 0;
+
+      &:first-child {
+        margin-left: 0.8rem;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    input {
+      display: none;
+    }
+    label {
+      display: block;
+      float: left;
+      width: 2.4rem;
+      height: 2.4rem;
+      font-size: 1.2rem;
+      line-height: 2.4rem;
+      color: $black;
+      text-align: center;
+      cursor: pointer;
+      background: #fff;
+      border: .1rem solid darken( $grey, 16%);
+      border-radius: .2rem;
+
+      @include transition(.1s);
+      &:hover,
+      &:focus {
+        border: .1rem solid $crimson;
+        outline: none;
+      }
+    }
+    input[type='checkbox']:checked + label {
+      color: #fff;
+      background: $crimson;
+      border: 0.1rem solid $crimson;
+    }
+  }
+}
+
+
+.form-group {
+  margin-bottom: 0;
+  .input_arrow {
+    display: none;
+  }
+  .checkbox_arrow {
+    margin-bottom: 0;
+    font-weight: normal;
+
+    line-height: 1rem;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 0;
+
+    input {
+      display: none;
+    }
+
+    label {
+      font-weight: normal;
+      line-height: 1rem;
+      cursor: pointer;
+      display: block;
+      min-height: auto !important;
+      padding-left: 0 !important;
+    }
+
+    &:last-child label {
+      margin-bottom: 0;
+    }
+  }
+  .checkbox_arrow:hover .icon_arrow {
+    border: .1rem solid $crimson;
+  }
+  .checkbox_arrow span {
+    display: inline;
+    padding-top: 0;
+    vertical-align: top;
+  }
+  .input_arrow:checked + label .icon_arrow, .icon_arrowChecked {
+    background: #fff url('//cdn-media.etagi.com/build/public/images/checkbox_check.png') no-repeat center !important;
+    background-size: 100% !important;
+  }
+  .input_arrow:checked + label .icon_arrow.fa.fa-circle {
+    background: none !important;
+    background-size: inherit !important;
+  }
+  .input_arrow:checked + label .icon_arrow.icon_arrow--flat {
+    background: #fff url('//cdn-media.etagi.com/build/public/images/checkbox_check.png') no-repeat center;
+    background-size: 100%;
+  }
+  .icon_arrow {
+    display: block;
+    float: left;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: .5rem;
+    background: #fff no-repeat center;
+    border: .1rem solid darken($grey, 16%);
+    border-radius: .2rem;
+
+    @include transition(.1s);
+    &:hover,
+    &:focus {
+      border: .1rem solid $crimson;
+      outline: none;
+    }
+  }
+}
+
+.offset-top {
+  margin-top: 2rem;
+}
+
+#DropdownButton-paging {
+  width: 100%;
+}
+
+.btn-group--etagi {
+  text-align: right;
+  overflow-x: hidden;
+  @extend .searchform--dropdown_box;
+  span {
+    span:first-child {
+      padding-left: 5px;
+    }
+  }
+}
+
+#msearcher_deadline > div {
+    width: 100%;
+}
+
+.dropdown-menu {
+  width: 100%;
+  padding-top: 1rem;
+  .dropdown--deadline {
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    .dropdown--quarters {
+      padding: .3rem 1rem 0 1.8rem;
+    }
+  }
+  li {
+    a {
+      &:hover,
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.searchform--preloader {
+  position: relative;
+  float: left;
+  margin-left: 10px;
+  div {
+    width: 25px !important;
+    height: 25px !important;
+  }
+}
+
+.rooms--label {
+  margin-left: 1rem;
+  line-height: 3.3rem;
+}
+
+.searchform--map-btn {
+  width: 100%;
+  padding: 0;
+  border: none;
+  &:hover,
+  &:focus,
+  &:active:focus {
+    background: $white;
+    outline: none;
+    box-shadow: none;
+  }
+  span {
+    display: block;
+    margin-top: .6rem;
+    line-height: 6rem;
+    color: $crimson;
+    text-decoration: underline;
+  }
+}
+
+
+.etagi--modal {
+  &.wide {
+    .modal-dialog {
+      width: 70% !important;
+      margin-top: 7.0rem;
+      @media screen and (max-width: 1366px) {
+        width: 95% !important;
+      }
+    }
+  }
+  &.modal-districts {
+    overflow-x: auto;
+
+    .modal-content {
+      min-width: 78rem;
+    }
+  }
+  &.modal-trakts {
+    overflow-x: auto;
+
+    .modal-content {
+      min-width: 100rem;
+    }
+  }
+  .modal-dialog {
+    width: 51% !important;
+    margin-top: 14.3rem;
+    @media screen and (max-width: 1366px) {
+      width: 70% !important;
+    }
+  }
+  .modal-content {
+    border-radius: 0;
+  }
+  .nav-tabs {
+    padding: 1.7rem 5rem 0;
+    margin: -1.5rem -1.5rem 0;
+    background: $grey url('//cdn-media.etagi.com/build/public/images/pattern.png') repeat;
+    li {
+      a {
+        padding: .8rem 3.3rem .9rem;
+        font-size: 2.4rem;
+        color: $black;
+        background: none;
+        border: 0;
+        border-radius: .2rem .2rem 0 0;
+        &:hover,
+        &:focus {
+          background: $white;
+          border: 0;
+          outline: none;
+        }
+      }
+    }
+    .active {
+      a {
+        color: $crimson;
+        background: $white;
+        &:hover,
+        &:focus {
+          color: $crimson;
+          background: $white;
+          border: 0;
+        }
+      }
+    }
+  }
+}
+
+.mapDistrictLegend {
+  background: $white;
+  .gm-scroll-view{
+      width: 100% !important;
+      height: 100% !important;
+      overflow-x: hidden;
+  }
+  .searchform--tab__list{
+    li {
+      position: relative;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.btn-abs-modal.btn-modal {
+  position: absolute;
+  bottom: 1.8rem;
+  right: 4.7rem;
+  z-index: 20;
+  width: auto;
+  height: 3rem;
+  font-size: 1.5rem;
+  line-height: 1rem;
+}
+
+.activeItem {
+  color: $crimson;
+}
+
+.disabledItem {
+  color: #c9c9c9;
+}
+
+.activeItem.disabledItem {
+  color: #db8375;
+}
+
+
+.label--margin {
+  margin-right: .5rem;
+}
+
+.searchform--count {
+  margin-top: 2.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.deadline--searchlabels {
+  margin-top: 3rem;
+}
+.btn-searchform {
+  width: 100%;
+  padding: .9rem 1.2rem;
+}
+
+.etagi--closeBtn {
+  position: absolute;
+  right: 1rem;
+  z-index: 20;
+  padding: 0;
+  margin: 0;
+  font-size: 3.3rem;
+  line-height: 3rem;
+  color: $trout;
+  background: none;
+  border: 0;
+  opacity: .5;
+
+  @include transition(.1s);
+  &:hover,
+  &:focus,
+  &:active {
+    border: 0;
+    outline: none !important;
+    opacity: 1;
+  }
+}
+
+.etagi--clearBtn {
+  position: absolute;
+  bottom: 24px;
+  right: 15rem;
+  z-index: 20;
+  padding: 0 0 .1rem;
+  font-size: 1.5rem;
+  color: $grey--font;
+  background: none;
+  border: 0;
+  border-bottom: .1rem solid $grey--font;
+  border-radius: 0;
+
+  @include transition(.1s);
+  &:hover {
+    color: $crimson;
+    text-decoration: none;
+    border-bottom: .1rem solid $crimson;
+    outline: none !important;
+  }
+  &:focus {
+    color: $grey--font;
+    text-decoration: none;
+    border-bottom: .1rem solid $grey--font;
+  }
+  &:active {
+    background: none;
+    box-shadow: none;
+  }
+}
+
+.etagi--clearBtn__hi {
+  top: 3rem;
+  bottom: auto;
+}
+
+.btn-modal__hi {
+  top: 3.4rem;
+  right: 4.7rem !important;
+}
+
+.searchform--input__form {
+  margin: .2rem 1.7rem 0;
+}
+
+.searchform--tags__wrap {
+  height: 3.3rem;
+  margin: .5rem 1.7rem;
+  overflow: hidden;
+  ul {
+    padding: 0;
+    margin: 0;
+    .searchform--tag__item {
+      display: block;
+      float: left;
+      padding: 0 .4rem;
+      margin: .5rem;
+      font-size: 1.2rem;
+      background: darken($grey, 3%);
+      border: .1rem solid darken($grey, 3%);
+      border-radius: 1.5rem;
+
+      @include transition(.1s);
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      button {
+        margin-left: .3rem;
+        font-size: 1.5rem;
+        &:hover,
+        &:focus {
+          border: 0;
+          outline: none !important;
+        }
+      }
+    }
+  }
+}
+
+.searchform--tab__list {
+  margin-top: 1.4rem;
+  li {
+    float: left;
+    width: 25%;
+    font-size: 1.5rem;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+
+    @include transition(.1s);
+    &:hover,
+    &:focus {
+      color: lighten($crimson, 15%);
+
+    }
+    .item-closeBtn {
+      display: inline-block;
+      color: $crimson;
+      @include transition(.1s);
+      &:hover,
+      &:focus {
+        color: $crimson;
+
+      }
+    }
+  }
+}
+
+.btn-modal {
+  width: 28%;
+  height: 5rem;
+  margin-top: -.7rem;
+  margin-left: 2.1rem;
+  font-size: 2.1rem;
+  &:hover,
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.nav-tabs {
+  .active {
+    .tabbedBadge {
+      display: inline-block;
+    }
+  }
+}
+
+.tabbedBadge {
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  display: inline-block;
+  background: $green;
+}
+
+.searchform--nav {
+  ul {
+    padding: 0;
+    li {
+      float: left;
+      padding: 1.5rem;
+      text-transform: uppercase;
+      list-style: none;
+      a {
+        color: $grey--font;
+
+        @include transition(.1s);
+        &:hover {
+          color: $crimson !important;
+          text-decoration: none;
+        }
+        &:focus {
+          color: inherit;
+          text-decoration: none;
+        }
+      }
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+
+.affixNav--wrap {
+  background: $grey url('//cdn-media.etagi.com/build/public/images/pattern.png') repeat ;
+}
+
+.affixNav--fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 50;
+}
+
+
+.search--result {
+  width: 100%;
+
+  padding: 0 1.5rem;
+
+  .search--result__filter {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    margin-top: 0;
+    .filter--scroll__wrap {
+      margin: 0 -1.5rem;
+    }
+  }
+  .search--result__objects {
+    position: relative;
+    z-index: 5;
+    height: 100%;
+    padding: 0;
+    margin-top: 0;
+    .sticky{
+      @extend .container-wide;
+      padding: 0;
+      z-index: 20 !important;
+      .result--control {
+        margin-top: 0;
+        background: $white;
+        padding-bottom: 1rem;
+        box-shadow: .4rem 1.8rem 1.4rem -1.67rem rgba(153,153,153,.5);
+        @extend .col-xs-10;
+        @extend .col-xs-offset-2;
+      }
+    }
+    .result--scroll__wrap {
+      .gm-scroll-view {
+        padding: 0 1.5rem;
+      }
+    }
+  }
+}
+
+.searchResult-nextBtn {
+  margin: 9px auto 23px;
+  height: 49px;
+  width: 236px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  background: #999;
+  color: #fff;
+  transition: all 250ms ease;
+  border-color: #999;
+  margin-left: 20px;
+  &:hover {
+    background: #60656c;
+    border-color: #60656c;
+    color: #fff;
+  }
+  &:focus,
+  &active {
+    outline: none;
+  }
+  .fa {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+  .fa.fa-chevron-left {
+    margin-right: 1rem;
+  }
+}
+
+.search--result.mapLayout {
+  width: 100%;
+  height: 75rem;
+  padding: 0 1.5rem;
+  overflow: hidden;
+  position: relative;
+  .search--result__filter {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    margin-top: 0;
+    background: $white;
+    padding: 0;
+    border-right: .1rem solid darken($grey, 15%);
+    box-shadow: .4rem 0 .5rem 0rem rgba(51, 51, 51, .11);
+    transition: all 250ms ease;
+    .filter--scroll__wrap {
+      margin: 0;
+    }
+  }
+  .search--result__objects {
+    position: relative;
+    z-index: 5;
+    height: 100%;
+    background: $white;
+    padding: 0;
+    margin-top: 0;
+    .sticky{
+      @extend .container-wide;
+      padding: 0;
+      .result--control {
+        margin-top: 0;
+        background: $white;
+        padding-bottom: 1rem;
+        box-shadow: .4rem 1.8rem 1.4rem -1.67rem rgba(153,153,153,.5);
+        @extend .col-xs-10;
+        @extend .col-xs-offset-2;
+      }
+    }
+    border-right: .1rem solid darken($grey, 15%);
+    .result--scroll__wrap {
+      .gm-scroll-view {
+        padding: 0 1.5rem;
+      }
+    }
+  }
+  .search--result__map {
+    position: relative;
+    z-index: 3;
+    height: 101%;
+    padding: 0;
+    margin-top: -.8rem;
+  }
+
+  .filter{
+    &--title{
+      padding: 0 1.5rem;
+      margin: 0;
+    }
+    &--block {
+      &__title {
+        h3 {
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
+          .glyphicon {
+            font-size: 1rem;
+          }
+        }
+      }
+      &__content{
+        padding: 1.5rem 2rem;
+      }
+    }
+  }
+
+}
+
+.visible {
+  margin-left: 0 !important;
+}
+
+.filter--mapBtn{
+  &.noLeftRightMargin {
+    margin: -0.4rem 0 .6rem;
+  }
+  display: block;
+  width: 100%;
+  color: $white;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  background: $backed;
+  margin: -0.4rem 0 .6rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  .glyphicon {
+    margin-right: 1rem;
+  }
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $white;
+    background: darken($backed, 15%);
+    outline: none;
+  }
+}
+
+.filter--title {
+  margin: 0 -1.5rem;
+  h3 {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: .6rem;
+    .ball-clip-rotate {
+      div {
+        position: relative !important;
+        width: 16px !important;
+        height: 16px !important;
+      }
+      width: auto;
+      height: auto;
+      min-height: 30rem;
+      display: block;
+      float: right;
+    }
+  }
+}
+
+.filter--collapse {
+  position: relative;
+  float: right;
+  padding: .4rem;
+  margin-top: 1.7rem;
+  margin-right: -1.5rem;
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+  color: lighten($grey--font, 20%);
+
+  @include transition(.1s);
+  &__control {
+    position: absolute;
+    top: .6rem;
+    right: -2.1rem;
+    width: 8rem;
+    height: 2.1rem;
+    font-size: 1.3rem;
+    line-height: 2.1rem;
+    font-weight: bold;
+    background: url('//cdn-media.etagi.com/build/public/images/filter-arr-bg.png') no-repeat 100% 0;
+    cursor: pointer;
+    &.reverseControl {
+      @extend .filter--collapse__control;
+      background: url('//cdn-media.etagi.com/build/public/images/filter-arr-bg-reverse.png') no-repeat 100% 0;
+    }
+  }
+  &:hover,
+  &:focus {
+    color: $grey--font;
+    text-decoration: none;
+  }
+}
+
+.filter--block {
+  .filter--block__title {
+    cursor: pointer;
+    border-bottom: .1rem solid darken($grey, 15%);
+    h3 {
+      padding: 0;
+      margin: 0;
+      margin-bottom: .2rem;
+      margin-top: .5rem;
+      font-size: 1.4rem;
+      line-height: 3rem;
+      text-align: right;
+      font-weight: bold;
+      .glyphicon {
+        font-size: 1rem;
+      }
+    }
+  }
+  .filter--block__content {
+    display: none;
+    padding: 1.5rem 0;
+    transition: all 120ms ease;
+  }
+}
+
+.visibleBlock {
+  display: block !important;
+}
+
+.result--title {
+  padding: 0 1.8rem;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.result--control {
+  margin-top: 1.5rem;
+  margin-bottom: .9rem;
+  &__title {
+    @extend .result--title;
+    margin-top: 1.5rem;
+    padding: 0;
+    .ball-clip-rotate {
+      div{
+        position: relative !important;
+        width: 19px !important;
+        height: 19px !important;
+      }
+      width: auto;
+      height: auto;
+      min-height: 0 !important;
+      display: block;
+      float: right;
+    }
+  }
+  &__label{
+    line-height: 3.3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  .dropdown.btn-group {
+    width: 100%;
+  }
+}
+
+.objects--item {
+  &__sale {
+    background-repeat: no-repeat;
+    width: 107%;
+    position: relative;
+    left: -28px;
+
+    &_html {
+      display: inline-block;
+    }
+
+    .liquidity_block_value {
+      width: 0%;
+      position: relative;
+
+      .cap {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        z-index: 10;
+      }
+    }
+
+    img {
+      display: inline-block;
+      width: 18px;
+      margin: 0 0 0 7px;
+    }
+
+    h1 {
+      display: inline-block;
+      color: $red-base;
+      font-size: 14px;
+      display: inline-block;
+      font-weight: 600;
+      margin: 10px 0 25px;
+      line-height: 16px;
+
+      a {
+        font-size: inherit;
+        text-decoration: underline;
+        font-weight: 500;
+        margin: 0 3px;
+      }
+    }
+  }
+
+  &-object__sale {
+    width: 100%;
+    padding: 20px 10px;
+    height: 107px;
+
+    &_html {
+      display: inline-block;
+    }
+
+    .liquidity_block_value {
+      width: 0%;
+      position: relative;
+
+      .cap {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        z-index: 10;
+      }
+    }
+
+    img {
+      display: inline-block;
+      width: 16px;
+      margin: 5px;
+    }
+
+    h1 {
+      display: inline-block;
+      color: $red-base;
+      font-size: 14px;
+      display: inline-block;
+      font-weight: 600;
+      margin: 0;
+
+      a {
+        font-size: inherit;
+        text-decoration: underline;
+        font-weight: 500;
+        margin: 0 3px;
+      }
+    }
+  }
+
+  &.object-active {
+    background: $mystic;
+  }
+  padding: 1rem 1.8rem;
+  .objects--item__title {
+    h3 {
+      padding-top: 1.1rem;
+      margin: 0;
+      padding-left: 0;
+      font-size: 1.4rem;
+      color: lighten($footer-bg, 3%);
+      text-transform: uppercase;
+    }
+    span {
+      font-weight: lighter;
+    }
+    .item--price {
+      font-size: 1.9rem;
+      font-weight: bold;
+
+        .ultra-black {
+          color: #333 !important;
+        }
+
+    }
+    .item--oldprice {
+      display: inline-block;
+      font-size: 1.5rem;
+    }
+  }
+  .objects--item__content {
+    margin-top: 1.3rem;
+    overflow: hidden;
+    position: relative;
+    .row {
+      height: auto;
+    }
+    .item--img_wrap {
+      padding: 0;
+      margin-left: 1.5rem;
+      border-top: 1px solid lighten($dark-grey, 4%);
+      border-left: 1px solid lighten($dark-grey, 4%);
+      img {
+        width: 100%;
+        padding: 0;
+      }
+    }
+    .item--description {
+      padding: 1.8rem 0 1.5rem 1.5rem;
+      margin-right: 1.5rem;
+      border-top: 1px solid lighten($dark-grey, 4%);
+      border-right: 1px solid lighten($dark-grey, 4%);
+      p {
+        margin-bottom: 0;
+      }
+    }
+    .item--controls {
+      &__pd {
+        margin-right: 1rem;
+      }
+      &__more {
+        display: block;
+        float: right;
+        padding: 1.2rem 0;
+        color: $grey--font;
+        text-align: center;
+        background: darken($grey, 3%);
+
+        @include transition(.1s);
+        &:hover,
+        &:focus {
+          color: $white;
+          text-decoration: none;
+          background: $apple;
+        }
+      }
+    }
+  }
+}
+
+.notFound{
+  p{
+    text-align: center;
+    padding-top: 15rem;
+    font-size: 1.5rem;
+  }
+}
+
+
+.objects--item__map {
+  @extend .objects--item__nomap;
+  margin-bottom: -.1rem !important;
+  border: .1rem solid lighten($dark-grey, 4%);
+  outline: 0 !important;
+  &:hover,
+  &:focus {
+    outline: .3rem solid $backed !important;
+    background: lighten($backed, 30%);
+    z-index: 20;
+    .item--controls__more {
+      color: $white;
+      text-decoration: none;
+      background: $apple;
+    }
+  }
+  &--img {
+    margin: 2rem 0 1rem;
+  }
+  &--rooms {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  &--content {
+    @extend .objects--item__nomap--content;
+    & > div {
+      padding: 1.4rem 0 0 1.5rem;
+      p {
+        margin-bottom: 0;
+      }
+      &:first-child {
+        padding: 0 0 0 1.5rem;
+      }
+      &:last-child {
+        padding: 1.4rem 1.5rem 0;
+      }
+    }
+  }
+}
+
+
+.objects--item__nomap {
+  position: relative;
+  overflow: hidden;
+  &.object-active {
+    outline: .3rem solid $backed;
+    box-shadow: 0 .3rem .9rem .4rem rgba(153,153,153,.5);
+  }
+  margin: 0 0 2rem;
+  outline: .1rem solid lighten($dark-grey, 4%);
+
+  @include transition(.1s);
+  &:hover,
+  &:focus {
+    outline: .3rem solid $backed;
+    box-shadow: 0 .3rem .9rem .4rem rgba(153,153,153,.5);
+  }
+  &--installment{
+    position: absolute;
+    top: -.1rem;
+    right: -.1rem;
+    width: 0;
+    height: 0;
+    z-index: 10;
+    border-style: solid;
+    border-width: 0 4rem 4rem 0;
+    border-color: transparent $yellow transparent transparent;
+    cursor: default;
+    &:before{
+      position: absolute;
+      content: '%';
+      display: block;
+      top: -.3rem;
+      left: 1.9rem;
+      width: 4rem;
+      height: 4rem;
+      font-size: 2.2rem;
+      color: $white;
+      text-align: left;
+    }
+
+    &:hover + .objects--item__nomap--installment__content{
+       right: 0;
+    }
+  }
+  &--installment__content {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    padding: 2rem;
+    color: white;
+    font-size: 1.2rem;
+    width: 50%;
+    background: $backed;
+    z-index: 5;
+    @include transition(.1s);
+
+    &:hover {
+      right: 0;
+    }
+
+    &:after{
+      content: '';
+      position: absolute;
+      width: 55px;
+      height: 52px;
+      top: 15%;
+      left: -14%;
+      z-index: 5;
+      background: url('//cdn-media.etagi.com/static/site/3/30/3098efb373e1e22d00f55d9817a70f4eb7d7f03c.png') no-repeat;
+    }
+  }
+
+  &--installment__arrow {
+    height: 100%; width: 35%;
+    padding-bottom: 24.748737%; /* = width / sqrt(2) */
+    overflow: hidden;
+    position: absolute;
+    right: 100%;
+    top: 0;
+
+    &:before {
+      content:'';
+      position:absolute;
+      top:100%; right:0;
+      width:400%; height:200%;
+      background: $backed;
+
+      -webkit-transform-origin:100% 0;
+      -ms-transform-origin:100% 0;
+      transform-origin:100% 0;
+
+      -webkit-transform: rotate(-200deg);
+      -ms-transform: rotate(-200deg);
+      transform: rotate(-200deg);
+    }
+  }
+
+  &--img{
+    margin: 0 -1.5rem;
+  }
+  &--title{
+    h3 {
+      padding-top: 2.3rem;
+      margin: 0;
+      padding-left: 0;
+      font-size: 1.4rem;
+
+      text-transform: uppercase;
+      a{
+        color: lighten($footer-bg, 3%);
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+          color: lighten($footer-bg, 3%);
+        }
+      }
+    }
+    .adress {
+      padding-left: 0;
+      font-size: 15px;
+      text-decoration: none;
+      .glyphicon {
+        margin-right: .5rem;
+        color: $crimson;
+      }
+      &--tocenter {
+        padding-left: .5rem;
+        color: $french-gray;
+      }
+    }
+    span {
+      font-weight: lighter;
+    }
+    .item--price {
+      font-size: 1.9rem;
+      font-weight: bold;
+      padding-top: 1.4rem;
+      padding-right: 1rem;
+      &.priceList {
+        font-size: 1.7rem;
+        padding-right: 0 ;
+      }
+    }
+    .item--priceSquare {
+      b > span {
+        font-weight: bold;
+      }
+    }
+    .item--oldprice {
+      display: inline-block;
+      font-size: 1.5rem;
+      &.priceList {
+        font-size: 1.3rem;
+        padding-right: 0;
+      }
+    }
+  }
+  &--content{
+    .item--description {
+      padding: 3.8rem 0 1.5rem;
+      p {
+        margin-bottom: 0;
+      }
+      .mortgagePay {
+        color: $crimson;
+        display: block;
+      }
+      .readMoreBtn {
+        color: $astronaut;
+        font-size: 1.4rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.item--controls {
+
+  &.nhFlats {
+    position: absolute;
+    width: 143px;
+    bottom: 10px;
+    right: 10px;
+
+    .item--controls__more {
+      border: .1rem solid $apple !important;
+      background: $white;
+
+      &:hover,
+      &:focus {
+        background: $apple;
+      }
+    }
+  }
+
+  &.builderObjects {
+    .item--controls__more {
+      border: none !important;
+    }
+  }
+
+
+  &__more {
+    display: block;
+    padding: 1.2rem 0;
+    color: $apple;
+    text-align: center;
+    border: .3rem solid $apple !important;
+
+    @include transition(.1s);
+    &:hover,
+    &:focus {
+      color: $white;
+      text-decoration: none;
+      background: $apple;
+    }
+    &.sold {
+      color: $crimson;
+      border: .3rem solid $crimson;
+      &:hover,
+      &:focus {
+        color: $white;
+        background: $crimson;
+      }
+    }
+  }
+}
+
+.action--badge {
+  padding: 0;
+  margin-top: .7rem;
+  p {
+    float: left;
+    margin-left: .8rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 2.2rem;
+    .action--badge__text {
+      font-size: 15px;
+      font-weight: bold;
+      color: $crimson;
+    }
+  }
+}
+
+.filter--slider {
+  &.horizontal-slider {
+    width: 100%;
+  }
+}
+
+.slider {
+  margin-bottom: .5rem;
+  &--labels {
+    &__title {
+      margin-bottom: 0;
+    }
+    &__values {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+.item--flatstable__new {
+  margin-top: 8px;
+  margin-bottom: 10px;
+  .table-responsive {
+    margin: 0 0.1rem;
+  }
+  .table-responsive-placeholder {
+    margin: 0 0.1rem;
+    border-top: 1px solid lighten($dark-grey, 4%) !important;
+  }
+  .table {
+    margin-bottom: 0;
+    tr {
+      border-top: 1px solid lighten($dark-grey, 4%) !important;
+      border-bottom: 1px solid lighten($dark-grey, 4%) !important;
+      border-left: 1px solid lighten($dark-grey, 4%) !important;
+      border-right: 1px solid lighten($dark-grey, 4%) !important;
+      td {
+        border-top: 0;
+        padding: 2px 4px;
+      }
+    }
+  }
+}
+
+.item--flatstable {
+  .table-responsive {
+    margin: 0 .1rem;
+  }
+  .table-responsive-placeholder {
+    margin: 0 .1rem;
+    border-top: 1px solid lighten($dark-grey, 4%) !important;
+  }
+  .table {
+    margin-bottom: 0;
+    tr {
+      th {
+        font-weight: normal;
+        text-align: center;
+        padding: 3px !important;
+        border-top: 1px solid lighten($dark-grey, 4%) !important;
+        border-bottom: 1px solid lighten($dark-grey, 4%);
+        border-right: 1px solid #dbdbdb;
+        &:last-child {
+          .bordered-table {
+            border-right: 0;
+          }
+        }
+        .bordered-table {
+          display: block;
+          //border-right: 1px solid lighten($dark-grey, 4%);
+        }
+      }
+      td {
+        padding: 3px !important;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.newhousecard ymaps {
+  height: auto !important;
+}
+
+.newhousecard {
+  position: relative;
+  width: 315px;
+  height: auto;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 8px 1px rgba(0,0,0,.27);
+          box-shadow: 0 0 8px 1px rgba(0,0,0,.27);
+  .close {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    display: block;
+    float: none;
+  }
+  &--body {
+    width: 315px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #fff;
+    &__title {
+      padding: 2rem 1.4rem 0.5rem;
+      padding-top: 1.1rem;
+      margin: 0;
+      font-size: 1.4rem;
+      color: #4a515d;
+      text-transform: uppercase;
+      a {
+        color: #4a515d;
+      }
+    }
+    &__district {
+      padding: .5rem 1rem 0;
+      margin: 0;
+    }
+    &__adress {
+      padding: 0 1rem .5rem;
+      margin: 0;
+    }
+    &__imgwrap {
+      overflow: hidden;
+      a {
+        img {
+          margin: 0 auto;
+        }
+      }
+    }
+    &__walls {
+      padding: .5rem 1rem 0;
+      margin: 0;
+    }
+    &__builder {
+      padding: .5rem 1rem 0;
+      a{
+        color: $grey--font;
+        text-decoration: none;
+        font-weight: bold;
+        @include transition(.1s);
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+    &__user {
+      padding: 0 1rem;
+      margin-top: 2rem;
+      .userimage {
+        display: block;
+        width: 65px;
+        height: 65px;
+        overflow: hidden;
+        border-radius: 50%;
+        img {
+          width: 100%;
+          margin-top: -6px;
+        }
+      }
+      .usercontent {
+        float: left;
+        width: 70%;
+        margin-left: 1rem;
+        &--title {
+          margin-top: 0;
+          font-size: 13px;
+        }
+        &--name {
+          margin-bottom: 0;
+          font-size: 1.3rem;
+          font-weight: bold;
+        }
+        &--callus {
+          color: $apple;
+          .icon-callus {
+            display: block;
+            float: left;
+            width: 1rem;
+            height: 1.8rem;
+            margin-right: .6rem;
+            background: url('//cdn-media.etagi.com/static/site/a/a1/a1ce05c8f83ce1311ffc97708818203d6a1e90f4.png') no-repeat center;
+          }
+        }
+      }
+    }
+    &__price {
+      float: left;
+      padding: .2rem 1rem;
+      margin-bottom: 0;
+      line-height: 30px;
+      span {
+        font-size: 1.9rem;
+      }
+    }
+    &__installment {
+      border: 1px solid darken($grey, 3%);
+      border-right: 0;
+      border-left: 0;
+      &--more {
+        display: block;
+        float: right;
+        width: 40%;
+        padding: .9rem 0;
+        color: $grey--font;
+        text-align: center;
+        text-transform: uppercase;
+        background: darken($grey, 3%);
+
+        @include transition(.1s);
+        &:hover,
+        &:focus {
+          color: $white;
+          text-decoration: none;
+          background: $apple;
+        }
+      }
+    }
+  }
+}
+
+.mainMapWidget {
+  position: relative;
+  &--statistics{
+    &__head{
+      min-height: 4.6rem;
+      line-height: 4.6rem;
+      text-align: center;
+      h3{
+        margin: 0;
+        position: relative;
+        line-height: 4.6rem;
+        color: $apple;
+        background: $white;
+      }
+    }
+    &__content{
+      background: $white;
+      position: relative;
+      padding: 1rem .5rem;
+      height: 17.4rem;
+      overflow: hidden;
+      text-align: center;
+      &--green {
+        color: $apple;
+
+          width: 100%;
+
+        &:hover,
+        &:focus {
+          color: $apple;
+          text-decoration: underline;
+        }
+      }
+      &--help {
+        background-color: rgb(239, 239, 239);
+        background: #f5f5f5 url('//cdn-media.etagi.com/build/public/images/pattern.png') repeat;
+        margin-top: 10px;
+       span{
+          color: $grey--font;
+          font-style: italic;
+          font-size: 13px;
+          font-weight: bold;
+       }
+      }
+    }
+  }
+}
+
+.preload{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -1.75rem;
+  margin-left: -2rem;
+}
+
+.fixHeight{
+  min-height: 270px;
+}
+
+.jk-square {
+  background-color: #CACACA;
+  /*height: 40px;*/
+}
+
+.td-square-min {
+  padding: 8px 6px 8px 6px;
+  position: relative;
+}
+
+.td-square-min div {
+  text-decoration: underline;
+}
+
+.widthAuto.outlined {
+  -webkit-box-shadow: 3px 2px 3px 0px rgba(165, 165, 165, 0.9);
+  -moz-box-shadow:    3px 2px 3px 0px rgba(165, 165, 165, 0.9);
+  box-shadow:         3px 2px 3px 0px rgba(165, 165, 165, 0.9);
+}
+
+.td-square-min:hover {
+  cursor: pointer;
+}
+
+.bgc-white {
+  background-color: #fff;
+}
+
+.square-min {
+  padding: 3px;
+  background-color: #fff;
+  border-radius: 7px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: .85em;
+  font-weight: bold;
+}
+
+.td-square-min-corner {
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.square-min-rooms {
+    width: 88%;
+    text-decoration: none !important;
+}
+
+.square-min-rooms:hover {
+  cursor: default;
+}
+
+.td-square-min-rooms {
+  padding: 5px 0 8px 0;
+}
+
+.td-square-min-rooms:hover {
+  cursor: default;
+}
+
+.section-header {
+  vertical-align: top;
+}
+.quarter-table {
+  height: 100%;
+}
+
+.xxx {
+  line-height: 20px;
+  position: absolute;
+  top: -20px;
+  text-transform: uppercase;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding-left: 24px;
+}
+.build-list-block {
+  position: relative;
+  padding-top: 25px;
+}
+
+.__hidden {
+  display: none;
+}
+
+.build {
+  position: relative;
+}
+#minP1, #maxP1 {
+  position: absolute; left: 0; top: 100%; z-index: 2; padding: .3rem 1rem;
+  width: 100%; background-color: #fff; cursor: pointer;
+  border-left: 1px solid #aaa; border-right: 1px solid #aaa; border-bottom: 1px solid #aaa;
+}
+
+#minP1:hover, #maxP1:hover,
+#minP1.active, #maxP1.active {
+  background: #e6e6e6; color: #932825;
+}
+
+.inputBlock {position: relative; display: inline-block; vertical-align: top; width: 40%; margin-right: 5%;}
+.inputBlock input {width: 100%;}
+
+/*realtyCard*/
+.realty{
+  &__description{
+    padding: 0.7rem 0 1.5rem !important;
+    .objectNotesContainer {
+
+     }
+     .objectNote {
+       position: relative;
+       max-height: 60px;
+       overflow: hidden;
+       text-overflow: ellipsis;
+       transition: all 0.3s ease-in;
+
+       > p {
+         display: inline-block;
+       }
+
+
+       &:after {
+         content: '...';
+         display: inline-block;
+       }
+
+       &.uncollapsed {
+         max-height: 700px;
+
+         &:after {
+           content: '';
+           display: inline-block;
+         }
+       }
+    }
+  }
+}
+
+.dateFilter--wrap{
+  .dateFilter--item {
+    padding-right: 0;
+    padding-left: .5rem;
+    &:first-child {
+      padding-left: 1.5rem;
+    }
+  }
+  .dateFilter{
+    min-height: 3.3rem;
+    line-height: 3.3rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    background-color: $grey;
+    &.disabled {
+      cursor: not-allowed;
+      a {cursor: not-allowed;}
+      &:hover {
+        background-color: $grey;
+        a {
+          text-decoration: none;
+          color: $grey--font;
+        }
+      }
+    }
+    @include transition(.1s);
+    a {
+      display: block;
+      text-decoration: none;
+      color: $grey--font;
+      &:focus {
+        outline: 0;
+      }
+    }
+    &:hover {
+      background-color: $french-gray;
+      a {
+        text-decoration: none;
+        color: $grey--font;
+      }
+    }
+
+    &.activeItem {
+      background-color: $apple;
+      a {
+        text-decoration: none;
+        color: $white;
+      }
+    }
+  }
+}
+
+.mapLayout .dateFilter {
+  line-height: 150% !important;
+  a span {
+    display: block;
+  }
+}
+
+.block--diviations{
+  &__title {
+    color: $french-gray;
+    text-transform: uppercase;
+    float: left;
+    font-size: 1.2rem;
+    padding-left: 1.5rem;
+    padding-bottom: .5rem;
+    &.title-noPadding {
+      padding-left: 0;
+    }
+  }
+  &__prc {
+    font-size: 1.8rem;
+  }
+
+  &__text {
+    color: $french-gray;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+}
+
+.tooltip-icon__mgLeftTop {
+  margin-left: 5px;
+  margin-top: 3px;
+}
+
+.padding-bottom-55 {
+  padding-bottom: 55px;
+}
+
+.padding-bottom-75 {
+  padding-bottom: 75px;
+}
+
+.MSearcher__btn {
+  margin: .3rem 1rem;
+}
+
+
+.search--result__wrap{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.search--wrap.mapLayout {
+  box-shadow: 0 .3rem 1rem 0 rgba(0,0,0,.3);
+  position: relative;
+  z-index: 20;
+}
+
+.search--result__map {
+  position: relative;
+  z-index: 3;
+  padding: 0;
+  height: 100%;
+}
+
+.mapLayout > div {
+  height: 100%;
+  padding: 0 !important;
+}
+
+.search--result.mapLayout .search--result__objects {
+  height: 862px !important;
+}
+
+.mapAbsolute{
+  position: absolute;
+  right: 1.5rem;
+  z-index: 3;
+  top: 0;
+}
+
+.fullHeight {
+  height: 100%;
+}
+
+.mapShadow > div {
+  box-shadow: 0 .3rem .3rem 0 rgba(0, 0, 0, .2);
+  z-index: 15;
+  display: block;
+  height: .1rem;
+  position: relative;
+  top: 0;
+  margin-top: -1.4rem;
+}
+
+.btn-label {
+  width: inherit;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-right: -1.2rem;
+  padding-right: 1.2rem;
+}
+
+.searchHeaderWrapper {
+  display: flex;
+  width: 100%;
+  background-color: whitesmoke;
+  padding: 4px;
+  height: 41px;
+
+  ul.dropdown-menu {
+    width: 250px;
+  }
+
+  .clearfix {
+    margin-left: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+    .noPadding {
+      .btn-group--etagi {
+        span {
+          span:first-child {
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+
+    .searchHeader_label {
+      margin-right: 15px;
+    }
+  }
+
+  .pagerWrapper {
+    position: absolute;
+    right: 10px;
+  }
+}
+
+.etagiPageListing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+
+  .etagiPaging--pages {
+    display: block;
+
+    .previous.disabled a {
+      display: inline-block !important;
+    }
+
+    .selected {
+      display: none;
+    }
+
+    .break {
+      display: none;
+    }
+
+    li {
+      padding: 0;
+    }
+
+    li.previous a, li.next a {
+      display: inline-block !important;
+      width: 33px;
+      height: 33px;
+      text-align: center;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      vertical-align: middle;
+    }
+
+    li.previous a span.glyphicon {
+      top: 4px;
+      left: 0;
+      font-size: 18px;
+    }
+    li.next a span.glyphicon {
+      top: 4px;
+      left: -1px;
+      font-size: 18px;
+    }
+  }
+
+  .etagiPageListing_inputPage {
+    text-align: center;
+    height: 33px;
+    font-weight: bold;
+    color: crimson;
+  }
+
+  .searchRealtyItem_objNotes {
+    line-height: 14px;
+    margin-top: 15px;
+  }
+}
+
+.in-fav button {
+  color: #e31f30;
+}
+
+.sticky {
+  .sticky-inner-wrapper {
+    left: 0;
+    right: 0;
+    width: 100% !important;
+  }
+}

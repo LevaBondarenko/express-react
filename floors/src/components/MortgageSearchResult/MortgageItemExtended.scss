@@ -1,0 +1,128 @@
+@import '../variables.scss';
+
+:global(.icon_arrow) {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  border: 0.1rem solid $gray-600 !important;
+}
+
+:global(.checkbox_arrow:hover .icon_arrow) {
+  border: 0.1rem solid $gray-600 !important;
+}
+
+.checkMortgage {
+  //width: 3rem;
+  padding-left: 2rem !important;
+  padding-right: 0 !important;
+  color: #e8f5e9;
+}
+
+.mortgageItemExtended {
+  height: 6.4rem;
+  padding: 1rem 0;
+  border-bottom: 0.1rem solid $gray-300;
+
+  :global(.input_arrow:checked + label .icon_arrow) {
+    background: $white-base url('https://cdn-media.etagi.com/static/site/c/ce/ce22fa2ce961ad8165e714d7299d1a5c21781fa9.png') no-repeat center !important;
+  }
+
+  &.mortgageItemActive {
+    background-color: $green-50;
+
+    .monthPaymentCompany,
+    .monthPaymentCompany .paymentPref {
+      background-color: $green-50;
+    }
+
+    .greenPercentWrapper {
+      background-color: $green-300;
+      color: $white-base;
+    }
+  }
+
+  &:hover {
+    background-color: $green-50;
+    cursor: pointer;
+    transition: none;
+
+    //.monthPaymentCompany,
+    //.monthPaymentCompany .paymentPref {
+    //  background-color: $green-50;
+    //}
+
+    .greenPercentWrapper {
+      background-color: $green-300;
+      color: $white-base;
+    }
+  }
+}
+
+.programTitle {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-height: 6.4rem;
+
+  a {
+    color: $gray-dark;
+
+    &:hover {
+      color: $blue-600;
+    }
+  }
+}
+
+.bankImage {
+  //width: 20rem;
+  text-align: center;
+}
+
+.bankImage img {
+  max-width: 14.8rem;
+  max-height: 4.6rem;
+}
+
+.monthPayment,
+.monthPaymentCompany,
+.greenMonthPayment,
+.percent,
+.greenPercent {
+  text-align: center;
+}
+
+.monthPaymentCompany {
+  padding: 0.6rem 0;
+}
+
+.greenMonthPayment {
+  color: $green-600;
+  font-weight: bold;
+}
+
+.greenPercentWrapper {
+  font-weight: bold;
+  color: $green-600;
+  background: $green-50;
+  padding: 0.4rem 0.7rem;
+  border-radius: 1rem;
+}
+
+.toggleInfo {
+  a {
+    color: $blue-600;
+  }
+}
+
+.mortgageItemExtendedWrapper td {
+  opacity: 1;
+  //background-color: $white-base;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.mortgageItemExtendedWrapperHidden td {
+  display: table-cell !important;
+  opacity: 0;
+  background-color: $green-300;
+  transition: all 0.3s ease-in-out;
+}

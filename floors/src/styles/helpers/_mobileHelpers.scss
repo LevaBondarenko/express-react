@@ -1,0 +1,398 @@
+/* helpers.scss */
+body {
+  color: $grey--font;
+}
+
+footer > div > div {
+  margin: 0!important;
+  position: relative;
+}
+
+.header > div > div {margin-left: 0!important; margin-right: 0!important;}
+
+footer {position: relative;}
+
+.liveinternet-wrapper {
+  padding: 0 1rem!important;
+}
+
+.liveinternet-block {
+  width: 31px; height: 31px;
+  margin: 0; padding: 0!important;
+}
+
+.container-width-auto {
+  width: auto !important;
+}
+
+@media (max-width: 768px) {
+  .container-wide {
+    width: 100%;
+    padding-right: 0.6rem;
+    padding-left: 0.6rem;
+    margin: 0;
+  }
+
+  .panel-grid {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .panel-grid-cell {
+    padding: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .header {
+    padding: 0 !important;
+  }
+
+  html,
+  body {
+    min-width: 0 !important;
+    width: 100% !important;
+    font-size: 16px;
+    font-family: 'Roboto', 'PT Sans', 'Helvetica', sans-serif;
+  }
+
+  .form-control {
+    padding: 0 12px;
+    height: 50px;
+    font-size: 16px;
+    box-shadow: none;
+    border-radius: 3px;
+    border-style: none;
+    border: 1px solid $gray-300;
+
+    &:focus,
+    &:active {
+      border-color: $gray-300;
+      box-shadow: none;
+    }
+  }
+
+  .btn-group {
+    display: flex;
+
+    .form-control {
+      border-radius: 0;
+
+      &:first-child {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+      }
+
+      &:last-child {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+      }
+    }
+  }
+}
+
+.container-mobile {
+  padding: 0;
+}
+
+.mobile-modal {
+  position: fixed;
+  top: 48px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: scroll;
+  background: $white-base;
+  z-index: 100;
+
+  &.fullscreen {
+    top: 0;
+    z-index: 200;
+  }
+
+  .modal-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 1rem 0.5rem;
+  }
+}
+
+.mobile-menu-icon {
+  position: relative;
+  padding-left: 40px !important;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+  }
+
+  &.icon-realty-search {
+    &:before {
+      background: url('//cdn-media.etagi.com/content/media/site/0/0e/0eee54ad4291485a7bf638e27a81b816b2bdc779.svg');
+    }
+  }
+
+  &.icon-profile {
+    &:before {
+      background: url('//cdn-media.etagi.com/content/media/site/8/85/85eaf32cb25084e7f326efa5b3ad7097343c4302.svg');
+    }
+  }
+
+  &.icon-promo-actions {
+    &:before {
+      background: url('//cdn-media.etagi.com/content/media/site/5/52/52ed4aa595fd5880f48d949e58660adc9309f6b3.svg');
+    }
+  }
+
+  &.icon-flag-2 {
+    &:before {
+      background: url('//cdn-media.etagi.com/content/media/site/6/68/68d106d22eeb60facbbbb8e1b40c26f9de3beecd.svg');
+    }
+  }
+
+  &.icon-briefcase {
+    &:before {
+      background: url('//cdn-media.etagi.com/content/media/site/4/44/445f48343e479c37a4390cf2195d763a89f2975d.svg');
+    }
+  }
+
+  &.icon-cog {
+    &:before {
+      background: url('//cdn-media.etagi.com/content/media/site/d/dc/dcae6893575f7b6dd1c3e4322df4507fd21b2936.svg');
+    }
+  }
+}
+
+.mobile-primary-button {
+  display: flex;
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  background-color: $green-600;
+  border-color: $green-600;
+  border-style: none;
+  color: $white-base;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $white-base;
+    text-decoration: none;
+  }
+}
+
+.mobile-primary-button-fixed {
+  .mobile-primary-button {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+.mobile-rooms-selector {
+  display: flex;
+
+  label {
+    margin-bottom: 0;
+  }
+
+  > div {
+    width: auto !important;
+    float: none !important;
+
+    &:first-child {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.mobile-rooms-selector[style*="display: block"] {
+  display: flex !important;
+}
+
+.mobile-searcher-row {
+  margin-top: 1rem;
+
+  .adv-searcher-switcher {
+    .switcheronoff-wrapper {
+      button {
+        border: none;
+        outline: none;
+        background: $white-base;
+        width: 100%;
+        text-align: center;
+        font-weight: 300;
+        text-decoration: underline;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .ordering-button {
+    .form-control {
+      border: none;
+      height: 2rem !important;
+    }
+  }
+}
+
+.condition-effect-slide {
+  width: 100%;
+  right: auto;
+  left: -100%;
+  transition: all 0.3s ease-in-out;
+  display: block !important;
+}
+
+.condition-effect-slide[style*="display: block"] {
+  left: 0;
+  box-shadow: 0 0 7px 0 rgba(0,0,0,0.4);
+}
+
+.backButton {
+  background-image: url('https://cdn-media.etagi.com/content/media/site/f/ff/ff5e73ba7338e945f843134609b8b9f13cd64ec5.svg');
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.mortgage-button-m {
+  .switcheronoff-wrapper {
+    display: block;
+    margin: 0;
+  }
+
+  button {
+    display: flex;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    background-color: $green-600 !important;
+    border-color: $green-600 !important;
+    border-style: none;
+    color: $white-base !important;
+    font-size: 16px !important;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  button:after {
+    content: '\F078';
+    font: normal normal normal 16px/1 'FontAwesome';
+    color: #e0e0e0;
+    margin-left: 10px;
+  }
+
+  button.active {
+    background-color: $gray-300 !important;
+    color: $gray-dark !important;
+  }
+
+  button.active:after {
+    content: '\F077';
+    color: $gray-dark !important;
+  }
+}
+
+.pgcell-no-min-height {
+  .panel-grid-cell {
+    min-height: 0;
+  }
+}
+
+.mortgageFull-button-m {
+  .switcheronoff-wrapper {
+    display: block;
+    margin: 0;
+  }
+
+  button {
+    display: flex;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+    border: none !important;
+    color: $blue-600 !important;
+    font-size: 14px !important;
+    background-color: $white-base !important;
+    text-align: center;
+  }
+
+  button.active {
+    box-shadow: none !important;
+  }
+
+  button:after {
+    content: '\F078';
+    font: normal normal normal 14px/1 'FontAwesome';
+    margin-left: 10px;
+  }
+
+  button.active:after {
+    content: '\F077';
+  }
+}
+
+.row-switcher-close {
+  height: 0;
+
+  .switcheronoff-wrapper {
+    width: 100%;
+
+    button {
+      position: absolute;
+      top: 6px;
+      right: 0;
+      background: none;
+      border: none;
+      outline: none;
+      box-shadow: none;
+      background-image: url('//cdn-media.etagi.com/content/media/site/3/3f/3f6e58c49060c32bbaca3f90a773c97e726b1272.svg');
+      height: 25px;
+      width: 25px;
+    }
+  }
+}
+
+.specialOffer {
+  background-color: $red-600;
+  border-radius: 50%;
+  padding: 2px 9px;
+  color: $white-base;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.site_socials {
+  width: 100%;
+  margin-top: 15px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: flex;
+
+  .site_socialicon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 50%;
+  }
+}

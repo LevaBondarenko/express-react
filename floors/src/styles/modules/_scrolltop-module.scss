@@ -1,0 +1,40 @@
+#toTop {
+  position: fixed;
+	opacity: 0;
+	overflow: hidden;
+	text-align: center;
+	z-index: 99999999;
+  background-color: #777777;
+	color: #eeeeee;
+	width: 50px;
+	height: 48px;
+	line-height: 48px;
+	left: 30px;
+	bottom: 30px;
+	padding-top: 2px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+}
+
+#toTop i {
+	display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 46px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 2em;
+}
+
+#toTop i:before {
+  content: "\f0aa";
+}

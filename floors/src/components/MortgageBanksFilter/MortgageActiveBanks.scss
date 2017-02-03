@@ -1,0 +1,37 @@
+/**
+ * MortgageBanks styles
+ *
+ * @ver 0.0.1
+ * @author a.d.permin@72.etagi.com
+ */
+
+@import '../variables.scss';
+
+.activeBanks {
+  padding-left: 1rem;
+}
+
+.showDisabledWrapper {
+  width: 22rem;
+  height: 5rem;
+  margin: 1rem;
+  overflow: hidden;
+
+  .showDisabled {
+    float: left;
+    margin-left: 1.8rem;
+    line-height: 3rem;
+    color: $blue-600;
+    text-decoration: underline;
+    cursor: pointer;
+
+    i {
+      margin-left: 0.3rem;
+    }
+
+    &:focus,
+    &:hover {
+      color: $blue-600;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.tabledata-wrapper {
+  th {
+    text-align: center;
+
+    &:first-child {
+      text-align: left;
+    }
+  }
+
+  td {
+    text-align: center;
+
+    &:first-child {
+      text-align: left;
+    }
+  }
+}

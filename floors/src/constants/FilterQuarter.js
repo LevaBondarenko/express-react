@@ -1,0 +1,24 @@
+/**
+ * Searchform constants
+ *
+ * @ver 0.0.1
+ * @author o.e.kurgaev@it.etagi.com
+ */
+
+import keyMirror from 'fbjs/lib/keyMirror';
+
+export default keyMirror({
+  FILTERQUARTER_CHANGE: null,
+  FILTERQUARTER_UPDATE: null,
+  FILTERQUARTER_SUBMIT: null,
+  FILTERQUARTER_FILLCOLLECTIONS: null,
+  FILTERQUARTER_SETURLDATA: null,
+  FILTERQUARTER_SETFLAT: null,
+  FILTERQUARTER_GETFLAT: null,
+  FILTERQUARTER_NEIGHBORFLAT: null,
+  FILTERQUARTER_CLICK: null,
+  FILTERQUARTER_LAYOUTCLICK: null,
+  FILTERQUARTER_MINMORTGAGE: null,
+  FILTERQUARTER_SET_CURRENT_SECTION: null,
+  FILTERQUARTER_SETCOMISSION: null
+});

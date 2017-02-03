@@ -1,0 +1,30 @@
+@import '../variables.scss';
+
+.sliderWrapper {
+  position: relative;
+
+  .slidesContainer {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 45.6rem;
+
+    .slidesWrapper {
+      position: relative;
+      display: block;
+      height: 100%;
+      transition: transform 500ms ease;
+
+      & > div {
+        height: 100%;
+      }
+    }
+  }
+
+  .slidesContainer__video {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 50.6rem;
+  }
+}

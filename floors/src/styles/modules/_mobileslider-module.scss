@@ -1,0 +1,51 @@
+.slider-slide {
+  height: 140px !important; // for all phone screens
+  overflow: hidden;
+}
+
+.fullScreenNorm .slider-slide {
+  height: 271px !important;
+}
+
+@media (max-width: 320px) {
+  .slider-slide {
+    height: 137px !important; // small phones (iphone 5, galaxy s5)
+    overflow: hidden;
+  }
+
+  .fullScreenNorm .slider-slide {
+    height: 271px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .slider-slide {
+    height: 280px !important; // for all tablets
+    overflow: hidden;
+  }
+
+  .fullScreenNorm .slider-slide {
+    height: 400px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slider-slide {
+    height: 360px !important; // for big tablets
+    overflow: hidden;
+  }
+
+  .fullScreenNorm .slider-slide {
+    height: 500px !important;
+  }
+}
+
+.slider-slide {
+  text-align: center;
+}
+
+.slider-slide img {
+  height: 100% !important;
+  width: auto !important;
+  margin: 0 auto;
+}

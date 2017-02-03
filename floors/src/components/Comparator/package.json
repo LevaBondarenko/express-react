@@ -1,0 +1,6 @@
+{
+  "name": "Comparator",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Comparator.js"
+}

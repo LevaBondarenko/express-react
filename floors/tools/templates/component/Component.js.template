@@ -1,0 +1,62 @@
+/**
+ * ##Component## widget class
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+import React, {Component, PropTypes} from 'react';
+
+import emptyFunction from 'fbjs/lib/emptyFunction';
+import s from './##Component##.scss';
+
+class ##Component## extends Component {
+
+  static propTypes = {
+    context: PropTypes.shape({
+      insertCss: PropTypes.func,
+    }),
+    foo: PropTypes.string
+  };
+
+  static defaultProps = {
+    foo: 'generated component'
+  };
+
+  static childContextTypes = {
+    insertCss: PropTypes.func.isRequired
+  };
+
+  getChildContext() {
+    const context = this.props.context;
+
+    return {
+      insertCss: context.insertCss || emptyFunction,
+    };
+  }
+
+  constructor(props) {
+    super(props);
+  }
+
+  componentWillMount() {
+    const {insertCss} = this.props.context;
+
+    this.removeCss = insertCss(s);
+  }
+
+  componentWillUnmount() {
+    this.removeCss();
+  }
+
+  render() {
+    return (
+      <div className={s.root}>
+        <h1>##Component##, {this.props.foo}</h1>
+      </div>
+    );
+  }
+
+}
+
+export default ##Component##;

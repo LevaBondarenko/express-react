@@ -1,0 +1,48 @@
+.mainWrapper {
+  position: relative;
+}
+
+.photo {
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.name {
+  text-align: center;
+  color: #226b8e;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.job {
+  text-align: center;
+  width: 75%;
+  margin: 5px auto;
+}
+
+.descriptionWrapper {
+  display: none;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.75);
+  z-index: 100;
+}
+
+.mainWrapper:hover .descriptionWrapper {
+  display: block;
+}
+
+.descriptionWrapper .photo {
+  padding: 20px 20px 0;
+  background-color: #f8f8f8;
+}
+
+.description {
+  padding: 20px;
+  text-align: justify;
+}

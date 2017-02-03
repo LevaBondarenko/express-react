@@ -1,0 +1,84 @@
+/*
+    Created on : 16.09.2016, 16:42:48
+    Author     : zemlyanov
+*/
+
+@import '../variables.scss';
+
+.root {
+  width: 100%;
+
+  .title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .form {
+    position: relative;
+    width: 334px;
+    margin: 10px auto;
+    padding: 4px;
+    border: 1px solid $gray-300;
+    border-radius: 3px;
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .fileUploader {
+      background: $gray-100;
+      padding-bottom: 6px;
+
+      :global(.input-label) {
+        font-size: 14px;
+        font-weight: 300;
+        margin: 20px 0 100px;
+        padding: 0 50px !important;
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: -76px;
+          left: 50%;
+          height: 59px;
+          width: 60px;
+          margin-left: -30px;
+          background: url('//cdn-media.etagi.com/content/media/site/2/20/202b3f2c89932b080b9690bca5e7e09a4053f7b9.png');
+        }
+      }
+
+      :global(.form-control) {
+        display: block;
+        width: 60%;
+        padding: 6px 12px;
+        margin: 0 auto 44px;
+        text-transform: uppercase;
+        background: $green-600;
+        border-color: $green-600;
+        color: $white-base;
+
+        &:hover {
+          box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.4);
+        }
+      }
+
+      :global(.help-block) {
+        display: block;
+        width: 100%;
+        margin-left: -5px;
+        font-size: 12px;
+        margin-top: 16px;
+        text-align: center;
+      }
+    }
+
+    .description {
+      :global(.form-control) {
+        resize: vertical;
+      }
+    }
+  }
+}

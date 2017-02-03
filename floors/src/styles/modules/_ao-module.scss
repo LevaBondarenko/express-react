@@ -1,0 +1,504 @@
+.ao {
+  &-backgroundFirst {
+    background: url("//cdn-media.etagi.com/static/site/b/b8/b86fdfcbd61e3d1cf664656752d69f58c6746d68.jpg") no-repeat center top;
+  }
+
+  &-title {
+    text-align: center;
+    font-size: 62px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+    padding: 36px 0 8px;
+  }
+
+  &-description {
+    text-align: center;
+    font-size: 16px;
+    color: #525252;
+  }
+
+  &-mainBlock {
+    position: relative;
+    background: url("//cdn-media.etagi.com/static/site/6/6a/6a7b15ab3b41c64be96331b49e9e54d56fd21df0.png") no-repeat center -4000px;
+    width: 1078px;
+    margin: 52px auto 0;
+    box-shadow: 0 25px 53px rgba(176,176,176,0.5);
+
+    .btn-searchform {
+      margin-top: 5.7rem;
+      padding: 0 20px;
+      font-size: 14px !important;
+      text-transform: uppercase;
+      background: #49bd3b;
+      color: #fff;
+      width: 100%;
+
+      border: 0;
+      border-radius: 2px;
+      line-height: 48px;
+
+      @include transition(.1s);
+      &:hover
+      {
+        color: #fff;
+        background: #41a836;
+      }
+      &:focus
+      {
+        color: #fff;
+        outline: none !important;
+        background: #41a836;
+      }
+    }
+
+    .msearcher {
+      padding: 1rem 0;
+      background: transparent;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      padding-top: 40px;
+      margin-bottom: 8px;
+    }
+
+    .rieltor2-block {
+      .jk-person {
+        padding: 20px 120px;
+        border: none;
+        background: transparent;
+
+        .jk-avatar {
+          width: 104px;
+          height: 104px;
+          border-radius: 52px;
+        }
+
+        .surnameAgent {
+          text-transform: none;
+        }
+
+        .person-data {
+          color: #899395;
+        }
+
+        .btn-rieltorGreen {
+          background: #49bd3b;
+          color: #fff;
+          width: 100%;
+
+          @include transition(.1s);
+          &:hover
+          {
+            color: #fff;
+            background: #41a836;
+          }
+          &:focus
+          {
+            color: #fff;
+            outline: none !important;
+            background: #41a836;
+          }
+        }
+      }
+
+      .person-data-last {
+        padding: 0 60px;
+      }
+    }
+
+    .h2-titleLast {
+      padding: 20px 90px;
+    }
+
+    .h2-titleOneRow {
+      text-align: center;
+      font-size: 28px;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding-top: 0;
+      margin-bottom: 0;
+      line-height: 60px;
+      background: #7e7e82;
+      color: #fff;
+      margin: 0 -12px;
+      position: relative;
+
+      &:before {
+        content: ' ';
+        top: 100%;
+        left: 0;
+        border: solid transparent;
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: transparent;
+        border-top-color: #5b5b5c;
+        border-width: 17px 0 0 12px;
+      }
+
+      &:after {
+        content: ' ';
+        top: 100%;
+        right: 0;
+        border: solid transparent;
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: transparent;
+        border-top-color: #5b5b5c;
+        border-width: 17px 12px 0 0;
+      }
+    }
+
+    .ao-comission {
+      font-weight: bold;
+      text-align: center;
+      color: #333;
+
+      .crimson {
+        color: #d61122;
+      }
+    }
+  }
+
+  &-pluses {
+    list-style: none;
+    padding: 0;
+    margin: 44px 46px 74px 92px;
+
+    li {
+      padding: 5px 0 5px 46px;
+      margin-bottom: 16px;
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+
+  &-leftCol {
+    .ao-pluses {
+      li {
+        background: url("//cdn-media.etagi.com/static/site/d/dc/dce185feb03b9a8a7f54bd0086652b8d1427e273.png") no-repeat left center;
+      }
+    }
+  }
+
+  &-rightCol {
+    .ao-pluses {
+      li {
+        background: url("//cdn-media.etagi.com/static/site/f/f3/f3ebdc1290363d1c081236edb146c7349362288c.png") no-repeat left center;
+      }
+    }
+  }
+
+  &-manualBlockAll {
+    padding: 60px 110px 0 94px;
+  }
+
+  &-manualBlock {}
+
+  &-manualNum {
+    font-size: 78px;
+    line-height: 66px;
+    font-weight: bold;
+    color: #d61122;
+    float: left;
+    text-align: center;
+    width: 70px;
+  }
+
+  &-manualTitle {
+    font-size: 18px;
+    font-weight: bold;
+    width: 85%;
+    line-height: 22px;
+  }
+
+  &-manualText {
+    padding-left: 18px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #899395;
+    margin-bottom: 0;
+  }
+
+  &-arrowDown {
+    margin-left: 32px;
+    margin-bottom: 15px;
+    width: 7px;
+    height: 58px;
+    background: url("//cdn-media.etagi.com/static/site/3/31/317ffac50be30f9b495d1aaa83b9be2545d35019.png") no-repeat;
+    display: block;
+  }
+
+  &-helpPhone {
+    margin: 105px -47px;
+
+    &Avatar {
+      width: 41px;
+      height: 41px;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 18px;
+      margin-top: 16px;
+    }
+
+    &Text {
+      width: 345px;
+      display: inline-block;
+      position: relative;
+      vertical-align: top;
+      font-size: 16px;
+      line-height: 26px;
+      padding: 24px 16px 24px 42px;
+      text-align: center;
+      border-radius: 15px;
+      background: #f5f5f5 url("//cdn-media.etagi.com/static/site/b/ba/bab3ce5b2265ff62638a875250cdf73563d67643.png") no-repeat 12px 24px;
+
+      &:before {
+        top: 50%;
+        right: 100%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: transparent;
+        border-right-color: #f5f5f5;
+        border-width: 12px;
+        margin-top: -50px;
+        background: transparent;
+      }
+    }
+  }
+
+  &-rightCol {
+    .ao-manualNum {
+      color: #b2b3b8;
+    }
+  }
+
+  &-mainBlockLeft {
+    background: url("//cdn-media.etagi.com/static/site/6/6a/6a7b15ab3b41c64be96331b49e9e54d56fd21df0.png") center top;
+
+    .ao-leftCol {
+      .ao-manualNum {
+        color: #b2b3b8;
+      }
+
+      .ao-pluses {
+        li {
+          padding: 5px 0 5px 46px;
+          background: url("//cdn-media.etagi.com/static/site/f/f3/f3ebdc1290363d1c081236edb146c7349362288c.png") no-repeat left center;
+        }
+      }
+    }
+
+    .ao-rightCol {
+      .ao-manualNum {
+        color: #d61122;
+      }
+
+      .ao-pluses {
+        li {
+          padding: 5px 0 5px 46px;
+          background: url("//cdn-media.etagi.com/static/site/d/dc/dce185feb03b9a8a7f54bd0086652b8d1427e273.png") no-repeat left center;
+        }
+      }
+    }
+
+    .form-group {
+      input {
+        border: 1px solid #ccc;
+      }
+    }
+  }
+
+  &-paddingForm {
+    padding: 0 120px;
+
+    .inputBlock:last-child {
+      margin-right: 0;
+      margin-left: 5%;
+    }
+
+    &.msearchersubmit--wrapper {
+      padding: .5rem 120px;
+
+      & > div {
+        margin: 0!important;
+      }
+    }
+  }
+
+  &-flatLeases {
+    padding: 30px 85px 0 100px;
+    font-size: 16px;
+    color: #899395;
+
+    img {
+      float: left; padding-right: 22px;
+    }
+  }
+
+  &-paddingBlock {
+    margin: 0 100px;
+  }
+
+  &-descField {
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20px;
+  }
+}
+
+.p-btnAO {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding-top: 36px;
+  font-weight: bold;
+}
+
+.pStr-btnAO {
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 56px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.red-btnAO {
+  padding: 7px 50px;
+  background: $crimson;
+  text-transform: none;
+  color: #fff;
+  font-weight: normal;
+  border-radius: 19px;
+  font-size: 20px;
+}
+
+.group-red-btnAO {
+  .btn-group {
+    border: none;
+    border-radius: 19px;
+    background-color: #e8e8eb;
+  }
+  .btn {
+    border: none;
+    padding: 7px 50px;
+    border-bottom-right-radius: 17px !important;
+    border-top-right-radius: 17px !important;
+    border-bottom-left-radius: 17px !important;
+    border-top-left-radius: 17px !important;
+    background-color: transparent;
+    margin: 2px;
+    margin-left: 2px !important;
+    margin-right: 2px !important;
+    font-size: 20px;
+    font-weight: 400;
+
+    &.active {
+      font-weight: 600;
+      color: white;
+      background: #d61122;
+      outline: none;
+    }
+    &:focus {
+      border: none;
+      outline: none;
+      color: white;
+    }
+    &:active {
+      outline: none;
+      box-shadow: none;
+      color: white;
+      background: #d61122;
+    }
+  }
+}
+
+@-webkit-keyframes wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px)
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px)
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px)
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px)
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px)
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+}
+
+@keyframes wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px)
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px)
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px)
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px)
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px)
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+}
+
+.wobble-vertical {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.wobble-vertical:active, .wobble-vertical:focus, .wobble-vertical:hover {
+  -webkit-animation-name: wobble-vertical;
+  animation-name: wobble-vertical;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1
+}

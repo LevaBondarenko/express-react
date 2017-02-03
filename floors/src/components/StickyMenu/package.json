@@ -1,0 +1,6 @@
+{
+  "name": "StickyMenu",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./StickyMenu.js"
+}

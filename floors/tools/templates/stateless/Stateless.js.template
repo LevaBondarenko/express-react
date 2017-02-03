@@ -1,0 +1,26 @@
+/**
+ * ##Component## stateless component
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+import React, {PropTypes} from 'react';
+
+import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import s from './##Component##.scss';
+
+const ##Component## = ({foo}) => {
+
+  return (
+    <div className={s.root}>
+      <h1>##Component##, {foo}</h1>
+    </div>
+  );
+};
+
+##Component##.propTypes = {
+  foo: PropTypes.string
+};
+
+export default withStyles(s)(##Component##);

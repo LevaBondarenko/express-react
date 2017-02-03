@@ -1,0 +1,59 @@
+/**
+ * MortgageBanksFilter styles
+ *
+ * @ver 0.0.1
+ * @author a.d.permin@72.etagi.com
+ */
+
+@import '../variables.scss';
+
+.showFilterButton {
+  padding: 0.6rem 2.2rem;
+  margin: 0 auto;
+  display: block;
+  border: 0.1rem solid $gray-300;
+
+  &:focus,
+  &:hover {
+    background-color: $gray-100;
+    border-color: $gray-300;
+    transition: all 0.15s;
+  }
+
+  span {
+    padding-left: 0.4rem;
+  }
+}
+
+:global(.modal-dialog) {
+  width: $max-content-width;
+}
+
+:global(.modal-open .modal) {
+  overflow-x: auto;
+}
+
+.modalHeader {
+  background-color: $gray-100;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+
+  .close {
+    font-size: 1.7rem;
+    text-shadow: 0 1px 0 #000;
+  }
+}
+
+:global(.modal-header) {
+  border-bottom: 0;
+}
+
+:global(.modal-footer) {
+  border-top: 0;
+}
+
+.banksWrapper {
+  height: 50rem;
+}

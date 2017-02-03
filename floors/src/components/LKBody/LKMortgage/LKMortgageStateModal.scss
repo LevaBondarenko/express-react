@@ -1,0 +1,160 @@
+/*
+  Created on : 15.09.2016, 16:56:00
+  Author     : zemlyanov
+*/
+@import '../../variables.scss';
+@import '../../ucontrols.scss';
+
+.root {
+  .header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: $white-base;
+    font-size: 18px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+
+    &.approved {
+      background: $green-600;
+      border-color: $green-600;
+    }
+
+    &.no_approved {
+      background: $red-600;
+      border-color: $red-600;
+    }
+
+    &.rework {
+      background: $orange-600;
+      border-color: $orange-600;
+    }
+
+    &.end_prepare {
+      color: $gray-900;
+      background: $gray-100;
+      border-color: $gray-100;
+    }
+
+    .statusValue {
+      font-weight: 600;
+    }
+  }
+
+  .modalBody {
+    display: flex;
+
+    .info {
+      margin-right: 25px;
+      min-width: 453px;
+    }
+
+    .broker {
+      display: flex;
+    }
+  }
+
+  .content {
+    margin-top: 10px;
+    margin-bottom: 60px;
+
+    &.wide {
+      width: 554px;
+    }
+
+    > span {
+      display: inline-block;
+      width: 100%;
+    }
+
+    .contentHeader {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .contentContent {
+      &.endPrepare {
+        text-align: center;
+
+        img {
+          width: 30%;
+        }
+      }
+    }
+
+    .conditionsTable {
+      width: 100%;
+
+      thead {
+        background: $gray-100;
+      }
+
+      tr {
+        border-bottom: 1px solid $gray-300;
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+
+      th,
+      td {
+        padding: 10px 16px;
+
+        &:first-child {
+          padding: 10px 6px;
+        }
+      }
+
+      .diff {
+        background: $orange-50;
+      }
+    }
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 15px;
+
+    :global(.form-control) {
+      width: auto;
+      margin: 0;
+      background: $white-base;
+      color: $gray-dark;
+      border-color: $gray-300;
+
+      &:hover {
+        background: $gray-100;
+      }
+    }
+  }
+
+  .percentBlock {
+    color: $blue-600;
+  }
+
+  :global(.modal-dialog) {
+    margin-top: 10%;
+    width: 800px;
+  }
+
+  :global(.modal-body) {
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+  }
+
+  :global(.modal-footer) {
+    display: none;
+  }
+
+  &.wide {
+    :global(.modal-dialog) {
+      width: 900px;
+    }
+  }
+}
+
+:global(.modal) {
+  overflow-x: auto !important;
+  overflow-y: auto !important;
+}

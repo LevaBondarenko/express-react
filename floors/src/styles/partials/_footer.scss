@@ -1,0 +1,75 @@
+/* footer.scss */
+
+.main > div > .panel-grid:last-child > div:last-child:not(.e404object-bg) {
+    padding-bottom: 4rem !important;
+}
+
+.footer {
+    background : $footer-bg;
+
+    &--row{
+        padding: 1rem;
+        background : darken($footer-bg, 4%);
+        color: $white;
+    }
+    &--copyright{
+        font-size: 1.2rem;
+        color: $white;
+        &__padding{
+            padding-top: 1.9rem;
+        }
+    }
+    &--adress{
+        color: $punch;
+        & a{
+        color: $punch;
+        text-decoration: none;
+        }
+    }
+    
+
+    &--nav{
+        padding: 2rem 2rem 0;
+        ul {
+            padding-left: 0;
+        }
+        li{
+            list-style: none;
+            a {
+                color: $white;
+                &:hover{
+                    color: #929ba7;
+                    text-decoration: none;
+                }
+            }
+
+        }
+        & > div:first-child {
+            margin-top: -2rem;
+            padding: 1rem 0;
+            background: darken($footer-bg, 4%);
+            color: #fff;            
+        }
+    }
+}
+
+.footer--link__main{
+      display: block;
+      margin-top: 1.2rem;
+      color: $regent;
+      font-weight: bold;
+      &:hover{
+        color: $regent;
+        text-decoration: none;
+      }
+
+}
+
+.stickyFooter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#cs_chat {z-index: 20;}
+/*darken($footer-bg, 4%)*/

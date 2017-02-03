@@ -1,0 +1,118 @@
+/**
+ * MortgageProgramDescription styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.root {
+  /* styles here */
+  :global(.gm-scroll-view) {
+    overflow-x: hidden !important;
+  }
+
+  :global(.gm-scrollbar.-vertical) {
+    width: 0.3rem;
+  }
+
+  :global(.gm-scrollbar) {
+    background-color: $gray-100;
+  }
+}
+
+.programTitle {
+  font-size: 2.4rem;
+  margin: 1rem 0 2rem;
+}
+
+.programTitleM {
+  margin: 0 1rem;
+}
+
+.descriptionTitle {
+  font-weight: bold;
+  padding-bottom: 0.8rem;
+  border-bottom: 0.1rem solid $gray-300;
+}
+
+.descriptionContainer {
+  width: 70rem;
+}
+
+.textScroll {
+  margin-top: 0.8rem;
+  max-height: 18rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.descriptionText {
+  padding-right: 1rem;
+}
+
+.descriptionTextM {
+  padding: 0 1rem 0 0.5rem;
+}
+
+.bankLogo {
+  margin-bottom: 1rem;
+
+  img {
+    max-width: 30rem;
+    max-height: 6rem;
+  }
+}
+
+.titleItemContainer {
+  font-size: 17px;
+  font-weight: bold;
+  height: 51px;
+  line-height: 51px;
+  padding: 0 12px;
+  border-top: 1px solid $gray-300;
+  border-bottom: 1px solid $gray-300;
+}
+
+.percentsWrapper {
+  display: table;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0 1rem;
+
+  & > div {
+    display: table-cell;
+
+    div:first-child {
+      color: $gray-600;
+    }
+  }
+
+  .companyPercent {
+    color: $green-600;
+  }
+}
+
+.noticeError {
+  position: relative;
+  text-align: left;
+  color: $gray-600;
+  padding-left: 3.5rem;
+  margin: 1rem;
+
+  &:before {
+    content: '!';
+    position: absolute;
+    color: $orange-300;
+    font-size: 3rem;
+    width: 3rem;
+    height: 3rem;
+    border: 0.2rem solid $orange-300;
+    border-radius: 50%;
+    line-height: 2.5rem;
+    text-align: center;
+    top: 0;
+    left: 0;
+  }
+}

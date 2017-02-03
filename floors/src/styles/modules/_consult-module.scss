@@ -1,0 +1,67 @@
+.testingConsult {
+  position: fixed;
+  right: 0;
+
+  z-index: 99999;
+  bottom: -37.7rem;
+  width: 23.4rem;
+  height: 63.4rem;
+  background: url('//cdn-media.etagi.com/build/public/images/consult_bg.png') no-repeat center;
+  &--header {
+    padding-top: 17.8rem;
+    color: #fff;
+    cursor: pointer;
+    h3 {
+      padding: .8rem 1.5rem;
+      font-size: 1.8rem;
+    }
+    .js-consultClose{
+          position: absolute;
+          top: 19rem;
+          right: 1rem;
+          color: #fff;
+          font-size: 2rem;
+          display: none;
+          &:hover,
+          &:focus {
+            text-decoration: underline;
+          }
+    }
+    .js-consultShow{
+          position: absolute;
+          top: 19rem;
+          right: 1rem;
+          color: #fff;
+          font-size: 2rem;
+          display: block;
+          &:hover,
+          &:focus {
+            text-decoration: underline;
+          }
+    }
+  }
+  &--content {
+    &__text {
+      padding: .5rem 1rem .5rem;
+    }
+    &__form {
+      padding: .5rem 1rem .5rem;
+      textarea {
+        width: 100%;
+        resize: none;
+        border: .1rem solid #eee;
+        border-radius: .5rem;
+      }
+    }
+  }
+}
+
+.consultVisible{
+    bottom: 0;
+    .js-consultClose{
+      display: block;
+    }
+    .js-consultShow{
+      display: none;
+    }
+}

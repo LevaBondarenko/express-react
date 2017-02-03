@@ -1,0 +1,262 @@
+/**
+ * LKSearches2 styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.root {
+  .title {
+    padding: 0.75rem;
+    background: $gray-100;
+    font-weight: 600;
+    box-shadow: 0 2px 10px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 6px;
+
+    div {
+      padding: 0;
+
+      &:last-child {
+        text-align: right;
+      }
+    }
+
+    .periodSelector {
+      background: none;
+      border: none;
+      color: $blue-600;
+      text-decoration: underline;
+      padding: 0;
+      outline: none;
+      font-weight: 300;
+      text-align: right;
+    }
+  }
+
+  .searchesList {
+    .emptySearchesList {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .searchItem {
+      .itemTitle {
+        background: $gray-100;
+        line-height: 1rem;
+        padding: 1rem 3rem 1rem 1rem;
+        position: relative;
+        font-weight: 600;
+        overflow: hidden;
+
+        .settingsButton {
+          position: absolute;
+          right: 1rem;
+          top: 0.75rem;
+          background: $white-base;
+          border: none;
+          outline: none;
+          border-radius: 50%;
+          height: 1.5rem;
+          width: 1.5rem;
+          font-size: 14px;
+          padding-bottom: 1.2rem;
+          background-image: url('//cdn-media.etagi.com/content/media/site/0/04/04e234ba195d0ca9b6f1fe873557612341c3a4e5.svg');
+          background-position: 50%;
+          background-size: 75%;
+          background-repeat: no-repeat;
+        }
+      }
+
+      .filter {
+        width: 100%;
+        padding: 0.4rem 0;
+        border-top: 1px solid $gray-300;
+        border-bottom: 1px solid $gray-300;
+
+        .filterButton {
+          width: 28%;
+          display: inline-block;
+          background: $white-base;
+          margin: 0.2rem 0;
+          border: none;
+          outline: none;
+          box-shadow: none;
+          border-right: 1px solid $gray-300;
+          position: relative;
+          white-space: nowrap;
+
+          > span {
+            font-size: 13px;
+            color: $gray-600;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+
+          &:last-child {
+            border-right: none;
+            width: 44%;
+          }
+
+          &.active {
+            &:after {
+              content: '';
+              position: absolute;
+              bottom: -0.6rem;
+              left: 0;
+              width: 100%;
+              border-bottom: 2px solid $green-600;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+
+      .sampleObjects {
+        .emptyObjectsList {
+          margin: 2rem 0;
+          text-align: center;
+        }
+      }
+
+      .searchFooter {
+        padding: 0.5rem;
+        background: $gray-50;
+        border-top: 1px solid $gray-300;
+        border-bottom: 1px solid $gray-300;
+
+        > div {
+          text-align: center;
+          padding: 0 1rem;
+
+          > span {
+            display: inline-block;
+            color: $gray-600;
+            margin-bottom: 0.5rem;
+            font-size: 14px;
+          }
+
+          > a {
+            display: inline-block;
+            border: 1px solid $green-600;
+            background: $white-base;
+            color: $green-600;
+            width: auto;
+            height: auto;
+            padding: 0.4rem;
+          }
+        }
+      }
+    }
+  }
+
+  .searchSettings {
+    background: $gray-50;
+
+    .searchTitle {
+      background: $gray-100;
+      line-height: 1rem;
+      padding: 1rem 3rem 1rem 1rem;
+      position: relative;
+      font-weight: 600;
+      overflow: hidden;
+      border-bottom: 1px solid $gray-300;
+
+      .closeSettingsButton {
+        position: absolute;
+        background: $gray-100;
+        right: 0.75rem;
+        top: 0.75rem;
+        border: none;
+        outline: none;
+        height: 1.5rem;
+        width: 1.5rem;
+        font-size: 14px;
+        padding-bottom: 1.2rem;
+        background-image: url('//cdn-media.etagi.com/content/media/site/3/3f/3f6e58c49060c32bbaca3f90a773c97e726b1272.svg');
+        background-position: 50%;
+        background-size: 75%;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .searchDescription,
+    .options {
+      margin-top: 0.4rem;
+      border-top: 1px solid $gray-300;
+      border-bottom: 1px solid $gray-300;
+      padding: 1rem 0.8rem;
+      background: $white-base;
+    }
+
+    .options {
+      > div {
+        margin-bottom: 1rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        input {
+          display: none;
+        }
+
+        label {
+          line-height: 15px;
+          font-weight: 300;
+          white-space: nowrap;
+        }
+
+        label i {
+          position: relative;
+          display: inline-block;
+          border: 1px solid $gray-600;
+          border-radius: 3px;
+          width: 16px;
+          height: 16px;
+          margin-right: 6px;
+          vertical-align: top;
+        }
+
+        label span {
+          display: inline-block;
+          white-space: normal;
+        }
+
+        label:hover i,
+        i:hover {
+          border-color: $red-600;
+        }
+
+        input:checked + label i {
+          background: $red-600;
+          border-color: $red-600;
+
+          &:after {
+            position: absolute;
+            content: '';
+            top: 3px;
+            left: 2px;
+            width: 11px;
+            height: 8px;
+            background: url('//cdn-media.etagi.com/content/media/site/d/d2/d298b173de6ea24fb3dda9c57a73b5f7cd60d7bd.svg');
+          }
+        }
+      }
+    }
+
+    .deleteSearch {
+      padding: 1rem;
+      text-align: center;
+
+      button {
+        background: none;
+        border: none;
+        outline: none;
+        color: $red-600;
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+/**
+ * ShowCaseTicketCount styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.root {
+  text-align: center;
+}
+
+.count {
+  width: 116px;
+  height: 116px;
+  background-image: url('https://cdn-media.etagi.com/content/media/site/2/2e/2ee8e205ef6ed888b12c129923c619ab3e06dccf.png');
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.countNum {
+  padding-top: 41px;
+  font-size: 36px;
+  line-height: 24px;
+}
+
+.countText {
+  font-size: 14px;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 24px;
+  width: 80%;
+  margin: 29px auto;
+}
+
+.title {
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 75%;
+  min-height: 38px;
+  margin: 0 auto;
+}
+
+.link a,
+.link a:hover {
+  text-decoration: none;
+  font-size: 14px;
+  color: #496fbd;
+}
+
+.link {
+  border-bottom: 1px dotted #496fbd;
+  display: inline-block;
+}
+
+.bold {
+  font-weight: bold;
+}

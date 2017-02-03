@@ -1,0 +1,122 @@
+#menu_bg {
+  position: fixed;
+  width: 200px;
+  height: 461px;
+  top: 50%;
+  margin-top: -230px;
+  right: -200px;
+  background-position: -72px 0;
+  z-index: 11;
+}
+#menuFixed {
+  position: absolute;
+  width: 210px;
+  height: 461px;
+  top: 0;
+  right: 15px;
+  text-align: right;
+  margin-left: -20px;
+  z-index: 2;
+
+  table {
+    height: 100%;
+    float: right;
+
+    td {
+      vertical-align: middle;
+      height: 100%;
+    }
+  }
+}
+
+.fixElemName {
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  margin-top: -100px;
+  width: 72px; height: 200px;
+  background-position: center left;
+}
+
+#menu_label, #menu_label2 {
+  position: absolute;
+  width: 120px;
+  height: 45px;
+  top: 50%;
+  margin-top: -40px;
+  left: -5px;
+  cursor: pointer;
+  transform: rotate(270deg);
+
+  &:before {
+    transform: rotate(90deg);
+    content: '';
+    position: absolute;
+    width: 9px; height: 18px;
+    bottom: 100%; right: 50%;
+    margin-top: -9px;
+    background: url('//cdn-media.etagi.com/site/9/18/0/0/0/0/0/0/0/0/70ec91446c39585681f68d51b466c3d855e932b5.png') 0 0 no-repeat;
+  }
+}
+
+#menu_label {
+  text-transform: uppercase;
+  color: #254654;
+  font-weight: bold;
+
+  text-align: center;
+}
+
+#menu_label2 {
+  display: none;
+
+  &:before {
+    background: url('//cdn-media.etagi.com/site/9/18/0/0/0/0/0/0/0/0/44fdaf9fe2bb8bcfb2677ddbefa1baa675231f2a.png') 0 0 no-repeat;
+  }
+}
+
+.btn-moreYa {
+  display: inline-block;
+  width: 123px; height: 31px;
+  line-height: 30px;
+  border-radius: 2rem;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #fff;
+
+  &:hover, &:focus {
+    background: #fff;
+    color: #72cddc;
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+#menuFixed {
+  display: none;
+  .menuFixedImg {
+    padding-top: 66px;
+  }
+  .menuFixedDescText {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0 0;
+
+    h3 {
+      text-transform: none;
+      font-weight: normal;
+    }
+  }
+
+  .viberSub p {
+    font-size: 14px;
+    text-transform: initial;
+    font-weight: normal;
+  }
+}
+
+.opened #menuFixed {display: block;}

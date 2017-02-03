@@ -1,0 +1,6 @@
+{
+  "name": "FilterRange",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./FilterRange.js"
+}

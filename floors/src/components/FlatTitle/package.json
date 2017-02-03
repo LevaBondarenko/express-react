@@ -1,0 +1,6 @@
+{
+  "name": "FlatTitle",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./FlatTitle.js"
+}

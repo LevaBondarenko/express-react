@@ -1,0 +1,51 @@
+@import '../variables.scss';
+
+.mortgageFooter {
+  text-align: center;
+}
+
+.showMorePrograms {
+  color: $gray-dark;
+  margin: 0 auto;
+  cursor: pointer;
+  background-color: $gray-100;
+  border: 0.1rem solid $gray-300;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0 0 0.5rem 0.5rem;
+  box-shadow: 0 0.1rem 0.1rem 0 rgba(0, 0, 0, 0.2);
+
+  &:hover,
+  &:focus {
+    background-color: $green-600;
+    color: $white-base !important;
+    border-color: $green-600;
+    transition: all 0.15s;
+    text-decoration: none;
+    box-shadow: none;
+  }
+}
+
+.showMorePrograms:hover {
+  color: $gray-dark;
+}
+
+.showMoreProgramsM {
+  color: $gray-dark;
+  margin: 0 auto;
+  background-color: $gray-100;
+  border: 0.1rem solid $gray-300;
+  border-radius: 3px;
+  white-space: normal;
+}
+
+.addMore {
+  font-weight: bold;
+}
+
+.textCenter {
+  margin: 0 auto;
+  font-style: italic;
+  color: $gray-600;
+}

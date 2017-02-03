@@ -1,0 +1,53 @@
+/**
+ * ShowCaseTicketCount styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.root {
+  background-color: #f9fcff;
+  border: 2px solid #6ca7db;
+  padding: 24px;
+  padding-top: 20px;
+  height: 70px;
+  padding-left: 80px;
+  background-image: url('https://cdn-media.etagi.com/content/media/site/a/a4/a4ed978538a1f574f2bd67b684d26c32b8c0ae4d.png');
+  background-repeat: no-repeat;
+  background-position: 15px 50%;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+}
+
+.close a {
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  line-height: 18px;
+  border-bottom: 1px solid #fff;
+}
+
+.close a:hover {
+  border-bottom: 1px solid #6ca7db;
+}
+
+.bigTimes {
+  font-size: 22px;
+  margin-left: 3px;
+}
+
+.closeItem {
+  vertical-align: middle;
+}
+
+.price {
+  font-size: 16px;
+}

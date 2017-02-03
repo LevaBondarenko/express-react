@@ -1,0 +1,139 @@
+.ipoteka-landing-bg .main-page-form-group .errorText{display: block;}
+.ipoteka-landing-bg {
+  background: url('//cdn-media.etagi.com/static/site/f/f0/f010166f886c5108ae21b83299bc4ffa74fde869.png') center top;
+  height: 581px;
+
+  .jk-menu-main a {
+    font-size: 18px;
+    color: $crimson;
+
+    img {padding-right: 10px;}
+  }
+
+}
+
+.ipoteka-landing-bg2 {
+  background: url('//cdn-media.etagi.com/static/site/9/92/9217f769bcc144fed70d067350b7bfb733050ebc.png') right bottom no-repeat;
+  height: 630px;
+  margin-bottom: 40px;
+
+  .jk-menu-main a {
+    font-size: 18px;
+    color: $crimson;
+
+    img {padding-right: 10px;}
+  }
+
+  .main-page-order-form .form-etagi {border: 1px solid #ccc;}
+
+
+}
+
+.titleIpotekaLanding {padding: 50px 0 35px;}
+
+.titleIpotekaLanding h1 {
+  font-size: 46px;
+  font-weight: bold;
+  color: #019c5c;
+  text-transform: uppercase;
+  line-height: 44px;
+}
+
+.titleIpotekaLanding h2 {
+  font-size: 34px;
+  line-height: 26px;
+  vertical-align: top;
+  font-weight: bold;
+  color: #019c5c;
+  text-transform: uppercase;
+}
+
+.strongP {
+  font-size: 18px;
+}
+
+.strongP2 {
+  color: #00b4c7;
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.descP {
+  font-size: 16px;
+}
+
+.paddingP {
+  padding: 70px 0 50px 0;
+}
+
+.paddingP2 {
+  padding: 40px 0 0 0;
+}
+
+.bounce {
+  /*
+  position: relative;
+  -webkit-animation-name: bounce;
+  -moz-animation-name: bounce;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  animation-timing-function: linear;
+  -moz-animation-timing-function: linear;*/
+}
+
+.ipotekaLandingWidth .countdown {
+  width: 30%;
+  padding: 0;
+}
+
+@-webkit-keyframes bounce {
+  from { top:-5px; }
+  to { top:5px; }
+}
+@-moz-keyframes bounce {
+  from { top:-5px; }
+  to { top:5px; }
+}
+
+.formLanding .form-control {
+  border-radius: 17px;
+  font-size: 18px;
+  padding: 3px 12px 6px;
+  background: #019c5c;
+  color: #fff;
+  font-weight: bold;
+
+  -webkit-box-shadow: 0px 2px 0px 0px darken( #019c5c, 10% );
+  -moz-box-shadow: 0px 2px 0px 0px darken( #019c5c, 10% );
+  box-shadow: 0px 2px 0px 0px darken( #019c5c, 10% );
+
+  /* -webkit-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s; */
+  /* transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s; */
+}
+
+.formLanding .form-control:hover, .formLanding .form-control:focus {
+  outline: none;
+  -webkit-box-shadow: 0 2px 0 0 darken( #019c5c, 50% );
+  -moz-box-shadow: 0 2px 0 0 darken( #019c5c, 50% );
+  border: 1px solid transparent;
+  box-shadow: 0 2px 0 0 darken( #019c5c, 50% );
+}
+
+.countdownText {
+  a {
+    color: $grey--font; text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+.countdownMain {
+  .countdown .row .col-xs-3:first-child span {
+    color: $crimson!important;
+  }
+}

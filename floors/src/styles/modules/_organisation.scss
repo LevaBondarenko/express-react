@@ -1,0 +1,144 @@
+.mainWrapMap {
+  position: relative;
+
+  width: 100%;
+  height: 610px;
+}
+
+.map {
+  position: absolute;
+
+  width: 100%;
+  height: 610px;
+}
+
+.grayBg {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 90px;
+
+  background: rgba(0, 0, 0, .52);
+}
+
+#menu {
+  text-align: center;
+  padding: 0;
+  li {
+    display: inline-block;
+
+    width: 162px;
+    padding-top: 19px;
+
+    list-style: none;
+
+    vertical-align: top;
+  }
+  a {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 18px;
+    text-align: left;
+
+    display: inline-block;
+
+    width: 125px;
+
+    color: #fff;
+    span {
+      display: block;
+      float: left;
+
+      width: 37px;
+      height: 52px;
+      margin-right: 10px;
+
+      background-repeat: no-repeat;
+      background-position: center 3px;
+    }
+    .bank {
+      background-image: url('//cdn-media.etagi.com/static/site/6/6b/6bd47efa1821f2ee738586edcfb74811a14afe4e.png');
+    }
+    .fitness {
+      background-image: url('//cdn-media.etagi.com/static/site/6/6f/6f097b46e42961ca51ec719a09d034e9b911759a.png');
+    }
+    .gymnasium {
+      background-image: url('//cdn-media.etagi.com/static/site/e/e6/e66e68ac8a82d93d062ee0f09f82af5ad8ab0689.png');
+    }
+    .hospital {
+      background-image: url('//cdn-media.etagi.com/static/site/5/51/51c208b9fbb23c4be5cb4b4388f6893c7d0b65a2.png');
+    }
+    .kinder {
+      background-image: url('//cdn-media.etagi.com/static/site/4/4b/4b05418681cc7d29cfe0587b07dc3510825d63d9.png');
+    }
+    .shopping {
+      background-image: url('//cdn-media.etagi.com/static/site/7/7f/7f824e329580ae781bac070683b8db1223189148.png');
+    }
+    &.active {
+      span {
+        background-position: center top;
+      }
+      .bank {
+        background-image: url('//cdn-media.etagi.com/static/site/7/75/75de0add92da3c0dd65d1ac866b13e807fea9f90.png');
+      }
+      .fitness {
+        background-image: url('//cdn-media.etagi.com/static/site/a/a4/a44ebd88861e62f516a6ce3d412960b24f8be29d.png');
+      }
+      .gymnasium {
+        background-image: url('//cdn-media.etagi.com/static/site/d/d7/d7eb6b1262f6a8865389f18622243afb65cb80e3.png');
+      }
+      .hospital {
+        background-image: url('//cdn-media.etagi.com/static/site/4/43/43f7d0db5b214111fc840632896a6434a6383388.png');
+      }
+      .kinder {
+        background-image: url('//cdn-media.etagi.com/static/site/3/32/32bf4d652043a4cfb710e5c5d4005fdc53625dd1.png');
+      }
+      .shopping {
+        background-image: url('//cdn-media.etagi.com/static/site/a/ac/ac4221c25a75ae06291c5981abffe2fb981fe02e.png');
+      }
+    }
+  }
+}
+
+.blockYaForm {
+  width: 260px;
+  padding-left: 18px;
+  padding-bottom: 18px;
+
+  .titleYaForm {
+    font-size: 1.6rem;
+    color: $gray-dark;
+    text-align: center;
+
+    padding: 4rem .5rem 0;
+    margin-bottom: 1.8rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .form-etagi {
+    border: 1px solid $gray-light;
+    margin-bottom: 10px;
+    float: none;
+  }
+
+  .btn-searchform {
+    margin: 0;
+  }
+  
+  .bgYaForm {
+    background: url("//cdn-media.etagi.com/static/site/3/33/336aa0a5ecb34a2c4b61d8d2fa2a0f31e69aee8a.png");
+    width: 104px; height: 78px;
+    position: absolute;
+    left: 0; top: 0;
+    z-index: 0;
+  }
+
+  #noticeNameYaForm, #noticePhoneYaForm {
+    margin-top: -1rem; margin-bottom: 0;
+    color: $crimson;
+  }
+}

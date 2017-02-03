@@ -1,0 +1,27 @@
+@import '../variables.scss';
+
+.arrows {
+  div {
+    position: absolute;
+    height: 100%;
+    width: 5rem;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 10;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .left {
+    left: 0;
+    background: rgba(51, 51, 51, 0.5) url('https://cdn-media.etagi.com/static/site/2/27/27d1462347e07eb78f81340643faa67f2e62b856.png') no-repeat center;
+    transform: rotate(180deg);
+  }
+
+  .right {
+    right: 0;
+    background: rgba(51, 51, 51, 0.5) url('https://cdn-media.etagi.com/static/site/2/27/27d1462347e07eb78f81340643faa67f2e62b856.png') no-repeat center;
+  }
+}

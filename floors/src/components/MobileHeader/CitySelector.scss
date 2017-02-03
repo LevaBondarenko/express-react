@@ -1,0 +1,47 @@
+/**
+ * CitySelector for mobile styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.root {
+  padding: 12px;
+  background: $white-base;
+}
+
+.title {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.countrySelector,
+.filter {
+  margin-bottom: 6px;
+
+  input,
+  select {
+    padding: 8px 12px;
+    height: auto;
+  }
+}
+
+.list {
+  padding: 4px;
+
+  a {
+    display: block;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 15px 4px;
+    color: $gray-dark;
+    text-decoration: none;
+    border-bottom: 1px solid $gray-300;
+  }
+}
+
+.cityNotFound {
+  margin: 16px;
+}

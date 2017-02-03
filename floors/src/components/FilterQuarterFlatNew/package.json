@@ -1,0 +1,6 @@
+{
+  "name": "FilterQuarterFlatNew",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./FilterQuarterFlat.js"
+}

@@ -1,0 +1,75 @@
+@import '../variables.scss';
+
+.buttonList {
+  display: inline-block;
+  position: relative;
+  width: 19rem;
+
+  button {
+    width: 100%;
+    padding: 0;
+  }
+
+  .buttonListContent {
+    position: absolute;
+    z-index: 100;
+    min-width: 100%;
+    background-color: #fff;
+    padding: 1.5rem;
+    box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.3);
+
+    ul {
+      padding: 0;
+      list-style: none;
+    }
+
+    button {
+      width: auto;
+      height: auto;
+      padding: 0.3rem 0.7rem;
+      border: 0.1rem solid #ececec;
+      background-color: #fff;
+      outline: none;
+
+      &:hover {
+        background-color: #ececec;
+      }
+    }
+
+    .button__left {
+      float: left;
+    }
+
+    .button__right {
+      float: right;
+    }
+
+    .closeContent {
+      font-size: 2.5rem;
+      position: absolute;
+      top: 0;
+      right: 1rem;
+      opacity: 0.5;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .contentArrow__active,
+  .contentArrow {
+    display: inline-block;
+    background: url('https://cdn-media.etagi.com/static/site/5/58/5865db5642115711121f5332cc3e114817b04529.png') no-repeat center;
+    margin: 0 0 0.2rem 1rem;
+    width: 0.8rem;
+    height: 0.4rem;
+  }
+
+  &:hover {
+    .contentArrow__active {
+      background: url('https://cdn-media.etagi.com/static/site/e/ed/ed0df7152830fa6329758cbd5aefab0d8d24fa24.png') no-repeat center;
+    }
+  }
+}

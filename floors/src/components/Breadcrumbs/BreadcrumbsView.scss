@@ -1,0 +1,43 @@
+@import '../variables.scss';
+
+.breadcrumbs {
+  list-style-type: none;
+  margin: 1rem 0;
+  padding: 0;
+
+  a {
+    color: $gray-600;
+    float: left;
+    text-decoration: underline;
+
+    &:after {
+      color: transparent;
+      content: attr(title);
+      display: block;
+      font-weight: bold;
+      height: 0;
+      overflow: hidden;
+      visibility: hidden;
+    }
+
+    &:hover {
+      font-weight: 600;
+    }
+  }
+
+  li {
+    float: left;
+  }
+
+  &__activePage {
+    color: $black;
+  }
+
+  &__separator {
+    background: url('//cdn-media.etagi.com/static/site/7/73/73433a6b8fb7e0d23915ee09412c9ee7aa7cbad9.png') no-repeat 100%;
+    float: left;
+    height: 2rem;
+    margin: 0 0.6rem;
+    width: 0.6rem;
+  }
+}

@@ -1,0 +1,521 @@
+.lkseller_header {
+  height: 843px;
+  background-image: url('https://cdn-media.etagi.com/static/site/c/ce/cef9dbe51416a06ae893a2f8cc76fc3d52f16f93.jpg');
+  background-repeat: no-repeat;
+  //background-size: 100%;
+  min-width: 1400px;
+  background-position: center;
+}
+
+.lkseller_headerTitle {
+  text-align: center;
+  margin-top: 0 !important;
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
+
+.lkseller_headerSubTitle {
+  color: #999999;
+  text-align: center;
+  font-size: 20px;
+}
+
+.lkseller_widgetTitle {
+  font-size: 48px;
+  text-align: center;
+  color: #44b2b0;
+  font-weight: bold;
+  margin-top: 140px;
+}
+
+@media only screen and (max-width: 1620px) {
+  .lkseller_widgetTitle {
+    margin-top: 180px;
+  }
+  .lkseller_headerTitle {
+    padding-top: 15px;
+  }
+
+  .lkseller-doptext {
+    margin-top: 0 !important;
+  }
+}
+
+@media only screen and (min-width: 2600px) {
+  .lkseller_widgetTitle {
+    margin-top: 210px;
+  }
+  .lkseller_headerTitle {
+    padding-top: 45px;
+  }
+}
+
+@media only screen and (max-width: 1860px) {
+  .lkseller-doptext {
+    margin-top: 35px !important;
+  }
+  .greenBlueBg {
+    background-size: auto !important;
+  }
+}
+
+@media only screen and (max-width: 1726px) {
+  .lkseller-doptext {
+    margin-top: 15px !important;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .lkseller-doptext {
+    margin-top: 0 !important;
+  }
+}
+
+.lkseller_scrollerBtnWrapper .lkseller_scrollerBtn {
+  text-align: center;
+  width: 40%;
+  min-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.lkseller_scrollerBtnWrapper {
+  margin-top: -20px;
+}
+
+.lkseller_scrollerBtnWrapper .lkseller_scroller {
+  max-width: 90%;
+  position: relative;
+  z-index: 5;
+  width: 670px;
+  height: 70px;
+  font-size: 24px;
+  padding-left: 20px;
+  background-image: url('https://cdn-media.etagi.com/static/site/6/62/6213cbe4d21afd9db4e670b8df1b9fa0cfdf9a10.png');
+  background-repeat: no-repeat;
+  text-align: left;
+  background-position: center right 3%;
+  transition: background .2s ease-in-out;
+}
+
+.lkseller_scrollerBtnWrapper .lkseller_scroller.open {
+  background-image: url('https://cdn-media.etagi.com/static/site/9/9e/9e3fcfeb76533fed4afc58ee5931f56142ab5599.png');
+  transition: background .2s ease-in-out;
+}
+
+.lkseller_scrollerBtnWrapper .lkscroller-overlay {
+  max-width: 90%;
+  width: 670px;
+  margin: 0 auto;
+  box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.3);
+  position: absolute;
+  left: 0 !important;
+  background-color: #fff;
+  right: 0 !important;
+  position: absolute;
+  top: 70px;
+  z-index: 1;
+}
+
+.lkseller_scrollerBtnWrapper .lkscroller_target {
+  text-align: left;
+  text-transform: lowercase;
+  padding-left: 15px;
+  .btn:active, .btn.active {
+    box-shadow: none;
+  }
+}
+
+.lkseller_scrollerBtnWrapper .lkscroller_target:hover {
+  cursor: pointer;
+}
+
+.lkseller_scrollerBtnWrapper .lkscroller_target:hover a {
+  color: #000;
+}
+
+.lkseller_scrollerBtnWrapper .lkscroller_target a {
+  color: #a0a0a0;
+  font-size: 20px;
+}
+
+.lkseller_scrollerBtnWrapper .lkscroller_goToBtnWrapper {
+  margin-top: 30px;
+}
+
+.lkseller_scrollerBtnWrapper .lkscroller_goToBtn {
+  background-color: #ec2015;
+  width: 250px;
+  height: 75px;
+  color: #fff;
+  font-size: 24px;
+  transition: background .2s ease-in-out;
+  background-image: url('https://cdn-media.etagi.com/static/site/6/69/691c7f794c78ccfb29b888e18ce2a0715e10f0b5.png');
+  background-repeat: no-repeat;
+  background-position: 25px;
+  padding-right: 45px;
+  text-align: right;
+  text-transform: lowercase;
+}
+
+.lkseller_scrollerBtnWrapper .lkscroller_goToBtn:hover {
+  background-color: #b5212f;
+  transition: background .2s ease-in-out;
+}
+
+.greenBlueBg {
+  background-image: url('https://cdn-media.etagi.com/static/site/e/e2/e23fa15e39f6408c3b6cea5f52eaf519255aa9fd.png');
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  //background-size: 100%;
+  background-position: center;
+  height: 1461px;
+  //min-width: 1600px;
+  margin-top: 160px;
+}
+
+.slide-text-content {
+  width: 420px;
+  white-space: normal !important;
+  color: #afafaf;
+}
+
+.slide-title {
+  font-size: 36px;
+  color: #000;
+  margin-bottom: 35px;
+}
+
+.slide-text {
+  font-size: 16px;
+  margin-bottom: 45px;
+}
+
+.slide-list {
+  padding: 0;
+}
+
+.slide1 .slide-red-link {
+  font-size: 16px;
+  padding-top: 15px;
+  height: 36px;
+  width: 355px;
+  font-weight: bold;
+}
+
+.slide1 .slide-image-free {
+  right: -70px;
+}
+
+.slide-list-item {
+  background-image: url("https://cdn-media.etagi.com/static/site/2/21/219881df51717df6781f4de6e8f76e294ec41120.png");
+  background-repeat: no-repeat;
+  background-position: 0px 8px;
+  list-style-type: none;
+  display: block;
+  height: 30px;
+  font-size: 18px;
+  width: 100%;
+  padding-left: 30px;
+  text-align: left;
+  margin-bottom: 50px;
+  line-height: 30px;
+}
+
+.slide-links {
+  margin-top: 85px;
+}
+
+.slide-red-link {
+  width: 250px;
+  height: 27px;
+  background-color: #ec2015;
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 10px;
+  font-size: 14px;
+  display: block;
+  text-align: center;
+}
+
+.slide-red-link:hover {
+  background-color: firebrick;
+  text-decoration: none;
+  color: #fff;
+}
+
+.slide-red-link:active, .slide-red-link:focus {
+  text-decoration: none;
+  color: #fff;
+}
+
+.slide-simple-link {
+  display: block;
+  margin-top: 35px;
+  font-size: 18px;
+  color: firebrick;
+  text-decoration: underline;
+}
+
+.slide-simple-link:hover {
+  color: #761616;
+}
+
+.slide-image-free {
+  background-image: url('https://cdn-media.etagi.com/static/site/c/c9/c9913cb2a927e957aab791c2f3dba5878c333344.png');
+  background-repeat: no-repeat;
+  width: 133px;
+  height: 80px;
+  position: absolute;
+  right: -100px;
+  bottom: 66px;
+}
+
+.greenBlueBg .ls-fullwidth .ls-nav-next {
+  width: 67px;
+  height: 67px;
+  z-index: 1000;
+  top: 81%;
+  margin-top: -20px;
+  position: absolute;
+  left: 83%;
+  background-image: url('https://cdn-media.etagi.com/static/site/9/9a/9af4e1af51eba03dbfc6ac5823a6cdacd7b44235.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.greenBlueBg .ls-fullwidth .ls-nav-next:hover{
+  background-image: url('https://cdn-media.etagi.com/static/site/e/e0/e00b3b5da0fa2fdf8b59640a073b6711ab662434.png');
+  background-position: 0 0;
+}
+
+.greenBlueBg .ls-fullwidth .ls-nav-prev {
+  width: 67px;
+  height: 67px;
+  z-index: 1000;
+  top: 81%;
+  left: 44%;
+  margin-top: -20px;
+  position: absolute;
+  background-image: url('https://cdn-media.etagi.com/static/site/0/05/053be352b613edb0a7438d6c272e706f948412b7.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.greenBlueBg .ls-fullwidth .ls-nav-prev:hover {
+  background-image: url('https://cdn-media.etagi.com/static/site/b/bb/bb2dfb2e70ab1dc8d7cb011c870d0934ef035bd1.png');
+  background-position: 0 0;
+}
+
+.greenBlueBg .ls-bottom-nav-wrapper {
+  position: absolute;
+  bottom: 100px;
+  left: 690px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.greenBlueBg .ls-bottom-nav-wrapper .ls-bottom-slidebuttons > a {
+  border: 2px solid transparent !important;;
+  background: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-position: 0 0;
+}
+
+.greenBlueBg .ls-bottom-nav-wrapper .ls-bottom-slidebuttons > a:hover, .greenBlueBg .ls-bottom-nav-wrapper .ls-bottom-slidebuttons > a.ls-nav-active {
+  border: 2px solid #fff !important;
+  background: transparent;
+}
+
+.greenBlueBg .ls-bottom-slidebuttons {
+  display: flex !important;
+  justify-content: space-around;
+  align-content: center;
+  width: 60%;
+}
+
+.landingtop_arrowDown:focus {
+  text-decoration: none;
+}
+
+.landingtop_arrowDown:active {
+  text-decoration: none;
+}
+
+.lkseller-doptext {
+  text-align: center;
+  margin-top: 75px;
+}
+
+.lkseller-doptext p {
+  color: #afafaf;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.lkseller-doptext a {
+  color: #80cbd5;
+  font-size: 16px;
+}
+.lkseller-pointer .pointer-wrapper {
+  margin-top: 180px;
+}
+
+.lkseller_order1 {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.lkseller_secondScreenText {
+  color: #fff;
+}
+
+.lkseller_title2 {
+  font-size: 44px;
+}
+
+.lkseller_list2wrapper {
+  margin-top: 50px;
+  font-size: 18px;
+}
+
+.lkseller_list2 {
+  padding: 0;
+}
+
+.lkseller_list2item {
+  list-style-type: none;
+  margin-bottom: 58px;
+  background-image: url('https://cdn-media.etagi.com/static/site/9/97/972045550eefc03cdf3ebeb8e71bb03832754218.png');
+  background-repeat: no-repeat;
+  padding-left: 35px;
+}
+
+.lkSellerOrder1 {
+  width: 680px;
+  height: 480px;
+  padding: 50px 110px 150px 110px;
+  background-color: #fff;
+  position: relative;
+}
+
+.lkSellerOrder1 .main-page-order-form {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.lkSellerOrder1 .main-page-form-group {
+  margin-bottom: 20px;
+}
+
+.lkSellerOrder1 input[type=text] {
+  border: 1px solid #999999;
+}
+
+.lkSellerOrder1 input[type=text]:hover {
+  border: 0.1rem solid #49bd3b;
+}
+
+.lkSellerOrder1 button {
+  background-color: #ec2015;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.lkSellerOrder1 button:hover {
+  background-color: firebrick;
+  color: #fff;
+  border: none;
+}
+
+.lkSeller-order1-title {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.lkSellerOrder1Bg {
+  position: absolute;
+  width: 807px;
+  height: 548px;
+  background-image: url('https://cdn-media.etagi.com/static/site/b/b8/b8cc011cad680b8391b21b80699656b84d42f22d.png');
+  top: 0;
+  left: -75px;
+}
+
+.lkSellerOrder1 .slide-image-free {
+  bottom: 145px;
+  right: 17px;
+}
+
+.lkseller_title {
+  text-align: center;
+  font-size: 45px;
+}
+
+.lkseller_text {
+  color: #999;
+  text-align: center;
+  font-size: 18px;
+}
+
+.lkseller_promo {
+  margin-top: 50px;
+}
+
+.lkseller_discount {
+  font-size: 30px;
+  color: darkcyan;
+}
+
+.lkSellerOrder2 {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.lkSellerOrder2 input[type=text] {
+  height: 40px;
+  background-color: inherit;
+  border: 1px solid #737373;
+}
+
+.lkSellerOrder2 input[type=text]:hover, .lkSellerOrder2 input[type=text]:focus {
+  background-color: #fff;
+  border: 1px solid #49bd3b;
+}
+
+.lkSellerOrder2 button {
+  background-color: #ec2015;
+  height: 80px !important;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 22px;
+  transition: all .3s ease-out;
+}
+
+.lkSellerOrder2 button:hover, .lkSellerOrder2 button:focus, .lkSellerOrder2 button:active {
+  color: #fff;
+  background-color: firebrick;
+  transition: all .3s ease-out;
+  border: 1px solid firebrick;
+}
+
+.landingFooter.lksellerFooter {
+  height: 620px;
+  padding-top: 100px;
+}
+
+.lkSeller-form-button {
+  position: relative;
+  z-index: 100;
+  margin-top: 40px;
+}
+
+.lkSeller-form-button button {
+  height: 42px;
+  font-weight: bold;
+}

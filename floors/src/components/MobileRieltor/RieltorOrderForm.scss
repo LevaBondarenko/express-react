@@ -1,0 +1,56 @@
+/**
+ * RieltorOrderForm styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.root {
+  padding-top: 0.5rem;
+
+  .formControl {
+    margin: 1rem;
+
+    :global(.form-control),
+    :global(.btn) {
+      padding: 0.8rem;
+      line-height: 1rem;
+      height: auto;
+      width: 100%;
+    }
+
+    :global(.usubmit-container) {
+      margin: 0;
+    }
+  }
+
+  .newPrice {
+    display: flex;
+
+    .objectPrice {
+      margin: 0.1rem 1rem;
+      text-align: left;
+      width: 45%;
+
+      > span {
+        display: block;
+        padding-left: 0.4rem;
+      }
+
+      .label {
+        font-size: 12px;
+      }
+    }
+
+    .formControl {
+      margin: 0 1rem;
+      width: 55%;
+
+      :global(.uinput-with-funny-placeholder) {
+        padding: 1.2rem 0.6rem 0.4rem;
+      }
+    }
+  }
+}

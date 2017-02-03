@@ -1,0 +1,39 @@
+.yandexMapWidget {
+  width: 100%; height: 750px; overflow: hidden;
+
+  .container-wide {
+    position: relative;
+  }
+  .yaMapArrow {
+    width: 480px;
+    position: absolute;
+    right: 0; top: 0;
+    padding-top: 85px;
+    padding-bottom: 55px;
+    background: #b31521; z-index: 2;
+
+    span {
+      color: #fff;
+      display: block; text-align: center;
+      font-size: 30px; line-height: 34px;
+      padding: 0 30px;
+      &.h2-address {text-transform: uppercase; font-weight: bold;}
+      &.h2-title {}
+    }
+
+    &:after {
+      position: absolute; top: 100%; left: 0;
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 38px 240px 0 240px;
+      border-color: #b31521 transparent transparent transparent;
+
+    }
+  }
+
+  .yaMap {
+    width: 141.5%; height: 100%;
+  }
+}

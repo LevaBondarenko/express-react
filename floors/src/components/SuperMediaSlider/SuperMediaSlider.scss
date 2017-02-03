@@ -1,0 +1,32 @@
+@import '../variables.scss';
+
+.fullscreenClose {
+  position: absolute;
+  top: -5rem;
+  right: -3rem;
+  cursor: pointer;
+  font-size: 300%;
+  z-index: 1000;
+  color: #fff;
+}
+
+.sliderFullscreen {
+  padding: 1rem 4rem 4rem !important;
+  height: 100%;
+
+  :global(.modal-dialog) {
+    width: 100%;
+    min-width: 1024px;
+    overflow-x: visible !important;
+  }
+
+  :global(.dialog) {
+    height: 100%;
+  }
+}
+
+@media (width <= 1100px) {
+  :global(.modal) {
+    overflow-x: visible !important;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "BlogSubscribe",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./BlogSubscribe.js"
+}

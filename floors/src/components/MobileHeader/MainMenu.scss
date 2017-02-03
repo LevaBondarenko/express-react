@@ -1,0 +1,105 @@
+/**
+ * MainMenu for mobile styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.root {
+  background: $gray-100;
+  padding: 0.4rem 0;
+
+  &.fullScreen {
+    padding: 0;
+  }
+}
+
+.city {
+  margin: 20px 0;
+
+  > div {
+    text-align: center;
+    padding: 2px 0;
+
+    > span {
+      display: inline-block;
+      margin-left: 3px;
+      text-decoration: underline;
+    }
+  }
+}
+
+.mapMarker {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  background-image: url('//cdn-media.etagi.com/content/media/site/0/06/0621494ee2fc334d447feb35a9a073231f6c54d8.svg');
+}
+
+.menu {
+  margin: 12px;
+
+  .topItemContainer {
+    margin-bottom: 10px;
+  }
+
+  .topItem {
+    border-radius: 3px;
+
+    &:after {
+      right: 20px !important;
+    }
+  }
+
+  .topItem,
+  .menuItem {
+    background: $white-base;
+    padding: 15px 40px 15px 20px;
+
+    a {
+      color: $gray-dark;
+      text-decoration: none;
+    }
+  }
+
+  .menuItem {
+    color: $gray-dark;
+    display: block;
+    border-top: 1px solid $gray-300;
+  }
+
+  .menuCitySelect,
+  .menuCurrencySelect {
+    display: table;
+    width: 100%;
+    padding-right: 20px;
+
+    > div {
+      display: table-cell;
+
+      &:last-child {
+        text-align: right;
+      }
+    }
+
+    .menuCurrencyControl {
+      width: 100px;
+      display: inline-block;
+      height: auto;
+      padding: 2px 6px;
+      margin: -2px -4px -2px 0;
+    }
+  }
+}
+
+.mainSiteLink {
+  margin: 25px 0;
+  text-align: center;
+
+  a {
+    color: $gray-dark;
+    text-decoration: underline;
+  }
+}

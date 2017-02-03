@@ -1,0 +1,776 @@
+.form-etagi-input, .input-label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.form-etagi-input.half {
+    width: 48% !important;
+}
+
+.inputTextBlock {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    margin-right: 5%;
+}
+
+.input-label {
+    margin-right: 5px;
+    margin-bottom: 0;
+    max-width: 48%;
+    font-weight: normal;
+}
+
+.realty-out-address {
+    height: 42px;
+    margin-bottom: 5px;
+}
+
+.realty-out-address div {
+    text-decoration: none !important;
+    line-height: 14px;
+}
+
+.realty-out-address-black {
+    color: #000;
+}
+
+.obj-price-out-ammount {
+    font-size: 110%;
+}
+
+.obj-area-out {
+    float: left;
+    padding: .4rem;
+    color: seagreen;
+    font-size: 16px;
+    margin-top: -4px;
+}
+
+.obj-name-realty-out {
+    width: 100%;
+    text-align: left;
+    padding: 10px 7px 0;
+    font-size: 110%;
+    font-weight: 700;
+    height: 60px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.obj-name-realty-out a {
+    text-align: center;
+    color: #000;
+    position: relative;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.textGrey {
+    color: #c8c7cb;
+}
+
+/* Виджет карты для загородки */
+
+.mapTraktModal {
+    padding: 0;
+}
+
+.mapTraktHeader {
+    background-color: #78757f;
+    padding: 20px 20px 20px 30px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+}
+
+.mapTraktContent {
+    background-color: #f0efef;
+    padding: 15px;
+}
+
+.mapTraktLeft, .mapTraktRight {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mapTraktLeft {
+    width: 65%;
+    position: relative;
+}
+
+.mapTraktRight {
+    width: 35%;
+    height: 640px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.mapTraktSearchForm, .mapTraktCategories {
+    height: 50px;
+    position: relative;
+    -webkit-box-shadow: 0px 2px 6px -1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 6px -1px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 6px -1px rgba(0,0,0,0.5);
+}
+
+.mapTraktCategories {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mapTraktMap {
+    height: 600px;
+    background-color: #48ff70;
+}
+
+.mapTraktButtons {
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    padding-left: 16px;
+
+    @media only screen and (max-width: 1700px) {
+        padding-left: 0px;
+
+        .mapTraktSelect {
+            padding-left: 6px;
+        }
+    }
+}
+
+.mapTraktCategory {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: normal;
+    vertical-align: middle;
+    width: 33%;
+}
+
+.mapTraktCategory label {
+    margin: 0;
+    font-weight: normal;
+}
+
+.mapTraktIcon {
+    display: inline-block;
+    height: 18px;
+    width: 25px;
+}
+
+.mapTraktIcon_lands {
+    background: url('//cdn-media.etagi.com/content/media/site/e/e6/e6a6526c04d3f261ae10fddf0e19ca6fcef4579c.png');
+    background-repeat: no-repeat;
+    background-position: 40% top;
+}
+
+.mapTraktIcon_houses {
+    background: url('//cdn-media.etagi.com/content/media/site/b/b4/b494baf778344a0c7f60a15ba6c79305cd62c282.png');
+    background-repeat: no-repeat;
+    background-position: 30% top;
+}
+
+.mapTraktTextSearch {
+    width: 100%;
+    height: 50px;
+    padding: 10px 10px 10px 15px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    transition: box-shadow .3s ease-in;
+}
+
+.mapTraktTextSearch.highlighted {
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(73,189,59,1);
+    -moz-box-shadow: 0px 0px 2px 2px rgba(73,189,59,1);
+    box-shadow: 0px 0px 2px 2px rgba(73,189,59,1);
+}
+
+.mapTraktTextSearch::-webkit-input-placeholder {
+    color: #b3b3b3;
+}
+
+.mapTraktTextSearch:-moz-input-placeholder {
+    color: #b3b3b3;
+}
+
+.mapTraktTextSearch::-moz-input-placeholder {
+    color: #b3b3b3;
+}
+.mapTraktTextSearch:-ms-input-placeholder {
+    color: #b3b3b3;
+}
+
+.textSearchTraktInput::-webkit-input-placeholder {
+    color: #b3b3b3;
+}
+
+.textSearchTraktInput:-moz-input-placeholder {
+    color: #b3b3b3;
+}
+
+.textSearchTraktInput:-ms-input-placeholder {
+    color: #b3b3b3;
+}
+
+.textSearchTraktInput::-moz-input-placeholder {
+    color: #b3b3b3;
+}
+
+.mapTraktSIcon {
+    position: absolute;
+    top: 20px;
+    right: 3%;
+    color: #949494;
+}
+
+.mapTraktTraktList {
+    margin-top: 20px;
+    height: 460px;
+    overflow: hidden;
+}
+
+.mapTraktTraktList .gm-scrollbar.-vertical {
+    background-color: #f0efef;
+}
+
+.mapTraktItem {
+    padding: 5px 5px 5px 15px;
+    font-size: 16px;
+    position: relative;
+
+    label {
+        padding-right: 30px;
+    }
+}
+
+.mapTraktItem.form-group .icon_arrow {
+    background-color: #f0efef;
+}
+
+.mapTraktItem.form-group:hover {
+    background-color: #fff;
+}
+
+.mapTraktItem.form-group:hover .icon_arrow {
+    background-color: #fff;
+}
+
+.mapTraktCheckAll {
+    display: none;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 11px;
+    position: absolute;
+    top: 13px;
+    right: 130px;
+    color: #000;
+}
+
+.mapTraktCheckAll:hover {
+    cursor: pointer;;
+}
+
+.mapTraktItem {
+    .checkbox_arrow {
+        height: 30px;
+        padding-top: 5px;
+    }
+}
+
+.mapTraktItem.form-group:hover .mapTraktCheckAll {
+    display: inline-block;
+}
+
+.mapTraktItem.form-group.active .mapTraktCheckAll {
+    display: inline-block;
+}
+
+.mapTraktCheckAll:hover {
+    text-decoration: underline;
+}
+
+.mapTraktItem.form-group .input_arrow:checked+label .icon_arrow {
+    background: #f0efef url("//cdn-media.etagi.com/content/media/site/2/27/272ee989a68c86cef1ee7a5923fe9a84f777ab21.png") no-repeat center;
+}
+
+.mapTraktItem.form-group:hover .input_arrow:checked+label .icon_arrow {
+    background: #fff url('//cdn-media.etagi.com/build/public/images/checkbox_check.png') no-repeat center;
+}
+
+.mapTraktItem.active.form-group .input_arrow:checked+label .icon_arrow {
+    background: #fff url('//cdn-media.etagi.com/build/public/images/checkbox_check.png') no-repeat center;
+}
+
+.mapTraktItem.active.form-group .input_arrow:checked+label .icon_arrow.partially {
+    background-color: $crimson;
+    border: 2px solid #ccc;
+}
+
+.mapTraktItem.form-group .input_arrow:checked+label .icon_arrow.partially {
+    background-color: #78757f;
+    border: 2px solid #ccc;
+    background-image: none;
+}
+
+.mapTraktItem.form-group:hover .input_arrow:checked+label .icon_arrow.partially {
+    background-color: $crimson;
+}
+
+.mapTraktItem.form-group:hover .mapTraktDisplayWrapper {
+    display: block;
+}
+
+.mapTraktItem.form-group.active .mapTraktDisplayWrapper {
+    display: block;
+}
+
+.mapTraktItem.form-group.active {
+    background-color: #fff;
+}
+
+.mapTraktDisplayWrapper {
+    display: none;
+    width: 60px;
+    float: right;
+    height: 30px;
+}
+
+.mapTraktDisplay {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.mapTraktDisplay:hover {
+    cursor: pointer;
+}
+
+.mapTraktDisplay__list {
+    background-image: url('//cdn-media.etagi.com/content/media/site/4/4b/4bf08926c997601fd8280f5f06bc2b6c09f092a2.png');
+}
+
+.mapTraktDisplay__map {
+    background-image: url('//cdn-media.etagi.com/content/media/site/1/14/14c758f4224eceef1fdf8dbaff850a045fdf5b4a.png');
+}
+
+.mapTraktDisplay__list_active {
+    background-color: #78757f;
+    background-image: url('//cdn-media.etagi.com/content/media/site/b/bc/bcb8c1acf7583934ab5bf5698d94b34faa807b48.png');
+}
+
+.mapTraktDisplay__map_active {
+    background-color: #78757f;
+    background-image: url('//cdn-media.etagi.com/content/media/site/7/78/782652f381590f61be1a8289dbab9fb590e7b163.png');
+}
+
+.mapTraktGreyBtns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mapTraktGreyBtns a {
+    color: #333333;
+    text-decoration: underline;
+}
+
+.mapTraktGreyBtns button {
+    width: 32%;
+    border: none;
+    border-radius: 0;
+    display: inline-block;
+    margin-right: 2px;
+    border-bottom: 2px solid #969696;
+    background-color: #DDDDDD;
+    position: relative;
+}
+
+.mapTraktGreyBtns_chosen {
+    position: absolute;
+    top: 20px;
+    left: 146px;
+    background-color: #78757f;
+    border-radius: 10px;
+    padding: 1px 5px 1px 5px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.mapTraktSelectWrapper {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mapTraktSelect {
+    width: 60%;
+}
+
+.mapTraktObjCount {
+    display: inline-block;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+//.mapTraktItem:hover .mapTraktObjCount {
+//    display: none;
+//}
+//
+//.mapTraktItem.active .mapTraktObjCount {
+//    display: none;
+//}
+
+.greyText {
+    color: #888888;
+}
+
+.districtsByTrakt {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+    height: 604px;
+    top: 46px;
+    padding: 10px;
+    box-shadow: 0px 2px 6px -1px rgba(0,0,0,0.5);
+}
+
+.districtItem {
+    width: 25%;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.traktTitle {
+    text-align: center;
+    margin: 0;
+    padding: 5px 0 15px 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+
+.traktButtons {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+}
+
+.traktButtons button {
+    border: none;
+    border-radius: 0;
+    display: inline-block;
+    margin-right: 10px;
+    border-bottom: 2px solid #969696;
+    background-color: #DDDDDD;
+    padding: 6px;
+    font-size: 16px;
+}
+
+.traktButtons button.clear {
+    background-color: #969696;
+    color: #fff;
+}
+
+.districtItem.form-group .input_arrow:checked+label .icon_arrow {
+    background: #fff url("//cdn-media.etagi.com/content/media/site/8/88/8836969e1a89bce988eeb7ab7787836a42cef4bc.png") no-repeat center;
+    display: inline-block;
+}
+
+.districtItem.form-group .checkbox_arrow span {
+    display: inline-block;
+    max-width: 160px;
+    line-height: 15px;
+    word-break: break-word;
+
+    @media only screen and (max-width: 1700px) {
+        max-width: 130px;
+    }
+}
+
+.districtList {
+    overflow: hidden;
+    height: 410px;
+    .gm-scrollbar-container {
+        .gm-scrollbar.-vertical {
+            top: 0;
+            width: .3rem;
+            display: none;
+            background-color: #fff;
+        }
+        .gm-scrollbar.-horizontal {
+            display: none;
+        }
+        .gm-scrollbar {
+            right: 0;
+            bottom: 0;
+            background: darken($grey, 16%);
+            border-radius: 0;
+            .thumb {
+                background: $apple;
+            }
+        }
+        .gm-scroll-view {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            align-content: flex-start;
+            padding-right: 10px;
+        }
+    }
+    &:hover {
+        .gm-scrollbar.-vertical {
+            display: block;
+        }
+    }
+}
+
+.traktList {
+    display: flex;
+    flex-wrap: wrap;
+    height: 60px;
+    align-items: baseline;
+    align-content: flex-start;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.traktList .gm-scrollbar.-vertical {
+    background-color: #fff;
+    width: .3rem;
+}
+
+.traktLabel {
+    padding: 2px 25px 2px 15px;;
+    background-color: #f0efef;
+    border-radius: 15px;
+    color: #777;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-right: 10px;
+    position: relative;
+    margin-bottom: 7px;
+    display: inline-block;
+}
+
+.traktLabel:hover {
+    background-color: #78757f;
+    color: #fff;
+    cursor: pointer;
+}
+
+.traktLabel.active {
+    background-color: #78757f;
+    color: #fff;
+    cursor: pointer;
+}
+
+.deleteTraktBtn {
+    font-size: 9px;
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    display: inline-block;
+    padding: 1px 3px 0 3px;
+    border-radius: 10px;
+}
+
+.deleteTraktBtn:hover {
+    background-color: #fff;
+    color: #78757f;
+}
+
+.etagi--closeBtn-white {
+    color: #fff;
+}
+
+.mapTraktSearchResult {
+    position: absolute;
+    background-color: #fff;
+    width: calc(100% - 15px);
+    height: 500px;
+    z-index: 100;
+    padding: 15px;
+    top: 3px;
+    box-shadow: 0px 2px 6px -1px rgba(0,0,0,0.5);
+}
+
+.searchResultItem {
+    padding-top: 6px;
+    padding-bottom: 7px;
+    position: relative;
+
+    .active {
+        background: #ccc;
+    }
+}
+
+.mapTraktSearchText {
+    padding-left: 5px;
+}
+
+.searchResultMapMarker {
+    width: 11px;
+    height: 15px;
+    background-image: url("//cdn-media.etagi.com/content/media/site/4/46/461ca620c78c5cbf9cd8ab2b5404bd95f934f11a.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0px;
+    top: 30%;
+}
+
+.searchResultMapMarker:hover {
+    cursor: pointer;
+}
+
+.showAllSearchResults {
+    position: absolute;
+    bottom: 7px;
+    right: 10px;
+    color: #5D5A5A;
+    text-decoration: underline;
+}
+
+.mapTraktSearchResultOverlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.clearSearch {
+    position: absolute;
+    top: 14px;
+    right: 35px;
+    font-size: 18px;
+}
+
+.clearSearch:hover {
+    cursor: pointer;
+}
+
+.closeSearch {
+    color: #5D5A5A;
+    text-decoration: underline;
+    position: absolute;
+    bottom: 9px;
+    left: 15px;
+}
+
+.clearTrakt {
+    width: auto;
+}
+
+.selectAllTrakt {
+    width: 22%;
+}
+
+.mapTraktItem.form-group .checkbox_arrow .icon_arrow {
+  width: 1.6rem;
+  height: 1.6rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mapTraktItem.form-group .checkbox_arrow span {
+  vertical-align: middle;
+}
+
+.mapTraktItem.form-group .checkbox_arrow:hover .icon_arrow {
+  border: 0.1rem solid #ccc;
+}
+
+.mapTraktItem.form-group .checkbox_arrow .icon_arrow:hover {
+    border: 0.1rem solid $crimson;
+}
+
+.foundDistrict {
+    font-weight: bold;
+}
+
+.queryHighlight {
+    background-color: #B3B3B3;
+}
+
+.headerText {
+    font-size: 18px;
+}
+
+.btnUseSearch {
+    height: 30px;
+    font-size: 16px;
+    padding: 0 5px 0 5px;
+}
+
+.selectedTraktsCount {
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.textSearchTrakt {
+    padding: 5px 0 15px 0;
+}
+
+.textSearchTraktInput {
+    width: 100%;
+    padding: 5px 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.textSearchTraktInput:hover {
+    border: 1px solid #49bd3b;
+}
+
+.textSearchTraktInput:focus {
+    border: 1px solid #49bd3b;
+}
+
+.showOnMap {
+    display: inline-block;
+    width: 20%;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.showOnMap button:hover {
+    color: #fff;
+    background-color: #49bd3b;
+    box-shadow: none;
+}
+
+.showAllList {
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.showAllList button:hover {
+    color: #fff;
+    background-color: #49bd3b;
+    box-shadow: none;
+}
+
+.distrObjCount {
+    font-weight: normal;
+}

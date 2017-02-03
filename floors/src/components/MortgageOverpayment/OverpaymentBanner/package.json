@@ -1,0 +1,6 @@
+{
+  "name": "OverpaymentBanner",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./OverpaymentBanner.js"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "JobSeekerProfile",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./JobSeekerProfile.js"
+}

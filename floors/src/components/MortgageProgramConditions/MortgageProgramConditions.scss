@@ -1,0 +1,44 @@
+/**
+ * MortgageProgramConditions styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.root {
+  table {
+    text-align: center;
+    width: 100%;
+    border: 0.1rem solid $gray-300;
+
+    td,
+    th {
+      border: 0.1rem solid $gray-300;
+    }
+
+    th {
+      background-color: $gray-100;
+      font-weight: bold;
+      text-align: center;
+      padding: 0 0.5rem;
+    }
+  }
+}
+
+.tableTitle {
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.titleItemContainer {
+  font-size: 17px;
+  font-weight: bold;
+  height: 51px;
+  line-height: 51px;
+  padding: 0 12px;
+  border-top: 1px solid $gray-300;
+  border-bottom: 1px solid $gray-300;
+}

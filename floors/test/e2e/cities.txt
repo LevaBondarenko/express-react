@@ -1,0 +1,5 @@
+www,ishim,n-urengoy,omsk,perm,surgut,tobolsk,yalutorovsk
+
+anapa,astana,astrakhan,vlg,vologda,gk,ekb,irk,kazan,kaliningrad,kem,krasnodar,kras,lipetsk,miass,msk,murom,chelny,ugansk,tagil,nk,novosibirsk,norilsk,orel,samara,saratov,sterlitamak,tomsk,tula,ulan-ude,ufa,khm,chel,shadrinsk,sakhalin,,
+
+vladimir,kostroma,vartovsk,rostov-na-donu,ryazan,spb,yakutsk,minsk,almaty,petropavlovsk

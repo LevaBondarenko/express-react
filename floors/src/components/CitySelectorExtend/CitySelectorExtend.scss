@@ -1,0 +1,112 @@
+@import '../variables.scss';
+
+.btn {
+  padding: 0;
+  font-size: 11.5px;
+  text-transform: uppercase;
+  margin-left: 19px;
+  color: $gray-dark;
+  margin-top: -2px;
+
+  &:hover {
+    text-decoration: none;
+    color: $gray-dark;
+
+    &__name {
+      color: $gray-base;
+      border-bottom: 0;
+    }
+  }
+
+  &__name {
+    border-bottom: 1px dashed $gray-dark;
+
+    &:hover {
+      color: $gray-base;
+      border-bottom: 0;
+    }
+  }
+
+  &:focus,
+  &:active,
+  &:active:focus, {
+    outline: none;
+  }
+}
+
+.modalWrap {
+  :global(.modal-dialog) {
+    width: 913px;
+    margin-top: 3px;
+
+    :global(.modal-content) {
+      border-radius: 0;
+    }
+  }
+}
+
+.mobileModalWrap {
+  :global(.modal-dialog) {
+    width: 400px;
+  }
+}
+
+.citySelectorWrapper {
+  min-height: 300px;
+}
+
+.citySelector__header {
+  margin: 8px 9px;
+}
+
+.citySelector__title {
+  font-size: 22px;
+  margin: 0 2px;
+  text-transform: initial;
+  font-weight: bold;
+}
+
+.citySelector__input {
+  width: 100%;
+  padding: 0;
+  margin: 10px 0;
+  line-height: 23px;
+}
+
+.citySelector__cities {
+  margin: 8px 9px;
+}
+
+@media (width <= 500px) {
+  .citySelector__cities div {
+    width: 100%;
+  }
+}
+
+.citySelector__subheader {
+  margin: 25px 11px;
+
+  h3 {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0;
+  }
+}
+
+:global(#textSearch) {
+  &::-webkit-input-placeholder {
+    color: $gray-base;
+  }
+
+  &::-moz-placeholder {
+    color: $gray-base;
+  }
+
+  &::-moz-placeholder {
+    color: $gray-base;
+  }
+
+  &::-ms-input-placeholder {
+    color: $gray-base;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "SearchMap",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./SearchMap.js"
+}

@@ -1,0 +1,412 @@
+/*
+  Created on : 02.06.2016, 10:30:05
+  Author     : zemlyanov
+*/
+@import '../../variables.scss';
+
+:global(.lkBodyMyTickets) {
+  padding-top: 2px;
+}
+
+.lkBodyMyTickets {
+  height: 100%;
+  margin: 0 2rem 10rem;
+}
+
+.emptyTicketItem,
+.activeTicketItem {
+  :global(.btn) {
+    width: 100%;
+    border: none;
+    margin-top: 3.3rem;
+    padding: 1rem 1.5rem;
+    overflow: hidden;
+  }
+
+  :global(.btn-link) {
+    padding: 0.8rem 1rem !important;
+  }
+
+  :global(.btn-submit) {
+    color: $white-base;
+    background: $lk-primary-button;
+  }
+
+  :global(.btn-datetime-picker),
+  :global(.btn-datetime-inremark),
+  :global(.btn-success) {
+    position: relative;
+    border: 1px solid $gray-light;
+    border-radius: 0.2rem;
+    padding: 0.3rem 1rem;
+    margin-top: 0.2rem;
+    font-size: 95%;
+  }
+
+  :global(.btn-datetime-picker),
+  :global(.btn-success) {
+    background: $white-base;
+    text-align: left;
+    color: color($gray-dark lightness(+25%));
+
+    &:hover {
+      color: $black;
+      background: $white-base;
+    }
+  }
+
+  :global(.btn-datetime-inremark) {
+    text-align: center;
+    background: inherit;
+    border: none;
+
+    > span {
+      display: inline-block;
+
+      > span,
+      > i {
+        color: color($lk-primary-button lightness(+15%));
+        border-bottom: 1px dotted color($lk-primary-button lightness(+15%));
+      }
+
+      > i {
+        line-height: 1.3rem;
+      }
+
+      > span:first-child {
+        display: inline-block;
+        color: $black;
+        border-color: $black;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  :global(.lk-popup-controls .btn-primary) {
+    margin-top: 0.8rem !important;
+
+    &:after {
+      content: '';
+    }
+  }
+
+  :global(.btn-datetime-picker) {
+    &:after {
+      content: '\f073';
+      font: normal normal normal 14px/1 'FontAwesome';
+      position: absolute;
+      right: 0.5rem;
+      top: 0.5rem;
+    }
+  }
+
+  :global(.btn-success) {
+    &:after {
+      content: '\f107';
+      font: normal normal normal 14px/1 'FontAwesome';
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: $white-base;
+      padding: 0.5rem;
+    }
+  }
+
+  :global(.btn-submit-extra) {
+    background: $gray-light;
+  }
+
+  :global(.btn-submit-darken) {
+    background: color($gray-light blackness(+5%));
+  }
+
+  :global(.no-margin) {
+    margin-top: 0;
+  }
+
+  :global(.control-title) {
+    display: block;
+    text-transform: uppercase;
+    margin: 0.5rem 0 0 1rem;
+    font-size: 90%;
+    color: color($gray-dark lightness(+15%));
+  }
+
+  :global(.extra-control-container),
+  :global(.object-select-container) {
+    position: relative;
+    margin-bottom: 1rem;
+
+    &:first-child {
+      margin-top: 1rem;
+    }
+  }
+
+  :global(.object-list-container) {
+    position: absolute;
+    right: 0;
+    top: 3.5rem;
+    width: 48rem;
+    height: 25rem;
+    background: color($gray-light lightness(+10%));
+    z-index: 1;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+    white-space: nowrap;
+  }
+
+  :global(.object-list-item) {
+    height: auto;
+    margin: 1rem 0.5rem 2rem;
+    border-bottom: 0.1rem solid $gray-light;
+  }
+
+  :global(.object-list-checkbox) {
+    padding: 3rem 0 0 1rem;
+  }
+
+  :global(.object-item-container) {
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 2rem;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+
+  :global(.object-item-title) {
+    white-space: normal;
+
+    h3 {
+      margin: 0;
+      padding: 0;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+    }
+
+    :global(.address) :global(.glyphicon) {
+      margin-right: 0.5rem;
+      color: $crimson;
+    }
+
+    :global(.address--tocenter) {
+      padding-left: 0.5rem;
+      color: color($gray-dark lightness(+15%));
+    }
+  }
+
+  :global(.object-item-content) {
+    p {
+      margin: 0;
+      font-size: 90%;
+    }
+  }
+
+  :global(.gm-scrollbar.-vertical) {
+    width: 0.6rem;
+  }
+  &:last-child { margin-bottom: 18rem; }
+}
+
+.emptyTicketItem {
+  border: 1px solid $gray-light;
+  margin-bottom: 2rem;
+
+  :global(.logo) {
+    padding: 0;
+    width: 10%;
+
+    img {
+      height: 6rem;
+      width: 6rem;
+      margin: 2rem;
+    }
+  }
+
+  :global(.info) {
+    width: 40%;
+  }
+
+  :global(.title) {
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    line-height: 2rem;
+  }
+
+  :global(.desc) {
+    color: color($gray-dark lightness(+25%));
+    font-size: 90%;
+  }
+
+  :global(.actions) {
+    width: 50%;
+  }
+}
+
+.activeTicketItem {
+  border: 1px solid $gray-light;
+  margin-bottom: 2rem;
+
+  :global(.head) {
+    height: 6rem;
+    margin: 0;
+  }
+
+  :global(.head-title) {
+    font-size: 1.7rem;
+    font-weight: 600;
+    border-right: 1px solid $gray-light;
+    height: 100%;
+
+    img {
+      margin: 0 4rem 0 0;
+      height: 6rem;
+      width: 6rem;
+    }
+  }
+
+  :global(.head-title-count) {
+    background: $lk-primary-button;
+    color: $white;
+    border-radius: 50%;
+    line-height: 2rem;
+    height: 2rem;
+    width: 2rem;
+    font-size: 90%;
+    text-align: center;
+    display: inline-block;
+  }
+
+  :global(.head-col) {
+    border-right: 1px solid $gray-light;
+    font-weight: 600;
+    text-align: center;
+    height: 100%;
+    padding: 2rem;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  :global(.ticket-item) {
+    height: 4rem;
+    margin: 0;
+    background: color($gray-light lightness(+5%));
+
+    > div {
+      height: 100%;
+      font-size: 90%;
+      padding-top: 1.2rem;
+      border-right: 1px solid $white;
+      position: relative;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    &:nth-child(even) {
+      background: $gray-light;
+    }
+
+    a {
+      color: $gray-dark;
+      text-decoration: underline;
+    }
+  }
+
+  :global(.ticket-item-param) {
+    text-align: center;
+  }
+
+  :global(.ticket-item-dir) {
+    font-size: 80%;
+    color: $lk-primary-button;
+    border: 1px solid $lk-primary-button;
+    border-radius: 0.3rem;
+    margin-left: 0.5rem;
+    padding: 0 0.3rem;
+  }
+
+  :global(.ticket-item-switch) {
+    position: absolute;
+    top: 1.2rem;
+    right: 0;
+  }
+
+  :global(.ticket-item-titleslist) {
+    position: relative;
+  }
+
+  :global(.ticket-item-toggler) {
+    cursor: pointer;
+  }
+
+  :global(.ticket-item-dropdown) {
+    position: absolute;
+    background: $white;
+    border: 1px solid $gray-light;
+    box-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
+    padding: 0.6rem 1rem;
+    z-index: 2;
+
+    span {
+      display: block;
+      padding: 0.2rem 0;
+    }
+  }
+
+  :global(.ticket-submit) {
+    height: 4rem;
+    margin: 0;
+
+    > div:first-child {
+      font-size: 90%;
+    }
+
+    > div {
+      height: 100%;
+      padding-top: 1.2rem;
+      padding-right: 0;
+      position: relative;
+      white-space: nowrap;
+
+      &:last-child {
+        padding-right: 15px;
+      }
+
+      > div {
+        display: inline-block;
+        margin: -0.5rem 1rem 0;
+        width: 45%;
+        position: relative;
+        margin-top: auto !important;
+      }
+    }
+  }
+
+  :global(.ticket-item-status-check) {
+    color: color($lk-primary-button blackness(+25%));
+  }
+
+  :global(.ticket-item-status-delete) {
+    color: color($gray-dark lightness(+25%));
+  }
+
+  :global(.btn) {
+    width: 100%;
+    padding: 0.4rem;
+    margin-top: -0.5rem;
+    display: inline-block;
+  }
+
+  :global(.btn-submit) {
+    width: 100%;
+    color: $white-base;
+    background: $lk-primary-button;
+  }
+}

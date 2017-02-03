@@ -1,0 +1,41 @@
+/**
+ * UCheckBox styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.UCheckBox {
+  :global(.ucheckbox-container) {
+    width: 100%;
+    margin: 0;
+  }
+
+  :global(.col-xs-12) {
+    position: relative;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  :global(.input-label) {
+    text-align: center;
+    min-width: 100%;
+    min-height: 22px;
+    max-width: none;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  :global(.form-control) {
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.2rem;
+    height: auto;
+  }
+
+  :global(div.form-control) {
+    border: none;
+  }
+}

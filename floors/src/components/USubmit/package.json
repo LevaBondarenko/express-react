@@ -1,0 +1,6 @@
+{
+  "name": "USubmit",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./USubmit.js"
+}

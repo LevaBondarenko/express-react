@@ -1,0 +1,41 @@
+@import '../variables.scss';
+
+.uProgressBar {
+  border: 1px solid $gray-light;
+  background: $white-base;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 0.7rem 2.1rem;
+  width: 100%;
+
+  &__bar {
+    background-color: $green-dark;
+    border-radius: 10px 0 0 10px;
+    float: left;
+    height: 100%;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+  }
+
+  &__barContainer {
+    background-color: $gray-light;
+    border-radius: 1rem;
+    height: 0.6rem;
+    margin: 2rem 0 1.1rem;
+    overflow: hidden;
+    vertical-align: middle;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 1.2rem;
+  }
+
+  &__percentage {
+    float: right;
+    font-size: 15px;
+    margin-left: 1.3rem;
+    width: 4rem;
+  }
+}
