@@ -1,0 +1,47 @@
+@import '../variables.scss';
+
+.item {
+  border: 1px solid $gray-300;
+  border-radius: 3px;
+  padding: 10px;
+  background-color: $gray-100;
+  margin-bottom: 10px;
+
+  .paramCompany {
+    font-weight: bold;
+  }
+
+  .linkProgram {
+    display: block;
+    text-align: center;
+    color: $blue-600;
+    text-decoration: underline;
+    margin-top: 15px;
+  }
+
+  .bankImage {
+    img {
+      height: 40px;
+      max-width: 100%;
+    }
+  }
+
+  .programTitle {
+    border-bottom: 1px solid $gray-400;
+    padding: 10px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .programParams {
+    > div {
+      display: flex;
+      margin: 5px 0;
+
+      > div {
+        width: 100%;
+      }
+    }
+  }
+}

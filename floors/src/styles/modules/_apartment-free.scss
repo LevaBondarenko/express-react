@@ -1,0 +1,244 @@
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.apartament-desc {
+  width: 490px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 18px;
+
+  img {padding-top: 2.4rem;}
+}
+
+.apartament-slider {
+  position: absolute;
+  top: 17rem;
+  left: 50%;
+  margin-left: -237px;
+
+  .bx-viewport {
+    height: 456px !important;
+    width: 456px !important;
+    overflow: visible!important;
+  }
+
+  .bx-controls-direction
+  {
+    a
+    {
+      width: 53px;
+      height: 111px;
+    }
+    .bx-prev
+    {
+      left: 50%;
+
+      margin-left: -38rem;
+
+      background: url('//cdn-media.etagi.com/static/site/1/13/1374a1ce17402885381a89fa0e9fa802b497125a.png') center center no-repeat;
+    }
+    .bx-next
+    {
+      right: 50%;
+      left: auto;
+
+      margin-right: -38rem;
+      background: url("//cdn-media.etagi.com/static/site/a/aa/aa70de5c1ae7296af9d61814097907b0bcc0f01a.png") center center no-repeat;
+
+    }
+  }
+}
+
+.apartament-menu-position {
+  position: absolute;
+  left: 50%;
+  bottom: 6rem;
+  margin-left: -10px;
+}
+
+.apartament-free-bg3 {
+  min-height: 850px; width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  h1 {
+    font-size: 4.8rem;
+    padding-top: 1.5rem;
+    margin-bottom: .6rem;
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: .6rem;
+  }
+  .apartament-btn-block {
+    width: 100%; position: absolute; bottom: 10.5rem;
+  }
+
+  .apartament-btn-green {
+    display: inline-block;
+    background-color: #49bd3b;
+    border-bottom-style: solid;
+    border-bottom-color: #296b22;
+    border-bottom-width: .3rem;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+    padding: 0 4rem;
+    border-radius: 3rem;
+    font-size: 17px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+      border-bottom-color: #49bd3b;
+    }
+
+    &:focus {
+      text-decoration: none;
+      border-bottom-color: #296b22;
+    }
+  }
+
+  .apartament-pic-text {
+    background: url("//cdn-media.etagi.com/static/site/c/c0/c0c8ed475600025dae74675c9a7798b7853a117f.png")  no-repeat;
+    z-index: 5;
+    width: 263px;
+    height: 168px;
+    position: absolute;
+    left: 50%;
+    margin-left: -41rem;
+    bottom: 12.4rem;
+  }
+
+  .apartament-slide1 {
+    width: 100%;
+    height: 800px;
+
+    &:before {
+      content: ' ';
+      display: block;
+      position: absolute;
+      width: 1646px;
+      height: 763px;
+      background: url("//cdn-media.etagi.com/static/site/b/be/be5608556bf3165d38fa506d2b753230e4b5f1e2.png")  no-repeat;
+      margin-left: -826px;
+      margin-top: -337px;
+      left: 50%;
+      top: 50%;
+      z-index: -1;
+    }
+  }
+  .apartament-slide2 {
+    //background: url("//cdn-media.etagi.com/static/site/c/ca/cacd557b4a592c9a1b60ccada045ae53266b7659.png")  no-repeat;
+    height: 800px;
+
+    &:before {
+      content: ' ';
+      display: block;
+      position: absolute;
+      width: 1745px;
+      height: 817px;
+      background: url("//cdn-media.etagi.com/static/site/c/ca/cacd557b4a592c9a1b60ccada045ae53266b7659.png")  no-repeat;
+      margin-left: -920px;
+      margin-top: -524px;
+      left: 50%;
+      top: 50%;
+      z-index: -1;
+    }
+
+  }
+  .apartament-logo {
+    background: url("//cdn-media.etagi.com/static/site/5/5d/5d783d374dae9baed1065b444017f18e2baf3484.png") center 24.5rem no-repeat;
+    height: 800px;
+  }
+  .apartament-slide3 {
+    height: 800px;
+
+    &:before {
+      content: ' ';
+      display: block;
+      position: absolute;
+      width: 1204px;
+      height: 533px;
+      background: url("//cdn-media.etagi.com/static/site/f/f4/f4684d7a23b1e0e32bf5aa8afb13584b58ae19da.png")  no-repeat;
+      margin-left: -788px;
+      margin-top: -247px;
+      left: 50%;
+      top: 50%;
+      z-index: -1;
+    }
+  }
+}
+
+.apartament-free-bg2 {
+  background: url("//cdn-media.etagi.com/static/site/0/0d/0da12b57500bf7a285353a8037233079f673831c.jpg") no-repeat center top;
+  min-height: 910px;
+  position: relative;
+
+  h1 {
+    font-size: 4.8rem;
+    padding-top: 9rem;
+  }
+
+  .apartament-text-in-block {
+    position: absolute;
+    top: 50rem;
+    left: 50%;
+    margin-left: -38rem;
+    height: 19.5rem;
+    padding: 1rem 0;
+    width: 85rem;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.apartament-free-bg {
+  background: url("//cdn-media.etagi.com/static/site/b/bd/bda9ef9295ea683ae55cdde39fb5796dc7bc2df5.png") no-repeat center top;
+  min-height: 656px;
+  .apartament-text {
+    width: 83rem; margin: 0 auto;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+
+    h1 {
+      color: $gray-dark;
+      padding-bottom: 5rem;
+      font-size: 4.8rem;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  .list-city {
+    width: 96rem;
+    margin: 0 auto;
+    padding-bottom: 10rem;
+
+    h2 {
+      font-size: 3.6rem;
+      padding-bottom: 3rem;
+    }
+
+    ul {
+      list-style-image: url("//cdn-media.etagi.com/static/site/2/28/285dda3fa2a6229e6c81426866998e05a4d9463c.png");
+      list-style-position: outside;
+      padding-left: 30px;
+
+      li {
+        font-size: 18px;
+        line-height: 24px;
+        padding: 3px 0 3px 6px;
+      }
+    }
+  }
+}

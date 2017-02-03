@@ -1,0 +1,80 @@
+/*
+    Created on : 16.09.2016, 16:42:48
+    Author     : zemlyanov
+*/
+
+@import '../variables.scss';
+
+.steps {
+  width: 75%;
+  padding: 0 20px;
+  margin: 0 auto 20px;
+
+  .stepBlock {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+
+    .number {
+      font-size: 24px;
+      line-height: 16px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      border: 2px solid $gray-300;
+      border-radius: 50%;
+      left: 50%;
+      top: -8px;
+      width: 54px;
+      height: 54px;
+      margin-left: -27px;
+      z-index: -1;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 10px;
+      margin-top: -5px;
+      background: url('//cdn-media.etagi.com/content/media/site/9/9a/9a83f01006f4c2d37cdcd9289c38871c31233ca9.png') center no-repeat;
+    }
+
+    &.stepActive {
+      color: $white-base;
+
+      &:before {
+        background: #056ba6;
+        border-color: #056ba6;
+      }
+
+      &:after {
+        background: url('//cdn-media.etagi.com/content/media/site/4/47/474b1cfadfe034e73d6ec1eed375958ff77d0ab7.png') center no-repeat;
+      }
+    }
+
+    &.stepBeforeActive {
+      &:before {
+        content: url('//cdn-media.etagi.com/content/media/site/6/6a/6ac6cf508062299b3854be6b46b3cc6093fa0039.png');
+        background: #056ba6;
+        border-color: #056ba6;
+        z-index: 1;
+        padding: 14px 13px;
+      }
+
+      &:after {
+        background: url('//cdn-media.etagi.com/content/media/site/0/03/0325cf39356de19dd809517a6befce9195a19fbd.png') center no-repeat;
+      }
+    }
+
+    &:last-child {
+      &:after {
+        background: none;
+      }
+    }
+  }
+}

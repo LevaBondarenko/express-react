@@ -1,0 +1,35 @@
+/**
+ * OverpaymenTable styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../../variables.scss';
+
+.root {
+  margin-top: 2.8rem;
+  margin-bottom: 0;
+}
+
+.table {
+  th {
+    text-align: center;
+    height: 3.2rem;
+    font-weight: normal;
+    background: color(black lightness(+96%));
+    border-color: color(black lightness(+88%));
+  }
+
+  tr {
+    text-align: center;
+
+    b {
+      font-size: 16px;
+    }
+  }
+
+  .greenCell {
+    background: $green-100;
+  }
+}

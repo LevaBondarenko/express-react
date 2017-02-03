@@ -1,0 +1,6 @@
+{
+  "name": "DemandShowCaseSearchResult",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./DemandShowCaseSearchResult.js"
+}

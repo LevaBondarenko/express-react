@@ -1,0 +1,143 @@
+.feedback {
+  width:100%;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: 0% 35%;
+  background-size: cover;
+  position: relative;
+}
+.feedback_title {
+  font-size: 2.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 4rem 0 4rem 0;
+}
+
+.feedback_slides {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  height: 217px;
+  padding: 0 0 2rem 0;
+}
+
+.feedback_slide {
+  list-style-type: none;
+  background-color: #fff;
+  padding: 25px 15px 25px 15px;
+  font-style: italic;
+  position: relative;
+  height: 100%;
+  -webkit-box-shadow: 8px 9px 22px -7px rgba(0,0,0,0.74);
+  -moz-box-shadow: 8px 9px 22px -7px rgba(0,0,0,0.74);
+  box-shadow: 8px 9px 22px -7px rgba(0,0,0,0.74);
+}
+
+.feedback_moreBtn {
+  position: absolute;
+  width: 50%;
+  height: 4rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -2rem;
+  background-color: #fff;
+  border: 2px solid $feedback-moreBtn-color;
+  font-style: normal;
+  color: $feedback-moreBtn-color;
+}
+
+.feedback_moreBtn:hover {
+  background-color: $feedback-moreBtn-color;
+  color: #fff;
+  transition: all 0.2s ease-out;
+
+}
+
+.feedback_moreBtn:active {
+  background-color: $feedback-moreBtnActive-color;
+}
+
+.feedback_signature {
+  text-align: right;
+  font-weight: bold;
+  height: 10%;
+  position: absolute;
+  right: 6%;
+  padding-left: 1rem;
+}
+
+.feedback .bx-viewport {
+  height: 25rem !important;
+}
+
+.feedback_full {
+  position: absolute;
+  width: 50%;
+  height: 237px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 100px;
+  background-color: #fff;
+  z-index: 100;
+  padding: 15px 20px;
+  opacity: 1;
+  transition: all .3s ease-out;
+  -webkit-box-shadow: 8px 9px 22px -7px rgba(0,0,0,0.74);
+  -moz-box-shadow: 8px 9px 22px -7px rgba(0,0,0,0.74);
+  box-shadow: 8px 9px 22px -7px rgba(0,0,0,0.74);
+}
+
+.feedback_full__hidden {
+  top: -10rem;
+  opacity: 0;
+  transition: all .6s ease-in;
+  z-index: -1;
+}
+
+.feedback_close {
+  position: absolute;
+  top: 7px;
+  right: 14px;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  color: $french-gray;
+  cursor: pointer;
+}
+
+.feedback_close:hover {
+  color: $trout;
+  transition: all .3s ease-out;
+}
+
+.feedback_fullText {
+  overflow-y: hidden;
+}
+
+.feedback_text__wrapper {
+  margin-top: 5px;
+  height: 90%;
+}
+
+.feedback_full .gm-scrollbar.-vertical {
+  width: .3rem;
+}
+
+.feedback_scrollHide {
+  background-color: #fff;
+  width: 20px;
+  height: 85%;
+  position: absolute;
+  right: 13px;
+  top: 13%;
+  z-index: 1;
+}
+
+.feedback_fullTextTitle {
+  font-weight: bold;
+  font-size: 1.05em;
+}
+.loader-inner.ball-clip-rotate.feedback-loader div {
+  top: 10rem !important;
+}

@@ -1,0 +1,746 @@
+.searchResultWrapper {
+  position: relative;
+}
+
+.searchRealtyItemWrapper {
+  max-height: 173px;
+  margin-bottom: 17px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  display: flex;
+  position: relative;
+  //overflow: hidden;
+
+  .noticeFlat {
+    width: 276px;
+
+    .popover-content {
+      padding: 14px;
+    }
+  }
+}
+
+.searchRealtyItemWrapper.experimental.expanded {
+  .searchRealtyItem_image {
+    width: 255px;
+    height: 200px;
+    img {
+      border-bottom: 1px solid lightgrey;
+    }
+  }
+}
+
+
+.searchRealtyItemWrapper.experimental {
+
+  max-height: 200px;
+  margin-bottom: 20px;
+  overflow: hidden;
+
+  .searchRealtyItem_image {
+    width: 255px;
+    height: 200px;
+  }
+
+  .searchRealtyItem_image.empty {
+    img {
+      border-right: 1px solid lightgrey;
+    }
+  }
+
+  .searchRealtyItem_objInfo {
+    position: relative;
+  }
+
+  .RatingBlock {
+    top: 8px;
+    right: 10px;
+  }
+
+  .searchRealtyItem_objPrice {
+    margin-top: 0;
+  }
+
+  .searchRealtyItem_objDeviation {
+    top: 70px;
+    left: 18px;
+    line-height: 14px;
+  }
+
+  .searchRealtyItem_objNotes {
+    line-height: 18px;
+    margin-top: 22px;
+  }
+
+  .searchRealtyItem_favBtn {
+    height: 100px;
+  }
+
+  .searchRealtyItem_compareBtn {
+    height: 100px;
+  }
+
+  .searchRealtyItem_objAddr {
+    margin-top: 7px;
+  }
+
+  .searchRealtyItem_objTitle {
+    display: inline-block;
+    height: 25px;
+  }
+
+  .searchRealtyItem_objTitle:hover {
+    border-bottom: 1px solid #000;
+  }
+
+  .searchRealtyItem_objTitle:hover,.searchRealtyItem_objTitle:focus,.searchRealtyItem_objTitle:active {
+    text-decoration: none;
+  }
+
+  .searchRealtyItem_rentFeatureWr.mortgagePay {
+    color: #e31f30;
+  }
+
+  .searchRealtyItem_rentMainFeatures {
+    margin-top: 17px;
+  }
+
+  .searchRealtyItem_controls {
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+    background-image: url('https://cdn-media.etagi.com/static/site/7/7f/7f160ef6515a59e22bdccd602e9381d62e5ff415.png');
+
+  }
+}
+
+.searchRealtyItemWrapper:hover {
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.61);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.61);
+  transition: all 0.3s ease-in;
+}
+
+.searchRealtyItemWrapper.expanded {
+  max-height: 800px;
+  transition: max-height 0.5s ease-out;
+}
+
+.searchRealtyItem_image {
+  width: 255px;
+  height: 172px;
+  border-right: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px 0 0 3px;
+  }
+}
+
+.searchRealtyItem_lkButtons {
+  border-right: 1px solid lightgrey;
+}
+
+.searchRealtyItem_favBtn {
+  height: 86px;
+  width: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid lightgrey;
+
+  .btn-fav-newsearch {
+    position: static;
+
+    &.in-fav {
+      i.fa {
+        color: $crimson;
+      }
+    }
+
+    .btn-default span {
+      display: block;
+      color: silver;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    i.fa {
+      font-size: 32px;
+      color: #000;
+      -webkit-text-stroke: 1px #fff;
+      &:hover {
+        color: $crimson;
+      }
+    }
+
+    &:hover {
+      i.fa {
+        color: $crimson;
+      }
+    }
+  }
+}
+
+.searchRealtyItem_compareBtn {
+  height: 86px;
+  width: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+
+  .btn-fav-newcompare {
+    position: static;
+
+    &.in-fav {
+      i.fa {
+        color: $crimson;
+      }
+    }
+
+    .subIcon {
+      position: absolute;
+      top: -7%;
+      right: 10%;
+      margin-top: -2px;
+      font-size: 23px !important;
+      font-weight: 100 !important;
+      color: #000 !important;
+    }
+
+    .btn-default span {
+      display: block;
+      color: silver;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    i.fa {
+      font-size: 32px;
+      color: #000;
+      -webkit-text-stroke: 3px #fff;
+      &:hover {
+        color: $crimson;
+      }
+    }
+
+    &:hover {
+      i.fa,
+      .subIcon {
+        color: $crimson !important;
+      }
+    }
+  }
+}
+
+.searchRealtyItemWrapper.expanded .searchRealtyItem_compareBtn {
+  border-bottom: 1px solid lightgrey;
+}
+
+.searchRealtyItem_favBtnText {
+  color: silver;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.searchRealtyItem_favBtnText:hover {
+  color: silver;
+}
+
+.searchRealtyItem_objInfo {
+  width: 425px;
+  padding-left: 15px;
+  padding-top: 7px;
+  border-right: 1px dotted lightgray;
+  padding-right: 10px;
+}
+
+.searchRealtyItem_objTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+.searchRealtyItem_objTitle:hover,
+.searchRealtyItem_objTitle:active,
+.searchRealtyItem_objTitle:focus {
+  color: #000;
+  text-decoration: underline;
+}
+
+.searchRealtyItem_objAddr {
+  color: darkgray;
+  //position: absolute;
+  width: 410px;
+  background-image: url('https://cdn-media.etagi.com/static/site/2/27/27194a53b1ea7aa4b295e3ce62a466356e150b55.png');
+  background-repeat: no-repeat;
+  padding-left: 15px;
+  line-height: 16px;
+
+  span.glyphicon-map-marker {
+    padding-right: 1px;
+    left: -2px;
+
+    &::before {
+      content: '';
+    }
+  }
+}
+
+.searchRealtyItem_objMainFeatures {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  align-items: center;
+  height: 40px;
+}
+
+.searchRealtyItem_objZastr {
+  margin-top: 2rem;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.searchRealtyItem_objMainFeatures div {
+  line-height: 12px;
+}
+
+.searchRealtyItem_objFeature {
+  font-size: 18px;
+}
+
+.searchRealtyItem_objFeatureTxt {
+  font-weight: bold;
+}
+
+.searchRealtyItem_objNotes {
+  line-height: 14px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+.searchRealtyItem_objNotes a {
+  text-decoration: underline;
+}
+
+.searchRealtyItem_objPriceWrapper {
+  width: 165px;
+  position: relative;
+  padding-top: 15px;
+}
+
+.searchRealtyItem_objPrice {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.searchRealtyItem_objOldPrice {
+  text-align: center;
+  color: darkgray;
+  text-decoration: line-through;
+  font-weight: bold;
+}
+
+.searchRealtyItem_objPriceSqr {
+  text-align: center;
+  color: darkgray;
+  font-weight: bold;
+}
+
+.searchRealtyItem_objBuilder {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 20px;
+}
+
+.searchRealtyItem_objDeviation {
+  width: 130px;
+  margin: 0 auto;
+  font-size: 12px;
+  margin-top: 10px;
+  line-height: 10px;
+  position: relative;
+
+  .liquidity_block_value {
+    width: 20px;
+  }
+}
+
+.searchRealtyItem_deviationUp {
+  display: inline-block;
+  border: 1px solid crimson;
+  color: crimson;
+  padding: 1px 10px;
+  margin-left: 5px;
+  line-height: 12px;
+  font-size: 12px;
+}
+
+.searchRealtyItem_deviationDown {
+  display: inline-block;
+  border: 1px solid #49bd3b;
+  color: #49bd3b;
+  padding: 1px 10px;
+  margin-left: 5px;
+  line-height: 12px;
+  font-size: 12px;
+}
+
+.searchRealtyItem_objGoTo {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  width: 120px;
+  margin: 0 auto;
+  background-color: #d61121;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 2px;
+  display: block;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+.searchRealtyItem_objGoTo:hover {
+  color: #fff;
+}
+
+.searchRealtyItemWrapper:hover .searchRealtyItem_objGoTo {
+  opacity: 1;
+  transition: all 0.3s ease-in;
+}
+
+.searchRealtyItem_objGoTo:hover, .searchRealtyItem_objGoTo:active, .searchRealtyItem_objGoTo:focus{
+  text-decoration: none;
+}
+
+.searchRealtyItemWrapper.out {
+  .searchRealtyItem_objFeature {
+    font-size: 12px;
+  }
+}
+
+.searchRealtyItem_rentMainFeatures {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  line-height: 14px;
+}
+
+.searchRealtyItem_rentFeatureWr {
+  width: 50%;
+  font-size: 14px;
+}
+
+.searchRealtyItem_controls {
+  height: 27px;
+  position: absolute;
+  z-index: 20;
+  bottom: 0;
+  right: 0;
+}
+
+.searchRealtyItem_arr {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-color: #333;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  opacity: .6
+}
+
+.searchRealtyItem_arr__left {
+  background-image: url('https://cdn-media.etagi.com/static/site/d/d8/d84b5b02cfb52fb778c63e1243958348ad0509a1.png');
+}
+
+.searchRealtyItem_arr__right {
+  background-image: url('https://cdn-media.etagi.com/static/site/b/b9/b91ec0fb74b48192ddd888d4c203aa40aea329ee.png');
+}
+
+.searchRealtyItem_photoCount {
+  display: inline-block;
+  vertical-align: top;
+  height: 27px;
+  padding-top: 5px;
+  color: #fff;
+  margin-right: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.searchRealtyItem_image .ball-clip-rotate > div {
+  top: 39% !important;
+}
+
+.searchRealtyItem_image.blurred img {
+  filter: blur(3px) brightness(1.2);
+  transition: 0.5s ease-in-out;
+}
+
+.RealtyItemList_objZastrMortgage {
+  text-align: center;
+  margin-bottom: 0;
+  color: #d61121;
+  margin-top: 16px;
+}
+
+
+/* temp styles */
+.searchRealtyItem_image img {
+  border-radius: 0 !important;
+}
+
+.searchRealtyItem_image {
+  width: 300px;
+  height: 267px;
+  //width: inherit !important;
+  //height: inherit !important;
+  border: none !important;
+}
+
+.realty__description {
+  padding: 0.5rem 0 1.5rem !important;
+}
+
+.btn-fav-infavmodule {
+  margin-left: 1rem !important;
+  vertical-align: text-bottom;
+}
+
+.objects--item__nomap--title h3 {
+  padding-top: 1.5rem;
+}
+
+.noticeFlat.ratings.popover.right {
+  top: -9px !important;
+}
+
+.searchRealtyItem_objDeviation {
+  position: absolute;
+  top: 40px;
+  left: 55px;
+}
+
+.btn-fav-insearchlayout {
+  margin-left: 3rem !important;
+}
+
+.ratings.popover {
+  max-width: 400px !important;
+  width: 320px !important;
+}
+
+.result--control__label {
+  float: none;
+  display: inline-block;
+  margin-right: 7px;
+}
+
+.sortList {
+  display: inline-block;
+  float: none;
+  min-width: 240px;
+}
+
+.bigBtnsWrapper {
+  width: 55%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dropdown-menu>li>a {
+  position: relative;
+}
+.specialChoice {
+  display: inline-block;
+  position: absolute;
+  right: 7px;
+  background-color: crimson;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 8px;
+  padding: 0px 4px;
+  font-weight: bold;
+  top: 7px;
+}
+
+.icon_arrow.fa.fa-circle {
+  border-radius: 10px;
+  font-size: 7px;
+  color: crimson;
+  padding-left: 2.3px;
+  padding-top: 1.4px;
+}
+
+.icon_arrow.fa.fa-circle:before {
+  content: "";
+}
+
+.form-group .input_arrow:checked+label .icon_arrow.fa.fa-circle {
+  background: none;
+  background-size: inherit !important;
+}
+.form-group .input_arrow:checked+label .icon_arrow.fa.fa-circle:before {
+  content: "\f111";
+}
+
+.firstInGroup .filterwidget-wrapper, .firstInGroup .msearcher {
+  padding-top: 15px !important;
+}
+
+.filtercheckbox-hint {
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  width: 250px;
+  background: $gray-800;
+  color: #fff;
+  padding: 7px;
+  -webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
+}
+
+.filtercheckbox-hint::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid $gray-800;
+  left: -8px;
+  top: 9px;
+}
+
+.filterhint-rotator {
+  width: 150px;
+  height: 20px;
+
+  div {
+    height: 20px !important;
+    width: 20px !important;
+    top: 20% !important;
+    border: 2px solid #fff !important;
+    border-bottom-color: transparent !important;
+  }
+}
+
+.filterhint-leave {
+  opacity: 1;
+}
+
+.filterhint-leave.filterhint-leave-active {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.filterhint-enter {
+  opacity: 0;
+}
+
+.filterhint-enter.filterhint-enter-active {
+  opacity: 1;
+  transition: all 0.1s ease-in-out;
+}
+
+.filterwidget-wrapper {
+
+  position: relative;
+
+  .msearcher {
+    padding: 0;
+  }
+
+  .msearcher--checkbox__item, .msearcher--radio__item {
+    margin: 0;
+  }
+
+  .msearcher--checkbox__item label, .msearcher--radio__item label {
+    line-height: 1rem;
+  }
+
+  .msearcher--checkbox__item i, .msearcher--radio__item i {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .msearcher--checkbox__item input:checked+label i, .msearcher--radio__item input:checked+label i {
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+.filterwidget-wrapper {
+
+  .clear-filter-block {
+    font-size: 11px;
+    color: #868686;
+    line-height: 30px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .glyphicon {
+    height: 30px;
+    line-height: 27px;
+    margin-right: 5px;
+  }
+}
+
+.filter-block-title {
+  text-transform: uppercase;
+  line-height: 30px;
+  font-size: 11px;
+}
+
+.filter-title {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.filter-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  a {
+    color: #868686;
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+
+.msearcher-clearallwrapper {
+  text-align: center;
+}
+
+.msearcher-clearall, .msearcher-clearall:active, .msearcher-clearall:focus {
+  font-size: 11px;
+  color: #868686;
+  font-weight: bold;
+}
+
+.msearcher-clearall:hover {
+  text-decoration: underline;
+  color: #868686;
+}

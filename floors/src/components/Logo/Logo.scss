@@ -1,0 +1,28 @@
+@import '../variables.scss';
+
+:global(.header--logo) {
+  padding-top: 0;
+  padding-left: 0;
+}
+
+:global(.header-a) {
+  padding-top: 8.2px;
+  padding-bottom: 8.7px;
+  border-bottom: 1px solid $gray-light;
+}
+
+:global(.header) {
+  padding-top: 0;
+}
+
+.root {
+  background: $white-base;
+}
+
+.logo {
+  background-color: $white-base;
+
+  &__test {
+    background-color: $white-base;
+  }
+}

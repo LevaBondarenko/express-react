@@ -1,0 +1,45 @@
+@import '../variables.scss';
+
+.searchSubscribe {
+  color: color($red-800 shade(10%));
+  float: right;
+  font-size: 18px;
+  margin-top: 0.2rem;
+  min-width: 28rem;
+  text-align: center;
+
+  > div {
+    padding: 0.6rem 1.2rem;
+
+    > div {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  &__link {
+    border-bottom: 1px dotted color($red-800 shade(10%));
+
+    a {
+      color: color($red-800 shade(10%));
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
+  }
+
+  i {
+    display: inline-block;
+    margin-right: 0.9rem;
+  }
+
+  &__text {
+    border-bottom: 1px dotted transparent;
+  }
+
+  :global(i.fa-envelope) {
+    vertical-align: middle;
+  }
+}

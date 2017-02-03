@@ -1,0 +1,47 @@
+@import '../variables.scss';
+
+.switcher__button {
+  height: 5rem;
+  padding: 0 1.5rem;
+  background-color: #fff;
+  border: 0.1rem solid #ececec;
+  outline: none;
+}
+
+.switcher__button__active {
+  height: 5rem;
+  padding: 0 1.5rem;
+  outline: none;
+  border: 0;
+  background-color: #ededed;
+  border-color: #ededed;
+  font-weight: bold;
+}
+
+.switcher__button__fs {
+  height: 5rem;
+  padding: 0 2.5rem;
+  background-color: #fff;
+  border: 0.1rem solid #ececec;
+  outline: none;
+
+  @media (width <= 1024px) {
+    padding: 0 1rem;
+    font-size: 1.3rem;
+  }
+}
+
+.switcher__button__fs__active {
+  height: 5rem;
+  padding: 0 2.5rem;
+  outline: none;
+  border: 0;
+  background-color: #ededed;
+  border-color: #ededed;
+  font-weight: bold;
+
+  @media (width <= 1024px) {
+    padding: 0 1rem;
+    font-size: 1.3rem;
+  }
+}

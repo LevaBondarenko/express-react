@@ -1,0 +1,82 @@
+
+$blue-booking: #4a535d;
+
+.icon {
+  display: block;
+  margin: 0 auto 1rem;
+  height: 5rem;
+  width: 5.5rem;
+  background: url('//cdn-media.etagi.com/static/site/0/09/090f96144295a043f13059a121d2475f523082d1.png') no-repeat;
+}
+
+.order {
+  background-position: 1.2rem 0;
+}
+
+.call {
+  background-position: -6.5rem 0;
+}
+
+.preview {
+  background-position: 0.65rem -6rem;
+}
+
+.steps {
+  margin-top: 5rem;
+  position: relative;
+
+  &.stepsBooking {
+    margin-top: 0;
+  }
+
+  & > div {
+    text-align: center;
+    color: $blue-booking;
+    font-size: 18px;
+  }
+}
+
+.iconAdditional {
+  background: url('//cdn-media.etagi.com/static/site/0/09/090f96144295a043f13059a121d2475f523082d1.png') no-repeat;
+  display: block;
+  width: 11rem;
+  top: 2rem;
+  height: 2rem;
+  position: absolute;
+}
+
+.arrowUp {
+  left: 29%;
+  background-position: -5.6rem -8.8rem;
+}
+
+.arrowDown {
+  right: 29%;
+  background-position: -5.6rem -6.4rem;
+}
+
+.bookingText {
+  font-size: 15px;
+  display: block;
+  margin-bottom: 1.5rem;
+  text-align: left;
+
+  h3 {
+    font-size: 18px;
+    min-height: 38px;
+    text-align: left;
+    font-weight: normal;
+    margin-bottom: 3rem;
+  }
+
+  p {
+    padding: 0 0 0 15px;
+  }
+}
+
+.letter {
+  display: block;
+  float: left;
+  min-height: 38px;
+  padding: 0 15px;
+}

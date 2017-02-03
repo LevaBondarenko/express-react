@@ -1,0 +1,43 @@
+/**
+ * FlatTitle styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.mobileTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1rem;
+  padding: 0.8rem;
+  background: $gray-100;
+
+  .title {
+    text-transform: uppercase;
+  }
+}
+
+.ratingNum {
+  display: inline-block;
+  margin-right: 6px;
+  padding: 0 6px;
+  border: 1px solid $gray-600;
+  color: $gray-600;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.ratingText {
+  display: inline-block;
+  border-bottom: 1px dotted $gray-600;
+  font-weight: 500;
+  font-size: 14px;
+
+  a {
+    color: $gray-600;
+    text-decoration: none;
+  }
+}

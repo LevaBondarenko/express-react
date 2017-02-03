@@ -1,0 +1,101 @@
+@import '../variables.scss';
+
+.root {
+  h3 {
+    margin-top: 10px;
+  }
+
+  .list {
+    > div {
+      position: relative;
+      padding: 8px 0;
+      border-top: 1px solid $gray-400;
+
+      input {
+        display: none;
+      }
+
+      label {
+        line-height: 15px;
+        font-weight: 300;
+      }
+
+      label i {
+        display: inline-block;
+        border: 1px solid $gray-600;
+        border-radius: 3px;
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+      }
+
+      label:hover i,
+      i:hover {
+        border-color: $red-600;
+      }
+
+      input:checked + label i {
+        background: $red-600;
+        border-color: $red-600;
+
+        &:after {
+          position: absolute;
+          content: '';
+          top: 12px;
+          left: 3px;
+          width: 11px;
+          height: 8px;
+          background: url('//cdn-media.etagi.com/content/media/site/d/d2/d298b173de6ea24fb3dda9c57a73b5f7cd60d7bd.svg');
+        }
+      }
+    }
+
+    div:first-child {
+      border: none;
+    }
+
+    div:last-child {
+      border-bottom: 1px solid $gray-400;
+    }
+  }
+
+  :global(.filter-block-title) {
+    line-height: 30px;
+    font-size: 16px;
+  }
+
+  :global(.glyphicon) {
+    font-size: 10px;
+    line-height: 30px;
+    float: right !important;
+  }
+
+  :global(.glyphicon) {
+    font-size: 10px;
+    line-height: 30px;
+    float: right !important;
+  }
+
+  :global(.clear-filter-block) {
+    font-size: 12px;
+    color: $gray-600;
+    line-height: 30px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  :global(.filter--block__title) {
+    border-top: 1px solid $gray-400;
+    border-bottom: 1px solid $gray-400;
+  }
+
+  :global(.filter--block__content) {
+    display: none;
+    -webkit-transition: all 120ms ease;
+    transition: all 120ms ease;
+  }
+
+  :global(.visibleBlock) {
+    display: block !important;
+  }
+}

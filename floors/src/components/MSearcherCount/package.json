@@ -1,0 +1,6 @@
+{
+  "name": "MSearcherCount",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./MSearcherCount.js"
+}

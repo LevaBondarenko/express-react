@@ -1,0 +1,35 @@
+.text-right {
+  .btn-group {
+   text-align: right;
+    .btn {
+      display: inline-block;
+    }
+  }
+}
+
+.href .switcheronoff-wrapper {
+  display: block;
+
+ .btn-group {
+   background: transparent;
+ }
+ .btn {
+   background: transparent;
+   border: none; font-size: 16px;
+   outline: none;
+   text-decoration: underline;
+   padding: 3px 0;
+
+   &.active {
+     box-shadow: none;
+     background: transparent!important;
+     color: $gray-dark;
+     font-weight: normal;
+   }
+
+   &:hover {
+     background: transparent;
+     color: $crimson; text-decoration: none;
+   }
+ }
+}

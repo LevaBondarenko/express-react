@@ -1,0 +1,238 @@
+
+
+.header_nav--wrap .socNetwork {
+  position: absolute;
+  right: 0;
+  top: -32px;
+  background: #60656c;
+}
+
+#footer .socNetwork, .header_nav--wrap .socNetwork {
+  color: #fff;
+  padding: 0;
+}
+
+#footer .socNetwork, .header_nav--wrap .socNetwork, .blackWhite .socNetwork {
+
+  & > span {
+    line-height: 30px;
+  }
+
+  .ico {
+    padding: 0 6px 6px 3px;
+    line-height: 1px;
+
+    .ico-bg {
+      background-image: url('//cdn-media.etagi.com/static/site/0/05/05ffd2d15b550d266153adcd703d4e7c04c8e007.png');
+      width: 24px;
+      height: 24px;
+      margin-left: 6px;
+      display: inline-block;
+      border: none;
+      border-radius: 50%;
+      background-color: #fff;
+      cursor: pointer;
+
+      &:hover {
+        background-image:  url('//cdn-media.etagi.com/static/site/0/0a/0a75845b87897602447dfb4a63fc0fb289379ce3.png');
+        background-color: #fff;
+        border: none;
+      }
+    }
+  }
+}
+
+.socNetwork {
+  padding: 30px 0;
+  margin: 0; line-height: 1;
+  .ico {
+    display: inline-block; padding-left: 20px; vertical-align: middle;
+    & > div {
+      display: inline-block;
+    }
+    .ico-bg {
+      background-image:  url('//cdn-media.etagi.com/static/site/0/0a/0a75845b87897602447dfb4a63fc0fb289379ce3.png');
+      background-color: #fff;
+      width: 26px;
+      height: 26px;
+      margin-left: 6px;
+      display: inline-block;
+      border-radius: 50%;
+      border: 1px solid #7c7782;
+      cursor: pointer;
+
+      &:hover {
+        background-image: url('//cdn-media.etagi.com/static/site/0/05/05ffd2d15b550d266153adcd703d4e7c04c8e007.png');
+        background-color: #e9e9e9;
+        border: 1px solid #e9e9e9;
+      }
+    }
+
+    .ico-fb {
+      background-position: 0 0;
+      border-color: #23589b;
+    }
+    .ico-ig {
+      background-position: -24px 0;
+      border-color: #0f739d;
+    }
+    .ico-ok {
+      background-position: -48px 0;
+      border-color: #ff821b;
+    }
+    .ico-vk {
+      background-position: -72px 0;
+      border-color: #2c76a6;
+    }
+    .ico-gp {
+      background-position: -96px 0;
+      border-color: #fe4935;
+    }
+    .ico-tw {
+      background-position: -120px 0;
+      border-color: #00adf1;
+    }
+    .ico-yt {
+      background-position: -144px 0;
+      border-color: #e10000;
+    }
+  }
+}
+
+.blog-main-bg .socNetwork {
+  position: absolute;
+  left: 36.6rem;
+  bottom: 7rem;
+
+  & > span {
+    display: block;
+    line-height: 30px;
+    color: #a6a8ab;
+    text-transform: uppercase;
+    font-size: 10px;
+  }
+
+  .ico {
+    padding: 0 0 0 0;
+    line-height: 1px;
+
+    .ico-bg {
+      background-image: url(//cdn-media.etagi.com/static/site/d/d1/d1e661d104f8d9b3035ec497ab28c74b26b4bb74.png);
+      width: 32px;
+      height: 32px;
+      margin-right: 14px;
+      margin-left: 0;
+      display: inline-block;
+      border-radius: 1px;
+      background-color: transparent;
+      cursor: pointer;
+      border: 1px solid #cbd5d8;
+
+      &:hover {
+        background-image:  url(//cdn-media.etagi.com/static/site/4/44/44493151c160ee9719e959831b2c9d1c7435d0dc.png);
+        border: 1px solid ;
+      }
+    }
+
+    .ico-fb {
+      background-position: 0 0;
+      &:hover {
+        border-color: #23589b;
+      }
+    }
+    .ico-ig {
+      background-position: -32px 0;
+      &:hover {
+        border-color: #0f739d;
+      }
+    }
+    .ico-ok {
+      background-position: -64px 0;
+      &:hover {
+        border-color: #ff821b;
+      }
+    }
+    .ico-vk {
+      background-position: -96px 0;
+      &:hover {
+        border-color: #2c76a6;
+      }
+    }
+    .ico-gp {
+      background-position: -128px 0;
+      &:hover {
+        border-color: #fe4935;
+      }
+    }
+    .ico-tw {
+      background-position: -160px 0;
+      &:hover {
+        border-color: #00adf1;
+      }
+    }
+    .ico-yt {
+      background-position: -192px 0;
+      &:hover {
+        border-color: #e10000;
+      }
+    }
+  }
+}
+
+.thankYouBg {
+  background: #ebebed; position: relative;
+  height: 480px;
+  .container-wide {
+    position: relative; height: 480px;
+  }
+  h3 {margin-top: 25px; font-size: 30px; padding-left: 28px;}
+}
+  .faceEtagi {
+    position: absolute;
+    right: 130px; bottom: 0;
+  }
+  .redLine {
+    margin-top: 100px; border-left: 8px solid #e31f30;
+    padding-left: 20px;
+    width: 420px; display: inline-block;
+    h2 {
+      text-transform: uppercase; font-size: 60px;
+      margin: 0;
+    }
+    p {font-size: 16px; line-height: 24px; margin: 10px 0 0 0;}
+  }
+
+  .thankYouBtn {
+    background: #bcbbbf; padding: 1rem 2.5rem; color: #fff; text-decoration: none; font-size: 16px;
+    display: inline-block; margin-left: 28px; margin-top: 35px;
+    &:hover, &:active, &:focus {background: #595562; color: #fff; text-decoration: none;}
+  }
+
+  .plusEtagiBlock {
+    padding-top: 45px; vertical-align: top; position: relative;
+    width: 33%; display: inline-block;
+    img {margin: 0 auto; display: block;}
+    h2 {
+      margin: 0; font-size: 16px; text-transform: uppercase; font-weight: bold; padding: 20px 20%; text-align: center; line-height: 20px;
+    }
+    p {padding: 0 30px; text-align: center;}
+
+    .borderLine {
+      height: 70%; position: absolute; top: 20%; left: 100%; width: 1px; background: #ccc;
+
+    }
+    .borderLine-2 {left: 200%;}
+  }
+
+  .plusEtagiMore {
+    display: block; margin: 0 auto; text-align: center; width: 220px; height: 50px; border: 3px solid #3eac47; color: #3eab47; line-height: 45px; font-size: 18px;
+    &:active, &:focus {
+      text-decoration: none; color: #3eab47;
+    }
+    &:hover {
+      background: #3eab47; color: #fff; text-decoration: none;
+    }
+  }
+
+  .plusesEtagi {padding-bottom: 40px;}
+  .paddingSocNetwork {padding: 22px}

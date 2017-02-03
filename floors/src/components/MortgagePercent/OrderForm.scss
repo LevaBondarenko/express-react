@@ -1,0 +1,29 @@
+@import '../variables.scss';
+
+.root {
+  background: $gray-100;
+  padding-bottom: 40px;
+  margin: 0 -15px;
+  text-align: center;
+  border-radius: 5px;
+
+  .formTitle {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .formControl {
+    width: 20%;
+    display: inline-block;
+    padding: 0 15px;
+
+    :global(.btn) {
+      padding: 4px 16px;
+      height: auto;
+      width: auto;
+      margin: 0 15px;
+    }
+  }
+}

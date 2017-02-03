@@ -1,12 +1,12 @@
 var express = require('express');
 var app = express();
 
-app.set('view engine', 'jade')
-
+app.set('view engine', 'jade');
+app.use(express.static('public'));
 app.get('/', function (req, res) {
-  res.render('index', {title: 'Главнаяя страница'});
+  res.render('index');
 });
 
 app.listen(2400, function () {
-  console.log('Example app listening on port 2400!');
+  console.log('Example app listening on port 2400');
 });

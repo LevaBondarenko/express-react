@@ -1,0 +1,22 @@
+/**
+ * TableRow styles
+ *
+ * @ver 0.0.0
+ * @author a.d.permin@72.etagi.com
+ */
+
+@import '../variables.scss';
+
+.row {
+  height: 4.4rem;
+}
+
+.grayCell {
+  background-color: $gray-100;
+  font-weight: bold;
+}
+
+.redPercent {
+  color: $red-600;
+  font-weight: bold;
+}

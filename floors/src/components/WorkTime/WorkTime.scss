@@ -1,0 +1,32 @@
+@import '../variables.scss';
+
+.root {
+  padding-top: 10.5px;
+  padding-bottom: 18.5px;
+}
+
+.phoneTime {
+  color: $gray-dark;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 22px 0 0;
+  font-size: 13px;
+  display: block;
+  float: left;
+
+  &:hover {
+    text-decoration: none;
+    color: $gray-dark;
+  }
+}
+
+.phoneNumber {
+  color: $gray-dark;
+  font-size: 20px;
+  float: right;
+
+  &:hover {
+    text-decoration: none;
+    color: $gray-dark;
+  }
+}

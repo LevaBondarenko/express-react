@@ -1,0 +1,69 @@
+@import '../variables.scss';
+
+.navArrowPrev__middle {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  width: 5.6rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  left: 1.5rem;
+  background: #3eab47 url('https://cdn-media.etagi.com/static/site/f/f7/f724dfaf1109a6b8a12b54a5d806fea8da808d98.png') no-repeat center;
+
+  &:hover {
+    background: #2b7832 url('https://cdn-media.etagi.com/static/site/f/f7/f724dfaf1109a6b8a12b54a5d806fea8da808d98.png') no-repeat center;
+  }
+}
+
+.navArrowNext__middle {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  width: 5.6rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  right: 1.5rem;
+  background: #3eab47 url('https://cdn-media.etagi.com/static/site/d/df/dfadfe88d0e3eac91f114a2996a884ccf5ab85ab.png') no-repeat center;
+
+  &:hover {
+    background: #2b7832 url('https://cdn-media.etagi.com/static/site/d/df/dfadfe88d0e3eac91f114a2996a884ccf5ab85ab.png') no-repeat center;
+  }
+}
+
+.navArrowPrev__bottom {
+  top: 37.5rem;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  width: 5.6rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  right: 13rem;
+  background: #3eab47 url('https://cdn-media.etagi.com/static/site/f/f7/f724dfaf1109a6b8a12b54a5d806fea8da808d98.png') no-repeat center;
+
+  &:hover {
+    background: #2b7832 url('https://cdn-media.etagi.com/static/site/f/f7/f724dfaf1109a6b8a12b54a5d806fea8da808d98.png') no-repeat center;
+  }
+}
+
+.navArrowNext__bottom {
+  top: 37.5rem;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  width: 5.6rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  right: 5.8rem;
+  background: #3eab47 url('https://cdn-media.etagi.com/static/site/d/df/dfadfe88d0e3eac91f114a2996a884ccf5ab85ab.png') no-repeat center;
+
+  &:hover {
+    background: #2b7832 url('https://cdn-media.etagi.com/static/site/d/df/dfadfe88d0e3eac91f114a2996a884ccf5ab85ab.png') no-repeat center;
+  }
+}

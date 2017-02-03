@@ -1,0 +1,49 @@
+/**
+ * MobileSearchResult styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.root {
+  position: relative;
+  padding: 0 12px;
+  border-bottom: 1px solid $gray-300;
+
+  & * {
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+  }
+
+  .prop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid $gray-300;
+  }
+
+  .prop:last-child {
+    border: none;
+  }
+}
+
+.titleItemContainer {
+  font-size: 17px;
+  font-weight: bold;
+  height: 51px;
+  line-height: 51px;
+  padding: 0 12px;
+  border-top: 1px solid $gray-300;
+  border-bottom: 1px solid $gray-300;
+}
+
+.propTitle {
+  color: $gray-600;
+}
+
+.propValue {
+  text-align: right;
+}

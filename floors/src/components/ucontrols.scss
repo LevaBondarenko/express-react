@@ -1,0 +1,366 @@
+/**
+ * Universal Controls styles
+ *
+ * @ver 0.0.0
+ * @author denis.zemlyanov@it.etagi.com
+ */
+
+:global(.uselect-container),
+:global(.udoubleinput-container),
+:global(.uinput-container),
+:global(.usubmit-container),
+:global(.ufileuploader-container),
+:global(.ucheckbox-container) {
+  :global(.etagi-help-icon) {
+    position: absolute;
+    top: -12px;
+    right: 10px;
+
+    :global(.fa) {
+      padding: 2px 6px;
+      background-color: $white-base;
+      border: 1px solid $gray-darker !important;
+      border-radius: 50%;
+      color: $gray-dark;
+    }
+  }
+
+  :global(.help-block) {
+    position: absolute;
+    top: 32px;
+    left: 5px;
+    margin: 0;
+    font-size: 13px;
+  }
+}
+
+:global(.uselect-container.has-error),
+:global(.uinput-container.has-error) {
+  input,
+  button {
+    border-color: $red-600 !important;
+    box-shadow: 0 0 5px 0 $red-300 !important;
+  }
+
+  :global(.help-block) {
+    color: $red-600 !important;
+  }
+}
+
+:global(.uselect-container.has-warning),
+:global(.uinput-container.has-warning) {
+  input,
+  button {
+    border-color: $orange-600 !important;
+    box-shadow: 0 0 5px 0 $orange-300 !important;
+  }
+
+  :global(.help-block) {
+    color: $orange-600 !important;
+  }
+}
+
+:global(.uvalidator-container.help-block) {
+  :global(.has-error),
+  :global(.has-warning) {
+    display: block;
+  }
+
+  :global(.has-error) {
+    color: $red-600 !important;
+  }
+
+  :global(.has-warning) {
+    color: $orange-600 !important;
+  }
+}
+
+:global(.ucheckbox-container) {
+  :global(.msearcher--checkbox__item),
+  :global(.msearcher--radio__item) {
+    label {
+      line-height: 15px;
+    }
+
+    label i {
+      border-color: $gray-600;
+      width: 15px;
+      height: 15px;
+      padding: 2px 3px;
+      font-size: 8px !important;
+    }
+
+    label:hover i,
+    i {
+      border-color: $green-300;
+    }
+
+    input:checked + label i {
+      color: $green-600;
+    }
+  }
+
+  :global(.msearcher--checkbox__item) {
+    label i {
+      padding: 1px;
+      font-size: 11px !important;
+    }
+
+    input:checked + label i {
+      background: none;
+      font: normal normal normal 14px/1 'FontAwesome';
+
+      &:after {
+        content: '\f00c';
+      }
+    }
+  }
+}
+
+:global(.modal-button) {
+  width: auto;
+}
+
+:global(.modal-dialog-wide) {
+  :global(.modal-dialog) {
+    width: 90% !important;
+    margin-top: 20px !important;
+  }
+}
+
+/**
+ * settings for mortgage
+ */
+
+:global(.ucontrol-for-mortgage) {
+  :global(.handle) {
+    width: 14px !important;
+    height: 14px !important;
+    margin-top: 3px;
+    border: 2px solid $green-600 !important;
+  }
+
+  :global(.bar) {
+    height: 3px !important;
+  }
+
+  :global(.bar-0) {
+    background-color: $green-600 !important;
+  }
+
+  :global(.bar-1) {
+    background-color: $gray-300 !important;
+  }
+
+  :global(.input-label) {
+    font-weight: 300 !important;
+    text-align: left !important;
+  }
+
+  :global(.etagi-help-icon) {
+    :global(.fa) {
+      background-color: $gray-300;
+      border: none !important;
+      color: $gray-dark;
+    }
+  }
+
+  :global(.help-block) {
+    font-style: italic;
+  }
+
+  :global(.uselect-container) {
+    :global(.uselect-list) {
+      ul {
+        li {
+          &:hover {
+            color: $white-base;
+            background: $green-300;
+          }
+        }
+
+        :global(.uselect-active-item) {
+          color: $gray-dark;
+          background: $green-100;
+        }
+
+        :global(.uselect-multiselect-item) {
+          &:hover {
+            color: $gray-dark;
+            background: $white-base;
+          }
+        }
+      }
+    }
+  }
+}
+
+:global(.ucontrol-label-dualline) {
+  :global(.input-label) {
+    height: 4.4rem;
+  }
+}
+
+:global(.ucontrol-required) {
+  :global(.input-label) {
+    span {
+      position: relative;
+
+      &:after {
+        content: '*';
+        color: $crimson;
+        position: absolute;
+        right: -6px;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+:global(.mortgage-form) {
+  :global(.panel-grid) {
+    :global(.panel-row-style) {
+      margin-top: 2rem;
+    }
+
+    &:first-child {
+      :global(.panel-row-style) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  :global(.label-nowrap) {
+    white-space: nowrap;
+  }
+}
+
+:global(.mortgage-scroller) {
+  margin-top: 27px;
+
+  a {
+    text-align: left;
+    position: relative;
+
+    i {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+  }
+}
+
+:global(.mortgage-more-button),
+:global(.mortgage-more-text) {
+  margin: 0;
+  padding: 10px;
+}
+
+:global(.mortgage-more-button) {
+  :global(.mortgage-scroller) {
+    margin-top: 0;
+  }
+
+  :global(.panel-grid-cell) {
+    padding-right: 0 !important;
+
+    :global(.switcher-wrapper) {
+      margin: 0 0 20px;
+      width: 100%;
+
+      :global(.btn-group) {
+        width: 100%;
+
+        button {
+          width: 100%;
+          display: none;
+          border: solid 1.6px $green-600;
+          border-radius: 3px;
+          border-bottom-right-radius: 3px !important;
+          border-top-right-radius: 3px !important;
+          margin: 0;
+          position: relative;
+
+          &:hover {
+            background: $green-600;
+            color: $white-base;
+          }
+
+          &:first-child {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+:global(.mortgage-more-text) {
+  color: $gray-600;
+  text-align: center;
+  font-size: 15px;
+}
+
+:global(.mortgageTabs) {
+  :global(.msearcher--radio__item) {
+    label {
+      display: block;
+      height: 3.2rem;
+      text-align: center;
+      line-height: 3rem;
+      border-radius: 0.5rem 0.5rem 0 0;
+      margin-bottom: -0.2rem;
+      transition: all 0.15s linear;
+
+      &:hover {
+        background: $green-100;
+        border-bottom: 0.1rem solid $green-600;
+      }
+
+      i {
+        display: none;
+      }
+    }
+
+    input:checked + label {
+      border: 0.1rem solid $green-600;
+      border-bottom: 0.2rem solid $white-base;
+      z-index: 5;
+
+      &:hover {
+        background: $white-base;
+      }
+    }
+  }
+}
+
+:global(.mobile-searcher-row) {
+  > div {
+    :global(.uinput-container) {
+      width: auto;
+      margin: 0 0.25rem;
+    }
+
+    &:first-child {
+      :global(.uinput-container) {
+        margin-left: 0;
+      }
+    }
+
+    &:last-child {
+      :global(.uinput-container) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  :global(.form-control) {
+    height: 3rem !important;
+  }
+
+  :global(.mobile-searcher-input-autoheight) {
+    :global(.form-control) {
+      height: auto !important;
+    }
+  }
+}

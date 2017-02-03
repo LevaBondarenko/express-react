@@ -1,0 +1,65 @@
+/* 
+    Author     : a.d.permin@72.etagi.com
+*/
+
+.switchbutton {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    input[type="checkbox"] {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    input[type="checkbox"] + label:after {
+        position: absolute;
+        content: '';
+        top: 0.1rem;
+        left: 0.1rem;
+        bottom: 0.1rem;
+        width: 2.2rem;
+        background-color: #ffffff;
+        border-radius: 5.2rem;
+        transition: margin .4s;
+    }
+
+    input[type="checkbox"]:checked + label:after {
+        margin-left: 2.4rem;
+    }
+
+    .container {
+        position: relative;
+        width: 4.8rem;
+        height: 2.3rem;
+        border-radius: 60px;
+        padding: 0.2rem;
+        vertical-align: middle;
+        margin: 0 1rem;
+        cursor: pointer;
+    }
+
+    .labelNotselected {
+        border-bottom: 0.2rem;
+        border-bottom-style: dotted;
+        cursor: pointer;
+    }
+}
+
+.switchbuttonsmall {
+
+    input[type="checkbox"] + label:after {
+        width: 1.1rem;
+        border-radius: 2.7rem;
+    }
+
+    input[type="checkbox"]:checked + label:after {
+        margin-left: 1.1rem;
+    }
+
+    .container {
+        width: 2.4rem;
+        height: 1.1rem;
+        border-radius: 30px;
+    }
+}

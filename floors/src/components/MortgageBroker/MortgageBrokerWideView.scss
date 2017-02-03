@@ -1,0 +1,193 @@
+@import '../variables.scss';
+
+:global(.wideProgrammBroker) {
+  :global(.img-circle) {
+    width: 10rem !important;
+    height: 10rem !important;
+  }
+}
+
+.root {
+  border: solid 0.1rem color(black lightness(+88%));
+  border-radius: 0.3rem;
+  padding: 0 2.5rem 0.7rem;
+  background: $white-base;
+  transition: all 0.15s linear;
+  margin: 0;
+
+  &:hover {
+    border-color: transparent;
+    box-shadow: 0 0.1rem 1rem 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+.mortgageQueryRow {
+  margin-top: 2rem;
+
+  .mortgageQuery {
+    font-size: 1.8rem;
+
+    span {
+      color: $green-600;
+      font-weight: bold;
+    }
+  }
+}
+
+.cardTitle {
+  h3 {
+    font-size: 1.8rem;
+  }
+}
+
+.imageWrapper {
+  margin-top: 2.2rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.agentCard {
+  margin-top: 2.1rem;
+
+  .agentName {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .agentTitle {
+    font-size: 1.4rem;
+    font-weight: normal;
+    font-style: italic;
+    color: color(black lightness(+46%));
+    margin-bottom: 2.3rem;
+  }
+
+  .agentText {
+    font-size: 1.4rem;
+    font-weight: normal;
+  }
+}
+
+.agentPhoneRow {
+  margin-top: 1rem;
+
+  .agentPhone {
+    margin-top: 0.5rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+
+    a {
+      color: $gray-dark;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.agentToolbar {
+  button,
+  a {
+    border: solid 0.1rem;
+    border-color: color(black lightness(+88%));
+    border-radius: 0.3rem;
+    padding: 0.75rem 0;
+    font-size: 1.4rem;
+    width: 40%;
+    transition: all 0.15s linear;
+
+    i {
+      margin-right: 0.5rem;
+    }
+
+    &:hover {
+      border-color: color(black lightness(+88%));
+      background: color(black lightness(+96%));
+    }
+
+    &:focus {
+      outline: none;
+      background: $white-base;
+    }
+
+    &:last-child {
+      width: 88%;
+      border: solid 0.1rem $green-600;
+      margin: 0;
+
+      &:hover {
+        border-color: $green-600;
+        background: $green-600;
+        color: $white-base;
+        outline: none;
+      }
+
+      &:focus {
+        outline: none;
+        background: $white-base;
+        color: #333;
+      }
+    }
+  }
+}
+
+.agentChange {
+  text-align: center;
+  margin-top: 2.1rem;
+  margin-bottom: 1.4rem;
+
+  button {
+    color: $blue-700;
+    text-decoration: underline;
+
+    &:hover {
+      color: $blue-800;
+    }
+
+    &:focus,
+    &:active:focus {
+      outline: none;
+    }
+  }
+}
+
+.orderToolbar {
+  button {
+    border: solid 0.1rem;
+    border-color: $red-600;
+    border-radius: 0.3rem;
+    padding: 0.75rem 0;
+    font-size: 1.4rem;
+    min-width: 10rem;
+    transition: all 0.15s linear;
+
+    &:hover {
+      border-color: $red-600;
+      background: $red-600;
+      color: $white-base;
+    }
+
+    &:focus {
+      outline: none;
+      background: $white-base;
+    }
+
+    &:last-child {
+      border: solid 0.1rem $green-600;
+      background: $green-600;
+      color: $white-base;
+
+      &:hover {
+        background: $green-700;
+        border: solid 0.1rem $green-700;
+        color: $white-base;
+      }
+
+      &:focus {
+        outline: none;
+        background: $green-600;
+      }
+    }
+  }
+}

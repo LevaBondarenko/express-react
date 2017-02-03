@@ -1,0 +1,23 @@
+@import '../../../src/components/variables.scss';
+
+.modal {
+  :global(.modal-dialog) {
+    width: 25%;
+    min-width: 400px;
+    margin-top: 10%;
+  }
+}
+
+.header {
+  border-bottom: 0;
+  padding: 1.5rem 1.5rem 0;
+}
+
+.footer {
+  border-top: 0;
+  padding: 0 1.5rem 1.5rem;
+}
+
+.body {
+  padding: 0 1.5rem 1.5rem;
+}

@@ -1,0 +1,222 @@
+@import '../variables.scss';
+
+.modal {
+  overflow-x: visible !important;
+
+  :global(.modal-dialog) {
+    width: 1200px;
+    margin: 1rem auto;
+  }
+
+  @media (width <= 1024px) {
+    :global(.modal-dialog) {
+      width: 100%;
+      min-width: 1024px;
+    }
+  }
+
+  :global(.modal-content) {
+    border-radius: 0;
+
+    :global(.modal-body) {
+      padding: 15px 15px 0;
+    }
+  }
+
+  :global(.modal-footer) {
+    border: 0;
+  }
+
+  :global(.nav) {
+    margin: 0 -1.5rem;
+    background: $gray-light;
+
+    & > li {
+      text-align: center;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover + li hr:first-child {
+        border-color: transparent;
+      }
+
+      & > a {
+        padding: 1rem 1.5rem;
+        color: $gray-dark;
+
+        &:hover,
+        &:focus {
+          background: $gray-light;
+          outline: none;
+
+          hr {
+            border-color: transparent;
+          }
+        }
+
+        hr {
+          margin: 0.5rem auto 0;
+          width: 35%;
+          border-width: 0.4rem;
+          border-color: #ddd;
+        }
+      }
+    }
+
+    :global(li.active + li hr:first-child) {
+      border-color: transparent;
+    }
+
+    :global(.active) {
+      background: $green-base;
+      box-shadow: 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.1);
+      z-index: 20;
+      font-weight: bold;
+
+      a {
+        color: $white-base;
+        transition: all 0.1s ease-in-out;
+
+        &:hover,
+        &:focus {
+          background: $green-base;
+          color: $white-base;
+        }
+
+        hr {
+          border-color: transparent;
+        }
+      }
+    }
+  }
+
+  :global(.nav-stacked) {
+    overflow: hidden;
+
+    & > li + li {
+      margin-top: 0 !important;
+    }
+  }
+
+  :global(.rieltor2-block) {
+    :global(.jk-person) {
+      background: $gray-light;
+      padding-top: 1rem;
+    }
+
+    :global(.jk-avatar) {
+      width: 80px;
+      height: 80px;
+    }
+
+    :global(.btn-rieltorGreen) {
+      background: $green-base;
+
+      &:hover {
+        background-color: $green-dark;
+      }
+    }
+
+    width: auto !important;
+    float: none;
+  }
+}
+
+@media (width <= 1024px) {
+  .modal {
+    overflow-x: visible !important;
+  }
+}
+
+.navItemHr {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: -5px;
+}
+
+.navItemHrBottom {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -5px;
+}
+
+.closeButton {
+  position: absolute;
+  right: -4.5rem;
+  top: -1.5rem;
+  z-index: 20;
+  padding: 0;
+  margin: 0;
+  font-size: 5rem;
+  font-weight: lighter;
+  line-height: 5rem;
+  background: transparent;
+  color: $white-base;
+  border: 0;
+  opacity: 0.5;
+  transition: all 0.1s ease-in-out;
+
+  span {
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &:hover,
+  &:active {
+    opacity: 1;
+    color: $white-base;
+    background: transparent;
+    outline: none;
+  }
+
+  &:active {
+    &:hover,
+    &:focus {
+      outline: none;
+      opacity: 1;
+      color: $white-base;
+      background: transparent;
+    }
+  }
+}
+
+.modal {
+  :global(.active) {
+    .info {
+      background-position: -8rem 0;
+    }
+
+    .review {
+      background-position: -8rem -5rem;
+    }
+
+    .book {
+      background-position: -8rem -10rem;
+    }
+  }
+}
+
+.icon {
+  display: block;
+  width: 8rem;
+  height: 4rem;
+  margin: -1rem auto 0;
+  background: url('//cdn-media.etagi.com/static/site/a/a0/a037089ef2bda122f492f1c8380369627c5a7b8e.png') no-repeat;
+}
+
+.info {
+  background-position: 0 0;
+}
+
+.review {
+  background-position: 0 -5rem;
+}
+
+.book {
+  background-position: 0 -10rem;
+}

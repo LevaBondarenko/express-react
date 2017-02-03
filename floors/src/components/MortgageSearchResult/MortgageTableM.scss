@@ -1,0 +1,13 @@
+@import '../variables.scss';
+
+.root {
+  a {
+    white-space: normal;
+  }
+
+  .zeroPrograms {
+    text-align: center;
+    background-color: $gray-300;
+    padding: 10px 0;
+  }
+}

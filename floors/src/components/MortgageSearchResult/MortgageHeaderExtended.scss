@@ -1,0 +1,112 @@
+@import '../variables.scss';
+
+.mortgageHeaderExtended {
+  height: 6rem;
+  background-color: $gray-100;
+  border-bottom: 0.2rem solid $gray-300;
+  font-weight: bold;
+}
+
+.mortgageHeaderExtended div {
+  padding: 0.7rem 0;
+}
+
+.mortgageHeaderExtended div a,
+.mortgageHeaderExtended div a:hover,
+.mortgageHeaderExtended div a:focus,
+.mortgageHeaderExtended div a:active {
+  color: inherit;
+}
+
+.percentHeader,
+.monthPaymentHeader,
+.economyHeader,
+.monthPaymentCompanyHeader,
+.bankHeader,
+.progTitleHeader,
+.redMonthPaymentHeader {
+  text-align: center;
+}
+
+.percentHeader {
+  position: relative;
+
+  :global(.fa) {
+    position: absolute;
+    top: -0.8rem;
+    right: 0;
+    display: block;
+    background: $gray-300;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    border: 0.1rem solid $gray-300 !important;
+    color: #333;
+    border-radius: 50%;
+    font-size: 11px;
+    cursor: pointer;
+    transition: 0.15s all linear;
+
+    &:hover {
+      background: $gray-300;
+      color: #333;
+    }
+  }
+}
+
+.percentHeader {
+  //width: 9rem;
+}
+
+.monthPaymentHeader {
+  //width: 17rem;
+}
+
+.economyHeader {
+  //width: 14rem;
+}
+
+.monthPaymentCompanyHeader {
+  //width: 17rem;
+}
+
+.bankHeader {
+  //width: 20rem;
+  margin-left: 3rem;
+  padding-left: 0.5rem !important;
+
+  button {
+    background: transparent;
+    border: 0;
+    margin-top: -0.8rem;
+    color: $gray-600;
+
+    &:hover {
+      color: $gray-900;
+    }
+
+    &:focus,
+    &:active:focus {
+      outline: none;
+      color: $gray-600;
+      background: transparent;
+      box-shadow: none;
+
+      &:hover {
+        color: $gray-900;
+      }
+    }
+  }
+}
+
+.progTitleHeader {
+  //width: 29rem;
+}
+
+.moreHeader {
+  //width: 10rem;
+}
+
+:global(.tooltip.in) {
+  opacity: 1 !important;
+}

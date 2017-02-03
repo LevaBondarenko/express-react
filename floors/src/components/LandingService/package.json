@@ -1,0 +1,6 @@
+{
+  "name": "LandingService",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./LandingService.js"
+}

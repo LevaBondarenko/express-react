@@ -1,0 +1,51 @@
+.etagiPaging {
+  margin-bottom: 1rem;
+  padding-left: 0;
+  font-size: 1.5rem;
+  line-height: 3.3rem;
+  color: $grey--font;
+  &--pagination {
+    float: left;
+    padding: 0;
+    margin-bottom: 0;
+    line-height: 3.3rem;
+    list-style: none;
+    & > li {
+      display: block;
+      float: left;
+      padding: 0 .3rem;
+      a {
+        color: $grey--font;
+        cursor: pointer;
+
+        @include transition(.1s);
+        &:hover {
+          color: $crimson;
+          text-decoration: none;
+          outline: none;
+        }
+      }
+    }
+    .selected a {
+      color: $crimson;
+      cursor: default;
+      text-decoration: none;
+    }
+  }
+  .previous, .next {
+    display: block;
+    float: left;
+    list-style: none;
+    a {
+      color: $grey--font;
+
+      @include transition(.1s);
+      &:hover {
+        color: $crimson;
+      }
+    }
+    &.disabled a {
+      @extend .hidden;
+    }
+  }
+}

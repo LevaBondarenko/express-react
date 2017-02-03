@@ -1,0 +1,36 @@
+/*
+  Created on : 26.05.2016, 17:16:49
+  Author     : zemlyanov
+*/
+@import '../variables.scss';
+
+.reserved {
+  color: $crimson;
+}
+
+.reservedCell {
+  display: block;
+  width: 100%;
+  background: url('https://cdn-media.etagi.com/static/site/a/a1/a15125c1562f0cada56055614816317ff5ff3a60.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.reservedLegend {
+  font-size: 13px;
+  font-weight: bold;
+  display: inline-block;
+  min-width: 18px;
+  height: 18px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  line-height: 18px;
+  background: url('https://cdn-media.etagi.com/static/site/a/a1/a15125c1562f0cada56055614816317ff5ff3a60.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}

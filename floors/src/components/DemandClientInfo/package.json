@@ -1,0 +1,6 @@
+{
+  "name": "DemandShowCaseClientInfo",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./DemandShowCaseClientInfo.js"
+}

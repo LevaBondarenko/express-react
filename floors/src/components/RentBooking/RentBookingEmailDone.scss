@@ -1,0 +1,36 @@
+@import '../variables.scss';
+
+.bookingForm {
+  &__arrow {
+    border: 5px solid transparent;
+    border-bottom: 5px solid $gray-light;
+    height: 0;
+    margin: 0 auto;
+    width: 0;
+  }
+
+  &__email {
+    margin-left: -3rem;
+    margin-right: -3rem;
+    overflow: hidden;
+  }
+
+  &__emailForm {
+    background-color: $gray-light;
+    color: $gray-dark;
+    padding: 0.9rem 2rem 1.2rem;
+    text-align: center;
+
+    &__success {
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 0.5rem;
+      text-transform: uppercase;
+    }
+
+    &__stext {
+      font-size: 13px;
+      margin-top: 0.5rem;
+    }
+  }
+}

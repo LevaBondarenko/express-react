@@ -1,0 +1,6 @@
+{
+  "name": "MSearcherOrder",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./MSearcherOrder.js"
+}

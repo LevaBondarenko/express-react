@@ -1,0 +1,186 @@
+@import '../variables.scss';
+
+:global(.bottomProgrammBroker) {
+  :global(.img-circle) {
+    width: 10rem !important;
+    height: 10rem !important;
+  }
+}
+
+.rowPadding {
+  margin: 0;
+  padding: 0;
+
+  .queryText {
+    font-size: 1.4rem;
+    color: $green-600;
+    font-weight: bold;
+  }
+
+  p {
+    margin: 5px 0 0;
+  }
+
+  .phoneBlock {
+    padding: 0.6rem 0 0 3rem;
+    margin: 0 2.5rem;
+    width: 25%;
+
+    p {
+      margin: 10px 0 0;
+    }
+  }
+
+  .agentCardBlock {
+    width: 24%;
+    padding: 0 1rem;
+  }
+
+  .btnToolbar {
+    width: 15%;
+    float: right;
+    padding: 0 10px;
+    margin: 0 10px 0 0;
+  }
+}
+
+.imageWrapper {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  width: 70px;
+  margin-top: 0;
+  padding: 0;
+}
+
+.agentCard {
+  margin-top: 0;
+  padding: 0.5rem 0;
+  max-height: 80px;
+
+  .agentName {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  .agentTitle {
+    font-size: 1.29rem;
+    font-weight: normal;
+    font-style: italic;
+    color: color(black lightness(+46%));
+    margin: 0.1rem 0;
+  }
+
+  .agentText {
+    font-size: 1.4rem;
+    font-weight: normal;
+  }
+}
+
+.agentPhone {
+  letter-spacing: 0.2px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: $gray-dark;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.agentToolbar {
+  margin-top: 2rem;
+  margin-bottom: 1.4rem;
+
+  button,
+  a {
+    border: solid 0.1rem;
+    border-color: color(black lightness(+88%));
+    border-radius: 0.3rem;
+    padding: 0.75rem 0;
+    font-size: 1.4rem;
+    width: 100%;
+    transition: all 0.15s linear;
+
+    &:last-child {
+      width: 100%;
+      border: solid 0.1rem $green-600;
+      float: right;
+      margin: 0;
+      text-transform: none;
+
+      &:hover {
+        border-color: $green-600;
+        background: $green-600;
+        color: $white-base;
+        outline: none;
+      }
+
+      &:focus {
+        outline: none;
+        background: $white-base;
+        color: #333;
+      }
+    }
+  }
+}
+
+.agentChange {
+  text-align: center;
+  margin-top: 2.1rem;
+  margin-bottom: 1.4rem;
+
+  button {
+    color: $blue-700;
+    text-decoration: underline;
+
+    &:hover {
+      color: $blue-800;
+    }
+
+    &:focus,
+    &:active:focus {
+      outline: none;
+    }
+  }
+}
+
+.orderToolbar {
+  button {
+    border: solid 0.1rem;
+    border-color: $red-600;
+    border-radius: 0.3rem;
+    padding: 0.75rem 0;
+    font-size: 1.4rem;
+    min-width: 10rem;
+    transition: all 0.15s linear;
+
+    &:hover {
+      border-color: $red-600;
+      background: $red-600;
+      color: $white-base;
+    }
+
+    &:focus {
+      outline: none;
+      background: $white-base;
+    }
+
+    &:last-child {
+      border: solid 0.1rem $green-600;
+      background: $green-600;
+      color: $white-base;
+
+      &:hover {
+        background: $green-700;
+        border: solid 0.1rem $green-700;
+        color: $white-base;
+      }
+
+      &:focus {
+        outline: none;
+        background: $green-600;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+/**
+ * Compact Dropdown element's styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../../src/components/variables.scss';
+
+.root {
+  .title {
+    position: relative;
+    font-size: 16px;
+    white-space: nowrap;
+
+    &:after {
+      content: '\f077';
+      font: normal normal normal 16px/1 'FontAwesome';
+      color: $gray-300;
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      margin-top: -8px;
+    }
+
+    &.collapsed {
+      &:after {
+        content: '\f078';
+      }
+    }
+  }
+
+  .childrens {
+    max-height: 2000px;
+    transition: all 0.8s ease-in-out;
+    overflow: hidden;
+
+    &.collapsed {
+      max-height: 0;
+    }
+  }
+}

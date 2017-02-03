@@ -1,0 +1,22 @@
+@import '../variables.scss';
+
+.root {
+  border-top: 1px solid $gray-400;
+  border-bottom: 1px solid $gray-400;
+
+  h3 {
+    margin-top: 10px;
+  }
+
+  :global(.glyphicon) {
+    font-size: 10px;
+    line-height: 30px;
+    float: right !important;
+  }
+
+  .filterBlockTitle {
+    font-size: 16px;
+    line-height: 30px;
+    display: inline-block;
+  }
+}

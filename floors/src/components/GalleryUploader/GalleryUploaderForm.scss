@@ -1,0 +1,82 @@
+/*
+    Created on : 16.09.2016, 16:42:48
+    Author     : zemlyanov
+*/
+
+@import '../variables.scss';
+
+.root {
+  width: 100%;
+
+  .title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+  }
+
+  .form {
+    position: relative;
+    width: 260px;
+    margin: 10px auto;
+    padding: 4px;
+
+    .input,
+    .select {
+      margin: 24px 0;
+
+      &.required {
+        position: relative;
+
+        &:after {
+          content: '*';
+          color: $crimson;
+          position: absolute;
+          right: 6px;
+          top: 0;
+          font-size: 20px;
+        }
+      }
+
+      :global(.help-block) {
+        top: 36px;
+        font-size: 12px;
+      }
+    }
+
+    .checkBox {
+      :global(.ucheckbox-container) {
+        :global(.input-label) {
+          min-height: 0;
+          height: 0;
+          margin: 0;
+        }
+
+        :global(.msearcher--checkbox__item) {
+          margin-top: 0;
+
+          label {
+            &:hover {
+              i {
+                border-color: $red-600;
+              }
+            }
+
+            i,
+            > span {
+              display: inline-block;
+            }
+
+            i {
+              color: $red-600;
+            }
+
+            > span {
+              width: 90%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

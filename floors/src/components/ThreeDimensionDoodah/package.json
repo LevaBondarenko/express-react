@@ -1,0 +1,6 @@
+{
+  "name": "ThreeDimensionDoodah",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ThreeDimensionDoodah.js"
+}

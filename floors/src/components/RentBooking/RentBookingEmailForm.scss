@@ -1,0 +1,84 @@
+@import '../variables.scss';
+
+.bookingForm {
+  &__arrow {
+    border: 5px solid transparent;
+    border-bottom: 5px solid $gray-light;
+    height: 0;
+    margin: 0 auto;
+    width: 0;
+  }
+
+  &__email {
+    margin-left: -3rem;
+    margin-right: -3rem;
+    overflow: hidden;
+  }
+
+  &__emailForm {
+    background-color: $gray-light;
+    font-size: 10px;
+    padding: 0.9rem 2rem 1.2rem;
+    text-align: center;
+
+    &__button {
+      background-color: $red-base;
+      border: 0;
+      float: right;
+      height: 3.5rem;
+      padding: 0 1.1rem;
+
+      :global(.loader-inner) {
+        width: 18px;
+
+        div {
+          width: 1px;
+        }
+      }
+
+      &:hover {
+        background-color: $red-dark;
+      }
+
+      &:disabled {
+        &:hover {
+          cursor: not-allowed;
+        }
+      }
+    }
+
+    &__formGroup {
+      height: 3.5rem;
+      overflow: hidden;
+      vertical-align: middle;
+    }
+
+    &__helpBlock {
+      text-align: left;
+    }
+
+    &__inputBlock {
+      padding: 0 2.6rem 2rem;
+    }
+
+    &__input {
+      background: $white;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+      height: 3.5rem;
+      padding: 0.6rem 1.2rem;
+
+      &:active,
+      &:focus,
+      &:hover {
+        border: 0;
+      }
+    }
+
+    :global(.help-block) {
+      position: absolute;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+/**
+ * OverpaymentBanner styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../../variables.scss';
+
+.root {
+  padding: 1.5rem;
+  min-height: 25.2rem;
+
+  h3 {
+    font-size: 3rem;
+    margin-bottom: 1.4rem;
+    font-weight: bold;
+  }
+
+  button {
+    font-size: 1.4rem;
+    border: solid 0.1rem;
+    border-color: $green-600;
+    border-radius: 0.3rem;
+    padding: 0.75rem 1rem;
+    transition: all 0.15s linear;
+
+    &:hover {
+      border-color: $green-600;
+      background: $green-600;
+      color: $white-base;
+    }
+
+    &:focus {
+      border-color: $green-700;
+      background: $green-700;
+      color: $white-base;
+      outline: none;
+    }
+  }
+}
+
+.bgGreen {
+  background: $white-base url('https://cdn-media.etagi.com/static/site/c/cf/cf1cee87f3a08139badd50011b0411555779d07d.png') bottom right;
+  background-size: 27rem;
+  background-repeat: no-repeat;
+}
+
+.bgError {
+  background: $white-base url('https://cdn-media.etagi.com/static/site/3/3a/3a17f53a2eecfeef12dba154ada1525e00a9bc20.png') bottom right;
+  background-size: 27rem;
+  background-repeat: no-repeat;
+}

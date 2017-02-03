@@ -1,0 +1,51 @@
+.flatTitle {
+  h1 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.45;
+    margin: 0;
+  }
+}
+
+.flatTitle_flatInfo {
+  line-height: 19px;
+  margin-top: 0.7rem;
+}
+
+.flatTitle_name {
+  font-size: 20px;
+  font-weight: bold;
+
+  &_paddingRight {
+    padding-right: 1.5rem;
+    margin-top: -4.5rem;
+  }
+}
+
+.ratingBlockObject {
+  display: inline-block;
+  padding-right: 7px;
+  vertical-align: middle;
+}
+
+.flatTitle_name_paddingRight {
+  .btn-fav-infavmodule {
+    vertical-align: middle;
+  }
+}
+
+.flatTitle_mapIcon {
+  background-image: url('//cdn-media.etagi.com/static/site/9/94/947b59dde9348d40af269044ca512cb965b80c69.png');
+  background-position: left top;
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 15px;
+  float: left;
+}
+
+.flatTitle_text {
+  color: darken($dark-grey, 20%);
+  padding-left: 5px;
+  font-size: 1.4rem;
+  line-height: 16px;
+}

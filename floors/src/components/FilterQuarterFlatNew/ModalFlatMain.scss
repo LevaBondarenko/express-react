@@ -1,0 +1,50 @@
+@import '../variables.scss';
+
+.modalFlatMain {
+  margin-top: 2.1rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+
+  div {
+    & > div {
+      padding: 0;
+      text-align: center;
+      border-right: 0.1rem solid;
+      border-color: #e2e3e5;
+
+      &:last-child {
+        color: $green-base;
+        border: 0;
+      }
+
+      p {
+        color: $blue-darker;
+        text-transform: uppercase;
+        font-weight: lighter;
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.oldPrice {
+  font-size: 16px;
+  color: #8e9199;
+  display: block;
+  top: -20px;
+  position: absolute;
+  right: 0;
+
+  &:before {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 100%;
+    content: '';
+    -webkit-transform: skewY(-10deg);
+    transform: skewY(-10deg);
+    border-bottom: 2px solid #8e9199;
+  }
+}

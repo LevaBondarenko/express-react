@@ -1,0 +1,51 @@
+@import '../variables.scss';
+
+.root {
+  :global(.btn-group) {
+    width: 100%;
+  }
+
+  :global(.dropdown-menu) {
+    margin: -1px 0 0;
+    border-radius: 0;
+    border-color: $gray-darker;
+    min-width: 100%;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+}
+
+.dropdownBtn {
+  border-color: $gray-darker;
+  border-radius: 0;
+  color: #737373;
+  padding: 0 20px;
+  font-size: 12px;
+  width: 100%;
+  text-align: left;
+  text-transform: uppercase;
+
+  &:active,
+  &.active {
+    border-color: $gray-darker;
+  }
+
+  &:focus,
+  &.focus {
+    background-color: transparent;
+  }
+
+  :global(.caret) {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    margin-top: -2px;
+    border-top-color: #737373 !important;
+  }
+
+  &:hover {
+    :global(.caret) {
+      border-top-color: #737373 !important;
+    }
+  }
+}

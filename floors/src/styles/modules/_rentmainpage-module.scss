@@ -1,0 +1,142 @@
+.rent-promo .textwidget {
+  padding: 20px;
+}
+
+.rent_promo_paragraph {
+  padding: 0 30px 0 30px;
+  font-size: 1.6rem;
+}
+
+.rent_promo_paragraph__strong {
+  font-size: 1.8rem;
+}
+
+.adv-paragraph {
+  font-size: 1.6rem;
+  padding: 7px 0px 0px 60px;
+  background-image: url("//cdn-media.etagi.com/content/media/site/6/62/62b1a65e114176d51456af3f215c24835b049ba7.png");
+  background-repeat: no-repeat;
+  background-position: 30px 10px;
+}
+
+.rent-promo-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
+.countRentFormWrapper {
+  padding: 25px;
+}
+
+.countRentForm {
+  font-size: 1.8rem;
+  border: 1px solid grey;
+}
+
+.rent-searcher {
+  margin-bottom: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 0px 15px 21px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 15px 21px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 15px 21px 0px rgba(0,0,0,0.15);
+}
+.daily-rent {
+  width: 160px;
+  position: absolute;
+  top: 107px;
+  right: 410px;
+}
+
+.daily-rent input[type=checkbox] {
+  left: 22px;
+}
+
+.obj-area-rent {
+  color: #6c6c6c;
+}
+
+.obj-address-rent {
+  color: #6c6c6c;
+  font-size: 13px;
+}
+
+.obj-data-rent {
+  padding: 5px 8px 4px 8px;
+  height: 9.5rem;
+  margin: 0;
+  position: relative;
+}
+
+.obj-price-rent {
+  padding-top: 5px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+}
+
+.obj-price-rent-ammount {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.obj-price-rent-text {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 12px;
+  margin-left: 5px;
+}
+
+.arrowsRight .bx-controls-direction {
+  position: absolute;
+  bottom: 25px;
+  right: 25%;
+}
+
+.arrowsRight .bx-controls-direction .bx-prev {
+  left: 0;
+  margin-left: inherit !important;
+}
+
+.arrowsRight .bx-controls-direction .bx-next {
+  right: -90px;
+  left: inherit !important;
+  margin-left: inherit !important;
+  margin-right: inherit !important;
+}
+
+.arrowsRight .bx-pager {
+  display: none !important;
+}
+
+.more-link {
+  position: absolute;
+  top: 300px;
+  background-repeat: no-repeat;
+  width: 221px;
+  height: 51px;
+  background: url("//cdn-media.etagi.com/content/media/site/5/55/55b22101f98cc7aa463977795ddcf3831aeb0d22.png");
+  left: 20px;
+  color: transparent;
+}
+
+.more-link:hover {
+  color: transparent;
+  -webkit-box-shadow: 0px 9px 42px -8px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 9px 42px -8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 9px 42px -8px rgba(0, 0, 0, 0.4);
+}
+
+.more-link:focus {
+  color: transparent;
+}

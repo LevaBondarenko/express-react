@@ -1,0 +1,27 @@
+.builderList {
+  padding: 20px 0;
+  text-align: center;
+
+  &--item {
+    width: 18rem;
+    margin: 20px 0;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 1.5rem;
+    text-align: center;
+    overflow: hidden;
+
+    img {
+      line-height: 5rem;
+      max-height: 5rem;
+      max-width: 100%;
+    }
+    strong {
+      text-align: center;
+      line-height: 24px;
+      color: #333;
+      font-size: 16px;
+
+    }
+  }
+}

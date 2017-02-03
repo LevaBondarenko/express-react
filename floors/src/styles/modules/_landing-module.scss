@@ -1,0 +1,444 @@
+.landingtop {
+  width: 100%;
+  height: 1100px;
+  position: relative;
+}
+
+.landingtop_bgscroll {
+  height: 820px;
+  overflow: hidden;
+}
+
+.landingtop_bgscrollImg {
+  background: url("https://cdn-media.etagi.com/static/site/9/95/95b6f4dac267fe2ef119ebbd7431fab2468a7a92.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 1200px;
+}
+
+.landingtop_promo {
+  position: absolute;
+  width: 100%;
+  top: 60px;
+}
+
+.landingtop_title {
+  text-align: center;
+  width: 700px;
+  margin: 0 auto;
+  line-height: 50px;
+}
+
+.landingtop_regBtnWrapper {
+  text-align: center;
+  margin-top: 45px;
+}
+
+.landingtop_regBtn {
+  height: 65px;
+  width: 230px;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: #ec2015;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  display: inline-block;
+  padding-top: 19px;
+}
+
+.landingtop_regBtn:hover {
+  background-color: $crimson;
+  color: #fff;
+  text-decoration: none;
+}
+
+.landingtop_regBtn:active, .landingtop_regBtn:focus {
+  background-color: $crimson;
+  color: #fff;
+  text-decoration: none;
+}
+
+.landingtop_arrowDownWrapper {
+  margin-top: 75px;
+}
+
+.landingtop_arrowDown {
+  width: 20px;
+  height: 20px;
+  background-image: url('https://cdn-media.etagi.com/static/site/1/19/19f28a617162f1020442ab74ebb7bc1856a9f568.png');
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto;
+}
+
+.landingtop_arrowDown:hover {
+  text-decoration: none;
+}
+
+.landingtop_macBookWrapper {
+  background-image: url('https://cdn-media.etagi.com/static/site/5/51/51ce49e1f66301359f14a907e4402739e0966c7b.png');
+  background-repeat: no-repeat;
+  width: 1187px;
+  height: 632px;
+  margin: 30px auto;
+  position: relative;
+}
+
+.landingtop_macBookScreen {
+  position: absolute;
+  background-image: url('https://cdn-media.etagi.com/static/site/8/86/865a01fc02d15253d865442b518a7067f59f5ec4.jpg');
+  background-repeat: no-repeat;
+  width: 781px;
+  height: 490px;
+}
+
+.landingtop_macBookScreen {
+  position: absolute;
+  background-image: url("https://cdn-media.etagi.com/static/site/8/86/865a01fc02d15253d865442b518a7067f59f5ec4.jpg");
+  background-repeat: no-repeat;
+  width: 766px;
+  height: 479px;
+  left: 209px;
+  top: 50px;
+}
+
+.landingtop_macBookScreenMono {
+  position: absolute;
+  width: 766px;
+  height: 479px;
+  left: 209px;
+  top: 50px;
+}
+
+
+.landingOurServices {
+  text-align: center;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.landingOurServices_subTitle {
+  font-size: 18px;
+  color: rgb(135, 135, 135);
+}
+
+.landingOurServices_title {
+  font-size: 50px;
+}
+
+.landingVisitorType .btn {
+  height: 45px;
+  width: 175px;
+  border: 3px solid #00b49e;
+  color: #00b49e;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 5px !important;
+}
+
+.landingVisitorType .btn.active, .landingVisitorType .btn:hover {
+  border: 3px solid #00b49e;
+  background-color: #00b49e;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 5px !important;
+  outline: none;
+  box-shadow: none;
+}
+
+.landingservice_title {
+  font-size: 21px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.landingservice_subTitle {
+  text-align: center;
+  font-size: 16px;
+  color: #868686;
+}
+
+.landingservice_image {
+  text-align: center;
+  min-height: 76px;
+}
+
+.landingServices {
+  margin-top: 70px;
+}
+
+.landingservice {
+  height: 240px;
+}
+
+.landingFeatureRow {
+  margin-top: -150px;
+  background-image: url('https://cdn-media.etagi.com/static/site/d/da/da191bf7bb84eb6bcf8cfb62d93354aefe6e329b.png');
+  background-repeat: no-repeat;
+  padding-top: 180px;
+  height: 1688px;
+}
+
+.landingfeature_subTitle {
+  font-size: 18px;
+  color: #878787;
+}
+
+.landingfeature_title {
+  font-size: 32px;
+}
+
+.landingFeatureWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 110px;
+}
+
+.landingFeatureWrapper_reverse {
+  flex-direction: row-reverse;
+  margin-right: 0;
+}
+
+.landingfeature_text {
+  text-align: left;
+  width: 500px;
+}
+
+.landingfeature_subTitle {
+  margin-top: 50px;
+  line-height: 32px;
+}
+
+.landingfeature_image {
+  margin-right: -100px;
+}
+
+.landingFeatureWrapper_reverse {
+  flex-direction: row-reverse;
+  .landingfeature_image {
+    margin-right: 50px;
+  }
+}
+
+.landingfeature_btn {
+  width: 175px;
+  height: 45px;
+  margin-top: 100px;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: none !important;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  display: block;
+  padding: 10px;
+}
+
+.landingfeature_btn:hover {
+  background-color: #e31f30 !important;
+  text-decoration: none;
+  color: #fff !important;
+}
+
+.landingslider {
+
+  .bx-pager-item {
+    border: 1px solid #909090;
+    border-radius: 50%;
+    width: 19px;
+    margin-left: 13px;
+    height: 19px;
+    padding: 2px;
+  }
+
+  .bx-wrapper .bx-pager.bx-default-pager a {
+    background: #fff;
+    text-indent: -9999px;
+    display: block;
+    width: 13px;
+    height: 13px;
+    margin-left: 0;
+    outline: 0;
+    border-radius: 50%;
+  }
+
+  .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: #7c8ca0;
+  }
+
+  .bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    width: 80px;
+    height: 80px;
+    text-indent: -9999px;
+    border: 1px solid #909090;
+    border-radius: 50%;
+  }
+
+  .bx-wrapper .bx-controls-direction a:active {
+    outline: none;
+  }
+
+  .bx-wrapper .bx-next {
+    right: -170px;
+    background-image: url('https://cdn-media.etagi.com/static/site/1/16/164f3c8ad0a032b6e0c02f4d95db639cf8af8d53.png');
+    background-position: 51% 50%;
+  }
+
+  .bx-wrapper .bx-prev {
+    left: -170px;
+    background-image: url('https://cdn-media.etagi.com/static/site/d/dd/dd39881f9b5159205d78ec7141d051e74ca1fe3d.png');
+    background-position: 45% 50%;
+  }
+}
+
+.landingTrades {
+  height: 669px;
+}
+
+.landingTradeImg {
+  margin-right: -1px;
+}
+
+.landingTradestext {
+  margin-top: 100px;
+  margin-left: 360px;
+  display: inline-block;
+  width: 485px;
+  background-color: rgb(255,255,255);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.landingTradeFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.landingTradestext h2 {
+  font-size: 64px;
+}
+
+.landingTradestext p {
+  font-size: 20px;
+  color: #878787;
+}
+
+.landingFooter {
+  height: 670px;
+  background-color: #f5f5f5;
+  margin-top: 57px;
+  padding-top: 200px;
+  text-align: center;
+  margin-bottom: -55px;
+
+  h2 {
+    font-size: 64px;
+  }
+
+  .bigLandingBtn {
+    margin-top: 50px;
+    background-color: #ec2015;
+    width: 335px;
+    height: 97px;
+    display: inline-block;
+    padding-top: 30px;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  .bigLandingBtn:hover {
+    text-decoration: none;
+    background-color: #e31f30;
+  }
+}
+
+/* animations */
+
+.landingservice--wrap.transformed {
+  transform: scale(0.01);
+}
+
+.landingservice--wrap {
+  transform: scale(1);
+  transition: transform .6s ease;
+}
+
+.landingfeature--wrap.transformed .landingfeature_text {
+  transform: translateX(-2000px);
+}
+
+.landingfeature--wrap .landingfeature_text {
+  transform: translateX(0);
+  transition: transform .6s ease;
+}
+
+.landingfeature--wrap.transformed .landingfeature_image {
+  transform: translateX(2000px);
+}
+
+.landingfeature--wrap .landingfeature_image {
+  transform: translateX(0);
+  transition: transform .6s ease;
+}
+
+.landingTrades.transformed .landingTradeImg {
+  margin-right: -1500px;
+}
+
+.landingTrades .landingTradeImg {
+  margin-right: -1px;
+  transition: all .6s ease;
+}
+
+.landingTrades.transformed .landingTradestext {
+  transform: translateX(-1000px);
+}
+
+.landingTrades .landingTradestext {
+  transform: translateX(0);
+  transition: transform .6s ease;
+}
+
+.landingtop--wrap.transformed .landingtop_macBookScreen {
+  opacity: 0;
+}
+
+.landingtop--wrap .landingtop_macBookScreen {
+  opacity: 1;
+  transition: all .9s ease;
+}
+
+@-webkit-keyframes bouncing {
+  0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+  40% {-webkit-transform: translateY(-20px);}
+  60% {-webkit-transform: translateY(-10px);}
+}
+@keyframes bouncing {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-20px);}
+  60% {transform: translateY(-10px);}
+}
+/*
+ * Adding the animation to our element
+*/
+.bouncing {
+  //-webkit-animation-name: bouncing;
+  //animation-name: bouncing;
+  animation: bouncing 2s 0s infinite;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}

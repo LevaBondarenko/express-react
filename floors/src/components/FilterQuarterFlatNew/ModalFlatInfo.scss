@@ -1,0 +1,36 @@
+@import '../variables.scss';
+
+/* out of palette */
+
+$nav-gray: #8c9098;
+
+.modalFlatInfo {
+  background: $blue-darker;
+  height: 17rem;
+  margin: -1.5rem -1.5rem 0;
+  border-top: 0.1rem solid;
+  border-bottom: 0.1rem solid;
+  border-color: $nav-gray;
+  color: $white-base;
+  text-align: center;
+}
+
+.floor {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 1rem 7rem 0;
+  border-bottom: 0.2rem solid;
+  border-color: $nav-gray !important;
+
+  p {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 2rem;
+  }
+}
+
+.section {
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+}

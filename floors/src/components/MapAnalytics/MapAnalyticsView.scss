@@ -1,0 +1,84 @@
+@import '../variables.scss';
+
+.mapAnalytics {
+  position: relative;
+
+  :global(#pm_main_MA) {
+    position: relative;
+    z-index: 2;
+
+    :global(#poligon_map) {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__legend {
+    background: #fff;
+    border: 1px solid #cacaca;
+    line-height: 2rem;
+    padding: 0.6rem;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    z-index: 3;
+
+    &__color00F,
+    &__color0FF,
+    &__color0F0,
+    &__colorFF0,
+    &__colorF00,
+    &__colorF00more {
+      display: inline-block;
+      height: 2rem;
+      margin-right: 0.6rem;
+      opacity: 0.7;
+      width: 4rem;
+    }
+
+    &__color00F {
+      background: #00f;
+    }
+
+    &__color0FF {
+      background: -webkit-linear-gradient(left, #00f, #0ff);
+      background: -o-linear-gradient(left, #00f, #0ff);
+      background: linear-gradient(to right, #00f, #0ff);
+    }
+
+    &__color0F0 {
+      background: -webkit-linear-gradient(left, #0ff, #0f0);
+      background: -o-linear-gradient(left, #0ff, #0f0);
+      background: linear-gradient(to right, #0ff, #0f0);
+    }
+
+    &__colorFF0 {
+      background: -webkit-linear-gradient(left, #0f0, #ff0);
+      background: -o-linear-gradient(left, #0f0, #ff0);
+      background: linear-gradient(to right, #0f0, #ff0);
+    }
+
+    &__colorF00 {
+      background: -webkit-linear-gradient(left, #ff0, #f00);
+      background: -o-linear-gradient(left, #ff0, #f00);
+      background: linear-gradient(to right, #ff0, #f00);
+    }
+
+    &__colorF00more {
+      background: #f00;
+    }
+
+    span {
+      display: inline-block;
+      font-size: 1.1rem;
+      vertical-align: top;
+    }
+  }
+
+  &__map {
+    height: 53rem;
+    position: relative;
+    width: 100%;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "ClearStore",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ClearStore.js"
+}

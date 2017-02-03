@@ -1,0 +1,60 @@
+@import '../../src/components/variables.scss';
+
+.prop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid $gray-300;
+
+  a {
+    color: $blue-600;
+    text-decoration: underline;
+  }
+
+  .propTitle {
+    color: $gray-600;
+  }
+
+  .propValue {
+    width: 50%;
+    text-align: right;
+    word-wrap: break-word;
+  }
+}
+
+.flatsWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 12px 30px 12px 5px;
+  border-bottom: 1px solid $gray-300;
+  color: $gray-dark;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    color: $gray-dark;
+    text-decoration: none;
+  }
+
+  &:after {
+    content: '\f054';
+    font: normal normal normal 16px/1 'FontAwesome';
+    color: $gray-300;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    margin-top: -8px;
+  }
+}
+
+.fixPrice {
+  align-items: baseline;
+}
+
+.flatsCount {
+  font-size: 0.8rem;
+  text-align: right;
+  color: $gray-600;
+}

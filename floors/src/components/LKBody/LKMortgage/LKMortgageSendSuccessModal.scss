@@ -1,0 +1,103 @@
+/*
+  Created on : 15.09.2016, 16:56:00
+  Author     : zemlyanov
+*/
+@import '../../variables.scss';
+@import '../../ucontrols.scss';
+
+.root {
+  .header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: $white-base;
+    font-size: 18px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+    background: $green-600;
+    border-color: $green-600;
+  }
+
+  .modalBody {
+    display: flex;
+
+    .info {
+      margin-right: 25px;
+      min-width: 453px;
+    }
+
+    .broker {
+      display: flex;
+    }
+  }
+
+  .content {
+    margin-top: 10px;
+    margin-bottom: 60px;
+
+    > span {
+      display: inline-block;
+      width: 100%;
+    }
+
+    .contentHeader {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .contentContent {
+      padding-top: 20px;
+
+      .green {
+        color: $green-600;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 15px;
+
+    :global(.form-control) {
+      width: auto;
+      margin: 0;
+      background: $white-base;
+      color: $gray-dark;
+      border-color: $gray-300;
+
+      &:hover {
+        background: $gray-100;
+      }
+    }
+  }
+
+  .percentBlock {
+    color: $blue-600;
+  }
+
+  :global(.modal-dialog) {
+    margin-top: 10%;
+    width: 800px;
+  }
+
+  :global(.modal-body) {
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+  }
+
+  :global(.modal-footer) {
+    display: none;
+  }
+
+  &.wide {
+    :global(.modal-dialog) {
+      width: 900px;
+    }
+  }
+}
+
+:global(.modal) {
+  overflow-x: auto !important;
+  overflow-y: auto !important;
+}

@@ -1,0 +1,247 @@
+.students-header {
+  background: url("//cdn-media.etagi.com/static/site/c/c5/c5e633f8b704fbb8e5cc7e57bba3c0d227969cd5.jpg") no-repeat center top;
+  height: 400px;
+  width: 100%;
+
+  &-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    font-size: 52px;
+    padding: 54px 0 0;
+    margin: 0;
+  }
+
+  &-title2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 7px;
+    background: url("//cdn-media.etagi.com/static/site/7/7c/7c994d239e593f739ecbf3bbe484940e9e3cd444.png") center no-repeat;
+  }
+
+  &-desc {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+.students-pluses {
+  padding-top: 65px;
+
+  &-item {
+    display: inline-block;
+    width: 49%;
+    padding-bottom: 45px;
+    vertical-align: top;
+
+    &:nth-child(2n+1) {
+      padding-right: 3%;
+    }
+
+    /*&:nth-child(2n + 1) {
+    }*/
+
+    img {
+      float: left;
+      padding-right: 43px;
+      padding-bottom: 50px;
+    }
+  }
+
+  &-title {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 26px;
+    padding-bottom: 14px;
+  }
+  &-desc {
+    font-size: 16px;
+    color: #87949e;
+    line-height: 26px;
+  }
+}
+
+.students-h1 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 50px;
+  text-align: center;
+}
+
+.students-p-desc {
+  color: #8c98a2;
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+
+.students-econom {
+  &-item {
+    background: url("//cdn-media.etagi.com/static/site/b/bf/bf6ac524d4d7935fa7155a0d1e7d1e5a031f90a1.png") no-repeat left top;
+    width: 1084px;
+    height: 224px;
+    margin: 50px auto;
+    padding: 40px 40px 0;
+  }
+
+  &-title {
+    font-size: 30px;
+    line-height: 26px;
+    padding-bottom: 14px;
+    padding-top: 4px;
+    color: #333743;
+  }
+
+  &-title-mini {
+    font-size: 15px;
+    padding-top: 10px;
+    margin-bottom: 25px;
+    color: #87949e;
+  }
+
+  &-desc {
+    line-height: 26px;
+    color: #87949e;
+  }
+
+  &-left {
+    text-align: center;
+    width: 27.7%;
+    float: left;
+    height: 160px;
+
+    img {
+      padding-top: 20px;
+      padding-right: 40px;
+    }
+  }
+  &-center {
+    width: 43%;
+    float: left;
+  }
+  &-right {
+    width: 29%;
+    float: left;
+  }
+}
+
+.vs-orderForm {
+  .order-bg-template1 {
+    h3 {
+      font-size: 33px;
+      line-height: 33px;
+      font-weight: bold;
+      padding-top: 22px;
+      margin-bottom: 0;
+
+      color: #226b8e;
+    }
+
+    .notice--text {
+      font-size: 17px;
+      margin: 14px 0 30px;
+
+      color: #226b8e;
+    }
+
+    .widget--body {
+      margin-bottom: 6rem;
+    }
+
+    .btn {
+      width: 100%;
+      text-align: center;
+      text-transform: none;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 8px 0;
+    }
+
+    .form-etagi {
+      padding: 0.8rem 1rem;
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+}
+
+.order-bg-template1 {
+  h3 {
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: bold;
+    padding-top: 18px;
+    margin-bottom: 0;
+
+    color: #3a3e4a;
+  }
+
+  .notice--text {
+    font-size: 17px;
+    margin: 14px 0 30px;
+
+    color: #8b97a1;
+  }
+
+  .widget--body {
+    margin-bottom: 6rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 0;
+  }
+
+  .form-etagi {padding: 1rem;}
+}
+
+.order-bg-template2 {
+  padding-bottom: 30px;
+  padding-top: 17px;
+
+  .widget--wrap__bg {min-height: 0;}
+
+  h3 {
+    font-size: 28px;
+    text-align: left;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 0;
+    margin: 0;
+
+    color: #fff;
+  }
+
+  .order-form {
+    padding: 0 60px;
+  }
+
+  .notice--text {
+    font-size: 14px;
+    color: #fff;
+    text-align: left;
+    padding: 0 15px;
+    margin: 0;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 0;
+  }
+
+  .form-etagi {padding: 1rem;}
+}

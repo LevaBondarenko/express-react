@@ -1,0 +1,55 @@
+.bankrating--wrap {
+  .ratingWrapper-star {
+    position: relative;
+    width: 86px;
+    height: 16px;
+    margin: 0;
+    background: url('https://cdn-media.etagi.com/static/site/c/c1/c1692d732f500fd23e2d646bfb8ffdb0ff542918.png') no-repeat bottom left;
+  }
+
+  .ratingWrapper-starActive {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://cdn-media.etagi.com/static/site/c/c1/c1692d732f500fd23e2d646bfb8ffdb0ff542918.png') no-repeat top left;
+  }
+}
+
+.bankBannerWrapper img {
+  width: 100%;
+}
+
+.bankTitle-mobile {
+  img {
+    max-width: 150px;
+  }
+}
+
+.mortgageListTitle {
+  font-size: 26px;
+  text-align: center;
+}
+
+.mortgageList {
+  div {
+    position: relative;
+    padding-left: 45px;
+    margin: 15px 0;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      margin-top: -12.5px;
+      left: 5px;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #a8aaab;
+      border-radius: 50%;
+      background: url('//cdn-media.etagi.com/content/media/site/f/fe/fe2045aaf5ec1c28384dbcf4fbad7afc4ef166d9.svg') no-repeat center;
+      background-size: 60%;
+    }
+  }
+}

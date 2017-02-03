@@ -1,0 +1,75 @@
+/**
+ * MSearcherSave2 styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.root {
+  width: 100%;
+
+  .button {
+    width: 100%;
+  }
+
+  .addSearchIco {
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    background-image: url('//cdn-media.etagi.com/content/media/site/6/67/67fdfb50fb6df1ba0fdfe0e62dd288b1db8551da.svg');
+  }
+
+  .addSearchText {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+
+  .modal {
+    padding: 10px;
+
+    .modalClose {
+      position: absolute;
+      background: url('//cdn-media.etagi.com/content/media/site/3/3f/3f6e58c49060c32bbaca3f90a773c97e726b1272.svg');
+      top: 12px;
+      right: 12px;
+      height: 20px;
+      width: 20px;
+      cursor: pointer;
+    }
+
+    .modalTitle {
+      margin: 10px 0;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .titleInput {
+      border: 1px solid $gray-300;
+      margin: 1rem 0 2rem;
+      padding: 0.8rem;
+      line-height: 1rem;
+      height: auto !important;
+    }
+
+    .createIco {
+      display: inline-block;
+      vertical-align: middle;
+      width: 25px;
+      height: 25px;
+      background-image: url('//cdn-media.etagi.com/content/media/site/5/5e/5e3290b3b5d92a90fb1c7aa1508625c5fb4221b4.svg');
+      background-position: 50%;
+      background-repeat: no-repeat;
+    }
+
+    .createText {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px;
+      font-size: 18px;
+    }
+  }
+}

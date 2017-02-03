@@ -1,0 +1,6 @@
+{
+  "name": "MSearcherTrakts",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./MSearcherTrakts.js"
+}

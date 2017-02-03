@@ -1,0 +1,51 @@
+@import '../../variables.scss';
+
+.root {
+  background: $gray-light;
+  border-radius: 0.3rem;
+  padding: 1.5rem;
+  margin: 1rem 0;
+}
+
+.consultWrap {
+  background: url('//cdn-media.etagi.com/static/site/6/63/6312cefb5fc72efae848e37b515af982a1b4e0eb.png') no-repeat center;
+  width: 4.1rem;
+  height: 4.1rem;
+  display: block;
+  float: right;
+}
+
+.quoteBlock {
+  width: 100%;
+  background: $white-base;
+  height: 4.1rem;
+  border-radius: 50rem;
+  line-height: 4.1rem;
+  padding: 0 1rem 0 4.3rem;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: -0.7rem;
+    margin-top: -0.55rem;
+    border-style: solid;
+    border-width: 0.55rem 0.8rem 0.55rem 0;
+    border-color: transparent $white-base transparent transparent;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    background: url('//cdn-media.etagi.com/static/site/b/b3/b351059d96ba458fc6e480d7bb7530244d1da459.png') no-repeat center;
+    display: block;
+    width: 1.9rem;
+    height: 1.9rem;
+    top: 50%;
+    margin-top: -1rem;
+    left: 1.6rem;
+  }
+}

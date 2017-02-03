@@ -1,0 +1,6 @@
+{
+  "name": "RatingParameters",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./RatingParameters.js"
+}

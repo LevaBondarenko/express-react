@@ -1,0 +1,6 @@
+{
+  "name": "BankBanner",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./BankBanner.js"
+}

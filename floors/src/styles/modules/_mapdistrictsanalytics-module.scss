@@ -1,0 +1,43 @@
+.mapAnalyticsWrapper {
+  position: relative;
+
+  .mapAnalyticsLegend {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: 1px solid #cacaca;
+    padding: 6px 6px 0 6px;
+    z-index: 20;
+    background: #fff;
+
+    .color00F, .color0FF, .color0F0 , .colorFF0 , .colorF00, .colorF00more {
+      width: 40px;
+      height: 20px;
+      display: inline-block;
+      opacity: .7;
+      margin-right: 6px;
+    }
+    line-height: 20px;
+
+    span {
+      display: inline-block;
+      font-size: 11px;
+      vertical-align: top;
+    }
+  //linear-gradient(to top, #fefcea, #f1da36)
+    /*.color00F {background: #00f;}
+    .color0FF {background: #0ff;}
+    .color0F0 {background: #0f0;}
+    .colorFF0 {background: #ff0;}
+    .colorF00 {background: #f00;}*/
+
+
+    .color00F {background: #00f;}
+    .color0FF {background: linear-gradient(to right, #00f, #0ff);}
+    .color0F0 {background: linear-gradient(to right, #0ff, #0f0);}
+    .colorFF0 {background: linear-gradient(to right, #0f0, #ff0);}
+    .colorF00 {background: linear-gradient(to right, #ff0, #f00);}
+    .colorF00more {background: #f00;}
+
+  }
+}

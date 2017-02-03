@@ -1,0 +1,130 @@
+@import '../variables.scss';
+
+.root {
+  .calcTitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .calcNotice {
+    text-align: center;
+    color: $gray-600;
+  }
+
+  .noticeError {
+    position: relative;
+    text-align: left;
+    color: $gray-600;
+    padding-left: 3.5rem;
+
+    &:before {
+      content: '!';
+      position: absolute;
+      color: $orange-300;
+      font-size: 3rem;
+      width: 3rem;
+      height: 3rem;
+      border: 0.2rem solid $orange-300;
+      border-radius: 50%;
+      line-height: 2.5rem;
+      text-align: center;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .box {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 0.3rem;
+    display: block;
+    float: left;
+    margin-right: 0.5rem;
+    margin-top: 0.2rem;
+  }
+
+  .boxTitle {
+    color: $gray-600;
+  }
+
+  .chartWrapper {
+    & > div {
+      display: inline-block;
+      vertical-align: middle;
+      width: 50%;
+    }
+  }
+
+  .economyWrapper {
+    border-top: 0.1rem solid $gray-300;
+    border-bottom: 0.1rem solid $gray-300;
+    padding: 1rem 0;
+
+    & > div {
+      display: inline-block;
+      width: 50%;
+
+      div:first-child {
+        color: $gray-600;
+      }
+    }
+
+    .economy {
+      color: $green-600;
+    }
+  }
+
+  .boxGrey {
+    background: $gray-300;
+  }
+
+  .boxRed {
+    background: $red-300;
+  }
+
+  button {
+    color: $gray-600;
+    background: $white-base;
+    border-color: $gray-300;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    font-size: 2.2rem;
+    line-height: 1.5rem;
+    padding: 0;
+    text-align: center;
+    transition: all 0.15s linear;
+
+    &:focus,
+    &:active:focus {
+      outline: none;
+    }
+  }
+
+  :global(.btn[disabled]) {
+    transition: all 0.1s linear;
+  }
+
+  .calcWrap {
+    display: block;
+    position: relative;
+    text-align: center;
+
+    div,
+    button {
+      display: inline-block;
+    }
+
+    input {
+      padding: 0.5rem 0 0 0.5rem;
+      margin: 0 0.5rem 0 -0.5rem;
+    }
+
+    .calcInput {
+      position: relative;
+      margin: 0 0 0 1rem;
+    }
+  }
+}

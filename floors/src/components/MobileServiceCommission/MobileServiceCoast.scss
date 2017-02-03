@@ -1,0 +1,48 @@
+@import '../variables.scss';
+
+.root {
+  position: relative;
+  padding: 0 12px;
+  border-bottom: 1px solid $gray-300;
+
+  & * {
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+  }
+}
+
+.titleItemContainer {
+  font-size: 17px;
+  font-weight: bold;
+  height: 51px;
+  line-height: 51px;
+  border-top: 1px solid $gray-300;
+  border-bottom: 1px solid $gray-300;
+  padding: 0 12px;
+  display: flex;
+}
+
+h5 {
+  color: $black;
+  font-weight: bold;
+}
+
+.propBlock {
+  width: 100%;
+  display: inline-block;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.propTitle {
+  color: $black;
+  width: 80%;
+  display: inline-block;
+  margin: 5px;
+}
+
+.propImg {
+  float: left;
+  width: 15%;
+  display: inline-block;
+}

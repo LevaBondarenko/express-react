@@ -1,0 +1,51 @@
+@import '../variables.scss';
+
+.formHeader {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.formDescription {
+  margin: 0 -15px;
+  padding: 0 15px 10px;
+  border-bottom: 1px solid $gray-300;
+
+  > span {
+    display: block;
+    font-size: 16px;
+  }
+
+  > span:last-child {
+    margin-top: 10px;
+  }
+}
+
+.paramsTable {
+  margin: 20px -15px 0;
+  padding: 0 15px;
+  font-size: 16px;
+  border-bottom: 1px solid $gray-300;
+
+  .paramItem {
+    width: 21%;
+    min-height: 70px;
+
+    &:nth-child(5n) {
+      width: 16%;
+    }
+  }
+
+  .paramName,
+  .paramValue {
+    font-size: 15px;
+  }
+
+  .paramName {
+    font-weight: 600;
+  }
+
+  .percentBlock {
+    color: $blue-600;
+  }
+}

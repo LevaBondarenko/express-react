@@ -1,0 +1,170 @@
+.specialOfferObjects {
+  box-sizing: content-box;
+
+  &-close {
+    position: absolute;
+    right: 0;
+    top: 3.1rem;
+    background: url("//cdn-media.etagi.com/static/site/b/b9/b9c04b2f326b08c68e4d1544389215a80273dda3.png") no-repeat top;
+    width: 1.9rem;
+    height: 1.9rem;
+
+    &:hover {
+      background: url("//cdn-media.etagi.com/static/site/b/b9/b9c04b2f326b08c68e4d1544389215a80273dda3.png") no-repeat bottom;
+    }
+  }
+
+  &-item {
+    width: 20%;
+    height: 25rem;
+    float: left;
+    outline: .1rem solid #ccc;
+    background: #fff;
+    position: relative;
+    cursor: pointer;
+
+    &.active {
+      outline: .1rem solid $crimson;
+      z-index: 500!important;
+
+      &:before {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -1.2rem;
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 1.2rem 1.2rem 0 1.2rem;
+        border-color: $crimson transparent transparent transparent;
+      }
+    }
+  }
+  &-logo {
+    text-align: center;
+    height: 7rem;
+    line-height: 7rem;
+
+    p {
+      font-size: 2.2rem;
+      line-height: 3.6rem;
+      margin-bottom: 0;
+    }
+
+    img {
+      line-height: 7rem;
+      max-width: 20rem;
+      max-height:  6rem;
+    }
+  }
+  &-pic {
+    position: relative;
+    //margin-left: .1rem;
+
+    img {
+      max-width: 100%;
+      max-height: 12rem;
+    }
+  }
+
+  &-openBlock {
+    width: 100%;
+
+    overflow-y: hidden;
+
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
+
+    max-height: 46rem;
+
+    &.exit {
+      max-height: 0;
+    }
+  }
+
+  &-openBlockWrapper {
+    padding: 5rem 0;
+    position: relative;
+  }
+
+  &-mainPhoto {
+    position: relative;
+    width: 40%;
+    float: left;
+    max-height: 36rem;
+    min-height: 24rem;
+    text-align: center;
+
+    img {
+      max-width: 40rem;
+      max-height: 100%;
+    }
+  }
+
+  &-actionName {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-style: italic;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: bold;
+    color: #E31F30;
+    margin-left: -8.1rem;
+    margin-top: -4.1rem;
+    width: 16.8rem;
+    height: 8.3rem;
+    background: url("//cdn-media.etagi.com/static/site/8/8f/8fec4c31d384176d9e364c89386147b4749c358c.png") no-repeat;
+    text-align: center;
+    padding: .5rem 2rem;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  &-fullDesc {
+    width: 60%;
+    float: left;
+    min-height: 24rem;
+
+    h3 {
+      text-align: center;
+      padding: 0 2rem 2rem;
+      margin: 0;
+    }
+
+    .btn-green {
+      display: inline-block;
+      margin-top: 2rem;
+    }
+  }
+
+  &-text {
+    width: 100%;
+    padding-right: 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &-text-gemini {
+    height: 21rem;
+  }
+
+  &-text-gemini-block {
+    padding-right: 2rem;
+  }
+
+  &-desc {
+    text-align: center;
+    height: 6rem;
+
+    p {
+      margin: 0;
+      padding: 1.5rem 1rem;
+      font-weight: bold;
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
+  }
+}

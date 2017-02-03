@@ -1,0 +1,6 @@
+{
+  "name": "LKManager",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./LKManager.js"
+}

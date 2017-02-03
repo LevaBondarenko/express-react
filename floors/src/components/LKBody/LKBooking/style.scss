@@ -1,0 +1,797 @@
+/*
+  Created on : 19.07.2016, 17:06:05
+  Author     : zemlyanov
+*/
+@import '../../variables.scss';
+
+:global(.lkBodyBooking) {
+  padding-top: 2px;
+}
+
+.lkBodyBooking {
+  height: 100%;
+  margin: 0 2rem 10rem;
+}
+
+.lkBodyBookingSpan {
+  padding: 0 5px;
+}
+
+.lkBodyBookingMain {
+  padding: 0;
+}
+
+.lkBodyBookingHead {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  > div:first-child {
+    height: 6rem;
+
+    > span {
+      color: color($gray-dark lightness(+25%));
+    }
+  }
+
+  .important {
+    color: $black !important;
+    font-weight: 600;
+  }
+}
+
+.lkBodyBookingSteps {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.lkBodyBookingStep,
+.lkBodyBookingStepActive,
+.lkBodyBookingStepComplete {
+  width: 33%;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+
+  .bookingStepItem {
+    border-radius: 50%;
+    background: $gray-light;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+
+  .bookingStepItemTitle {
+    color: color($gray-dark lightness(+25%));
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  > span {
+    display: inline-block;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 98%;
+    height: 0;
+    top: 1.25rem;
+    left: 52%;
+    border-bottom: 2px solid $gray-light;
+  }
+
+  &:last-child {
+    &:after {
+      border: none;
+    }
+  }
+}
+
+.lkBodyBookingStepActive,
+.lkBodyBookingStepComplete {
+  .bookingStepItem {
+    color: $white-base;
+    background: $lk-primary-button;
+  }
+
+  .bookingStepItemTitle {
+    color: $gray-dark;
+    font-weight: 600;
+  }
+
+  &:after {
+    border-color: $lk-primary-button;
+  }
+}
+
+.lkBodyBookingStepComplete {
+  .bookingStepItem {
+    &:after {
+      content: '\f00c';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      line-height: 2.5rem;
+      font-family: 'FontAwesome';
+      background: $lk-primary-button;
+      border-radius: 50%;
+    }
+  }
+}
+
+.lkBodyBookingList {
+  padding: 0;
+}
+
+.lkBodyBookingListHead {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.lkBodyBookingListItem {
+  height: 212px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border: 1px solid $gray-light;
+
+  &:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.61);
+    transition: all 0.3s ease-in;
+  }
+}
+
+.bookingObjectInfo {
+  padding: 2rem 1rem;
+  width: 45%;
+
+  :global(.col-xs-5) {
+    width: 45%;
+    margin-left: -0.5rem;
+  }
+
+  :global(.col-xs-7) {
+    width: 55%;
+    padding-left: 0.5rem;
+  }
+
+  :global(.searchRealtyItem_image) {
+    width: 172px;
+    height: 172px;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      margin: -100%;
+    }
+
+    > a {
+      display: block;
+      height: 172px;
+      width: 172px;
+      line-height: 172px;
+      text-align: center;
+    }
+  }
+
+  :global(.searchRealtyItem_image.blurred) {
+    line-height: 172px;
+    text-align: center;
+  }
+
+  .bookingObjTitle {
+    margin: 0;
+    padding-left: 0;
+    font-size: 1.8rem;
+
+    a {
+      color: $black;
+    }
+  }
+
+  .bookingObjParams {
+    margin-top: 1rem;
+    padding: 0.5rem 0 1.5rem;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .bookingObjAddress {
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+    font-size: 90%;
+    text-decoration: none;
+    color: color($gray-dark lightness(+25%));
+    position: relative;
+
+    i {
+      position: absolute;
+      top: 0.3rem;
+      left: 0;
+    }
+  }
+}
+
+.bookingInfo {
+  width: 36%;
+  padding-left: 0;
+
+  .bookingTitle {
+    color: color($black lightness(+10%));
+    font-size: 1.8rem;
+  }
+
+  .bookingTitleId {
+    color: $black;
+    font-weight: 600;
+  }
+
+  .bookingStatus {
+    margin-bottom: 1rem;
+
+    > span {
+      color: $black;
+      font-weight: 600;
+    }
+  }
+
+  .bookingStatusValue {
+    display: inline-block;
+    font-size: 90%;
+    font-weight: 600;
+    margin-left: 1rem;
+    padding: 0.3rem 1.5rem 0.3rem 3rem;
+    background: color($gray-light lightness(+8%));
+    border: 1px solid $gray-light;
+    border-radius: 1rem;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      background: $gray-light;
+      border-radius: 50%;
+      height: 0.7rem;
+      width: 0.7rem;
+      top: 0.8rem;
+      left: -0.4rem;
+    }
+
+    &:after {
+      background: color($gray-light lightness(+8%));
+      height: 0.7rem;
+      width: 0.8rem;
+      top: 0.8rem;
+      left: -0.3rem;
+    }
+  }
+
+  :global(.statusGreen) {
+    background: url('//cdn-media.etagi.com/static/site/f/f7/f7fb6ec5e75cd2594b2abb3e5cbffdea4dba99e7.png') no-repeat center;
+  }
+
+  :global(.statusYellow) {
+    background: url('//cdn-media.etagi.com/static/site/f/f8/f8e1f95099a6f7870b6daad73519469a306f6766.png') no-repeat center;
+  }
+
+  :global(.statusRed) {
+    background: url('//cdn-media.etagi.com/static/site/4/4f/4f79d983f2cd18722a3ece5cb1df8299b5cab658.png') no-repeat center;
+  }
+
+  :global(.statusGreen),
+  :global(.statusYellow),
+  :global(.statusRed) {
+    position: absolute;
+    top: 0.4rem;
+    left: 1.2rem;
+    height: 1.4rem;
+    width: 1.4rem;
+  }
+
+  .bookingStatusDescr {
+    font-size: 95%;
+    font-style: italic;
+  }
+}
+
+.bookingActions {
+  width: 19%;
+
+  .bookingTimeLeft {
+    width: 100%;
+    height: 6rem;
+    padding: 1.5rem 0 0 2.5rem;
+    font-size: 1.2rem;
+
+    &.active {
+      background: url('//cdn-media.etagi.com/static/site/6/6d/6d82ed90a55bc8f7ac3573188812f2ad64615858.png') no-repeat;
+      background-position: 0% center;
+    }
+
+    .timeLeftTitle {
+      color: color($gray-dark lightness(+20%));
+    }
+
+    .timeLeftValue {
+      font-weight: 600;
+    }
+  }
+
+  :global(.btn) {
+    width: 100%;
+    font-size: 90%;
+    padding: 1rem 0.5rem;
+  }
+
+  :global(.btn-link) {
+    color: color($gray-dark lightness(+20%));
+  }
+
+  :global(.btn-disabled) {
+    background: $gray-light;
+    border-color: $gray-light;
+    color: color($gray-dark lightness(+20%));
+    cursor: not-allowed;
+    position: relative;
+
+    &:hover {
+      background: $gray-light;
+      border-color: $gray-light;
+      color: color($gray-dark lightness(+20%));
+    }
+  }
+
+  :global(.help-border-circle) {
+    position: absolute;
+    top: 1.7rem;
+    right: 2.8rem;
+  }
+}
+
+.additionalService {
+  width: 30%;
+  padding: 2rem;
+  border-left: 2px dotted $gray-light;
+  height: 100%;
+
+  .servicesTitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.1;
+    color: $dark-gray;
+    position: relative;
+
+    :global(.fa) {
+      text-align: center;
+    }
+  }
+
+  .servicesList {
+    margin-top: 1rem;
+  }
+
+  .servicesListItem {
+    height: 4rem;
+    width: 100%;
+  }
+
+  .servicesListItemControl,
+  .servicesListItemPrice {
+    float: left;
+    width: 70%;
+    height: 100%;
+  }
+
+  .servicesListItemPrice {
+    width: 30%;
+    text-align: right;
+  }
+
+  .servicePrice,
+  .servicePriceDesc {
+    display: block;
+    margin-top: 0.7rem;
+  }
+
+  .servicePriceDesc {
+    font-size: 80%;
+    margin: 0;
+  }
+
+  .priceDescBold {
+    font-weight: 600;
+  }
+
+  :global(.msearcher--checkbox__item) {
+    margin-bottom: 1rem;
+
+    label i {
+      border: 2px solid $gray-light;
+      background: #fff url('//cdn-media.etagi.com/static/site/9/9e/9ee4362d9f825e1750da49aab8dbbe24b258ae06.png') no-repeat center;
+    }
+
+    &:focus,
+    &:hover {
+      label i {
+        border: 2px solid $lk-primary-button;
+      }
+    }
+
+    input:checked + label {
+      font-weight: 600;
+
+      i {
+        background: #fff url('//cdn-media.etagi.com/static/site/e/ed/ede15b17457eb0a42d548ca14ec1084c47113ce9.png') no-repeat center;
+        background-size: 160%;
+      }
+    }
+  }
+}
+
+.totalPrice,
+.ownerContacts {
+  width: 25%;
+  height: 100%;
+  background: color($gray-light lightness(+5%));
+
+  .ownerContactsTitle {
+    width: 100%;
+    padding-top: 3rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .ownerContactsList,
+  .ownerContactsValues {
+    margin: 1rem 0;
+
+    span {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+
+  .ownerContactsList {
+    text-align: right;
+  }
+
+  .ownerContactsValues {
+    .ownerContactsPhones {
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+  }
+
+  .contactsPrintButton,
+  .contactsSendButton,
+  .contractDownloadButton {
+    border: 1px solid color($gray-dark lightness(+25%));
+    border-radius: 2.1rem;
+    height: 4.2rem;
+    width: 4.2rem;
+    min-width: 4.2rem;
+    line-height: 3.8rem;
+    position: relative;
+    margin: 0 0.6rem;
+    background-color: inherit;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding: 0;
+    transition: width 0.3s ease-in-out;
+
+    &:hover {
+      width: 15rem;
+    }
+
+    div {
+      display: inline-block;
+      text-align: left;
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-left: 3rem;
+      padding: 0 1rem;
+    }
+
+    :global(.fa-question) {
+      background-color: $black;
+      z-index: 1;
+    }
+  }
+
+  .disabledSendButton {
+    opacity: 0.65;
+
+    &:hover {
+      cursor: not-allowed;
+      width: 4.2rem;
+    }
+  }
+
+  .contactsPrintButton {
+    background-position: 0.8rem center;
+    background-image: url('//cdn-media.etagi.com/static/site/3/3d/3d40030dae5ca8ff1d86b4178e248816cf8cf5e7.png');
+
+    &:hover {
+      background-image: url('//cdn-media.etagi.com/static/site/c/c4/c44f34eefc40770910e6b1a0dc0c764fe7444cb7.png');
+      width: 12rem;
+    }
+  }
+
+  .contactsSendButtonImg {
+    &:after {
+      position: absolute;
+      font-family: 'FontAwesome';
+      font-size: 1.5em;
+      content: '\f003';
+      top: 0;
+      left: 1rem;
+      line-height: 3.8rem;
+    }
+
+    &:hover {
+      color: $crimson;
+    }
+  }
+
+  .contractDownloadButton {
+    background-position: 1.2rem center;
+    background-image: url('//cdn-media.etagi.com/static/site/4/45/4596d77e87cbe6aad6533cff0cd7e8dc4f230bca.png');
+
+    &:hover {
+      background-image: url('//cdn-media.etagi.com/static/site/3/32/32cd0045a00b63c132adb36ca110055339b9d63c.png');
+    }
+  }
+}
+
+.totalPrice {
+  .pricesPerServices,
+  .priceTotal {
+    width: 100%;
+  }
+
+  .pricesPerServices {
+    margin-top: 7rem;
+    height: 7rem;
+  }
+
+  .priceItem {
+    display: inline-block;
+    width: 100%;
+
+    > span {
+      display: inline-block;
+      text-align: right;
+
+      &:first-child {
+        width: 55%;
+      }
+
+      &:last-child {
+        width: 45%;
+      }
+    }
+  }
+
+  .priceTotal {
+    font-weight: 600;
+    font-size: 1.6rem;
+  }
+}
+
+.ownerContacts {
+  width: 55%;
+}
+
+.lkBodyBookingPaymentType {
+  :global(.col-xs-12) {
+    border-bottom: 1px solid $gray-light;
+    padding: 1rem 0;
+  }
+
+  .paymentTypeTitle {
+    font-weight: 600;
+    padding: 0 1.5rem 1rem;
+  }
+
+  :global(.msearcher--radio__item) {
+    margin: 0.7rem 0.5rem;
+
+    label {
+      color: color($gray-dark lightness(+35%));
+    }
+
+    input:checked + label {
+      color: $gray-dark;
+
+      i {
+        color: $lk-primary-button;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      label i {
+        border-color: $lk-primary-button;
+      }
+    }
+  }
+
+  .paymentInfo {
+    min-height: 3rem;
+    padding: 0.5rem 2rem 1rem;
+
+    i {
+      display: inline-block;
+      height: 28px;
+      width: 66px;
+      background-size: contain;
+    }
+  }
+
+  :global(.ico-card-visa) {
+    background: url('//cdn-media.etagi.com/static/site/1/17/17b9873254e5b45fa69daf425491c3ecbb970ebe.png') no-repeat center;
+  }
+
+  :global(.ico-card-mastercard) {
+    background: url('//cdn-media.etagi.com/static/site/9/91/916abef5f7cffbef19ec9e9c0203fa037d655fea.png') no-repeat center;
+  }
+
+  :global(.ico-card-paypal) {
+    background: url('//cdn-media.etagi.com/static/site/4/40/403e4cc2e8fcc0572ddd433311e3efbe778e11cc.png') no-repeat center bottom;
+  }
+
+  :global(.btn) {
+    width: 100%;
+    font-size: 90%;
+    padding: 1rem 0.5rem;
+  }
+
+  :global(.btn-default) {
+    background: color($gray-light lightness(+5%));
+    border-color: color($gray-light lightness(+5%));
+
+    &:hover {
+      border-color: color($gray-light lightness(+5%));
+      box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.21);
+      transition: all 0.3s ease-in;
+    }
+  }
+
+  .withMargin {
+    margin-top: 1.2rem;
+  }
+
+  .paymentDesc {
+    color: color($gray-dark lightness(+35%));
+  }
+
+  .paymentDesc.withMargin {
+    margin-top: 2.2rem;
+  }
+
+  .officeAddress {
+    text-transform: uppercase;
+  }
+}
+
+.lkBodyBookingPaymentType,
+.lkBodyBookingSettleConfirm {
+  :global(.btn) {
+    width: 100%;
+    font-size: 90%;
+    padding: 1rem 0.5rem;
+  }
+
+  :global(.btn-default) {
+    background: color($gray-light lightness(+5%));
+    border-color: color($gray-light lightness(+5%));
+
+    &:hover {
+      border-color: color($gray-light lightness(+5%));
+      box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.21);
+      transition: all 0.3s ease-in;
+    }
+  }
+}
+
+.lkBodyBookingSettleConfirm {
+  text-align: center;
+  margin: 4rem 0 2rem;
+
+  > div:first-child {
+    height: 8rem;
+    margin-bottom: 2rem;
+
+    > span {
+      color: color($gray-dark lightness(+25%));
+    }
+  }
+
+  :global(.btn) {
+    margin-top: 0;
+  }
+}
+
+.alreadyPayedWarning {
+  color: $crimson;
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 2rem 0;
+}
+
+.invoiceTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+.invoicePrices {
+  margin-top: 1rem !important;
+}
+
+.colorRed {
+  color: color($crimson lightness(+15%));
+}
+
+:global(.block-to-print) {
+  width: 102.4rem;
+  padding: 1.5rem;
+  margin-left: 3rem;
+
+  @media print {
+    a[href]:after {
+      content: none !important;
+    }
+
+    .bookingObjectInfo {
+      width: 41.66667%;
+    }
+
+    .lkBodyBookingListItem {
+      height: auto !important;
+    }
+
+    .ownerContactsTitle {
+      padding-top: 2rem;
+    }
+
+    .ownerContactsPhones {
+      font-size: 1.3rem !important;
+    }
+
+    :global(.searchRealtyItem_image) {
+      display: block !important;
+      max-width: 100% !important;
+      height: auto !important;
+    }
+
+    .additionalService {
+      border-right: 2px dotted $gray-light;
+    }
+
+    .totalPrice {
+      margin-top: 2.5rem;
+    }
+  }
+}
+
+.phoneInModal {
+  white-space: nowrap;
+  font-weight: 600;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "WorkTime",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./WorkTime.js"
+}

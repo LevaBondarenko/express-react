@@ -1,0 +1,106 @@
+/**
+ * ThreeDimensionDoodah styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.root {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  perspective: 1000px;
+  perspective-origin: center 60%;
+
+  .backG {
+    background: $gray-50;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    perspective: inherit;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 1s cubic-bezier(0.45, 0.2, 0.2, 1);
+  }
+
+  .wrapper {
+    transition: transform 1s cubic-bezier(0.45, 0.2, 0.2, 1);
+    perspective: inherit;
+    min-height: 200px;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+  }
+
+  .front,
+  .back {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 40px;
+    perspective: inherit;
+    z-index: 2;
+    overflow: hidden;
+    outline: 1px solid transparent;
+    top: 50%;
+  }
+
+  .front {
+    transform: translateY(-50%) translateZ(60px);
+  }
+
+  .back {
+    transform: translateY(-50%) translateZ(-60px) rotateY(180deg);
+  }
+
+  &:hover {
+    .wrapper {
+      transform: rotateY(-180deg);
+      transform-style: preserve-3d;
+    }
+
+    .backG {
+      &.dontRotate {
+        transform: rotateY(180deg);
+      }
+    }
+  }
+
+  :global(.title) {
+    font-weight: 600;
+    color: $gray-dark;
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  :global(.descr),
+  :global(.dummy-link) {
+    color: $gray-dark;
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+
+  :global(.dummy-link) {
+    color: $blue-600;
+    text-decoration: underline;
+  }
+
+  :global(.dummy-link-2) {
+    display: inline-block;
+    color: $white-base;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    line-height: 20px;
+    padding: 5px 10px;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
+}

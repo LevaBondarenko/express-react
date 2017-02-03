@@ -1,0 +1,41 @@
+@import '../variables.scss';
+
+.slide {
+  float: left;
+  height: 100%;
+  text-align: center;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.1;
+  cursor: pointer;
+}
+
+.slideLayout {
+  float: left;
+  height: 100%;
+  text-align: center;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0;
+  cursor: pointer;
+}
+
+.slide__img {
+  height: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+.slide__active {
+  position: relative;
+  display: block;
+  float: left;
+  height: 100%;
+  text-align: center;
+  z-index: 9;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity 500ms ease, -webkit-filter 500ms ease;
+}

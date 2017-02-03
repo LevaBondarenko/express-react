@@ -1,0 +1,75 @@
+@import '../variables.scss';
+
+.rejectedObjects__counts {
+  margin: 0 auto;
+
+  tr {
+    td {
+      padding: 5px 10px;
+      margin: 2px;
+
+      &:first-child {
+        font-weight: bold;
+      }
+
+      &:last-child {
+        font-style: italic;
+        background-color: $hint;
+      }
+    }
+  }
+}
+
+.rejectedObjects__input {
+  margin: 0 auto;
+
+  tr {
+    td {
+      padding: 5px 10px;
+      margin: 2px;
+    }
+  }
+}
+
+.rejectedObjects__objects {
+  margin: 0 auto;
+
+  tr {
+    th {
+      text-align: center;
+    }
+
+    td {
+      padding: 5px 10px;
+      margin: 2px;
+      background: #eee;
+    }
+  }
+}
+
+.rejectedObjects__notfound {
+  text-align: center;
+  padding: 5px 10px;
+  margin: 2px;
+  color: green;
+}
+
+.rejectedObjects__wrapper {
+  background-color: whitesmoke;
+  padding: 10px;
+  margin: 10px;
+}
+
+.rejectedObjects__title {
+  margin: 15px 0 10px;
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+:global(.loader-inner) {
+  & > div {
+    position: relative !important;
+  }
+}

@@ -1,0 +1,199 @@
+.jobSeekerProfileBg {
+  background-image: url('https://cdn-media.etagi.com/static/site/6/62/6270f32f79ea626af3df131a517baaea844838a3.jpg');
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  margin-bottom: -40px;
+}
+
+.jobSeekerProfileWrapper {
+  padding-bottom: 20px;
+}
+
+.jobSeekerProfile {
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(130,130,130,.5);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(130,130,130,.5);
+  box-shadow: 0px 2px 5px 0px rgba(130,130,130,.5);
+  border: 1px solid rgba(130,130,130,.5);
+  position: relative;
+}
+
+.jobSeekerProfile_form {
+  width: 600px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.jobSeekerProfile_title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 25px;
+}
+
+.jobSeekerProfile_formInfo {
+  padding-top: 25px;
+  font-size: 15px;
+}
+
+.jobSeekerProfile_bold {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.jobSeekerProfile_grey {
+  font-style: italic;
+  color: #c2c2c2;
+  font-size: 13px;
+}
+
+.jobSeekerProfile_inputs {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.jobSeekerProfile_inputs .form-group {
+  margin-top: 20px;
+}
+
+.jobSeekerProfile_inputs label {
+  -ms-text-align-last: right;
+  text-align-last: right;
+  font-weight: normal;
+}
+
+.jobSeekerProfile_inputs .dropdown {
+  width: 100%;
+}
+
+.jobSeekerProfile_inputs textarea {
+  width: 100%;
+  border: 1px solid #c2c2c2;
+  resize: none;
+}
+
+#vacancy {
+  width: 100%;
+}
+
+.required_flag {
+  color: #E31F30;
+  padding-right: 5px;
+}
+
+.paddingZero {
+  padding-left: 0;
+}
+
+.dt-wrapper {
+  padding-right: 0;
+}
+
+.addMoreLink {
+  padding-bottom: 10px;
+  padding-left: 206px;
+  margin-top: -30px;
+}
+
+.addMoreLink a {
+  text-decoration: underline;
+}
+
+.addMoreIcon {
+  padding: 5px;
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.plus {
+  padding: 3px;
+}
+
+.jobSeekerProfile_submit button {
+  background-color: #d61122;
+  color: #fff;
+  border: none;
+  padding: 10px 35px;
+  font-weight: bold;
+}
+
+.jobSeekerProfile_submit {
+  padding-left: 206px;
+  margin-top: 20px;
+}
+
+.jobSeekerProfile_inst, .jobSeekerProfile_job {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.addMoreLink.removeLink {
+  padding-top: 40px;
+}
+
+.jobPeriod {
+  padding: 0;
+}
+
+.jobPeriod .col-sm-6 {
+  margin-bottom: 20px;
+}
+
+.form-group.duties {
+  margin-top: 0;
+}
+
+.form-control.error {
+  border: 1px solid white;
+  -webkit-box-shadow: 0px 0px 1px 1px #d61122 !important;
+  -moz-box-shadow: 0px 0px 1px 1px #d61122 !important;
+  box-shadow: 0px 0px 1px 1px #d61122 !important;
+}
+
+.form-control.success {
+  border: 1px solid white;
+  -webkit-box-shadow: 0px 0px 1px 1px $apple !important;
+  -moz-box-shadow: 0px 0px 1px 1px $apple !important;
+  box-shadow: 0px 0px 1px 1px $apple !important;
+}
+
+.jobSeekerProfile .form-control:hover {
+  border: 1px solid white;
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(167,196,210,1);
+  -moz-box-shadow: 0px 0px 1px 1px rgba(167,196,210,1);
+  box-shadow: 0px 0px 1px 1px rgba(167,196,210,1);
+}
+
+.jobSeekerProfile_check {
+  background-image: url('https://cdn-media.etagi.com/static/site/c/c1/c14906b65c6efc6224b7828093f880ba6a07caa3.jpg');
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 10px;
+  right: -14px;
+  display: none;
+}
+
+.form-control.success + .jobSeekerProfile_check {
+  display: block;
+}
+
+.jobSeekerProfile_cup {
+  background-image: url('https://cdn-media.etagi.com/static/site/9/9e/9e46a58742db3104b2b0d6bd2eda3328cdf40bbb.png');
+  background-repeat: no-repeat;
+  width: 439px;
+  height: 495px;
+  position: absolute;
+  right: -150px;
+  top: 85px
+}
+
+.jobSeekerProfile_pen {
+  background-image: url('https://cdn-media.etagi.com/static/site/f/ff/fffd696126ee73a1e9f273ed3f466b6c053e50b1.png');
+  background-repeat: no-repeat;
+  width: 214px;
+  height: 306px;
+  position: absolute;
+  left: -100px;
+  top: 540px;
+}

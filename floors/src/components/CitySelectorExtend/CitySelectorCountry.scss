@@ -1,0 +1,66 @@
+@import '../variables.scss';
+
+.citySelector__countries {
+  margin: 0 11px;
+}
+
+.citySelector__list__link {
+  display: block;
+  padding: 5px 0 5px 5px;
+  font-size: 14px;
+  color: $gray-dark;
+  cursor: pointer;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    color: $gray-dark;
+    background: $gray-light;
+    text-decoration: none;
+
+    &:before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 14.5px 0 14.5px 17px;
+      border-color: transparent transparent transparent $gray-light;
+      position: absolute;
+      top: 0;
+      right: -17px;
+    }
+  }
+}
+
+.citySelector__list__disabled {
+  display: block;
+  padding: 5px 0 5px 5px;
+  font-size: 14px;
+  color: $gray-dark;
+  cursor: default;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    color: $gray-dark;
+    text-decoration: none;
+  }
+}
+
+.activeLink {
+  color: $gray-dark;
+  background: $gray-light;
+  text-decoration: none;
+
+  &:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 14.5px 0 14.5px 17px;
+    border-color: transparent transparent transparent $gray-light;
+    position: absolute;
+    top: 0;
+    right: -17px;
+  }
+}

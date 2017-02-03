@@ -1,0 +1,6 @@
+{
+  "name": "MenuFixed",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./MenuFixed.js"
+}

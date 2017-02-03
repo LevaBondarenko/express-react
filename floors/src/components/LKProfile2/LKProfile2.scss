@@ -1,0 +1,299 @@
+/**
+ * LKProfile2 styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.root {
+  background: $gray-100;
+
+  > * {
+    background: $white-base;
+  }
+
+  .title {
+    padding: 1rem;
+    background: $gray-100;
+    font-weight: 600;
+    box-shadow: 0 2px 10px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 6px;
+  }
+
+  .comment {
+    font-size: 12px;
+    margin: 0.8rem;
+    padding: 0.3rem 0.6rem;
+    border: 1px solid $orange-100;
+    background: $orange-50;
+    border-radius: 3px;
+  }
+
+  .avatar {
+    padding: 0.8rem;
+
+    .avatarBlock {
+      border: 1px dashed $gray-300;
+      border-radius: 3px;
+      display: flex;
+      padding: 0.8rem;
+
+      > img,
+      .photoComment {
+        display: inline-block;
+        line-height: 64px;
+      }
+
+      > img {
+        height: 64px;
+        width: 64px;
+      }
+
+      .photoComment {
+        color: $blue-800;
+        margin-left: 1rem;
+      }
+    }
+
+    .inputFile {
+      display: none;
+    }
+  }
+
+  .fio {
+    padding: 0.8rem;
+
+    input {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .birthday,
+  .sex {
+    padding: 0.8rem;
+
+    > span {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 0.6rem;
+    }
+  }
+
+  .birthday {
+    .birthdayDate {
+      display: flex;
+
+      .day {
+        width: 20%;
+      }
+
+      .month {
+        width: 50%;
+        margin: 0 0.5rem;
+      }
+
+      .year {
+        width: 30%;
+      }
+    }
+  }
+
+  .sex {
+    margin-bottom: 0.8rem;
+
+    .sexValues {
+      display: flex;
+
+      > div {
+        margin: 0 1rem 0 0;
+        position: relative;
+
+        input {
+          display: none;
+        }
+
+        label {
+          line-height: 1rem;
+          font-weight: 300;
+        }
+
+        label i {
+          display: inline-block;
+          border: 1px solid $gray-600;
+          border-radius: 50%;
+          width: 1rem;
+          height: 1rem;
+          margin-right: 6px;
+        }
+
+        label:hover i,
+        i:hover {
+          border-color: $red-600;
+        }
+
+        input:checked + label i {
+          border: 5px solid $red-600;
+        }
+      }
+    }
+  }
+
+  .blockContainer {
+    margin-bottom: 0.8rem;
+    border-top: 1px solid $gray-100;
+
+    .titleBlockContainer {
+      padding: 1rem 0.8rem;
+      border-bottom: 1px solid $gray-100;
+    }
+
+    input,
+    button {
+      margin-bottom: 0.5rem;
+    }
+
+    .button {
+      border: 1px solid $green-600;
+      background: $white-base;
+      color: $green-600;
+      outline: none;
+
+      &.disabled {
+        color: $gray-500;
+        border-color: $gray-300;
+      }
+    }
+  }
+
+  .form {
+    margin: 0.8rem;
+
+    .comment {
+      margin: 0.8rem 0;
+    }
+  }
+
+  .contactGroup {
+    display: flex;
+    position: relative;
+
+    input {
+      display: inline-block;
+      width: 60%;
+      margin-right: 0.4rem;
+      font-size: 14px;
+    }
+
+    button {
+      display: inline-block;
+      width: 38%;
+      width: calc(40% - 0.4rem);
+      font-size: 14px;
+      padding: 0 8px;
+    }
+
+    .helpBlock {
+      position: absolute;
+      top: 2rem;
+      left: 0.4rem;
+      color: $red-600;
+      font-size: 12px;
+    }
+  }
+
+  .button {
+    outline: none;
+  }
+
+  .submitAll {
+    background: none;
+    padding: 0.8rem;
+  }
+
+  .modalForm {
+    padding: 10px;
+    background: $gray-100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .modalClose {
+      position: absolute;
+      background: url('//cdn-media.etagi.com/content/media/site/3/3f/3f6e58c49060c32bbaca3f90a773c97e726b1272.svg');
+      top: 12px;
+      right: 12px;
+      height: 20px;
+      width: 20px;
+      cursor: pointer;
+      border: none;
+      outline: none;
+    }
+
+    .innerForm {
+      background: $white-base;
+      border: 1px solid $gray-300;
+      border-radius: 2px;
+      box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+      padding: 0.6rem;
+      text-align: center;
+
+      .innerTitle {
+        font-weight: 600;
+      }
+
+      .innerDescription {
+        color: $gray-600;
+        font-size: 14px;
+      }
+
+      .codeInput {
+        margin: 0.8rem 0;
+
+        input {
+          width: 60%;
+          text-align: center;
+          padding: 0.6rem;
+          letter-spacing: 3px;
+          display: inline-block;
+          height: auto;
+        }
+      }
+
+      .codeSubmit {
+        margin: 0.8rem 0 0;
+
+        button {
+          display: inline-block;
+          width: auto;
+          padding: 10px;
+          outline: none;
+        }
+      }
+    }
+
+    .innerComment {
+      text-align: center;
+      margin-top: 0.6rem;
+
+      span {
+        display: inline-block;
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 0.4rem;
+
+        &:first-child {
+          font-size: 16px;
+          margin-bottom: 0.8rem;
+        }
+
+        a {
+          text-decoration: underline;
+          color: $blue-600;
+        }
+      }
+    }
+  }
+}

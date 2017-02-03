@@ -1,0 +1,33 @@
+/**
+ * MortgageProgramCreditConditions styles
+ *
+ * @ver 0.0.0
+ * @author a.d.permin@72.etagi.com
+ */
+
+@import '../variables.scss';
+
+.root {
+  table {
+    text-align: center;
+    width: 100%;
+    border: 0.1rem solid $gray-300;
+
+    td,
+    th {
+      border: 0.1rem solid $gray-300;
+    }
+
+    th {
+      background-color: $gray-100;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}
+
+.tableTitle {
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,92 @@
+/**
+ * MobileHeader styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.root {
+  min-height: 3rem;
+
+  .location {
+    background: $gray-300;
+  }
+
+  .header {
+    padding: 5px 12px;
+    display: flex;
+    width: 100%;
+
+    .logo {
+      img {
+        height: 38px;
+        width: 110px;
+      }
+    }
+
+    .icons {
+      text-align: right;
+      padding: 6px 0;
+      width: calc(100% - 110px);
+      line-height: 0;
+
+      .icon {
+        position: relative;
+        display: inline-block;
+        height: 25px;
+        width: 25px;
+        margin-left: 12px;
+
+        .badge {
+          position: absolute;
+          background: $red-600;
+          color: $white-base;
+          border-radius: 8px;
+          font-size: 10px;
+          min-width: 1.4rem;
+          text-align: center;
+          height: 1rem;
+          line-height: 0.8rem;
+          padding: 2px;
+          top: 2px;
+          right: -10px;
+        }
+      }
+
+      .citySelect {
+        background-image: url('//cdn-media.etagi.com/content/media/site/4/43/4308da8fbf7a28040a3183a654e30f648195fcbb.svg');
+      }
+
+      .favorites {
+        background-image: url('//cdn-media.etagi.com/content/media/site/8/84/84c4559abdf430787422853314ebbb482e61869c.svg');
+      }
+
+      .lk {
+        background-image: url('//cdn-media.etagi.com/content/media/site/8/85/85eaf32cb25084e7f326efa5b3ad7097343c4302.svg');
+      }
+
+      .lkAutoriz {
+        background-image: url('//cdn-media.etagi.com/content/media/site/b/bc/bc4a331bdd5df8ea226661705410d6466ffa33f8.svg');
+      }
+
+      .mainmenu {
+        background-image: url('//cdn-media.etagi.com/content/media/site/4/4c/4c26b84815f43554301a3aac848161d81124d1d1.svg');
+      }
+
+      .close {
+        background-image: url('//cdn-media.etagi.com/content/media/site/3/3f/3f6e58c49060c32bbaca3f90a773c97e726b1272.svg');
+      }
+    }
+  }
+
+  &.fixedHeader {
+    .header {
+      position: fixed;
+      top: 0;
+      z-index: 100;
+      background: $white-base;
+    }
+  }
+}

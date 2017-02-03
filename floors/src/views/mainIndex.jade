@@ -1,0 +1,37 @@
+doctype html
+html.no-js(lang='ru-RU')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='shortcut icon', href=favicon, type='image/x-icon')
+    if !seo
+      title= title
+    else
+      != seo
+    link(rel='stylesheet', href=maincss)
+    script(src='//cdn-media.etagi.com/static/site/f/fc/fc25bba3f72f26c0d3568e99a2a3a5b2fffe1b93.js')
+    script(async, defer, src='/wp-content/plugins/LayerSlider/static/js/layerslider.kreaturamedia.jquery.js')
+    script(async, defer, src='/wp-content/plugins/LayerSlider/static/js/greensock.js')
+    script(async, defer, src='/wp-content/plugins/LayerSlider/static/js/layerslider.transitions.js')
+    script(async, defer, src='/wp-content/plugins/LayerSlider/static/js/layerslider.transition.gallery.js')
+    != scripts.metrika
+    != scripts.headScripts
+    style#pagebuilder!= styles
+    style#css!= css
+  body.siteorigin-panels
+    //if [lt IE 9] <div class="alert alert-warning"><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p></div><![endif]
+    header.header!= header
+    .wrap(role='document')
+      .content
+        main#mainApp.main(role='main')!= body
+    #page_seo_text.container-wide
+      != seoText
+    footer#footer.footer.clearfix(role='contentinfo')!= footer
+    script.
+     var data = !{js};
+    != scripts.bodyScripts
+    != scripts.googleMapsApi
+    != scripts.yandexMapsApi
+    script(src=vendors)
+    script(src=entry)

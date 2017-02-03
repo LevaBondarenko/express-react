@@ -1,0 +1,10 @@
+build
+coverage
+doc
+node_modules
+ncp-debug.log
+npm-debug.log
+.idea/
+.happypack/
+lintresult.xml
+*.json.gzip

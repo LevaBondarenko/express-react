@@ -1,0 +1,385 @@
+@import '../variables.scss';
+
+.bookingForm {
+  border: 1px solid $gray-base;
+  border-radius: 2px;
+  color: $black;
+  margin-bottom: 1rem;
+  padding: 1.3rem 3rem;
+  width: 100%;
+  text-align: center;
+
+  :global(.btn-link[disabled]) {
+    color: $white;
+    background: $green-base;
+
+    &:hover {
+      opacity: 0.65;
+    }
+  }
+
+  &__ownerContacts {
+    width: 100%;
+    height: 100%;
+    background: color($gray-light lightness(+5%));
+
+    &__title {
+      width: 100%;
+      padding-top: 3rem;
+      font-size: 1.6rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    &__contactblock {
+      width: 100%;
+      text-align: center;
+    }
+
+    &__list,
+    &__values {
+      margin: 1rem 0;
+      display: inline-block;
+      text-align: left;
+
+      span {
+        display: block;
+      }
+    }
+
+    &__values {
+      margin-left: 2.5rem;
+
+      .bookingForm__ownerContacts__phones {
+        font-weight: 600;
+        font-size: 1.5rem;
+      }
+    }
+
+    .bookingForm__ownerContacts__office {
+      margin-top: 1.5rem;
+    }
+  }
+
+  &__callUsBlock {
+    margin-top: 2rem;
+
+    p {
+      margin-bottom: 0.5rem;
+      text-align: center;
+      font-size: 10px;
+    }
+
+    &__phone {
+      font-size: 12px !important;
+      font-weight: 700;
+      padding-top: 0 !important;
+    }
+  }
+
+  &__cancelModal {
+    text-align: center;
+
+    p {
+      font-size: 18px;
+      padding-bottom: 2rem;
+    }
+
+    :global(.modal-dialog) {
+      max-width: 35rem;
+
+      :global(.modal-header) {
+        border: 0;
+        padding: 15px 15px 0 0;
+
+        :global(.close) {
+          font-size: 20px;
+          font-weight: 300;
+          opacity: 1;
+        }
+      }
+
+      :global(.modal-body) {
+        padding: 15px 40px;
+      }
+    }
+  }
+
+  &__modalButton {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    display: block;
+    border-radius: 2px;
+    margin-bottom: 2rem;
+
+    &__confirm {
+      background: $gray-light;
+      color: color($gray-base shade(40%));
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: $red-dark;
+        color: $white;
+        text-decoration: none;
+      }
+    }
+
+    &__cancel {
+      background: $green-base;
+      color: $white;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: $green-dark;
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__okSign {
+    margin-bottom: 2rem;
+  }
+
+  &__flag {
+    height: 14px;
+    width: 12px;
+    display: inline-block;
+    margin-right: 0.6rem;
+
+    &__yellow {
+      background: url('//cdn-media.etagi.com/static/site/7/7f/7f9d927bc3685de5cdfa4895c47f381944035673.png') no-repeat center top;
+    }
+
+    &__red {
+      background: url('//cdn-media.etagi.com/static/site/5/58/582e08ce619445c217c512a687e6f6498aec49ab.png') no-repeat center top;
+    }
+
+    &__teal {
+      background: url('//cdn-media.etagi.com/static/site/c/cd/cdb0b549d1de16d20416162965cd3d1be177250b.png') no-repeat center top;
+    }
+  }
+
+  &__header {
+    font-size: 20px;
+    letter-spacing: 0.3px;
+    font-weight: 700;
+    padding-bottom: 0.6rem;
+    line-height: 2.4rem;
+    margin: 1.3rem 0 0.7rem;
+  }
+
+  &__message {
+    line-height: 1.6rem;
+    font-size: 13px;
+    margin-bottom: 1rem;
+
+    p {
+      font-size: 18px;
+      margin: 1rem 0 2.5rem;
+    }
+  }
+
+  &__descriptionblock {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem 0 1rem;
+  }
+
+  &__phoneblock {
+    font-size: 9px;
+    color: $gray-dark;
+
+    &__header {
+      font-size: 9px;
+      padding: 0 2rem;
+      line-height: 1.5rem;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  &__offerLink {
+    color: $gray-dark;
+    margin-top: -0.6rem;
+
+    :global(.input_arrow:checked+label .icon_arrow) {
+      background: $white url('//cdn-media.etagi.com/static/site/1/18/18694afbf62ebee45f9d089e8d60ed477bf5a813.png') no-repeat center;
+      background-size: 100%;
+    }
+
+    :global(.checkbox_arrow:hover .icon_arrow) {
+      border: 0.1rem solid $red-base;
+    }
+
+    input {
+      display: none;
+      margin: 0;
+      vertical-align: middle;
+    }
+
+    label {
+      font-weight: 100;
+      margin: 0;
+      vertical-align: middle;
+
+      a {
+        color: $gray-dark;
+        text-decoration: underline;
+
+        &:hover {
+          color: $blue-dark;
+          cursor: pointer;
+        }
+      }
+
+      i {
+        display: block;
+        float: left;
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-right: 0.5rem;
+        background: #fff no-repeat center;
+        border: 0.1rem solid #ccc;
+        border-radius: 0.2rem;
+        -webkit-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+      }
+
+      span {
+        vertical-align: middle;
+      }
+    }
+  }
+
+  &__inputForm {
+    margin: 1.5rem 0 2rem;
+
+    &__input {
+      height: 4rem;
+      background: $gray-light;
+
+      &:focus {
+        background: transparent;
+      }
+
+      &:active,
+      &:focus,
+      &:hover {
+        border-color: $gray-darker;
+      }
+    }
+
+    :global(.help-block) {
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  &__button {
+    color: $white;
+    background: $green-base;
+    max-height: 4.9rem;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 1.5rem 0.7rem;
+    border-radius: 4px;
+    margin: 0.8rem 0 1.4rem;
+    font-size: 12px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $white;
+      background: $green-dark;
+      text-decoration: none;
+    }
+  }
+
+  &__contacts {
+    margin: 1.7rem 0;
+    text-align: left;
+
+    &__info {
+      font-size: 12px;
+      line-height: 1.1;
+    }
+
+    &__controls {
+      margin-top: 1.9rem;
+
+      p {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      &__bar {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      &__button {
+        display: inline-block;
+        border: 1px solid $gray-base;
+        border-radius: 22px;
+        padding: 12.5px;
+        font-size: 12px;
+        text-align: left;
+
+        &__text {
+          vertical-align: middle;
+          display: inline-block;
+          color: $black;
+          font-weight: 700;
+        }
+
+        &:hover,
+        &:active,
+        &:focus,
+        &:active:focus {
+          text-decoration: none;
+          border: 1px solid $gray-base;
+          outline: 0;
+        }
+      }
+    }
+  }
+
+  &__link {
+    font-size: 12px;
+    letter-spacing: -0.5px;
+    cursor: pointer;
+
+    &__cancel {
+      color: color($gray-base shade(40%));
+      font-size: 13px;
+
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: underline;
+        color: color($gray-base shade(40%));
+      }
+    }
+  }
+}
+
+:global(.roemailform-leave) {
+  max-height: 40rem;
+}
+
+:global(.roemailform-leave.roemailform-leave-active) {
+  max-height: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+:global(.roemailform-enter) {
+  max-height: 0;
+}
+
+:global(.roemailform-enter.roemailform-enter-active) {
+  max-height: 400px;
+  transition: all 0.5s ease-in-out;
+}

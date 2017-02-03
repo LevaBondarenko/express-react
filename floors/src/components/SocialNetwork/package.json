@@ -1,0 +1,6 @@
+{
+  "name": "SocialNetwork",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./SocialNetwork.js"
+}

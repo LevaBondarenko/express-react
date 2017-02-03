@@ -1,0 +1,6 @@
+{
+  "name": "TableData",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./TableData.js"
+}

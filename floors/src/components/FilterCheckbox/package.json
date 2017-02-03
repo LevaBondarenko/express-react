@@ -1,0 +1,6 @@
+{
+  "name": "FilterCheckbox",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./FilterCheckbox.js"
+}

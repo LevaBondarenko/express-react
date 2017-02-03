@@ -1,0 +1,6 @@
+{
+  "name": "MobileRieltor",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./MobileRieltor.js"
+}

@@ -1,0 +1,35 @@
+/**
+ * FavButton2 styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.root {
+  width: 100%;
+  background: $white-base;
+  border: 1px solid $gray-300;
+  border-radius: 3px;
+  outline: none;
+  box-shadow: none;
+  line-height: 1rem;
+  padding: 1rem 1rem 1rem 2rem;
+  margin: 0.4rem 0.2rem;
+  position: relative;
+
+  > i {
+    position: absolute;
+    top: 50%;
+    margin-top: -12.5px;
+    left: 0.6rem;
+    width: 25px;
+    height: 25px;
+    background: url('//cdn-media.etagi.com/content/media/site/6/6a/6ac7af0304ae58e13f519b054b40d407650e9f2b.svg');
+  }
+
+  :global(.in-favorites) {
+    background: url('//cdn-media.etagi.com/content/media/site/5/56/56e8f31de3b1d77f18972d075269342f475d0098.svg');
+  }
+}

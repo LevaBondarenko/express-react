@@ -1,0 +1,253 @@
+/*
+    Created on : 11.09.2015, 13:55:30
+    Author     : zemlyanov
+*/
+.msearcher {
+    padding: .5rem 0;
+    background: $white;
+
+  &-disctrict {
+    position: relative;
+
+    .caret {
+      margin: 0 !important;
+      position: absolute;
+      top: 21px;
+    }
+  }
+    .msearcher--count {
+      font-size: 1.8rem;
+      margin-top: 0.2rem;
+      font-weight: 900;
+      .count--labels {
+          font-size: 1.5rem;
+          font-weight: normal;
+          padding-top: .3rem;
+      }
+      * {
+          display: inline-block;
+      }
+    }
+    .list-open-up {
+      .msearcher-select, .dropdown-menu {
+        top: auto;
+        bottom: 100%;
+        margin-bottom: 0.2rem;
+      }
+    }
+    .msearcher--pansbutton {
+        & > div {
+            margin-right: -25px;
+            & > div > div {
+                float: right;
+            }
+        }
+    }
+    .range-help-block {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      z-index: 2;
+      padding: 0.3rem 1rem;
+      width: 100%;
+      background-color: #fff;
+      cursor: pointer;
+      border-left: 1px solid #aaa;
+      border-right: 1px solid #aaa;
+      border-bottom: 1px solid #aaa;
+      &.active, &:hover {
+        background: #e6e6e6;
+        color: #932825;
+      }
+    }
+    .dropdown-menu {
+        width: 100%;
+    }
+    .msearcher-select {
+        position: absolute;
+        top: 100%;
+        z-index: 49;
+        background: #fff;
+        padding: 5px 0;
+        margin: 2px 0 0;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+        background-clip: padding-box;
+        white-space: nowrap;
+        &-filter {
+            width: 90%;
+            margin: .4rem auto;
+            position: relative;
+            .form-control {
+                padding: 1px 5px;
+                font-size: 12px;
+                line-height: 1.5;
+                border-radius: 3px;
+                height: auto;
+            }
+            &-clear {
+                position: absolute;
+                right: 1rem;
+                top: 2px;
+                cursor: pointer;
+            }
+        }
+        ul {
+            max-height: 30rem;
+            overflow-y: auto;
+            list-style: none;
+            margin: 0;
+            padding: .3rem 0 0 0;
+            border-top: 1px solid $grey;
+            li {
+                padding: 0 2rem;
+                white-space: nowrap;
+                cursor: pointer;
+                &.active {
+                  color: $crimson;
+                }
+
+                &.focus {
+                  background: #ccc;
+                }
+            }
+        }
+    }
+}
+
+.absoluteItem {
+  position: absolute;
+}
+
+.mdistricts_line {
+  margin: 10px;
+  position: relative;
+}
+
+.btn-select {
+    width: 100%;
+    text-align: left;
+    span {
+        display: inline-block;
+        float: left;
+    }
+    .caret {
+        float: right;
+        margin-top: .8rem;
+    }
+}
+
+.msearcher--checkbox,
+.msearcher--radio {
+  &__item {
+    margin: .7rem .5rem .1rem 0;
+    input {
+      display: none;
+    }
+    label {
+      margin-bottom: 0;
+      font-weight: normal;
+      line-height: 1.9rem;
+      cursor: pointer;
+    }
+    label:hover i {
+      border: 1px solid $crimson;
+    }
+    label span {
+      display: inline;
+      padding-top: 0;
+      vertical-align: top;
+    }
+    input:checked + label i {
+      background: #fff url('//cdn-media.etagi.com/build/public/images/checkbox_check.png') no-repeat center;
+    }
+    i {
+      display: block;
+      float: left;
+      width: 1.8rem;
+      height: 1.8rem;
+      margin-right: .5rem;
+      background: #fff no-repeat center;
+      border: 1px solid darken( $grey, 16%);
+      border-radius: .2rem;
+
+      @include transition(.1s);
+      &:hover,
+      &:focus {
+        border: 1px solid $crimson;
+        outline: none;
+      }
+    }
+  }
+  &__disabled {
+    input, label {
+      cursor: not-allowed;
+      opacity: 0.65;
+      filter: alpha(opacity=65);
+      box-shadow: none;
+    }
+  }
+}
+
+.msearcher--radio {
+  &__item {
+    i {
+      border-radius: 50%;
+      padding: .1rem .2rem;
+    }
+    input:checked + label i {
+      background: none;
+      font: normal normal normal 14px/1 FontAwesome;
+      color: $crimson;
+      &:after {
+        content: "\f111";
+      }
+    }
+  }
+}
+
+.msearcher--checkbuttons {
+  &__item {
+    margin: .3rem .5rem .1rem 0;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    input {
+      display: none;
+    }
+    label {
+      display: block;
+      float: left;
+      min-width: 2.4rem;
+      height: 2.4rem;
+      font-size: 1.2rem;
+      line-height: 2.4rem;
+      color: $black;
+      text-align: center;
+      cursor: pointer;
+      background: #fff;
+      border: 1px solid darken( $grey, 16%);
+      border-radius: .2rem;
+      padding: 0 .4rem;
+      @include transition(.1s);
+      &:hover,
+      &:focus {
+        border: 1px solid $crimson;
+        outline: none;
+      }
+    }
+    input[type='checkbox']:checked + label,
+    input[type='radio']:checked + label {
+      color: #fff;
+      background: $crimson;
+      border: 1px solid $crimson;
+    }
+  }
+  &__label {
+    margin-left: 1rem;
+    line-height: 3.3rem;
+  }
+}

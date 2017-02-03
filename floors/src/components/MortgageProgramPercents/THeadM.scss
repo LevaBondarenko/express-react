@@ -1,0 +1,31 @@
+/**
+ * MortgageProgramCreditConditions styles
+ *
+ * @ver 0.0.0
+ * @author a.d.permin@72.etagi.com
+ */
+
+@import '../variables.scss';
+
+.cell6850 {
+  height: 6.8rem;
+  width: 50%;
+}
+
+.cell6840 {
+  height: 6.8rem;
+  width: 40%;
+}
+
+.cell34 {
+  div:first-child {
+    font-weight: normal;
+  }
+}
+
+td.cell34 {
+  font-size: 0.8rem;
+  color: $gray-600;
+  height: auto;
+  padding-top: 1rem;
+}

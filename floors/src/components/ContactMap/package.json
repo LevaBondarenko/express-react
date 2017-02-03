@@ -1,0 +1,6 @@
+{
+  "name": "ContactMap",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ContactMap.js"
+}

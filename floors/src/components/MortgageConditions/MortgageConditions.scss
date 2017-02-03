@@ -1,0 +1,132 @@
+/**
+ * MortgageConditions styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.root {
+  .termItem {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+
+    .price {
+      font-size: 2.4rem;
+      font-weight: bold;
+    }
+
+    .box {
+      width: 1.4rem;
+      height: 1.4rem;
+      border-radius: 0.3rem;
+      display: block;
+      float: left;
+      margin-right: 0.5rem;
+      margin-top: 0.2rem;
+    }
+
+    .boxGrey {
+      background: $gray-300;
+    }
+
+    .boxRed {
+      background: $red-300;
+    }
+  }
+
+  .economyPref {
+    border: 0.1rem solid $red-300;
+    border-radius: 0.3rem;
+  }
+
+  .errorWrap {
+    min-height: 20.8rem;
+
+    .errorText {
+      margin-top: 4rem;
+    }
+
+    .errorIcon {
+      margin-top: 6.5rem;
+      color: $orange-300;
+      font-size: 3.4rem;
+      display: block;
+      width: 5rem;
+      height: 5rem;
+      border: 0.2rem solid $orange-300;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 4.5rem;
+    }
+  }
+
+  .creditLabel {
+    position: absolute;
+    top: 12%;
+    display: block;
+    z-index: 0;
+    left: -2rem;
+
+    &:before {
+      content: '';
+      border-bottom: 0.1rem solid $gray-300;
+      position: absolute;
+      display: block;
+      width: 10rem;
+      top: 52%;
+      left: 0;
+    }
+  }
+
+  .overpaymentLabel {
+    position: absolute;
+    top: 12%;
+    display: block;
+    z-index: 0;
+    right: -2rem;
+
+    &:before {
+      content: '';
+      border-bottom: 0.1rem solid $red-300;
+      position: absolute;
+      display: block;
+      width: 10rem;
+      top: 105%;
+      left: -3.4rem;
+    }
+  }
+}
+
+:global(.overpaymentSwitch) {
+  :global(.btn-group) {
+    button {
+      margin-right: -3.4rem;
+      border: solid 0.1rem $green-600;
+      border-radius: 0.3rem;
+      padding: 0.75rem 1rem;
+      font-size: 1.4rem;
+      transition: all 0.15s linear;
+      background: $green-600;
+      color: $white-base;
+
+      &:hover {
+        border-color: $green-700;
+        background: $green-700;
+        color: $white-base;
+      }
+
+      &:focus {
+        outline: none;
+        background: $white-base;
+      }
+    }
+
+    button:last-child {
+      display: none;
+    }
+  }
+}

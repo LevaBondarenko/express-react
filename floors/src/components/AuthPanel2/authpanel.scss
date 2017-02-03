@@ -1,0 +1,152 @@
+/*
+    Created on : 29.05.2016, 11:11:11
+    Author     : zemlyanov
+*/
+@import '../variables.scss';
+
+:global(.authpanel) {
+  padding-top: 2px;
+}
+
+.authpanel {
+  text-align: right;
+}
+
+.authpanelItem {
+  display: inline-block;
+  position: relative;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  line-height: 4rem;
+  margin-right: 4rem;
+  margin-top: 0.5rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  a {
+    color: $gray-dark;
+    text-decoration: none;
+
+    i {
+      position: relative;
+      padding-right: 0.5rem;
+      font-size: 110%;
+    }
+
+    &:hover {
+      color: $crimson;
+    }
+  }
+
+  :global(.badge) {
+    position: absolute;
+    background-color: $crimson;
+    top: 0;
+    font-size: 1rem;
+    line-height: 1rem;
+    border: 0.2rem solid #fff;
+  }
+
+  :global(.btn) {
+    padding: 0 1rem;
+    outline: none;
+    border: none;
+  }
+
+  :global(.dropdown-menu) {
+    width: 0;
+    left: 25%;
+  }
+}
+
+.avatar {
+  width: 18rem;
+  white-space: nowrap;
+  padding: 0;
+  color: #333;
+  text-align: left;
+  text-transform: uppercase;
+  margin-left: 1rem;
+
+  img {
+    vertical-align: top;
+  }
+
+  :global(.username) {
+    height: 3.5rem;
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 2.5rem;
+    text-align: left;
+
+    &-welcome {
+      font-size: 1.3rem;
+    }
+
+    &-name {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+  }
+
+  :global(.badge) {
+    top: -0.5rem;
+    left: 5rem;
+  }
+}
+
+.signup {
+  border-radius: 3px;
+  padding: 6.5px 15px !important;
+  text-transform: uppercase;
+  font-size: 11px;
+  transition: all 0.2s ease-in-out;
+  margin-left: 11px;
+  margin-top: -3px;
+  background: $red-darker;
+  color: $white-base;
+  border: 1px solid $red-darker !important;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:active:focus {
+    color: $white-base;
+    text-decoration: none;
+    outline: none;
+    background: $red-base;
+    border: 1px solid $red-base !important;
+  }
+}
+
+.signin {
+  border-radius: 3px;
+  padding: 6.5px 15px !important;
+  text-transform: uppercase;
+  font-size: 11px;
+  transition: all 0.2s ease-in-out;
+  margin-left: 11px;
+  margin-top: -3px;
+  background: $white-base;
+  color: $gray-dark;
+  border: 1px solid $gray-dark !important;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:active:focus {
+    color: $gray-dark;
+    text-decoration: none;
+    outline: none;
+    background: $white-base;
+    border: 1px solid $gray-base !important;
+  }
+}
+
+.subIcon {
+  position: absolute;
+  left: 1.4rem;
+  top: -7%;
+}

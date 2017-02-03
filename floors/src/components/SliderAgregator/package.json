@@ -1,0 +1,6 @@
+{
+  "name": "SliderAgregator",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./SliderAgregator.js"
+}

@@ -1,0 +1,118 @@
+/**
+ * AuthPanelMobileDialogs styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.root {
+  .title {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .subTitle {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin: 0 0.8rem 1rem;
+
+    span {
+      padding: 0 0.5rem;
+      background: $white-base;
+      font-size: 14px;
+    }
+
+    &:before {
+      content: '';
+      border-bottom: 1px solid $gray-dark;
+      margin: 0 auto;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 0;
+      z-index: -1;
+    }
+  }
+
+  .socials {
+    .socialsList {
+      text-align: center;
+      margin-bottom: 1rem;
+
+      .socialLink {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin: 0 0.4rem;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        box-shadow: none;
+
+        &.google {
+          background: url('//cdn-media.etagi.com/content/media/site/5/54/546e2395e2097354e027ac7ffb590f3513e9142e.svg');
+        }
+
+        &.facebook {
+          background: url('//cdn-media.etagi.com/content/media/site/9/98/98f6dced9e88dfe667cc6909731d205533774598.svg');
+        }
+
+        &.vk {
+          background: url('//cdn-media.etagi.com/content/media/site/2/24/24636bedf858f2fbd86fa6e127dbc1c177424145.svg');
+        }
+
+        &.odnoklassniki {
+          background: url('//cdn-media.etagi.com/content/media/site/6/6c/6c57313d1eb032139b2eb479823cc5f64f05a093.svg');
+        }
+      }
+    }
+  }
+
+  .formGroup {
+    padding: 0 0.8rem 1rem;
+
+    :global(.form-control) {
+      width: 100%;
+      margin-bottom: 1rem;
+      line-height: 1rem;
+      padding: 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .toolsLinks {
+    text-align: right;
+    padding: 0 0.8rem;
+    font-size: 14px;
+    margin-bottom: 1rem;
+
+    button {
+      display: inline-block;
+      border: none;
+      outline: none;
+      box-shadow: none;
+      background: $white-base;
+      color: color($blue-600 blackness(+20%));
+    }
+  }
+
+  .error {
+    display: inline-block;
+    width: 100%;
+    color: $red-600;
+    font-size: 14px;
+    margin: -0.8rem 0.8rem;
+  }
+}

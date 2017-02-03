@@ -1,0 +1,78 @@
+/**
+ * MSearcherPaging styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.root {
+  .pager {
+    height: 3.2rem;
+    line-height: 3.1rem;
+    padding: 0 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    transition: all 0.3s;
+    position: relative;
+    width: 100%;
+    background: $white-base;
+
+    &.fixPager {
+      position: fixed;
+      top: 0;
+      box-shadow: 0 1px 10px 0 rgba(50, 50, 50, 0.75);
+      transition: box-shadow 0.3s;
+      z-index: 10;
+    }
+
+    .prev,
+    .next {
+      display: block;
+      background-repeat: no-repeat;
+      background-size: 15px 15px;
+      color: $gray-600;
+      text-decoration: none;
+
+      &.disabled {
+        color: $gray-300;
+      }
+    }
+
+    .prev {
+      background-image: url('https://cdn-media.etagi.com/content/media/site/3/35/35b4805feddeb675ff440d55298fc836589326ee.svg');
+      background-position: 0;
+      padding-left: 18px;
+    }
+
+    .next {
+      background-image: url('https://cdn-media.etagi.com/content/media/site/6/64/641df21f478b7169e23c1a804e5d9e2548b8830f.svg');
+      background-position: 100%;
+      padding-right: 18px;
+    }
+
+    .inputPage {
+      width: 46px;
+      margin-right: 6px;
+      margin-bottom: 0;
+      margin-left: 6px;
+      padding: 10px 4px;
+      border: 1px solid #e0e0e0;
+      border-radius: 3px;
+      background-color: #fafafa;
+      font-size: 16px;
+      text-align: center;
+      height: 38px;
+    }
+  }
+
+  .margin {
+    height: 0.8rem;
+    background: $gray-100;
+  }
+}

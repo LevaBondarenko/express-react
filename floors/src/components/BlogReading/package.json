@@ -1,0 +1,6 @@
+{
+  "name": "BlogReading",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./BlogReading.js"
+}

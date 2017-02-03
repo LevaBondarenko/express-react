@@ -1,0 +1,38 @@
+/* 
+    Created on : 21.01.2016, 18:00:19
+    Author     : zemlyanov
+*/
+
+.time-picker-nano {
+    width: 100%;
+    &-digit, &-divider {
+        float: left;
+    }
+    &-divider {
+        width: 14%;
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+    &-digit {
+        width: 43%;
+        input {
+            width: 100%;
+            display: block;
+            text-align: center;
+            border: 1px solid rgba(0,0,0,0.15) !important;
+        }
+        .btn-up, .btn-down {
+            width: 100%;
+            height: 1.4rem;
+            font-size: .6rem;
+            display: block;
+            padding: .2rem;
+            border: none;
+            background: none;
+            outline: none;
+            &:hover {
+                color: #e31f30;
+            }
+        }
+    }
+}

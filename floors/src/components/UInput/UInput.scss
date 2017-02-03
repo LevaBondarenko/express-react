@@ -1,0 +1,86 @@
+/**
+ * UInput styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+@import '../ucontrols.scss';
+
+.UInput {
+  :global(.uinput-container) {
+    width: 100%;
+    margin: 0;
+  }
+
+  :global(.col-xs-12) {
+    position: relative;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  :global(.input-label) {
+    text-align: center;
+    min-width: 100%;
+    max-width: none;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  :global(.form-control) {
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.2rem;
+    height: auto;
+    border-color: $gray-300;
+    color: $gray-600;
+  }
+
+  :global(div.form-control) {
+    border: none;
+  }
+
+  input:disabled {
+    background: $gray-300;
+    color: $gray-600;
+    box-shadow: inset 0 0 8px -1px rgba(0, 0, 0, 0.15);
+  }
+}
+
+:global(.uinput-with-unit.form-control) {
+  padding-right: 35px;
+}
+
+:global(.uinput-unit) {
+  position: absolute;
+  top: 5px;
+  right: 6px;
+  color: $gray-600;
+}
+
+.withRefreshButton {
+  padding-right: 100px;
+}
+
+.refreshButton {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  border-top-right-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+}
+
+:global(.uinput-with-funny-placeholder.form-control) {
+  padding: 1rem 0.6rem 0.2rem;
+  color: $gray-dark;
+}
+
+:global(.uinput-funny-placeholder) {
+  position: absolute;
+  top: 0.2rem;
+  left: 0.6rem;
+  color: $gray-600;
+  font-size: 12px;
+}

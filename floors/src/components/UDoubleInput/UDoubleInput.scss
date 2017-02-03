@@ -1,0 +1,90 @@
+/**
+ * udoubleinput styles
+ *
+ * @ver 0.0.1
+ * @author a.d.permin@72.etagi.com
+ */
+
+@import '../variables.scss';
+@import '../ucontrols.scss';
+
+.UDoubleInput {
+  :global(.udoubleinput-container) {
+    width: 100%;
+    margin: 0;
+  }
+
+  :global(.col-xs-12) {
+    position: relative;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  :global(.input-label) {
+    text-align: center;
+    min-width: 100%;
+    max-width: none;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  :global(.form-control) {
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.2rem;
+    height: auto;
+    color: $gray-600;
+  }
+
+  :global(div.form-control) {
+    border: none;
+  }
+}
+
+:global(.udoubleinput-with-unit.form-control) {
+  padding-right: 3.5rem;
+  width: 70%;
+  display: inline-block;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+:global(.udoubleinput-with-percent.form-control) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 1.6rem;
+  width: 30%;
+  display: inline-block;
+  border-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+:global(.udoubleinput-with-percent.form-control:focus) {
+  border: 0.1rem solid #49bd3b;
+  padding-left: 0.5rem;
+}
+
+:global(.udoubleinput-unit) {
+  position: absolute;
+  top: 0.5rem;
+  right: 33%;
+  color: $gray-600;
+}
+
+:global(.udoubleinput-with-funny-placeholder.form-control) {
+  padding: 1rem 0.6rem 0.2rem;
+  color: $gray-dark;
+}
+
+:global(.udoubleinput-percent) {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.6rem;
+  color: $gray-600;
+}
+
+:global(.udoubleinput-with-unit + div) {
+  z-index: 1;
+}

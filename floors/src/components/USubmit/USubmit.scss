@@ -1,0 +1,71 @@
+/**
+ * USubmit styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.USubmit {
+  :global(.usubmit-container) {
+    position: relative;
+  }
+
+  :global(.form-control) {
+    background-color: $green-600;
+    border-radius: 3px;
+    transition: all 0.15s ease-in-out;
+
+    &:hover {
+      background-color: $green-700;
+    }
+  }
+}
+
+:global(.usubmit-modal) {
+  text-align: center;
+
+  :global(.usubmit-modal-header) {
+    font-size: 20px;
+    padding-bottom: 4px;
+    font-weight: 600;
+    width: 80%;
+    text-align: center;
+    border-bottom: 1px solid $gray-300;
+    margin: 0 auto 20px;
+  }
+
+  :global(.usubmit-modal-loader) {
+    height: 110px;
+    display: table;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin: 10px 0;
+  }
+
+  :global(.usubmit-modal-loader) {
+    :global(.usubmit-modal-countdown) {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  :global(.usubmit-modal-comment) {
+    font-size: 16px;
+  }
+
+  :global(.italic) {
+    font-style: italic;
+  }
+}
+
+.redirectModal {
+  :global(.modal-dialog) {
+    width: 600px !important;
+  }
+}

@@ -1,0 +1,86 @@
+.manyRieltorsBlock {
+  border: 1px solid #ededed;
+  padding: 0;
+  width: 84em;
+}
+
+.itemRieltorBlock-wrapper {
+  padding: 0;
+  h1 {
+    padding-left: 23px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 27px;
+    color: #303030;
+  }
+
+  .itemRieltorBlock {
+    padding: 50px 40px 22px 23px;
+    width: 50%;
+    float: left;
+    color: #576371;
+    font-size: 16px;
+
+    img {
+      padding-right: 20px;
+      float: left;
+      vertical-align: top;
+    }
+  }
+}
+
+.rieltor2BlockStyle {
+  .rieltor2-block {
+    background: #ededed;
+    padding: 5px 0;
+
+    .jk-person {
+      border: none;
+      background: transparent;
+    }
+
+    .jk-avatar {
+      width: 120px;
+      height: 120px;
+      margin-top: 10px;
+    }
+
+    .person-data-last {
+      padding: 0 48px;
+    }
+  }
+}
+
+.noticeRieltorTab {
+  color: #a0a2ad;
+  font-size: 12px;
+}
+
+.rieltorTab {
+  text-align: center;
+  .fa-angle-double-up {
+    color: #191d1f;
+    font-size: 12px;
+    margin-top: 15px;
+  }
+
+  .rieltorTab-ico {
+    display: block;
+    width: 66px;
+    height: 66px;
+    border: 2px solid #ededed;
+    border-radius: 50%;
+    margin: 15px auto 0;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    &.active, &:hover {
+      border: 2px solid #767676;
+    }
+  }
+}

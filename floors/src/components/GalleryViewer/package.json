@@ -1,0 +1,6 @@
+{
+  "name": "GalleryViewer",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./GalleryViewer.js"
+}

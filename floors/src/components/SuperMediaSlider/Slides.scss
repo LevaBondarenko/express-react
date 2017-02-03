@@ -1,0 +1,29 @@
+@import '../variables.scss';
+
+.slide {
+  float: left;
+  height: 100%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.1;
+  overflow: hidden;
+}
+
+.slide__active {
+  position: relative;
+  display: block;
+  float: left;
+  height: 100%;
+  z-index: 9;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  opacity: 1;
+  overflow: hidden;
+  transition: opacity 500ms ease, -webkit-filter 500ms ease;
+}
+
+:global(.slideImg) {
+  height: 100%;
+  max-width: 100%;
+  display: block;
+}

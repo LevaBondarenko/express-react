@@ -1,0 +1,20 @@
+{
+  "name": "etagi-e2e",
+  "private": true,
+  "version": "0.0.0",
+  "dependencies": {
+    "jasmine-spec-reporter": "2.5.0",
+    "npm-run-script": "0.0.4",
+    "protractor": "4.0.14",
+    "protractor-jasmine2-screenshot-reporter": "0.3.2"
+  },
+  "scripts": {
+    "test": "node node_modules/protractor/bin/protractor protractor.conf.js",
+    "test-smoke": "node node_modules/protractor/bin/protractor protractor.conf.js --params.smoke 1",
+    "test-smoke-1": "node node_modules/protractor/bin/protractor protractor.conf.js --params.smoke 1 --suite part1",
+    "test-smoke-2": "node node_modules/protractor/bin/protractor protractor.conf.js --params.smoke 1 --suite part2",
+    "test-tickets": "node node_modules/protractor/bin/protractor protractor.conf.js --suite tickets",
+    "wdu": "node node_modules/protractor/bin/webdriver-manager update",
+    "wds": "node node_modules/protractor/bin/webdriver-manager start"
+  }
+}

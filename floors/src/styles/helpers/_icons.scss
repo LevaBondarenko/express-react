@@ -1,0 +1,71 @@
+
+.header--icon,
+.searchform--icon {
+    display : block;
+    float : left;
+    margin-right : 1.6rem;
+}
+
+.icon-watch {
+    width : 2.6rem;
+    height : 3.2rem;
+    margin-left : .3rem;
+    background : url('//cdn-media.etagi.com/static/site/5/5b/5b2e97ae94822ff40440a4f794316347b8894886.png') no-repeat center;
+}
+
+.icon-phone__dark {
+    width : 2.6rem;
+    height : 3.7rem;
+    background : url('//cdn-media.etagi.com/static/site/0/01/0153c258975cdbbcac545b403dbfd33862ed7f8e.png') no-repeat center;
+}
+
+.icon-map {
+    width : 4rem;
+    height : 6rem;
+    margin-top : .4rem;
+    background : url('//cdn-media.etagi.com/build/public/images/map_point.png') no-repeat center;
+}
+
+.icon-info {
+    display: block;
+    float: left;
+    width: 1.8rem;
+    height: 2.7rem;
+    background: url('//cdn-media.etagi.com/build/public/images/icon-info.png') no-repeat center;
+}
+
+.icon-flag{
+    display: block;
+    float: left;
+    width: 4.2rem;
+    height: 2.9rem;
+    background: url('//cdn-media.etagi.com/build/public/images/icon-flag.png') no-repeat center;
+}
+
+.icon-diviationPic {
+    display: block;
+    float: left;
+    width: 3.5rem;
+    height: 3.4rem;
+    line-height: 3.4rem;
+    margin-right: .6rem;
+    margin-top: 2.1rem;
+
+    .red {background: #f9d2d6;}
+    .green {background: #3eab47;}
+
+    &_col {
+        width: .5rem;
+        vertical-align: bottom;
+        display: inline-block;
+        margin-right: .2rem;
+    }
+}
+
+.icon-info-square {
+    display: block;
+    width: 1.8rem;
+    height: 1.8rem;
+    float: left;
+    background: url('//cdn-media.etagi.com/static/site/1/16/165de4fa57f50e9897293002158b43a8871d4e15.png') no-repeat center;
+}

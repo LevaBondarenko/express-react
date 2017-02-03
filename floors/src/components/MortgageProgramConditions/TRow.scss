@@ -1,0 +1,32 @@
+/**
+ * TableRow styles
+ *
+ * @ver 0.0.0
+ * @author a.d.permin@72.etagi.com
+ */
+
+@import '../variables.scss';
+
+.row {
+  height: 4.4rem;
+
+  th {
+    width: 50%;
+  }
+
+  td {
+    padding: 0 1rem;
+  }
+}
+
+.rowMobile {
+  height: 3.5rem;
+
+  th {
+    width: 50%;
+  }
+
+  td {
+    padding: 0 1rem;
+  }
+}

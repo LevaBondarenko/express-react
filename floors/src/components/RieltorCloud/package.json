@@ -1,0 +1,6 @@
+{
+  "name": "RieltorCloud",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./RieltorCloud.js"
+}

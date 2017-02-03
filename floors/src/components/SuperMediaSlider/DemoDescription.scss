@@ -1,0 +1,18 @@
+@import '../variables.scss';
+
+.demoDescription {
+  margin: 1rem 0;
+  padding-right: 1rem;
+}
+
+.demoScroll {
+  height: 7rem;
+
+  :global(.gm-scroll-view) {
+    overflow-x: hidden;
+  }
+
+  :global(.gm-scrollbar.-vertical) {
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,33 @@
+/* 
+    Created on : 25.09.2015, 14:47:46
+    Author     : zemlyanov
+*/
+
+.objectsananalogs--wrapper {
+    a {
+        font-size: 1.15rem;
+        color: $gray;
+        text-decoration: underline;
+    }
+    h4 {
+        a {
+            display: block;
+            float: right;
+            margin-top: 0.5rem;
+        }
+    }
+    span {
+        font-size: 95%;
+    }
+    .preloader {
+      margin-right: auto;
+      margin-left: auto;
+      width: 25px;
+      height: 100%;
+      margin-top: 40%;
+      div {
+        width: 25px !important;
+        height: 25px !important;
+      }
+    }
+}

@@ -1,0 +1,80 @@
+/**
+ * ShowCaseTicketCount styles
+ *
+ * @ver 0.0.0
+ * @author npm generator
+ */
+
+@import '../variables.scss';
+
+.root {
+  text-align: center;
+  height: 270px;
+  position: relative;
+}
+
+.root.active {
+  box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.75);
+  transition: all 0.3s ease-in-out;
+}
+
+.count {
+  width: 100%;
+  height: 90px;
+  margin: 0 auto;
+  margin-top: 55px;
+  background-image: url('https://cdn-media.etagi.com/content/media/site/7/7c/7caeaec444ddc9cfa22f3c65e8e00845efa50b15.png');
+  background-repeat: no-repeat;
+  background-position: 35px 35px;
+  padding-top: 39px;
+}
+
+.countNum {
+  font-size: 36px;
+  line-height: 24px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.countText {
+  font-size: 10px;
+  display: inline-block;
+  vertical-align: top;
+  width: 50px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-left: 7px;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 20px;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 53px;
+  margin-bottom: 17px;
+  text-align: left;
+}
+
+.link a,
+.link a:hover {
+  text-decoration: none;
+  font-size: 14px;
+  color: #496fbd;
+}
+
+.link {
+  border-bottom: 1px dotted #496fbd;
+  display: inline-block;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  width: 55%;
+  margin: 0 auto;
+}
+
+.bold {
+  font-weight: bold;
+}

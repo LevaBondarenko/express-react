@@ -1,0 +1,35 @@
+@import '../variables.scss';
+
+.switcherBtn {
+  display: inline-block;
+  background: $white-base;
+  border: 1px solid $gray-base;
+  border-radius: 2px;
+  color: $gray-base;
+  margin-bottom: 1rem;
+  width: 49%;
+
+  &__header {
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding: 0.9rem 0.9rem 0.2rem;
+    text-align: center;
+  }
+
+  &__price {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.4rem;
+  }
+
+  &:hover {
+    color: $black;
+    cursor: pointer;
+  }
+}
+
+.buttonToggled {
+  background: $gray-light;
+  color: $black;
+}

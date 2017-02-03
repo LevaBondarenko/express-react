@@ -1,0 +1,37 @@
+@import '../variables.scss';
+
+.mortgageHeader {
+  //display: flex;
+  height: 6rem;
+  background-color: $gray-100;
+  border-bottom: 0.1rem solid $gray-300;
+  font-weight: bold;
+}
+
+.mortgageHeader div {
+  padding: 0.7rem 0;
+}
+
+.mortgageHeader div a,
+.mortgageHeader div a:hover,
+.mortgageHeader div a:focus,
+.mortgageHeader div a:active {
+  color: inherit;
+}
+
+.percentHeader {
+  text-align: center;
+}
+
+.percentHeader {
+  width: 12rem;
+}
+
+.progTitleHeader {
+  width: 90rem;
+  padding-left: 1.4rem !important;
+}
+
+.moreHeader {
+  width: 10rem;
+}

@@ -1,0 +1,102 @@
+.mortgagerecommendprogram--wrapper {
+  margin-bottom: 15px;
+}
+
+.mortgage-header-line {
+  background: #99b7c6;
+  height: 60px;
+
+  .mortgage-h1 {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 15px 0;
+    font-weight: bold;
+    color: #FFF;
+  }
+
+  .mortgage-center {
+    padding: 23px 0 0;
+  }
+
+  .mortgage-right {
+    background: #f7f7f7;
+    position: relative;
+    z-index: 9;
+    clear: both;
+    padding: 15px 30px;
+  }
+
+  .title-recommend {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 0 0 12px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .mortgage-recommend {
+    padding-bottom: 16px;
+    position: relative;
+
+    &-percentTitle {
+      width: 53%;
+      padding-top: 36px;
+      font-size: 16px;
+      line-height: 20px;
+      font-style: italic;
+      font-weight: bold;
+      color: #4c8aa7;
+      display: inline-block;
+    }
+
+    &-arrow {
+      height: 22px;
+      width: 55px;
+      padding-bottom: 40px;
+      background: url("//cdn-media.etagi.com/static/site/9/96/962dcadaeff47d1f9ca8acba3f1ec2ed902fee68.png") left bottom no-repeat;
+      left: 53%;
+      top: 0;
+      position: absolute;
+    }
+
+    &-percent {
+      display: inline-block;
+      font-size: 38px;
+      padding-top: 29px;
+      font-weight: bold;
+      float: right;
+      text-align: right;
+    }
+  }
+
+  .mortgage-line {
+    clear: both;
+
+    span {
+      font-size: 16px;
+      float: left;
+    }
+    big {
+      float: right;
+      font-weight: bold;
+    }
+  }
+}
+
+.btn-dark-blue {
+  background: #226b8e;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 16px;
+  display: block;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 0;
+  text-align: center;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    background: darken(#226b8e, 20%);
+  }
+}

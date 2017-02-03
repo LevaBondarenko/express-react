@@ -1,0 +1,19 @@
+@import '../variables.scss';
+
+.mapObjectM {
+  height: 300px;
+
+  :global(#ymapsMobileObjectMap) {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__compactDDTitle {
+    font-weight: 600;
+    height: 51px;
+    padding: 15px 12px;
+    border-bottom: 1px solid $gray-300;
+    border-top: 1px solid $gray-300;
+  }
+}
