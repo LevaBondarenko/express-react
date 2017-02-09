@@ -30,5 +30,11 @@ module: {
   }]
 },
 
+devServer: {
+  host: 'localhost',
+  port: 8080,
+  contentBase: __dirname + '/views'
+},
+
   watch: NODE_ENV == 'development',
 };
